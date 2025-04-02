@@ -1,5 +1,5 @@
 body{
-    background-color: #2d2d2d;
+    background-color: #ececec;
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -9,7 +9,7 @@ body{
 }
 header, footer{
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(237, 137, 7);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,18 +28,18 @@ footer nav{
     margin-right: 30px;
 }
 header nav a{
-    color: rgb(210, 210, 210);
+    color: rgb(31, 31, 31);
     text-decoration: none;
 }
 footer nav a{
-    color: rgb(210, 210, 210);
+    color:  rgb(31, 31, 31);
     text-decoration: none;
 }
 header nav a:hover{
-    color: rgb(189, 124, 4)
+    color: rgb(255, 255, 255)
 }
 footer nav a:hover{
-    color: rgb(189, 124, 4)
+    color: rgb(255, 255, 255)
 }
 .introcontainer{
     margin: 30px;
@@ -57,7 +57,7 @@ img{
 .introduction{
     margin-left: 200px;
     text-align: justify;
-    color: rgb(210, 210, 210);
+    color:  rgb(31, 31, 31);
 }
 .introductionlinks{
     display: flex;
@@ -82,7 +82,7 @@ p{
     }
     .word{
         display: block;
-        color: rgb(210, 210, 210);
+        color:  rgb(31, 31, 31);
        margin-left: 20px;
        margin-right: 20px;
     }
@@ -112,7 +112,7 @@ p{
     }
 }
 h1{
-    color: rgb(210, 210, 210);
+    color:  rgb(31, 31, 31);
 }
 .skillcontainer{
     text-align: center;
@@ -125,7 +125,7 @@ h1{
     margin-top: 20px;
 }
 .skillheaders{
-    background-color: rgb(189, 124, 4);
+    background-color: rgb(237, 137, 7);
     padding: 6px 15px;
     display: inline-block;
     border-radius: 5px;
@@ -140,7 +140,7 @@ h1{
     height: 60px;
     margin: 0;
     margin-top: 30px;
-    background-color: rgb(210, 210, 210);
+    background-color:  rgb(255, 255, 255);
     padding: 10px;
     border-radius: 5px;
 }
@@ -153,7 +153,7 @@ figcaption {
     text-align: center;
     margin-top: 5px; 
     font-size: 16px;
-    color: #fff; 
+    color:  rgb(31, 31, 31); 
 }
 .skillitemscontainer{
     display: flex;
@@ -203,7 +203,7 @@ figcaption {
         justify-content: center;  
         max-width: fit-content;
         margin: auto;
-        background-color: rgb(210, 210, 210);
+        background-color:  rgb(255, 255, 255);
         padding: 5px 20px; 
         gap: 150px; 
         border-radius: 5px;
@@ -216,7 +216,7 @@ figcaption {
     list-style-type: disc;
     list-style-position: inside;
     line-height: 2;
-    background-color: rgb(210, 210, 210);
+    background-color:  rgb(255, 255, 255);
     border-radius: 5px;
     margin: 5px auto; /* Reduce margin to bring sections closer */
     max-width: fit-content;/* Make sure content is centered and not too wide */
@@ -255,7 +255,7 @@ figcaption {
 }
 
 .certificatewords {
-    background-color: rgb(210, 210, 210);
+    background-color:  rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px 20px;
     margin-bottom: 20px;
@@ -285,7 +285,7 @@ figcaption {
 .contactlinks img{
     height: auto;
     width: 40px;
-    background-color: rgb(210, 210, 210);
+    background-color:  rgb(255, 255, 255);
     padding: 20px 30px;
     justify-content: center;
     align-items: center;
