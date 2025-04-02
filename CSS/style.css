@@ -1,0 +1,283 @@
+body{
+    background-color: #2d2d2d;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.word{
+    display: none;
+}
+header, footer{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10px; /* Add padding to prevent overflow on small screens */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+header nav{
+    display: flex;
+    gap: 20px;
+    margin-right: 30px;
+}
+footer nav{
+    display: flex;
+    gap: 20px;
+    margin-right: 30px;
+}
+header nav a{
+    color: aliceblue;
+    text-decoration: none;
+}
+footer nav a{
+    color: aliceblue;
+    text-decoration: none;
+}
+header nav a:hover{
+    color: orange;
+}
+footer nav a:hover{
+    color: orange;
+}
+.introcontainer{
+    margin: 30px;
+    display: flex;
+    gap: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+img{
+    height: auto;
+    width: 20%;
+    order: 2;
+    margin-right: 200px;
+}
+.introduction{
+    margin-left: 200px;
+    text-align: justify;
+    color: aliceblue;
+}
+.introductionlinks{
+    display: flex;
+    gap: 20px;
+}
+.introductionlinks a img {
+    width: 30px;
+    height: auto;
+    margin: 0%;
+}
+p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px){
+    header {
+        justify-content: center; 
+    }
+    footer {
+        justify-content: center; 
+    }
+    .word{
+        display: block;
+        color: azure;
+       margin-left: 20px;
+       margin-right: 20px;
+    }
+    header nav {
+        display: none;
+    }
+    footer nav {
+        display: none;
+    }
+    .introcontainer {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center; /* Center items */
+        gap: 20px;
+        padding-top: 20px;
+    }
+    img {
+        width: 50%; /* Make the image take more space on small screens */
+        margin-right: 0; /* Remove margin on the right */
+        order: 1; /* Ensure the image appears first */
+    }
+    .introduction {
+        margin-left: 0; /* Remove the left margin for smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+    .introductionlinks {
+        justify-content: center; 
+    }
+}
+h1{
+    color: azure;
+}
+.skillcontainer{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin: 30px;
+}
+.programming-containers {
+    text-align: center; 
+    margin-top: 20px;
+}
+.skillheaders{
+    background-color: orange;
+    padding: 6px 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.programming-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.logos{
+    width: auto;
+    height: 60px;
+    margin: 0;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+figure{
+    display: block;
+    margin: 0 20px; 
+    text-align: center; 
+}
+figcaption {
+    text-align: center;
+    margin-top: 5px; 
+    font-size: 16px;
+    color: #fff; 
+}
+.skillitemscontainer{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex: 1;
+}
+@media screen and (max-width: 768px) {
+    .skillitemscontainer {
+        flex-direction: column;
+        gap: 20px; 
+        justify-content: center;
+    }
+    .programming-container {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        gap: 20px; /* Adjust the gap */
+    }
+    .logos {
+        width: auto;
+        margin-top: 10px;
+        margin-bottom: 1px;
+    }
+    figure {
+        margin: 10px 0; 
+    }
+    .skillcontainer {
+        margin: 20px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+}
+
+.toolscontainer{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    .toolscontainer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+.experienceheader{
+        display: flex;
+        align-items: center;  
+        justify-content: center;  
+        max-width: fit-content;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 5px 20px; 
+        gap: 150px; 
+        border-radius: 5px;
+}
+.experience, .experience2 {
+    font-size: 13px;
+    padding: 25px;
+    color: #2d2d2d;
+    text-align: justify;
+    list-style-type: disc;
+    list-style-position: inside;
+    line-height: 2;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 5px auto; /* Reduce margin to bring sections closer */
+    max-width: fit-content;/* Make sure content is centered and not too wide */
+}
+@media screen and (max-width: 768px) {
+    .experienceheader {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+        gap: 10px; /* Reduce space between title and date */
+        padding: 10px; /* Adjust padding */
+        width: 90%; /* Make it responsive */
+    }
+
+    .experience, .experience2 {
+        width: 90%; /* Make the experience sections fit smaller screens */
+        padding: 15px; /* Reduce padding */
+        font-size: 12px; /* Reduce text size */
+        margin: 10px auto; /* Add slight spacing */
+    }
+}
+.certificateheaders {
+    text-align: center; /* Centers the title */
+    margin-bottom: 30px; /* Reduces space between the title and certificates */
+    font-size: 24px; /* Adjust the size if needed */
+    color: #2d2d2d; /* Choose your color */
+}
+
+.certificatecontainers {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers certificates horizontally */
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.certificatewords {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    width: 50%; /* This defines the width of each certificate box */
+    max-width: 500px; /* Limits the width to prevent it from being too wide */
+    text-align: center; /* Centers text inside the certificate box */
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .certificatewords {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .certificatewords {
+        width: 90%;
+    }
+}
+
+
+
+
+
