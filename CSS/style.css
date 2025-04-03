@@ -9,7 +9,7 @@ body{
 }
 header, footer{
     width: 100%;
-    background-color: rgb(237, 137, 7);
+    background-color: rgb(87, 87, 87);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,18 +28,18 @@ footer nav{
     margin-right: 30px;
 }
 header nav a{
-    color: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 footer nav a{
-    color:  rgb(31, 31, 31);
+    color:  rgb(255, 255, 255);
     text-decoration: none;
 }
 header nav a:hover{
-    color: rgb(255, 255, 255)
+    color: rgb(0, 0, 0)
 }
 footer nav a:hover{
-    color: rgb(255, 255, 255)
+    color: rgb(0, 0, 0)
 }
 .introcontainer{
     margin: 30px;
@@ -57,7 +57,7 @@ img{
 .introduction{
     margin-left: 200px;
     text-align: justify;
-    color:  rgb(31, 31, 31);
+    color:  rgb(87, 87, 87);
 }
 .introductionlinks{
     display: flex;
@@ -82,7 +82,7 @@ p{
     }
     .word{
         display: block;
-        color:  rgb(31, 31, 31);
+        color:  rgb(87, 87, 87);
        margin-left: 20px;
        margin-right: 20px;
     }
@@ -112,7 +112,7 @@ p{
     }
 }
 h1{
-    color:  rgb(31, 31, 31);
+    color:  rgb(87, 87, 87);
 }
 .skillcontainer{
     text-align: center;
@@ -125,7 +125,7 @@ h1{
     margin-top: 20px;
 }
 .skillheaders{
-    background-color: rgb(237, 137, 7);
+   color: rgb(87, 87, 87);
     padding: 6px 15px;
     display: inline-block;
     border-radius: 5px;
@@ -140,7 +140,7 @@ h1{
     height: 60px;
     margin: 0;
     margin-top: 30px;
-    background-color:  rgb(255, 255, 255);
+
     padding: 10px;
     border-radius: 5px;
 }
@@ -153,7 +153,10 @@ figcaption {
     text-align: center;
     margin-top: 5px; 
     font-size: 16px;
-    color:  rgb(31, 31, 31); 
+    color:  rgb(255, 255, 255);
+    background-color: #2d2d2d;
+    padding: 10px;
+    border-radius: 5px;
 }
 .skillitemscontainer{
     display: flex;
@@ -166,6 +169,9 @@ figcaption {
         flex-direction: column;
         gap: 20px; 
         justify-content: center;
+    }
+    figcaption{
+        
     }
     .programming-container {
         flex-direction: column; /* Stack elements vertically on mobile */
@@ -211,7 +217,7 @@ figcaption {
 .experience, .experience2 {
     font-size: 13px;
     padding: 25px;
-    color: #2d2d2d;
+    color: rgb(87, 87, 87);
     text-align: justify;
     list-style-type: disc;
     list-style-position: inside;
@@ -275,7 +281,7 @@ figcaption {
 }
 .project-link {
     padding: 12px 20px;
-    background-color: #ff9d00;
+    background-color: rgb(0, 85, 255);
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
@@ -286,7 +292,7 @@ figcaption {
 }
 .project-link2 {
     padding: 12px 20px;
-    background-color: #ff9d00;
+   
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
@@ -298,11 +304,15 @@ figcaption {
 
 .fig{
     margin-right: 200px;
-    text-decoration: underline;
+    color: #ffffff;
     margin-top: 10px;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    max-width: fit-content;
+    
 }
 .project-link:hover {
-    background-color: #555;
+    background-color: rgb(87, 87, 87);
 }
 .projectnote {
     margin-right: 20px;
@@ -330,7 +340,7 @@ figcaption {
     padding: 20px;
 }
 .techli {
-    background-color: #ff9d00;
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 10px;
     color: rgb(255, 255, 255);
@@ -350,7 +360,7 @@ figcaption {
     }
     .project-link {
         padding: 12px 10px;
-        background-color: #ff9d00;
+        background-color: rgb(87, 87, 87);
         color: #ffffff;
         text-decoration: none;
         font-weight: bold;
@@ -362,7 +372,7 @@ figcaption {
     }
     .project-link2 {
         padding: 12px 10px;
-        background-color: #ff9d00;
+        background-color: rgb(87, 87, 87);
         color: #ffffff;
         text-decoration: none;
         font-weight: bold;
@@ -467,4 +477,14 @@ figcaption {
     }
 }
 
+
+.lo2{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    padding: 0;
+    margin-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
 
