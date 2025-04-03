@@ -49,6 +49,7 @@ footer nav a:hover{
     padding-top: 50px;
     position: relative
 }
+
 img{
     height: auto;
     width: 20%;
@@ -72,6 +73,7 @@ img{
 p{
     margin: 0;
     margin-bottom: 10px;
+    font-size: 14px;
 }
 .resume {
     position: absolute;
@@ -96,6 +98,9 @@ p{
         padding: 10px 15px; /* Adjust padding if needed */
         left: none;
         font-size: smaller;
+    }
+    p{
+        font-size: 11px;
     }
     header {
         justify-content: center; 
@@ -133,10 +138,13 @@ p{
     .introductionlinks {
         justify-content: center; 
     }
+
 }
 h1{
     color:  rgb(0, 0, 0);
+    font-size: 30px;
 }
+
 .skillcontainer{
     text-align: center;
     padding-bottom: 50px;
@@ -193,7 +201,11 @@ figcaption {
         gap: 20px; 
         justify-content: center;
     }
+    h1{
+        font-size: 25px
+    }
     figcaption{
+        font-size: 11px;
         
     }
     .programming-container {
@@ -257,6 +269,7 @@ figcaption {
         gap: 10px; /* Reduce space between title and date */
         padding: 10px; /* Adjust padding */
         width: 90%; /* Make it responsive */
+        font-size: 12px;
     }
 
     .experience, .experience2 {
@@ -264,6 +277,7 @@ figcaption {
         padding: 15px; /* Reduce padding */
         font-size: 12px; /* Reduce text size */
         margin: 10px auto; /* Add slight spacing */
+        font-size: 11px;
     }
 }
 .projectcontainer {
@@ -426,6 +440,7 @@ figcaption {
     .projectnote {
         margin-left: 20px;
         margin-right: 20px;
+        font-size: 11px;
     }
 }
 .certificatecontainers {
@@ -445,6 +460,7 @@ figcaption {
     width: 50%; /* This defines the width of each certificate box */
     max-width: 500px; /* Limits the width to prevent it from being too wide */
     text-align: center; /* Centers text inside the certificate box */
+    
 }
 
 /* Media Queries */
@@ -457,6 +473,7 @@ figcaption {
 @media screen and (max-width: 480px) {
     .certificatewords {
         width: 90%;
+        font-size: 11px;
     }
 }
 .contactcontainer{
