@@ -309,6 +309,7 @@ figcaption {
     text-align: center;
     background-color: rgb(87, 87, 87);
     max-width: fit-content;
+    text-decoration: underline;
     
 }
 .project-link:hover {
