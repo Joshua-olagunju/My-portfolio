@@ -237,23 +237,147 @@ figcaption {
         margin: 10px auto; /* Add slight spacing */
     }
 }
-.certificateheaders {
-    text-align: center; /* Centers the title */
-    margin-bottom: 30px; /* Reduces space between the title and certificates */
-    font-size: 24px; /* Adjust the size if needed */
-    color: #2d2d2d; /* Choose your color */
+.projectcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
+.projectimagecontainer {
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    gap: 10px;
+    width: 70%; /* Ensure the container spans full width */
+    padding-top: 0%;
+}
+.projectimage {
+    width: auto; /* Allow images to retain their natural width */
+    width: 300px; /* Limit the maximum size of images */
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    object-fit: cover; /* Maintain aspect ratio of images */
+    scroll-snap-align: center; /* Center images in the viewport when scrolling */
+}
+.project-link-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.project-link {
+    padding: 12px 20px;
+    background-color: #ff9d00;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+.fig{
+    margin-right: 200px;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+.project-link:hover {
+    background-color: #555;
+}
+.projectnote {
+    margin-right: 20px;
+    font-size: 13px;
+    margin-top: 10px;
+    order: 1;
+    color: #2d2d2d;
+    text-align: justify;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.techstack {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    order: 2;
+}
+.projectnotecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+    padding: 20px;
+}
+.techli {
+    background-color: #ff9d00;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .projectcontainer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .fig{
+        margin-right: 0px;
+    }
+    .project-link {
+        padding: 12px 10px;
+        background-color: #ff9d00;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        max-width: fit-content;
+        margin-left: 210px;
+        transition: background-color 0.3s ease-in-out;
+    }
 
+    .projectimagecontainer {
+        width: 90%; /* Adjust for smaller screen */
+    }
+
+    .projectimage {
+        width: 200px;
+        height: 120px;
+    }
+
+    .project-link-container {
+        flex-direction: column;
+    }
+
+    .techstack {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .projectnote {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
 .certificatecontainers {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers certificates horizontally */
     justify-content: center;
     width: 100%;
-    min-height: 100vh;
-    margin: 0;
-}
 
+    padding-bottom: 0;
+}
 .certificatewords {
     background-color:  rgb(255, 255, 255);
     border-radius: 10px;
@@ -275,6 +399,15 @@ figcaption {
     .certificatewords {
         width: 90%;
     }
+}
+.contactcontainer{
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom:10px;
+   
+    margin-top: 10px;
+
 }
 
 .contactlinks{
