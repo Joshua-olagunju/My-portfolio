@@ -280,8 +280,22 @@ figcaption {
     text-decoration: none;
     font-weight: bold;
     border-radius: 8px;
+    margin: 0 auto; /* Center the button horizontally */
+    display: block; /* Make the button a block element for centering */
     transition: background-color 0.3s ease-in-out;
 }
+.project-link2 {
+    padding: 12px 20px;
+    background-color: #ff9d00;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 0 auto; /* Center the button horizontally */
+    display: block; /* Make the button a block element for centering */
+    transition: background-color 0.3s ease-in-out;
+}
+
 .fig{
     margin-right: 200px;
     text-decoration: underline;
@@ -341,8 +355,21 @@ figcaption {
         text-decoration: none;
         font-weight: bold;
         border-radius: 8px;
-      margin-left: 70px;
-      margin-right: 70px;
+        padding-left: 70px;
+        padding-right: 70px;
+        max-width: fit-content;
+        transition: background-color 0.3s ease-in-out;
+    }
+    .project-link2 {
+        padding: 12px 10px;
+        background-color: #ff9d00;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        padding-left: 70px;
+        padding-right: 70px;
+        max-width: fit-content;
         transition: background-color 0.3s ease-in-out;
     }
 
