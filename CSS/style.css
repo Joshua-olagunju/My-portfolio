@@ -47,6 +47,7 @@ footer nav a:hover{
     gap: 30px;
     padding-bottom: 50px;
     padding-top: 50px;
+    position: relative
 }
 img{
     height: auto;
@@ -72,8 +73,30 @@ p{
     margin: 0;
     margin-bottom: 10px;
 }
+.resume {
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the button */
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: rgb(87, 87, 87);
+    color: #e3e3e3;
+    text-decoration: none;
+    text-align: center;
+}
+
+.resume:hover {
+    background-color: black;
+}
 
 @media screen and (max-width: 768px){
+    .resume {
+        bottom: 1px; /* Moves it up slightly for tablets */
+        padding: 10px 15px; /* Adjust padding if needed */
+        left: none;
+        font-size: smaller;
+    }
     header {
         justify-content: center; 
     }
@@ -112,7 +135,7 @@ p{
     }
 }
 h1{
-    color:  rgb(87, 87, 87);
+    color:  rgb(0, 0, 0);
 }
 .skillcontainer{
     text-align: center;
@@ -281,27 +304,25 @@ figcaption {
 }
 .project-link {
     padding: 12px 20px;
-    background-color: rgb(0, 85, 255);
+    
     color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
+    background-color: #2d2d2d;
     border-radius: 8px;
     margin: 0 auto; /* Center the button horizontally */
     display: block; /* Make the button a block element for centering */
-    transition: background-color 0.3s ease-in-out;
+  
 }
 .project-link2 {
     padding: 12px 20px;
-   
     color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
+    background-color: #2d2d2d;
     border-radius: 8px;
     margin: 0 auto; /* Center the button horizontally */
     display: block; /* Make the button a block element for centering */
-    transition: background-color 0.3s ease-in-out;
+    
 }
-
 .fig{
     margin-right: 200px;
     color: #ffffff;
@@ -461,7 +482,7 @@ figcaption {
     justify-content: center;
     align-items: center;
     margin: 5px;
-    border-radius: 90px;
+    border-radius: 10px;
 }
 
 @media (max-width: 768px) {
