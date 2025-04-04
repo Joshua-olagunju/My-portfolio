@@ -256,14 +256,9 @@ figcaption {
 }
 @media screen and (max-width: 768px) {
     .toolscontainer{
-        flex-direction: column;
-        justify-content: center;
+        display: block;
         gap: 20px;
-    }
-    .toolscontainer{
         
-        flex-direction: row;
-       
     }
 }
 .experienceheader{
