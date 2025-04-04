@@ -76,9 +76,9 @@ p{
     margin-bottom: 10px;
     font-size: 14px;
 }
-.resume {
+.resume{
     position: absolute;
-    bottom: 110px;
+    bottom: 105px;
     left: 50%;
     transform: translateX(-50%); /* Centers the button */
     padding: 8px 10px;
@@ -87,6 +87,24 @@ p{
     color: #e3e3e3;
     text-decoration: none;
     text-align: center;
+    font-size: smaller
+}
+.resume1 {
+    position: absolute;
+    bottom: 105px;
+    right: 10px;
+    transform: translate(-510%);
+    padding: 7px 10px;
+    border-radius: 5px;
+    background-color: #e3e3e3;
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+    text-align: center;
+    font-size: smaller;
+    border: 1px solid rgb(87, 87, 87);
+}
+.resume1:hover{
+    background-color: rgb(186, 223, 255);
 }
 
 .resume:hover {
@@ -96,9 +114,16 @@ p{
 @media screen and (max-width: 768px){
     .resume {
         bottom: 1px; /* Moves it up slightly for tablets */
-        padding: 10px 15px; /* Adjust padding if needed */
+        padding: 8px 10px; /* Adjust padding if needed */
         left: none;
-        font-size: smaller;
+        font-size: x-small;
+    }
+    .resume1 {
+        bottom: -33px; /* Move it up for small screens */
+        right: 50%;   /* Center the button on mobile */
+        transform: translateX(50%); /* Adjust for centering */
+        font-size: 10px;
+        padding: 7px 22px;
     }
     p{
         font-size: 11px;
