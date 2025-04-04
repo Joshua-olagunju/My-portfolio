@@ -220,9 +220,7 @@ figcaption {
         padding-left: 30px;
         padding-right: 30px;
     }
-    .lo3{
-        flex-direction: column;
-    }
+    
     h1{
         font-size: 25px
     }
@@ -261,6 +259,11 @@ figcaption {
         flex-direction: column;
         justify-content: center;
         gap: 20px;
+    }
+    .toolscontainer{
+        
+        flex-direction: row;
+       
     }
 }
 .experienceheader{
