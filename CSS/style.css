@@ -76,50 +76,27 @@ p{
     margin-bottom: 10px;
     font-size: 14px;
 }
-.resume{
-    position: absolute;
-    bottom: 105px;
-    left: 50%;
-    transform: translateX(-50%); /* Centers the button */
-    padding: 8px 10px;
-    border-radius: 5px;
-    background-color: rgb(87, 87, 87);
-    color: #e3e3e3;
-    text-decoration: none;
-    text-align: center;
-    font-size: smaller
-}
+
 .resume1 {
     position: absolute;
     bottom: 105px;
-    right: 10px;
+    right: 195px;
     transform: translate(-510%);
     padding: 7px 10px;
     border-radius: 5px;
-    background-color: #e3e3e3;
-    color: rgb(87, 87, 87);
+    background-color: rgb(87, 87, 87);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
     font-size: smaller;
-    border: 1px solid rgb(87, 87, 87);
+
 }
 .resume1:hover{
-    background-color: rgb(186, 223, 255);
+    background-color: rgb(0, 0, 0);
 }
-
-.resume:hover {
-    background-color: black;
-}
-
 @media screen and (max-width: 768px){
-    .resume {
-        bottom: 1px; /* Moves it up slightly for tablets */
-        padding: 8px 10px; /* Adjust padding if needed */
-        left: none;
-        font-size: x-small;
-    }
     .resume1 {
-        bottom: -33px; /* Move it up for small screens */
+        bottom: 10px; /* Move it up for small screens */
         right: 50%;   /* Center the button on mobile */
         transform: translateX(50%); /* Adjust for centering */
         font-size: 10px;
