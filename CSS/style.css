@@ -201,7 +201,7 @@ figcaption {
     gap: 100px;
     flex: 1;
 }
-.lo2{
+.lo2, .lo1, .lo3{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
     padding: 0;
     margin-top: 20px;
@@ -217,8 +217,11 @@ figcaption {
         justify-content: center;
     }
     .lo2{
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .lo3{
+        flex-direction: column;
     }
     h1{
         font-size: 25px
@@ -228,7 +231,7 @@ figcaption {
         display: block;
     }
     .programming-container {
-        flex-direction: column; /* Stack elements vertically on mobile */
+        flex-direction: row; /* Stack elements vertically on mobile */
         gap: 20px; /* Adjust the gap */
     }
     .logos {
@@ -409,7 +412,6 @@ figcaption {
     text-align: center;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 @media (max-width: 768px) {
     .projectcontainer {
@@ -417,15 +419,14 @@ figcaption {
         margin-right: 20px;
     }
     .techli{
-        font-size: 11px;
-        
+        font-size: 11px; 
     }
     .fig{
         margin-right: 0px;
     }
     .project-link {
         padding: 8px 10px;
-        background-color: rgb(255, 255, 255);
+        background-color: #ececec;
         color: rgb(87, 87, 87);
         text-decoration: none;
         border-radius: 5px;
@@ -435,7 +436,7 @@ figcaption {
     }
     .project-link2 {
         padding: 8px 10px;
-        background-color: rgb(255, 255, 255);
+        background-color: #ececec;
         color: rgb(87, 87, 87);
         text-decoration: none; 
         border-radius: 5px;
@@ -466,14 +467,14 @@ figcaption {
     }
 
     .techstack {
-        flex-direction: column;
+        flex-direction: row;
         margin-top: 0;
     }
 
     .projectnote {
         margin-left: 20px;
         margin-right: 20px;
-        font-size: 11px;
+        font-size: 13px;
     }
 }
 .certificatecontainers {
