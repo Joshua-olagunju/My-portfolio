@@ -177,7 +177,6 @@ h1{
     height: 60px;
     margin: 0;
     margin-top: 30px;
-
     padding: 10px;
     border-radius: 5px;
 }
@@ -253,7 +252,7 @@ figcaption {
         justify-content: center;  
         max-width: fit-content;
         margin: auto;
-        background-color:  rgb(255, 255, 255);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
         padding: 5px 20px; 
         gap: 150px; 
         border-radius: 5px;
@@ -266,7 +265,7 @@ figcaption {
     list-style-type: disc;
     list-style-position: inside;
     line-height: 2;
-    background-color:  rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
     border-radius: 5px;
     margin: 5px auto; /* Reduce margin to bring sections closer */
     max-width: fit-content;/* Make sure content is centered and not too wide */
@@ -298,7 +297,7 @@ figcaption {
     padding-bottom: 20px;
     margin-bottom: 0;
     margin-top: 30px;
-    background-color: #ffffff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
     border-radius: 20px;
     margin-left: 150px;
     margin-right: 150px;
@@ -385,14 +384,13 @@ figcaption {
     align-items: center;
     justify-content: center;
     text-align: center;
-   
     padding: 20px;
 }
 .techli {
-    background-color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
     padding: 10px;
     border-radius: 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(87, 87, 87);
     margin-top: 10px;
     text-align: center;
     justify-content: center;
@@ -416,7 +414,6 @@ figcaption {
         background-color: rgb(255, 255, 255);
         color: rgb(87, 87, 87);
         text-decoration: none;
-        
         border-radius: 8px;
         padding-left: 70px;
         padding-right: 70px;
@@ -427,8 +424,7 @@ figcaption {
         padding: 12px 10px;
         background-color: rgb(255, 255, 255);
         color: rgb(87, 87, 87);
-        text-decoration: none;
-        
+        text-decoration: none; 
         border-radius: 8px;
         padding-left: 70px;
         padding-right: 70px;
@@ -474,13 +470,12 @@ figcaption {
     align-items: center; /* Centers certificates horizontally */
     justify-content: center;
     width: 100%;
-
-    padding-bottom: 0;
+    padding-bottom: 0px;
 }
 .certificatewords {
-    background-color:  rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 20px 20px;
     margin-bottom: 20px;
     width: 50%; /* This defines the width of each certificate box */
     max-width: 500px; /* Limits the width to prevent it from being too wide */
@@ -513,7 +508,7 @@ figcaption {
 .contactlinks img{
     height: auto;
     width: 40px;
-    background-color:  rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
     padding: 20px 30px;
     justify-content: center;
     align-items: center;
@@ -533,6 +528,20 @@ figcaption {
         width: 25px; /* Make the image even smaller on smaller screens */
         padding: 10px; /* Adjust padding for small screens */
     }
+}
+.certificatelinks{
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(87, 87, 87);
+    color:  rgb(87, 87, 87);
+    text-decoration: none;
+    text-align: center;
+    font-size: smaller;
+}
+.certificatelinks:hover{
+    background-color: rgb(87, 87, 87);
+    color: #ffffff;
+
 }
 
 
@@ -600,14 +609,12 @@ figcaption {
         top: 1px;
         right: 20px;
         color: #000000;
-        
     }
-    
-
-    /* ✅ Fix: Show menu when checkbox is checked */
+/* ✅ Fix: Show menu when checkbox is checked */
     .menu-checkbox:checked ~ .menu {
         display: block;
     }
+    
 }
 
 
