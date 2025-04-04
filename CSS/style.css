@@ -80,19 +80,20 @@ p{
 .resume1 {
     position: absolute;
     bottom: 105px;
-    right: 195px;
+    right: 187px;
     transform: translate(-510%);
     padding: 7px 10px;
     border-radius: 5px;
-    background-color: rgb(87, 87, 87);
-    color: rgb(255, 255, 255);
+    border: 1px solid rgb(87, 87, 87);
+    color:  rgb(87, 87, 87);
     text-decoration: none;
     text-align: center;
     font-size: smaller;
 
 }
 .resume1:hover{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(87, 87, 87);
+    color: #ffffff;
 }
 @media screen and (max-width: 768px){
     .resume1 {
@@ -326,9 +327,9 @@ figcaption {
 }
 .project-link {
     padding: 12px 20px;
-    color: #ffffff;
+    color:rgb(87, 87, 87);
     text-decoration: none;
-    background-color: rgb(87, 87, 87);
+    border: 1px solid rgb(87, 87, 87);
     border-radius: 8px;
     margin: 0 auto; /* Center the button horizontally */
     display: block; /* Make the button a block element for centering */
@@ -336,9 +337,9 @@ figcaption {
 }
 .project-link2 {
     padding: 12px 20px;
-    color: #ffffff;
+    color: rgb(87, 87, 87);
     text-decoration: none;
-    background-color: rgb(87, 87, 87);
+    border: 1px solid rgb(87, 87, 87);
     border-radius: 8px;
     margin: 0 auto; /* Center the button horizontally */
     display: block; /* Make the button a block element for centering */
@@ -355,10 +356,12 @@ figcaption {
     
 }
 .project-link:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(87, 87, 87);
+    color: #ffffff;
 }
 .project-link2:hover {
-    background-color: rgb(0, 0, 0)
+    background-color: rgb(87, 87, 87);
+    color: #ffffff;
 }
 .projectnote {
     margin-right: 20px;
@@ -410,10 +413,10 @@ figcaption {
     }
     .project-link {
         padding: 12px 10px;
-        background-color: rgb(87, 87, 87);
-        color: #ffffff;
+        background-color: rgb(255, 255, 255);
+        color: rgb(87, 87, 87);
         text-decoration: none;
-        font-weight: bold;
+        
         border-radius: 8px;
         padding-left: 70px;
         padding-right: 70px;
@@ -422,10 +425,10 @@ figcaption {
     }
     .project-link2 {
         padding: 12px 10px;
-        background-color: rgb(87, 87, 87);
-        color: #ffffff;
+        background-color: rgb(255, 255, 255);
+        color: rgb(87, 87, 87);
         text-decoration: none;
-        font-weight: bold;
+        
         border-radius: 8px;
         padding-left: 70px;
         padding-right: 70px;
@@ -437,10 +440,12 @@ figcaption {
         width: 90%; /* Adjust for smaller screen */
     }
     .project-link:hover {
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(87, 87, 87);
+        color: #ffffff;
     }
     .project-link2:hover {
-        background-color: rgb(0, 0, 0)
+        background-color: rgb(87, 87, 87);
+        color: #ffffff;
     }
 
     .projectimage {
