@@ -564,11 +564,12 @@ figcaption {
     .menu {
         display: none;
         position: absolute;
-        top: 50px;
-        right: 8px;
+        top: 55px;
+        right: -8px;
         background: rgb(87, 87, 87);
         padding: 10px;
         border-radius: 5px;
+        z-index: 100; /* Ensure the menu is on top */
     }
 
     .menu ul {
@@ -599,12 +600,15 @@ figcaption {
         top: 1px;
         right: 20px;
         color: #000000;
+        
     }
+    
 
-    /* Show menu when checkbox is checked */
-    .menu-checkbox:checked + .menu-label + .menu {
+    /* ✅ Fix: Show menu when checkbox is checked */
+    .menu-checkbox:checked ~ .menu {
         display: block;
     }
 }
+
 
 

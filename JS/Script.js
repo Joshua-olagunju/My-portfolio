@@ -1,9 +1,16 @@
-document.addEventListener("click", function(event) {
+document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
-    const menuLabel = document.querySelector(".menu-label");
     const menu = document.querySelector(".menu");
+    const menuLabel = document.querySelector(".menu-label");
 
-    if (menuToggle.checked && !menu.contains(event.target) && !menuLabel.contains(event.target)) {
-        menuToggle.checked = false;
-    }
+    document.addEventListener("click", function (event) {
+        // Check if the click is outside the menu and the menu label (☰ button)
+        if (
+            menuToggle.checked && // Only run if the menu is open
+            !menu.contains(event.target) && 
+            !menuLabel.contains(event.target)
+        ) {
+            menuToggle.checked = false; // Close the menu
+        }
+    });
 });
