@@ -2,7 +2,7 @@ body{
     background-color: #ececec;
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .word{
     display: none;
@@ -40,7 +40,8 @@ header nav a:hover{
     text-decoration: overline;
 }
 footer nav a:hover{
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
+    text-decoration: overline;
 }
 .introcontainer{
     margin: 30px;
@@ -74,13 +75,13 @@ img{
 p{
     margin: 0;
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .resume1 {
     position: absolute;
     bottom: 105px;
-    right: 187px;
+    right: 276px;
     transform: translate(-510%);
     padding: 7px 10px;
     border-radius: 5px;
@@ -147,7 +148,7 @@ p{
 }
 h1{
     color:  rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .skillcontainer{
@@ -200,18 +201,31 @@ figcaption {
     gap: 100px;
     flex: 1;
 }
+.lo2{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    padding: 0;
+    margin-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
 @media screen and (max-width: 768px) {
     .skillitemscontainer {
         flex-direction: column;
         gap: 20px; 
         justify-content: center;
     }
+    .lo2{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
     h1{
         font-size: 25px
     }
     figcaption{
         font-size: 11px;
-        
+        display: block;
     }
     .programming-container {
         flex-direction: column; /* Stack elements vertically on mobile */
@@ -258,7 +272,7 @@ figcaption {
         border-radius: 5px;
 }
 .experience, .experience2 {
-    font-size: 13px;
+    font-size: 14px;
     padding: 25px;
     color: rgb(87, 87, 87);
     text-align: justify;
@@ -298,7 +312,7 @@ figcaption {
     margin-bottom: 0;
     margin-top: 30px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    border-radius: 20px;
+    border-radius: 10px;
     margin-left: 150px;
     margin-right: 150px;
 }
@@ -364,7 +378,7 @@ figcaption {
 }
 .projectnote {
     margin-right: 20px;
-    font-size: 13px;
+    font-size: 14px;
     margin-top: 10px;
     order: 1;
     color: #2d2d2d;
@@ -389,7 +403,7 @@ figcaption {
 .techli {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: rgb(87, 87, 87);
     margin-top: 10px;
     text-align: center;
@@ -410,24 +424,22 @@ figcaption {
         margin-right: 0px;
     }
     .project-link {
-        padding: 12px 10px;
+        padding: 8px 10px;
         background-color: rgb(255, 255, 255);
         color: rgb(87, 87, 87);
         text-decoration: none;
-        border-radius: 8px;
-        padding-left: 70px;
-        padding-right: 70px;
+        border-radius: 5px;
+       
         max-width: fit-content;
        
     }
     .project-link2 {
-        padding: 12px 10px;
+        padding: 8px 10px;
         background-color: rgb(255, 255, 255);
         color: rgb(87, 87, 87);
         text-decoration: none; 
-        border-radius: 8px;
-        padding-left: 70px;
-        padding-right: 70px;
+        border-radius: 5px;
+        
         max-width: fit-content;
         
     }
@@ -474,7 +486,7 @@ figcaption {
 }
 .certificatewords {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 20px 20px;
     margin-bottom: 20px;
     width: 50%; /* This defines the width of each certificate box */
@@ -495,7 +507,6 @@ figcaption {
     padding-bottom: 0;
     padding-top: 0;
     margin-bottom:10px;
-   
     margin-top: 10px;
 
 }
@@ -513,7 +524,7 @@ figcaption {
     justify-content: center;
     align-items: center;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -545,15 +556,7 @@ figcaption {
 }
 
 
-.lo2{
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    padding: 0;
-    margin-top: 20px;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-}
+
 /* Hide mobile dropdown by default on larger screens */
 @media (min-width: 768px) {
     .menu-label, .menu-checkbox, .menu {
