@@ -173,6 +173,10 @@ h1{
     justify-content: center;
     gap: 30px;
 }
+.firstprogram{
+    display: flex;
+    flex-direction: column;
+}
 .logos{
     width: auto;
     height: 60px;
@@ -216,6 +220,11 @@ figcaption {
         gap: 20px; 
         justify-content: center;
     }
+    .firstprogram{
+        display: flex;
+        
+        justify-content: center;
+    }
     .lo2{
         padding-left: 30px;
         padding-right: 30px;
@@ -254,9 +263,10 @@ figcaption {
     display: flex;
     justify-content: center;
 }
+
 @media screen and (max-width: 768px) {
     .toolscontainer{
-        display: block;
+       flex-direction: row;
         gap: 20px;
         
     }
