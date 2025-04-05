@@ -173,7 +173,7 @@ h1{
     justify-content: center;
     gap: 30px;
 }
-.firstprogram{
+.firstlanguage{
     display: flex;
     flex-direction: column;
 }
@@ -220,10 +220,11 @@ figcaption {
         gap: 20px; 
         justify-content: center;
     }
-    .firstprogram{
+    .firstlanguage{
         display: flex;
-        
+        flex-direction: row;
         justify-content: center;
+        gap: 20px; 
     }
     .lo2{
         padding-left: 30px;
@@ -541,6 +542,10 @@ figcaption {
         width: 30px; /* Make the image smaller on medium screens */
         padding: 15px; /* Adjust padding to keep it proportionate */
     }
+    .contactlinks:hover{
+        background: #000000;
+    }
+  
 }
 
 @media (max-width: 480px) {
