@@ -536,15 +536,15 @@ figcaption {
 
 @media (max-width: 768px) {
     .contactlinks img {
-        width: 80px; /* Make the image smaller on medium screens */
-        padding: 20px; /* Adjust padding to keep it proportionate */
+        width: 50px; /* Make the image smaller on medium screens */
+        padding: 10px; /* Adjust padding to keep it proportionate */
     }
  
 }
 
 @media (max-width: 480px) {
     .contactlinks img {
-        width: 25px; /* Make the image even smaller on smaller screens */
+        width: 50px; /* Make the image even smaller on smaller screens */
         padding: 10px; /* Adjust padding for small screens */
     }
 }
