@@ -1,5 +1,5 @@
 body{
-    background-color: #ececec;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -11,7 +11,7 @@ p{
 }
 header, footer{
     width: 100%;
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(4, 40, 106);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,17 +68,10 @@ img{
     transition: background-color 0.4s ease-in-out; 
 }
 .resume:hover{
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(4, 40, 106);
     color: #ffffff;  
 }
-@keyframes prolink{
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.2);
-    }
-}
+
 @media screen and (max-width: 768px){
     header, footer{
         justify-content: center; 
@@ -179,7 +172,7 @@ figcaption {
     margin-top: 5px; 
     font-size: 16px;
     color:  rgb(255, 255, 255);
-    background-color: #2d2d2d;
+    background-color: rgb(4, 40, 106);
     padding: 10px;
     border-radius: 5px;
 }
@@ -321,6 +314,14 @@ figcaption {
     margin-top: 20px;
     width: 100%;
 }
+@keyframes projectlink{
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
 .project-link{
     padding: 7px 10px;
     font-size: small;
@@ -331,13 +332,13 @@ figcaption {
     margin: 0 auto; /* Center the button horizontally */
     display: block; /* Make the button a block element for centering */
     transition: background-color 0.4s ease-in-out;
-    animation-name: prolink;
+    animation-name: projectlink;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;  
 }
 .project-link:hover {
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(4, 40, 106);
     color: #ffffff;
 }
 .projectnotecontainer {
@@ -444,7 +445,7 @@ figcaption {
     transition: background-color 0.4s ease-in-out;  
 }
 .certificatelinks:hover{
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(4, 40, 106);
     color: #ffffff;
 }
 @media screen and (max-width: 768px) {
