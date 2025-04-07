@@ -88,14 +88,6 @@ p{
         transform: scale(1.2);
     }
 }
-@keyframes slideAnimation {
-    from {
-        transform: translateX(-100%); /* Start off-screen to the left */
-    }
-    to {
-        transform: translateX(0); /* End at the element's original position */
-    }
-}
 .resume1{
     transform: translate(-510%);
     padding: 7px 10px;
@@ -370,6 +362,7 @@ figcaption {
 }
 .project-link, .project-link2 {
     padding: 7px 10px;
+    font-size: small;
     color:rgb(87, 87, 87);
     text-decoration: none;
     border: 1px solid rgb(87, 87, 87);
@@ -530,34 +523,23 @@ figcaption {
     margin-top: 10px;
 
 }
-
-.contactlinks{
-    font: bold;
-    justify-content: center;
-    align-items: center;
-    
-}
 .contactlinks img{
     height: auto;
-    width: 40px;
+    width: 80px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    padding: 20px 30px;
+    padding: 10px 20px;
     justify-content: center;
     align-items: center;
     margin: 5px;
     border-radius: 5px;
-    
 }
 
 @media (max-width: 768px) {
     .contactlinks img {
-        width: 30px; /* Make the image smaller on medium screens */
-        padding: 15px; /* Adjust padding to keep it proportionate */
+        width: 50px; /* Make the image smaller on medium screens */
+        padding: 10px; /* Adjust padding to keep it proportionate */
     }
-    .contactlinks:hover{
-        background: #000000;
-    }
-  
+ 
 }
 
 @media (max-width: 480px) {
