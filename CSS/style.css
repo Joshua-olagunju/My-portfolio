@@ -529,7 +529,7 @@ figcaption {
         position: absolute;
         top: 1px;
         right: 20px;
-        color: #000000;
+        color: #ffffff;
     }
     .menu-checkbox:checked ~ .menu {
         display: block;
