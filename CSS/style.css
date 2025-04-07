@@ -536,7 +536,7 @@ figcaption {
 
 @media (max-width: 768px) {
     .contactlinks img {
-        width: 50px; /* Make the image smaller on medium screens */
+        width: 70px; /* Make the image smaller on medium screens */
         padding: 10px; /* Adjust padding to keep it proportionate */
     }
  
