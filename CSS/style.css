@@ -4,6 +4,9 @@ body{
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.custom-btn{
+    background-color: rgb(8, 54, 139);
+}
 p{
     margin: 0;
     margin-bottom: 10px;
@@ -11,7 +14,7 @@ p{
 }
 header, footer{
     width: 100%;
-    background-color: rgb(9, 65, 168);
+    background-color: rgb(8, 54, 139);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,8 +59,12 @@ img{
     text-align: justify;
     color:  rgb(87, 87, 87);
 }
-.custom-btn btn-one{
+.custom-btn.btn-one{
     padding: 8px 15px;
+}
+.custom-btn.btn-two{
+    padding: 5px 10px;
+    font-size: smaller;
 }
 
 @media screen and (max-width: 768px){
@@ -85,7 +92,13 @@ img{
         margin-left: 0; /* Remove the left margin for smaller screens */
         text-align: justify; /* Center text on smaller screens */
     }
-    .btn-one, .btn-two {
+    .btn-one{
+        max-width: fit-content;
+        align-self: center;
+        padding: 7px 13px; /* Adjust padding for medium screens */
+        font-size: 15px; /* Optional: slightly smaller text size for medium screens */
+    }
+    .btn-two{
         max-width: fit-content;
         align-self: center;
         padding: 7px 13px; /* Adjust padding for medium screens */
@@ -304,14 +317,6 @@ figcaption {
     margin-top: 20px;
     width: 100%;
 }
-@keyframes projectlink{
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.2);
-    }
-}
 .projectnotecontainer {
     display: flex;
     flex-direction: column;
@@ -396,6 +401,7 @@ figcaption {
     }
     .big-text {
         font-size: 40px; /* Adjust the size as needed */
+        margin-top: 110px;
       }
      /* ========================
    Certificate Section
