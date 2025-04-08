@@ -11,7 +11,7 @@ p{
 }
 header, footer{
     width: 100%;
-    background-color: rgb(4, 40, 106);
+    background-color: rgb(9, 65, 168);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,20 +56,8 @@ img{
     text-align: justify;
     color:  rgb(87, 87, 87);
 }
-.resume{
-    transform: translate(-510%);
-    padding: 7px 10px;
-    border-radius: 5px;
-    border: 1px solid rgb(87, 87, 87);
-    color:  rgb(87, 87, 87);
-    text-decoration: none;
-    text-align: center;
-    font-size: smaller;
-    transition: background-color 0.4s ease-in-out; 
-}
-.resume:hover{
-    background-color: rgb(4, 40, 106);
-    color: #ffffff;  
+.custom-btn btn-one{
+    padding: 8px 15px;
 }
 
 @media screen and (max-width: 768px){
@@ -97,13 +85,15 @@ img{
         margin-left: 0; /* Remove the left margin for smaller screens */
         text-align: justify; /* Center text on smaller screens */
     }
-    .resume{
-        bottom: 10px; /* Move it up for small screens */
-        right: 50%;   /* Center the button on mobile */
-        transform: translateX(50%); /* Adjust for centering */
-        font-size: 10px;
-        padding: 7px 22px;
-        position: absolute;
+    .btn-one, .btn-two {
+        max-width: fit-content;
+        align-self: center;
+        padding: 7px 13px; /* Adjust padding for medium screens */
+        font-size: 15px; /* Optional: slightly smaller text size for medium screens */
+    }
+    .btn-three{
+        font-size: 15px;
+        justify-content: center;
     }
      /* ========================
    Skills Section
@@ -156,7 +146,7 @@ h1{
 }
 .logo{
     width: auto;
-    height: 50px;
+    height: 70px;
     margin: 0;
     margin-top: 30px;
     padding: 10px;
@@ -322,25 +312,6 @@ figcaption {
         transform: scale(1.2);
     }
 }
-.project-link{
-    padding: 7px 10px;
-    font-size: small;
-    color:rgb(87, 87, 87);
-    text-decoration: none;
-    border: 1px solid rgb(87, 87, 87);
-    border-radius: 5px;
-    margin: 0 auto; /* Center the button horizontally */
-    display: block; /* Make the button a block element for centering */
-    transition: background-color 0.4s ease-in-out;
-    animation-name: projectlink;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;  
-}
-.project-link:hover {
-    background-color: rgb(4, 40, 106);
-    color: #ffffff;
-}
 .projectnotecontainer {
     display: flex;
     flex-direction: column;
@@ -365,15 +336,25 @@ figcaption {
     gap: 10px;
 }
 .techlist{
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    background-color: #2d2d2d;
     padding: 10px;
     border-radius: 5px;
-    color: rgb(87, 87, 87);
+    color: rgb(255, 255, 255);
     margin-top: 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
+.projecthtml {
+    text-align: center;
+    font-weight: bold;
+  }
+  .big-text {
+    font-size: 100px;
+  }
+  .blue {
+    color: blue;
+  }
 @media (max-width: 768px) {
     .projectcontainer {
         margin-left: 20px;
@@ -413,6 +394,9 @@ figcaption {
     .techlist{
         font-size: 11px; 
     }
+    .big-text {
+        font-size: 40px; /* Adjust the size as needed */
+      }
      /* ========================
    Certificate Section
    ======================== */
@@ -466,7 +450,7 @@ figcaption {
 }
 .contactlinks img{
     height: auto;
-    width: 50px;
+    width: 90px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
     padding: 10px 20px;
     justify-content: center;
@@ -476,7 +460,7 @@ figcaption {
 }
 @media screen and (max-width: 768px) {
     .contactlinks img {
-        width: 25px; /* Make the image smaller on medium screens */
+        width: 50px; /* Make the image smaller on medium screens */
         padding: 10px; /* Adjust padding to keep it proportionate */
     }
      /* ========================
