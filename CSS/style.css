@@ -64,7 +64,7 @@ img{
 }
 .custom-btn.btn-two{
     padding: 5px 10px;
-    font-size: smaller;
+  
 }
 
 .back-arrow a{
@@ -109,7 +109,7 @@ img{
     .btn-two{
         max-width: fit-content;
         align-self: center;
-        padding: 7px 13px; 
+        padding: 10px 20px; 
         font-size: 15px;
     }
     .btn-three{
@@ -316,8 +316,9 @@ figcaption {
 }
 .projectimage {
     width: auto; /* Allow images to retain their natural width */
-    width: 300px; /* Limit the maximum size of images */
+    max-width: 300px; /* Limit the maximum size of images */
     height: 150px;
+    margin: 0;
     margin-top: 20px;
     border-radius: 10px;
     object-fit: cover; /* Maintain aspect ratio of images */
@@ -370,7 +371,7 @@ figcaption {
     font-size: 100px;
   }
   .blue {
-    color: blue;
+    color: rgb(8, 54, 139);
   }
 @media (max-width: 768px) {
     .projectcontainer {
