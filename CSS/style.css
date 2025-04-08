@@ -115,6 +115,9 @@ img{
     .btn-three{
         font-size: 15px;
         justify-content: center;
+        position: absolute;
+        right: 260px;
+        bottom: 5px;
     }   
     .back-arrow{
         position: absolute;
