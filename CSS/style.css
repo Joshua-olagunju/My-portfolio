@@ -67,6 +67,14 @@ img{
     font-size: smaller;
 }
 
+.back-arrow a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.back-arrow a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: overline;
+}
 @media screen and (max-width: 768px){
     header, footer{
         justify-content: center; 
@@ -95,19 +103,24 @@ img{
     .btn-one{
         max-width: fit-content;
         align-self: center;
-        padding: 7px 13px; /* Adjust padding for medium screens */
-        font-size: 15px; /* Optional: slightly smaller text size for medium screens */
+        padding: 7px 13px; 
+        font-size: 15px; 
     }
     .btn-two{
         max-width: fit-content;
         align-self: center;
-        padding: 7px 13px; /* Adjust padding for medium screens */
-        font-size: 15px; /* Optional: slightly smaller text size for medium screens */
+        padding: 7px 13px; 
+        font-size: 15px;
     }
     .btn-three{
         font-size: 15px;
         justify-content: center;
-    }
+    }   
+    .back-arrow{
+        position: absolute;
+        left: 20px;
+    } 
+  
      /* ========================
    Skills Section
    ======================== */
