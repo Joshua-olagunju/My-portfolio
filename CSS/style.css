@@ -429,6 +429,9 @@ figcaption {
         font-size: 40px; /* Adjust the size as needed */
         margin-top: 130px;
       }
+      .navbar, .custom-nav{
+        display: none;
+      }
      /* ========================
    Certificate Section
    ======================== */
