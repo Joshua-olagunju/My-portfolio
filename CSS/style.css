@@ -102,7 +102,7 @@ header nav a:hover, footer nav a:hover{
         padding-top: 20px;
     }
     .custom-img-one{
-        width: 40%;
+        width: 50%;
         margin-right: 0; /* Remove margin on the right */
         order: 1; /* Ensure the image appears first */
     }
