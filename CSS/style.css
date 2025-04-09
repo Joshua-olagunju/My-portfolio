@@ -5,7 +5,16 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .custom-btn{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: background-color 0.4s ease-in-out;  
+    border-color: #000000 ! important;
+    font-size: 15px;
+    padding: 5px 20px !important;
+}
+.custom-btn:hover{
     background-color: rgb(8, 54, 139);
+    color: rgb(255, 255, 255);
 }
 p{
     margin: 0;
@@ -52,12 +61,13 @@ img{
     height: auto;
     width: 20%;
     order: 2;
-    margin-right: 200px;  
+    margin-right: 200px; 
+
 }
 .introduction{
     margin-left: 200px;
     text-align: justify;
-    color:  rgb(87, 87, 87);
+    color:  rgb(0, 0, 0);
 }
 .custom-btn.btn-one{
     padding: 8px 15px;
@@ -145,7 +155,7 @@ h1{
     margin-top: 20px;
 }
 .skillheaders{
-   color: rgb(87, 87, 87);
+   color: rgb(0, 0, 0);
     padding: 6px 15px;
     display: inline-block;
     border-radius: 5px;
@@ -263,7 +273,7 @@ figcaption {
 .experience{
     font-size: 14px;
     padding: 25px;
-    color: rgb(87, 87, 87);
+    color: rgb(0, 0, 0);
     text-align: justify;
     list-style-type: disc;
     list-style-position: inside;
@@ -320,9 +330,12 @@ figcaption {
     height: 150px;
     margin: 0;
     margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
     object-fit: cover; /* Maintain aspect ratio of images */
     scroll-snap-align: center; /* Center images in the viewport when scrolling */
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    
 }
 .project-link-container {
     display: flex;
@@ -343,7 +356,7 @@ figcaption {
     font-size: 14px;
     margin-top: 10px;
     order: 1;
-    color: #2d2d2d;
+    color: #000000;
     text-align: justify;
     margin-right: 30px;
     margin-left: 30px;
@@ -354,7 +367,7 @@ figcaption {
     gap: 10px;
 }
 .techlist{
-    background-color: #2d2d2d;
+    background-color: #000000;
     padding: 10px;
     border-radius: 5px;
     color: rgb(255, 255, 255);
@@ -362,6 +375,7 @@ figcaption {
     text-align: center;
     justify-content: center;
     align-items: center;
+    border-radius: 50px;
 }
 .projecthtml {
     text-align: center;
@@ -391,13 +405,13 @@ figcaption {
     .project-link {
         padding: 7px 10px;
         background-color: #ececec;
-        color: rgb(87, 87, 87);
+        color: rgb(0, 0, 0);
         text-decoration: none;
         border-radius: 5px;
         max-width: fit-content;  
     }
     .project-link:hover {
-        background-color: rgb(87, 87, 87);
+        background-color: rgb(0, 0, 0);
         color: #ffffff;
     }
     .projectnote {
@@ -440,8 +454,8 @@ figcaption {
 .certificatelinks{
     padding: 7px 10px;
     border-radius: 5px;
-    border: 1px solid rgb(87, 87, 87);
-    color:  rgb(87, 87, 87);
+    border: 1px solid rgb(0, 0, 0);
+    color:  rgb(0, 0, 0);
     text-decoration: none;
     text-align: center;
     font-size: smaller;
@@ -504,7 +518,7 @@ figcaption {
         position: absolute;
         top: 55px;
         right: -8px;
-        background: rgb(87, 87, 87);
+        background: rgb(0, 0, 0);
         padding: 10px;
         border-radius: 5px;
         z-index: 100; /* Ensure the menu is on top */
