@@ -432,6 +432,10 @@ figcaption {
       .navbar, .custom-nav{
         display: none;
       }
+      .custom-img{
+        width: 200px;
+        height: 200px;
+      }
      /* ========================
    Certificate Section
    ======================== */
