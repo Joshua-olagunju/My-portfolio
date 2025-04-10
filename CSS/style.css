@@ -56,7 +56,6 @@ header nav a:hover, footer nav a:hover{
     position: relative
 }
 .custom-img-one{
-    border-radius: 5px;
     height: auto;
     width: 20%;
     order: 2;
