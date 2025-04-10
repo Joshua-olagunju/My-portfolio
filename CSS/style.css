@@ -59,9 +59,7 @@ header nav a:hover, footer nav a:hover{
     height: auto;
     width: 20%;
     order: 2;
-    margin-right: 200px; 
-   
-
+    margin-right: 200px;
 }
 .introduction{
     margin-left: 200px;
@@ -459,8 +457,7 @@ figcaption {
     border-radius: 5px;
     padding: 20px 20px;
     margin-bottom: 20px;
-    width: 50%; /* This defines the width of each certificate box */
-    max-width: 500px; /* Limits the width to prevent it from being too wide */
+    width: 400px; /* Limits the width to prevent it from being too wide */
      
 }
 .certificatelinks{
@@ -480,6 +477,7 @@ figcaption {
     .certificatewords {
         width: 80%;
         font-size: 12px;
+        
     }
      /* ========================
     Contact Section
