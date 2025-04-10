@@ -39,7 +39,7 @@ header nav, footer nav{
     color: #ffffff !important;
 }
 header nav a:hover, footer nav a:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0) !important;
     text-decoration: overline;
     transform: scale(1.3);
    
