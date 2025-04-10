@@ -500,10 +500,34 @@ figcaption {
     margin: 5px;
     border-radius: 5px;
 }
+.backtotop{
+    float: right;
+}
+.backtotop img {
+    width: 90px;  /* Set the width of the logo */
+    height: auto; /* Keep the aspect ratio */
+    margin-bottom: 10px;
+    margin: 0;
+    padding: 0;
+}
+.figure2{
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
 @media screen and (max-width: 768px) {
     .contactlinks img {
         width: 50px; /* Make the image smaller on medium screens */
         padding: 10px; /* Adjust padding to keep it proportionate */
+    }
+    .backtotop img {
+        width: 60px;  /* Set the width of the logo */
+        height: auto; /* Keep the aspect ratio */
+        margin-right: 20px;
+    }
+    .figure2{
+        margin-right: 20px;
     }
      /* ========================
    Drop down menu mobile Section
