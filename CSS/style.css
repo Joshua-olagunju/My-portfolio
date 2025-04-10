@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
 }
 .custom-btn{
     background-color: rgb(255, 255, 255);
@@ -502,7 +503,11 @@ figcaption {
 }
 .backtotop{
     float: right;
+    position: absolute;
+    right: 10px;
+    top: 97%;
 }
+
 .backtotop img {
     width: 90px;  /* Set the width of the logo */
     height: auto; /* Keep the aspect ratio */
@@ -520,6 +525,10 @@ figcaption {
     .contactlinks img {
         width: 50px; /* Make the image smaller on medium screens */
         padding: 10px; /* Adjust padding to keep it proportionate */
+    }
+    .backtotop{
+        position: absolute;
+        top: 98%;
     }
     .backtotop img {
         width: 60px;  /* Set the width of the logo */
