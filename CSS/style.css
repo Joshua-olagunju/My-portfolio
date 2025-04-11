@@ -304,7 +304,7 @@ figcaption {
         font-size: 13px !important; /* Reduce text size */
         margin: 10px auto; /* Add slight spacing */
         font-size: 11px;
-        max-width: 430px;
+        width: auto;
     }
      /* ========================
    Projects Section
@@ -398,6 +398,7 @@ figcaption {
     .projectcontainer {
         margin-left: 20px;
         margin-right: 20px;
+        width: auto;
     }
     .projectimagecontainer {
         width: 90%; /* Adjust for smaller screen */
