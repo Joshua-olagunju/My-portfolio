@@ -160,13 +160,15 @@ h1{
 .programminglanguage{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-self: center;
 }
 .logo-container{
     box-shadow: 0px 1px 3px  rgb(74, 78, 79); 
     
     padding-bottom: 20px;
     border-radius: 5px;
-    width: 210px;
+    width: 150px;
     margin: 10px;
     margin-top: 10px;
     
@@ -215,8 +217,7 @@ figure{
         justify-content: center;
     }
     .logo-container{
-        padding-left: 50px;
-        padding-right: 50px;
+      
         margin-top: 10px;
         justify-content: center; 
     }
