@@ -59,7 +59,7 @@ Feel free to get in touch with me!
 
 Email: olagunjujoshua11@gmail.com
 
-LinkedIn: [[Your LinkedIn Profile](https://www.linkedin.com/in/joshuaolagunju/)](https://www.linkedin.com/in/joshuaolagunju/)
+LinkedIn: (https://www.linkedin.com/in/joshuaolagunju/)](https://www.linkedin.com/in/joshuaolagunju/)
 
 GitHub: [https://github.com/Joshua-olagunju](https://github.com/Joshua-olagunju)
 
