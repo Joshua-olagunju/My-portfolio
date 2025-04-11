@@ -111,22 +111,7 @@ footer nav a:hover{
     .introduction {
         margin-left: 0; /* Remove the left margin for smaller screens */
         text-align: justify; /* Center text on smaller screens */
-    }
-    .btn-one{
-        max-width: fit-content;
-        align-self: center;
-        padding: 7px 13px; 
-        font-size: 15px; 
-    }
-    .btn-two{
-        max-width: fit-content;
-        align-self: center;
-        padding: 10px 20px; 
-        font-size: 15px;
-    }
-    .btn-three{
-        font-size: 15px;
-    }   
+    } 
     .back-arrow{
         position: absolute;
         left: 20px;
@@ -295,6 +280,7 @@ figcaption {
     justify-content: center;
     padding-bottom: 20px;
     margin-bottom: 0;
+    background: #ffffff;
     box-shadow: 0px 1px 3px  rgb(74, 78, 79);  
     border-radius: 5px;
     margin-left: 150px;
@@ -488,9 +474,8 @@ figcaption {
 }
 .backtotop{
     float: right;
-    position: absolute;
-    right: 10px;
-    top: 96.5%;
+    margin-bottom: 20px;
+    margin-right: 30px;
 }
 .backtotop img {
     width: 90px;  /* Set the width of the logo */
@@ -510,11 +495,7 @@ figcaption {
         width: 90px; /* Make the image smaller on medium screens */
         padding: 15px; /* Adjust padding to keep it proportionate */
     }
-    .backtotop{
-        position: absolute;
-        top: 97.5%;
-    }
-    .backtotop img {
+   .backtotop img {
         width: 60px;  /* Set the width of the logo */
         height: auto; /* Keep the aspect ratio */
         margin-right: 20px;
