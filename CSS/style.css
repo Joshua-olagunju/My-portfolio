@@ -231,10 +231,12 @@ figcaption {
         flex-direction:row;
         justify-content: center;
         gap: 20px;
+        justify-content: center;
     }
     .logo-container{
         padding-left: 30px;
         padding-right: 30px;
+        justify-content: center;
     }
     figure {
         margin: 10px 0; 
