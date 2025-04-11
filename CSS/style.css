@@ -163,10 +163,7 @@ h1{
 }
 .logo-container{
     box-shadow: 0px 1px 3px  rgb(74, 78, 79); 
-    padding: 10;
-    margin-top: 20px;
-    padding-right: 50px;
-    padding-left: 50px;
+    
     padding-bottom: 20px;
     border-radius: 5px;
     width: 210px;
@@ -182,17 +179,13 @@ h1{
     border-radius: 5px;
 }
 figure{
-    margin: 0 20px; 
     text-align: center; 
 }
-figcaption {
-    text-align: center;
-    margin-top: 5px; 
-    font-size: 16px;
-    color:  rgb(255, 255, 255);
+.logo-container figcaption {
+    color: #ffffff;
     background-color: rgb(74, 78, 79); 
-    padding: 10px;
-    border-radius: 5px;
+  
+   
 }
 @media screen and (max-width: 768px) {
     .section-container {
@@ -280,7 +273,7 @@ figcaption {
     justify-content: center;
     padding-bottom: 20px;
     margin-bottom: 0;
-    background: #ffffff;
+    
     box-shadow: 0px 1px 3px  rgb(74, 78, 79);  
     border-radius: 5px;
     margin-left: 150px;
@@ -324,7 +317,7 @@ figcaption {
     display: flex;
     overflow-x: auto; /* Allow horizontal scrolling */
     gap: 10px;
-    width: 70%; /* Ensure the container spans full width */
+    width: 90%; /* Ensure the container spans full width */
     padding-top: 0%;
 }
 .projectimage {
