@@ -70,9 +70,7 @@ footer nav a:hover{
     text-align: justify;
     color:  rgb(74, 78, 79);
 }
-.back-arrow{
-    font-size: larger;
-}
+
 .back-arrow a{
     color:  rgb(74, 78, 79); 
     text-decoration: none;
@@ -167,14 +165,16 @@ h1{
     flex-direction: column;
 }
 .logo-container{
-    box-shadow: 0px 1px 3px  rgb(163, 163, 163); 
+    box-shadow: 2px 2px 10px  rgb(74, 78, 79); 
     padding: 0;
-    min-width: 200px;
+    margin-top: 20px;
     padding-right: 50px;
     padding-left: 50px;
     padding-bottom: 20px;
     border-radius: 5px;
+    min-width: 200px;
     margin: 10px;
+    margin-top: 10px;
 }
 .logo{
     width: auto;
@@ -194,7 +194,7 @@ figcaption {
     margin-top: 5px; 
     font-size: 16px;
     color:  rgb(255, 255, 255);
-    background-color:rgb(74, 78, 79);
+    background-color: rgb(74, 78, 79); 
     padding: 10px;
     border-radius: 5px;
 }
@@ -208,6 +208,7 @@ figcaption {
         flex-direction: column;
         gap: 20px; 
         justify-content: center;
+        margin: 0;
     }
     .programming-container, .frontend-container{
         display: flex;
@@ -258,45 +259,35 @@ figcaption {
 }
 .experienceheader{
         display: flex;
+        align-items: center;  
+        justify-content: center;  
+        max-width: fit-content;
+        margin: auto;
+        box-shadow: 2px 2px 10px  rgb(74, 78, 79); 
+        padding: 5px 20px; 
         gap: 150px; 
-        position: absolute;
-        left: 310px;
-        top: 33.3%;
-}
-.experienceheader2{
-    display: flex;
-    gap: 150px; 
-    position: absolute;
-    left: 310px;
-    top: 42%;
+        border-radius: 5px;
 }
 .experience{
     font-size: 14px;
-    padding-top: 60px !important;
     padding: 25px;
     text-align: justify;
     list-style-type: disc;
     list-style-position: inside;
     line-height: 2;
-    background-color: #e6e6e6;
-    box-shadow: 0px 1px 3px  rgb(163, 163, 163); 
+    box-shadow: 2px 2px 10px  rgb(74, 78, 79); 
     border-radius: 5px;
     margin: 5px auto; /* Reduce margin to bring sections closer */
     max-width: 700px;/* Make sure content is centered and not too wide */
 }
 @media screen and (max-width: 768px) {
     .experienceheader {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
         gap: 10px; /* Reduce space between title and date */
+        padding: 10px; /* Adjust padding */
+        width: 90%; /* Make it responsive */
         font-size: 12px;
-        top: 39%;
-        left: 80px;
-    }
-    .experienceheader2{
-        gap: 10px; /* Reduce space between title and date */
-        font-size: 12px;
-        left: 80px;
-        top: 46.1%;
-     
     }
     .experience{
         width: 90%; /* Make the experience sections fit smaller screens */
@@ -304,7 +295,6 @@ figcaption {
         font-size: 13px !important; /* Reduce text size */
         margin: 10px auto; /* Add slight spacing */
         font-size: 11px;
-        max-width: 500px;
     }
      /* ========================
    Projects Section
@@ -319,7 +309,7 @@ figcaption {
     padding-bottom: 20px;
     margin-bottom: 0;
     margin-top: 30px;
-    box-shadow: 0px 1px 3px  rgb(163, 163, 163); 
+    box-shadow: 2px 2px 10px  rgb(74, 78, 79); 
     border-radius: 10px;
     margin-left: 150px;
     margin-right: 150px;
@@ -342,7 +332,7 @@ figcaption {
     border-radius: 10px;
     object-fit: cover; /* Maintain aspect ratio of images */
     scroll-snap-align: center; /* Center images in the viewport when scrolling */
-    box-shadow: 0px 1px 3px  rgb(163, 163, 163);   
+    box-shadow: 3px 5px 10px  rgb(74, 78, 79);   
 }
 .projectnotecontainer {
     display: flex;
@@ -396,7 +386,6 @@ figcaption {
     .projectcontainer {
         margin-left: 20px;
         margin-right: 20px;
-        max-width: 500px;
     }
     .projectimagecontainer {
         width: 90%; /* Adjust for smaller screen */
@@ -442,7 +431,7 @@ figcaption {
     padding-bottom: 0px;
 }
 .certificatewords {
-    box-shadow: 0px 1px 3px  rgb(163, 163, 163);  
+    box-shadow: 2px 2px 10px rgb(74, 78, 79); 
     border-radius: 5px;
     padding: 20px 20px;
     margin-bottom: 20px;
@@ -469,7 +458,7 @@ figcaption {
     width: 90px;
     box-shadow: 2px 2px 10px  rgb(74, 78, 79); 
     padding: 10px 20px;
-    justify-backcontent: center;
+    justify-content: center;
     align-items: center;
     margin: 5px;
     border-radius: 5px;
@@ -500,7 +489,7 @@ figcaption {
     }
     .backtotop{
         position: absolute;
-        top: 96.9%;
+        top: 97.5%;
     }
     .backtotop img {
         width: 60px;  /* Set the width of the logo */
