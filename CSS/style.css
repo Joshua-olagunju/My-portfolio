@@ -206,9 +206,15 @@ figcaption {
         flex-direction: column;
         gap: 20px; 
         justify-content: center;
-        margin: 0;
+        
     }
     .programming-container, .frontend-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0px; 
+    }
+    .frontend-container{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -229,6 +235,7 @@ figcaption {
         margin-top: 10px;
         justify-content: center;
         
+        
     }
     figure {
         margin: 10px 0; 
@@ -237,10 +244,11 @@ figcaption {
         font-size: 12px;
         display: block;
     }   
-    .logos {
+    .logo{
         width: auto;
         margin-top: 10px;
         margin-bottom: 1px;
+     
     } 
      /* ========================
    Platform Section
