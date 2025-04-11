@@ -8,6 +8,8 @@ body{
     transition: background-color 0.4s ease-in-out;  
     font-size: 15px;
     padding: 5px 20px !important;
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 p{
     margin: 0;
@@ -333,6 +335,10 @@ figure{
     scroll-snap-align: center; /* Center images in the viewport when scrolling */
     box-shadow: 0px 1px 3px  rgb(74, 78, 79);   
 }
+.projectimage:hover{
+    transform: scale(1.1);
+
+}
 .projectnotecontainer {
     display: flex;
     flex-direction: column;
@@ -374,7 +380,6 @@ figure{
   .custom-img-two{
     width: 300px;
     height: 300px;
-   
   }
   .big-text {
     font-size: 100px;
