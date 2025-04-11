@@ -447,13 +447,13 @@ figcaption {
     border-radius: 5px;
     padding: 20px 20px;
     margin-bottom: 20px;
-    width: 400px; /* Limits the width to prevent it from being too wide */    
+    width: 400px;   
 }
 @media screen and (max-width: 768px) {
     .certificatewords {
         width: 80%;
         font-size: 12px;
-        width: 250px;
+        width: auto;
     }
      /* ========================
     Contact Section
