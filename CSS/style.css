@@ -283,18 +283,23 @@ figcaption {
         padding: 5px 20px; 
         gap: 150px; 
         border-radius: 5px;
+        margin-top: 20px;
 }
 .experience{
     font-size: 14px;
     padding: 25px;
     text-align: justify;
     list-style-type: disc;
-    list-style-position: inside;
+    list-style-position: outside;
     line-height: 2;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 0;
     box-shadow: 0px 1px 3px  rgb(74, 78, 79);  
     border-radius: 5px;
-    margin: 5px auto; /* Reduce margin to bring sections closer */
-    max-width: 700px;/* Make sure content is centered and not too wide */
+    margin-left: 150px;
+    margin-right: 150px;
+    max-width:auto;
 }
 @media screen and (max-width: 768px) {
     .experienceheader {
@@ -306,11 +311,9 @@ figcaption {
         font-size: 12px;
     }
     .experience{
-        padding: 15px; /* Reduce padding */
-        font-size: 13px !important; /* Reduce text size */
-        margin: 10px auto; /* Add slight spacing */
-        font-size: 11px;
-        width: 300px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
     }
      /* ========================
    Projects Section
