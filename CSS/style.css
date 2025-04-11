@@ -462,15 +462,18 @@ figcaption {
     margin-bottom:10px;
     margin-top: 10px;
 }
+.contactlinks{
+    padding: 30px;
+}
 .contactlinks img{
-    height: 60px;
-    min-width: auto;
+    height: auto;
+    width: 150px;
     box-shadow: 0px 1px 3px  rgb(74, 78, 79);  
     padding: 10px 20px;
     justify-content: center;
-    align-items: center;
-    margin: 5px;
+    margin: 15px;
     border-radius: 5px;
+    
 }
 .backtotop{
     float: right;
@@ -492,8 +495,7 @@ figcaption {
 }
 @media screen and (max-width: 768px) {
     .contactlinks img {
-        width: 90px; /* Make the image smaller on medium screens */
-        padding: 15px; /* Adjust padding to keep it proportionate */
+        width: 120px; /* Make the image smaller on medium screens */
     }
    .backtotop img {
         width: 60px;  /* Set the width of the logo */
