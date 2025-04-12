@@ -117,7 +117,7 @@ footer nav a:hover{
     } 
     .back-arrow{
         position: absolute;
-        left: 20px;
+        left: 10px;
     } 
   
      /* ========================
@@ -445,11 +445,19 @@ figure{
     margin-bottom: 20px;
     width: 400px;   
 }
+.custom-certificate img{
+    height: 250px;
+    width: 100%;
+}
 @media screen and (max-width: 768px) {
     .certificatewords {
         width: 80%;
         font-size: 12px;
         width: auto;
+    }
+    .custom-certificate img{
+        height: 100px;
+        width: 100%;
     }
      /* ========================
     Contact Section
