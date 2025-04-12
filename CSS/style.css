@@ -455,8 +455,11 @@ figure{
         width: auto;
     }
     .custom-certificate img{
-        height: 200px;
-        width: 90%;
+        height: 280px;
+    }
+    .custom-certificate-one img{
+        height: 180px;
+        width: 100%;
     }
      /* ========================
     Contact Section
