@@ -312,9 +312,9 @@ figure{
     margin-top: 30px;
     box-shadow: 0px 1px 3px  rgb(74, 78, 79);  
     border-radius: 10px;
-    margin-left: 150px;
-    margin-right: 150px;
-    max-width:auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    
 }
 .projectimagecontainer{
     display: flex;
@@ -383,9 +383,8 @@ figure{
   }
 @media (max-width: 768px) {
     .projectcontainer {
-        margin-left: 20px;
-        margin-right: 20px;
-        width: 100%;
+        margin-left: 6px;
+        margin-right: 6px;
     }
     .projectimagecontainer {
         width: 90%; /* Adjust for smaller screen */
