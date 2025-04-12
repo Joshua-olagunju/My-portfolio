@@ -486,18 +486,21 @@ figure{
     border-radius: 5px;
 }
 
-.backtotop{
-    float: right;
-    margin-bottom: 20px;
-    margin-right: 30px;
+.backtotop {
+    position: fixed;      /* Makes it stay in place */
+    bottom: 70px;         /* Position it 20px from the bottom of the screen */
+    right: 30px;          /* Position it 30px from the right of the screen */
+    margin: 0;            /* Remove any extra margin */
+    z-index: 9999;        /* Ensure it stays above other elements */
 }
+
 .backtotop img {
-    width: 90px;  /* Set the width of the logo */
-    height: auto; /* Keep the aspect ratio */
+    width: 90px;          /* Set the width of the logo */
+    height: auto;         /* Keep the aspect ratio */
     margin-bottom: 10px;
-    margin: 0;
     padding: 0;
 }
+
 .figure2{
     background-color: #ffffff;
     color:  rgb(74, 78, 79); 
