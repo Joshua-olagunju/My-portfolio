@@ -487,13 +487,11 @@ figure{
 }
 
 .backtotop {
-    position: fixed;      /* Makes it stay in place */
-    bottom: 70px;         /* Position it 20px from the bottom of the screen */
-    right: 30px;          /* Position it 30px from the right of the screen */
-    margin: 0;            /* Remove any extra margin */
-    z-index: 9999;        /* Ensure it stays above other elements */
+    float: right;
+    bottom: 70px;
+    right: 30px; 
+    margin: 0;   
 }
-
 .backtotop img {
     width: 90px;          /* Set the width of the logo */
     height: auto;         /* Keep the aspect ratio */
