@@ -356,22 +356,15 @@ figure{
     margin-right: 30px;
     margin-left: 30px;
 }
-.techstack {
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-}
-.techlist{
-    background-color: rgb(74, 78, 79); 
-    padding: 10px;
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
-    margin-top: 10px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.techstack-item {
+    display: inline-block;
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
     border-radius: 50px;
+    margin: 5px;
 }
+
 .projecthtml {
     text-align: center;
     font-weight: bold;
@@ -406,10 +399,7 @@ figure{
         margin-right: 20px;
         font-size: 14px !important;
     }
-    .techstack{
-        flex-direction: row;
-        margin-top: 0;
-    }
+    
     .techlist{
         font-size: 11px; 
     }
