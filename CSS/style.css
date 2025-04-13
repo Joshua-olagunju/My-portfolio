@@ -324,25 +324,32 @@ figure{
    Experience Section
    ======================== */
 }
-.experiencecontainer {
+.experiencecontainer{
     text-align: center;
-    padding: 50px 0;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin: 30px;
     background-image: url("../Images/Background3.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0;   
     width: 100%;
-    
 }
 .experienceheader{
         display: flex;
         align-items: center;  
         justify-content: center;  
+        max-width: fit-content;
+        margin: auto;
+        padding: 5px 20px; 
         gap: 150px; 
+        border-radius: 5px;
         margin-top: 20px;
 }
 .experience{
     font-size: 14px;
+    padding: 25px;
     text-align: justify;
     list-style-type: disc;
     list-style-position: outside;
@@ -350,6 +357,7 @@ figure{
     justify-content: center;
     padding-bottom: 20px;
     margin-bottom: 0;
+    border-radius: 5px;
     margin-left: 150px;
     margin-right: 150px;
     max-width:auto;
@@ -364,8 +372,8 @@ figure{
         font-size: 12px;
     }
     .experience{
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 0;
+        margin-right: 0;
         width: auto;
     }
      /* ========================
