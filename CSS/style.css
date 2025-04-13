@@ -513,6 +513,9 @@ figure{
    
     
 }
+.cisco{
+    color: #ffffff;
+}
 .certificatewords {
     box-shadow: 0px 1px 3px  rgb(74, 78, 79);  
     border-radius: 5px;
