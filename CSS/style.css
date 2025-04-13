@@ -504,6 +504,13 @@ figure{
     justify-content: center;
     width: 100%;
     padding-bottom: 0px;
+    background-image: url("../Images/Background.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;  
+    padding-top: 50px;   
+   
     
 }
 .certificatewords {
