@@ -123,7 +123,10 @@ footer nav a:hover{
         color: #ffffff !important;
         margin: 0;
         margin-bottom: 30px;
-        
+    }
+    footer nav a{
+        justify-content: center;
+        align-items: center;
     }
     
    
@@ -497,8 +500,9 @@ figure{
 }
 .d-flex {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 20px; /* Adds space between each link */
+    flex-wrap: wrap;
 }
 .contactlinks img {
     width: 80px;
