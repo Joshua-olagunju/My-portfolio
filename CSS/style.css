@@ -22,7 +22,7 @@ p{
     color: rgb(74, 78, 79);
 }
 li{
-    color: rgb(74, 78, 79);
+    color: rgb(255, 255, 255);
 }
 header{
     width: 100%;
@@ -100,15 +100,14 @@ footer nav a:hover{
    .introductioncontainer {
     display: flex;
     gap: 30px;
-    width: 100%;                   /* Ensure full width */
-                    /* Optional: makes the section take the full viewport height */
+    width: 100%;
     padding-bottom: 50px;
     padding-top: 70px;
     background-image: url("../Images/Background2.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0;                     /* Removes default margin */
+    margin: 0;            
 }
 
 .custom-img-one{
@@ -192,6 +191,12 @@ h1{
     font-size: 25px;
 }
 .section-container{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin: 30px;
+}
+.skillcontainer{
     text-align: center;
     padding-bottom: 50px;
     padding-top: 50px;
@@ -319,21 +324,25 @@ figure{
    Experience Section
    ======================== */
 }
+.experiencecontainer {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url("../Images/Background3.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
 .experienceheader{
         display: flex;
         align-items: center;  
         justify-content: center;  
-        max-width: fit-content;
-        margin: auto;
-        box-shadow: 0px 1px 3px  rgb(74, 78, 79); 
-        padding: 5px 20px; 
         gap: 150px; 
-        border-radius: 5px;
         margin-top: 20px;
 }
 .experience{
     font-size: 14px;
-    padding: 25px;
     text-align: justify;
     list-style-type: disc;
     list-style-position: outside;
@@ -341,8 +350,6 @@ figure{
     justify-content: center;
     padding-bottom: 20px;
     margin-bottom: 0;
-    box-shadow: 0px 1px 3px  rgb(74, 78, 79);  
-    border-radius: 5px;
     margin-left: 150px;
     margin-right: 150px;
     max-width:auto;
@@ -357,8 +364,8 @@ figure{
         font-size: 12px;
     }
     .experience{
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 10px;
+        margin-right: 10px;
         width: auto;
     }
      /* ========================
