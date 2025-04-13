@@ -523,20 +523,12 @@ figure{
 .backtotop {
     float: right;
     bottom: 70px;
-    right: 30px; 
     margin: 0;   
 }
 .backtotop img {
     width: 90px;          /* Set the width of the logo */
     height: auto;         /* Keep the aspect ratio */
     margin-bottom: 10px;
-    padding: 0;
-}
-
-.figure2{
-    background-color: #ffffff;
-    color:  rgb(74, 78, 79); 
-    margin: 0;
     padding: 0;
 }
 @media screen and (max-width: 768px) {
@@ -546,10 +538,7 @@ figure{
    .backtotop img {
         width: 60px;  /* Set the width of the logo */
         height: auto; /* Keep the aspect ratio */
-        margin-right: 20px;
-    }
-    .figure2{
-        margin-right: 20px;
+      
     }
      /* ========================
    Drop down menu mobile Section
