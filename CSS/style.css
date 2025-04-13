@@ -4,6 +4,9 @@ body{
     padding: 0;
     position: relative;
 }
+hr{
+    color: black;
+}
 .custom-btn{
     transition: background-color 0.4s ease-in-out;  
     font-size: 15px;
