@@ -324,18 +324,6 @@ figure{
    Experience Section
    ======================== */
 }
-.experiencecontainer{
-    text-align: center;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    margin: 30px;
-    background-image: url("../Images/Background3.avif");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;   
-    width: 100%;
-}
 .experienceheader{
         display: flex;
         align-items: center;  
