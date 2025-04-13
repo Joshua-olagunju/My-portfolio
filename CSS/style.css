@@ -84,12 +84,12 @@ header nav a{
     color: #ffffff !important;
 }
 header nav a:hover{
-    color: rgb(74, 78, 79) !important;
+    color:#005f9b!important;
     text-decoration: overline;
     transform: scale(1.3);
 }  
 footer nav a:hover{
-    color: rgb(255, 255, 255) !important;
+    color:#005f9b!important;
     text-decoration: overline;
     transform: scale(1.3);
 }  
@@ -98,12 +98,14 @@ footer nav a:hover{
    ======================== */
 
 .introductioncontainer{
-    margin: 30px;
+   
     display: flex;
     gap: 30px;
     padding-bottom: 50px;
     padding-top: 70px;
-    position: relative
+
+    background-color: #005f9b;
+    
 }
 .custom-img-one{
     height: auto;
@@ -114,7 +116,9 @@ footer nav a:hover{
 .introduction{
     margin-left: 200px;
     text-align: justify;
-    color:  rgb(74, 78, 79);
+}
+.introduction p{
+    color: #ffffff;
 }
 .back-arrow{
     font-size: larger;
@@ -166,7 +170,8 @@ footer nav a:hover{
         order: 1; /* Ensure the image appears first */
     }
     .introduction {
-        margin-left: 0; /* Remove the left margin for smaller screens */
+        margin-left: 30px; /* Remove the left margin for smaller screens */
+        margin-right: 30px;
         text-align: justify; /* Center text on smaller screens */
     } 
     .back-arrow{
