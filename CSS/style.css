@@ -8,9 +8,13 @@ html{
     margin: 0;
     padding: 0;
 }
-hr{
-    color: black;
-}
+hr {
+        border: none;
+        height: 2px;
+        background-color: rgb(255, 255, 255); /* or any color */
+        width: 80%;  /* or 100% if you want full width */
+        margin: 20px auto; /* space around the line and center it */
+    }
 .custom-btn{
     transition: background-color 0.4s ease-in-out;  
     font-size: 15px;
@@ -196,14 +200,17 @@ h1{
 }
 .section-container{
     text-align: center;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-top: 30px;
 }
+
+
 .skillcontainer{
     text-align: center;
     padding-bottom: 50px;
-    padding-top: 50px;
-    margin: 30px;
+    margin-top: 5px;
+    padding-top: 60px;
+   
 }
 .skillitemscontainer{
     display: flex;
@@ -267,7 +274,7 @@ figure{
 @media screen and (max-width: 768px) {
     .section-container {
         
-        padding-bottom: 30px;
+        padding-bottom: 0px;
         padding-top: 30px;
     }
     .skillitemscontainer {
@@ -331,7 +338,7 @@ figure{
     text-align: center;
     padding-bottom: 50px;
     padding-top: 50px;
-    background-image: url("../Images/premkumar-masilamani-Qi2bsCwx-gM-unsplash.jpg");
+    background-image: url("../Images/andrew-kliatskyi-tsmO0npD4pY-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -388,11 +395,11 @@ figure{
     justify-content: center;
     padding-bottom: 20px;
     margin-bottom: 0;
-    margin-top: 30px;
-    box-shadow: 0px 1px 3px  rgb(74, 78, 79);  
-    border-radius: 10px;
+    margin-top: 20px;
+    
     margin-left: 100px;
     margin-right: 100px;
+    
     
 }
 .projectimagecontainer{
@@ -407,7 +414,7 @@ figure{
     max-width: 300px; /* Limit the maximum size of images */
     height: 150px;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 20px;
     border-radius: 10px;
     object-fit: cover; /* Maintain aspect ratio of images */
@@ -429,11 +436,12 @@ figure{
 .projectnote {
     margin-right: 20px;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 0;
     order: 1;
     text-align: justify;
     margin-right: 30px;
     margin-left: 30px;
+    color: #ffffff;
 }
 .techstack-item {
     display: inline-block;
@@ -503,22 +511,10 @@ figure{
     align-items: center; /* Centers certificates horizontally */
     justify-content: center;
     width: 100%;
-    padding-bottom: 0px;
-    background-image: url("../Images/pexels-natri-129208.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;  
-    padding-top: 50px;      
+    margin-top: 70px;
+         
 }
-.container1{
-    background-image: url("../Images/pexels-natri-129208.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;  
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
+
 .container1 p{
     color: #ffffff;
 }
