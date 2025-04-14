@@ -107,7 +107,7 @@ footer nav a:hover{
     width: 100%;
     padding-bottom: 50px;
     padding-top: 70px;
-    background-image: url("../Images/Background2.avif");
+    background-image: url("../Images/shubham-dhage-MpL4w1vb798-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -331,7 +331,7 @@ figure{
     text-align: center;
     padding-bottom: 50px;
     padding-top: 50px;
-    background-image: url("../Images/Background.avif");
+    background-image: url("../Images/premkumar-masilamani-Qi2bsCwx-gM-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -504,14 +504,23 @@ figure{
     justify-content: center;
     width: 100%;
     padding-bottom: 0px;
-    background-image: url("../Images/Background.avif");
+    background-image: url("../Images/pexels-natri-129208.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;  
-    padding-top: 50px;   
-   
-    
+    padding-top: 50px;      
+}
+.container1{
+    background-image: url("../Images/pexels-natri-129208.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.container1 p{
+    color: #ffffff;
 }
 .cisco{
     color: #ffffff;
@@ -579,10 +588,12 @@ figure{
     margin: 0;   
 }
 .backtotop img {
-    width: 90px;          /* Set the width of the logo */
+    width: 70px;          /* Set the width of the logo */
     height: auto;         /* Keep the aspect ratio */
     margin-bottom: 10px;
     padding: 0;
+    margin-right: 20px;
+    filter: invert(100%);
 }
 @media screen and (max-width: 768px) {
     .contactlinks img {
