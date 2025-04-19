@@ -65,7 +65,42 @@ const skillsObserver = new IntersectionObserver((entries) => {
 
 skillsObserver.observe(skillsSection);
 logoContainers.forEach(logo => skillsObserver.observe(logo));
+
+/*line three 2 */
+function fadeInPlatforms() {
+    const items = document.querySelectorAll('.platform-item');
+    items.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+            item.classList.add('fade-in');
+        } else {
+            item.classList.remove('fade-in');
+        }
+    });
+}
+
+window.addEventListener('scroll', fadeInPlatforms);
+window.addEventListener('load', fadeInPlatforms);
+
 /*line four*/
+
+function fadeInProjects() {
+    const projects = document.querySelectorAll('.project-card');
+    
+    projects.forEach(project => {
+        const rect = project.getBoundingClientRect();
+        
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+            project.classList.add('fade-in');
+        } else {
+            project.classList.remove('fade-in'); // Reset animation if it goes out of view
+        }
+    });
+}
+
+window.addEventListener('scroll', fadeInProjects);
+window.addEventListener('load', fadeInProjects); // To trigger on page load if it's already in view
+/*line five*/
 // Function to trigger the fade-in effect for testimonials
 function fadeInTestimonials() {
     const testimonials = document.querySelectorAll('.testimonial');
@@ -86,7 +121,7 @@ function fadeInTestimonials() {
 // Run the fade-in effect when the page loads and on scroll
 window.addEventListener('load', fadeInTestimonials);
 window.addEventListener('scroll', fadeInTestimonials);
-/*line five*/
+/*line six*/
 function fadeInCertifications() {
     const certifications = document.querySelectorAll('.certification');
 
@@ -102,3 +137,26 @@ function fadeInCertifications() {
 
 window.addEventListener('load', fadeInCertifications);
 window.addEventListener('scroll', fadeInCertifications);
+/*line seven */
+document.addEventListener("DOMContentLoaded", function () {
+    const backToTopButton = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    backToTopButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+
