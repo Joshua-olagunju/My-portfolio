@@ -12,7 +12,7 @@ html{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0); 
 }
-.maincontainer, .maincontainer1{
+.maincontainer, .maincontainer1, .maincontainer2{
     margin-top: 90px !important;
     margin-bottom: 90px !important;
     padding-top: 50px;
@@ -222,6 +222,16 @@ footer nav a:hover{
     width: 100%;
     border-radius: 8px;
   }
+  .maincontainer2 {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.maincontainer2.show {
+    transform: scale(1);
+    opacity: 1;
+}
 
 
 @media (max-width: 768px) {

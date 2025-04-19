@@ -56,6 +56,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 /*line four */
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.maincontainer, .maincontainer1, .maincontainer2');
+
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(function (section) {
+        observer.observe(section);
+    });
+});
 
 /*line five*/
 
