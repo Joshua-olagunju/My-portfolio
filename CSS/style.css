@@ -243,19 +243,18 @@ footer nav a:hover{
     display: inline-block;
     background-color: #000000;
 }
-.image-slider {
-    display: flex;
-    overflow-x: auto;
-  }  
- .image-slider img{
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10px;
- } 
-  .slider-img {
-    width: 100%;
-    border-radius: 8px;
-  }
+
+.project-card {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.project-card.zoom-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
   .maincontainer2 {
     transform: scale(0.8);
     opacity: 0;
@@ -279,37 +278,21 @@ footer nav a:hover{
         margin-top: 150px !important;      
       }
 }
-.testimonial {
+.testimonial, .testimonial2{
     opacity: 0; /* Start with hidden */
     transform: translateX(-50px); /* Start with moved position */
     transition: opacity 2s ease-out, transform 1s ease-out;
 }
 
-.testimonial.fade-in {
+.testimonial.fade-in, .testimonial2.fade-in{
     opacity: 1; /* Make visible */
     transform: translateY(0); /* Reset position */
 }
 
-.testimonial:hover {
+.testimonial:hover, .testimonial2:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
-.testimonial2 {
-    opacity: 0;
-    transform: translateX(-50px); /* Initial off-screen position */
-    transition: opacity 1s ease-out, transform 1s ease-out; /* Add transition for both opacity and transform */
-}
-
-.testimonial2.fade-in {
-    opacity: 1;
-    transform: translateX(0); /* Animate back to normal position */
-}
-
-.testimonial2:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
 .custom-certificate img{
     height: 250px;
     width: 100%;

@@ -24,3 +24,25 @@ function fadeInTestimonials2() {
 // Run the fade-in effect for testimonial2 when the page loads and on scroll
 window.addEventListener('load', fadeInTestimonials2);
 window.addEventListener('scroll', fadeInTestimonials2);
+
+
+
+
+function zoomInProjects() {
+    const projectCards = document.querySelectorAll('.project-card');
+
+    projectCards.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+
+        // Check if the project card is in view
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+            card.classList.add('zoom-in');
+        } else {
+            card.classList.remove('zoom-in');
+        }
+    });
+}
+
+// Run the zoom-in effect when the page loads and on scroll
+window.addEventListener('load', zoomInProjects);
+window.addEventListener('scroll', zoomInProjects);
