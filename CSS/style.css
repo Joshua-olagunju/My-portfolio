@@ -3,8 +3,8 @@ body, html{
     padding: 0;
     position: relative;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    
 }
+
 .custom-btn{
     transition: background-color 0.4s ease-in-out;  
     background-color: rgb(255, 255, 255);
