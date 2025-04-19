@@ -98,21 +98,6 @@ function fadeInTestimonials() {
 window.addEventListener('load', fadeInTestimonials);
 window.addEventListener('scroll', fadeInTestimonials);
 /*line seven*/
-function fadeInCertifications() {
-    const certifications = document.querySelectorAll('.certification');
-
-    certifications.forEach((certification) => {
-        const rect = certification.getBoundingClientRect();
-        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-            certification.classList.add('fade-in');
-        } else {
-            certification.classList.remove('fade-in');  // Remove when out of view
-        }
-    });
-}
-
-window.addEventListener('load', fadeInCertifications);
-window.addEventListener('scroll', fadeInCertifications);
 /*line eight */
 document.addEventListener("DOMContentLoaded", function () {
     const backToTopButton = document.getElementById('backToTop');
