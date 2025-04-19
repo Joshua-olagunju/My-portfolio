@@ -297,16 +297,7 @@ footer nav a:hover{
     height: 250px;
     width: 100%;
 }
-.certification {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s, transform 1s ease-in-out;
-}
 
-.certification.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 /* Initially hide the certification section */
 
@@ -346,7 +337,6 @@ footer nav a:hover{
     transition: opacity 0.3s ease, transform 0.3s ease;
     transform: translateY(100px);
 }
-
 .backtotop a {
     display: block;
     width: 50px;
@@ -357,14 +347,10 @@ footer nav a:hover{
     margin-right: 30px;
     margin-bottom: 30px;
 }
-
-
 .backtotop.show {
     opacity: 1;
     transform: translateY(0);
 }
-
-
 @media screen and (max-width: 768px) {
     .contactlinks img {
         width: 80px; /* Make the image smaller on medium screens */

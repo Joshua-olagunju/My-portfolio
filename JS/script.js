@@ -106,21 +106,6 @@ function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
 }
-
-// Get the certifications section
-const certificationSection = document.querySelector('.certification');
-
-// Add a scroll event listener to check if the section is in the viewport
-window.addEventListener('scroll', function () {
-    // If the section is in the viewport, add the class to trigger animation
-    if (isElementInViewport(certificationSection)) {
-        certificationSection.classList.add('visible');
-    } else {
-        // Optionally, remove the class when the section is out of view
-        certificationSection.classList.remove('visible');
-    }
-});
-
 /*line eight */
 document.addEventListener("DOMContentLoaded", function () {
     const backToTopButton = document.getElementById('backToTop');
