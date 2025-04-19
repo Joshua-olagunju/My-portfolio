@@ -167,6 +167,7 @@ footer nav a:hover{
     transition: opacity 1s ease-out, transform 1s ease-out;
   }
   
+  
   .logo-container {
     opacity: 0;
     transform: translateX(-50px); /* For logos to slide in from left */

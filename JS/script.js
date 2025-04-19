@@ -84,22 +84,6 @@ window.addEventListener('load', fadeInPlatforms);
 
 /*line four*/
 
-function fadeInProjects() {
-    const projects = document.querySelectorAll('.project-card');
-    
-    projects.forEach(project => {
-        const rect = project.getBoundingClientRect();
-        
-        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-            project.classList.add('fade-in');
-        } else {
-            project.classList.remove('fade-in'); // Reset animation if it goes out of view
-        }
-    });
-}
-
-window.addEventListener('scroll', fadeInProjects);
-window.addEventListener('load', fadeInProjects); // To trigger on page load if it's already in view
 /*line five*/
 // Function to trigger the fade-in effect for testimonials
 function fadeInTestimonials() {
