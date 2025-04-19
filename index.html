@@ -33,7 +33,7 @@
             
         </header>
 
-        <section class="container hero d-flex justify-content-center align-items-center gap-5 mt-5 mb-5 maincontainer" >
+        <section id="hero" class="container d-flex justify-content-center align-items-center gap-5 mt-5 mb-5 maincontainer" >
             <div class="d-flex flex-column align-items-center text-center gap-2">
                 <p style="font-size: large; margin-bottom: 0;">Hello, I’m </p>
                 <p style="font-size: xx-large; margin-bottom: 0;" class="fw-bold">Joshua Olagunju</p>
@@ -52,7 +52,7 @@
         <section class="container d-flex flex-column align-items-center maincontainer bg-light">
             <h6>Know more</h6>
             <h2 class="fw-bold mb-1">About Me</h2>
-            <p class="text-center mx-md-5">
+            <p id="about-text" class="text-center mx-md-5">
                 A Frontend Developer skilled in HTML, CSS, JavaScript, Linux, and Python, 
                 with a growing interest in backend development and web security.
                 I build user-friendly, accessible websites while exploring ethical hacking
@@ -60,7 +60,7 @@
                 UI/UX design, and continuous learning.
             </p>
             <div class="d-flex justify-content-center mt-3">
-                <img src="Images/Profile.jpg" class="img-fluid custom-img-one rounded-circle" alt="Profile Picture">
+                <img src="Images/Profile.jpg" class="img-fluid custom-img-one rounded-circle" id="about-image" alt="Profile Picture">
             </div>
         </section>
         
@@ -125,8 +125,8 @@
         </div>
         </div>
             
-        <section class="container my-5 mx-md-5 maincontainer">
-            <h1 id="projects" class="text-center mb-3">Projects</h1>
+        <section class="container my-5 mx-md-5 maincontainer" id="projects">
+            <h1 class="text-center mb-3">Projects</h1>
             <div class="d-flex justify-content-center">
                 <a href="projects.html" class="btn btn-dark custom-btn">
                     <i class="bi bi-eye"></i> View all projects
@@ -179,22 +179,23 @@
             <h2 class="text-center mb-4">Testimonials</h2>
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-3 text-center">
-                    <p class="p-3 shadow rounded">"Working with Joshua was a smooth experience. His attention to detail and commitment to clean, responsive design really stood out. Highly recommend for front-end projects."</p>
+                    <p class="p-3 shadow rounded testimonial">"Working with Joshua was a smooth experience. His attention to detail and commitment to clean, responsive design really stood out. Highly recommend for front-end projects."</p>
                     <p><strong>Daniel Rotimi.</strong> — Backend Dev</p>
                 </div>
                 <div class="col-md-4 mb-3 text-center">
-                    <p class="p-3 shadow rounded">"Impressed by the UI/UX clarity and the professional communication throughout the project. Joshua delivers modern, user-friendly designs."</p>
+                    <p class="p-3 shadow rounded testimonial">"Impressed by the UI/UX clarity and the professional communication throughout the project. Joshua delivers modern, user-friendly designs."</p>
                     <p><strong>Raymond Okoh.</strong> — Product Manager</p>
                 </div>
                 <div class="col-md-4 mb-3 text-center">
-                    <p class="p-3 shadow rounded">"The layout, responsiveness, and creativity on each project showed both skill and passion. Looking forward to future collaborations!"</p>
+                    <p class="p-3 shadow rounded testimonial">"The layout, responsiveness, and creativity on each project showed both skill and passion. Looking forward to future collaborations!"</p>
                     <p><strong>Mary O.</strong> — Customer Care</p>
                 </div>
             </div>
         </section>
         
         
-                <section class="container mt-5 maincontainer ">
+        
+                <section class="container mt-5 maincontainer certification ">
                     <h1 class="text-center">Certifications</h1>
                     <div class="d-flex justify-content-center">
                         <a href="certificate.html" class="btn btn-dark custom-btn mb-2 text-center">
@@ -219,6 +220,7 @@
                 </div>
                 </section>
         <script src="JS/bootstrap.bundle.min.js"></script>
+        <script src="JS/script.js"></script>
     </body>
     <footer>
         <nav class="navbar custom-nav justify-content-center mb-5">
