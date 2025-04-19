@@ -24,7 +24,7 @@ header{
 }
 header:hover {
     box-shadow: 0px 3px 5px rgb(74, 78, 79);
-    transform: translateY(5px); /* optional: add slight lift on hover */
+    
     transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
 }
 footer {
