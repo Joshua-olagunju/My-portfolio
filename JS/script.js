@@ -4,10 +4,10 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = 1;
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.style.transform = 'translateX(0)';
         } else {
             entry.target.style.opacity = 0;
-            entry.target.style.transform = 'translateY(20px)';
+            entry.target.style.transform = 'translateX(-50px)';
         }
     });
 }, { threshold: 0.3 });
@@ -38,11 +38,11 @@ aboutObserver.observe(aboutImage);
 /*line three*/
 
 
-/*line three 2 */
-
-/*line four*/
+/*line four */
 
 /*line five*/
+
+/*line six*/
 // Function to trigger the fade-in effect for testimonials
 function fadeInTestimonials() {
     const testimonials = document.querySelectorAll('.testimonial');
@@ -63,7 +63,7 @@ function fadeInTestimonials() {
 // Run the fade-in effect when the page loads and on scroll
 window.addEventListener('load', fadeInTestimonials);
 window.addEventListener('scroll', fadeInTestimonials);
-/*line six*/
+/*line seven*/
 function fadeInCertifications() {
     const certifications = document.querySelectorAll('.certification');
 
@@ -79,7 +79,7 @@ function fadeInCertifications() {
 
 window.addEventListener('load', fadeInCertifications);
 window.addEventListener('scroll', fadeInCertifications);
-/*line seven */
+/*line eight */
 document.addEventListener("DOMContentLoaded", function () {
     const backToTopButton = document.getElementById('backToTop');
 

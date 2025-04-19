@@ -98,7 +98,7 @@ footer nav a:hover{
 }
 #hero {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(-50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
   }
 #about-text {
@@ -160,12 +160,26 @@ footer nav a:hover{
 .logo-container figcaption {
     color: #ffffff;
     background-color: rgb(0, 0, 0);  
+} 
+.logo-container2{
+    box-shadow: 0px 1px 3px  rgb(74, 78, 79);
+    padding-bottom: 20px;
+    border-radius: 5px;
+    width: 150px;
+    margin: 10px;
+    margin-top: 10px;   
 }
-
-  
-
-
-  
+.logo2{
+    height: 70px;
+    margin: 0;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5px;   
+}
+.logo-container2 figcaption {
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);  
+} 
 @media screen and (max-width: 768px) {
     .logo-container{
         margin-top: 10px;
