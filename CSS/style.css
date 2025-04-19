@@ -384,7 +384,7 @@ footer nav a:hover{
         background:  rgb(0, 0, 0); 
         padding: 10px;
         border-radius: 5px;
-        z-index: 100; /* Ensure the menu is on top */
+        z-index: 999; /* Ensure the menu is on top */
     }
     .menu ul {
         list-style: none;
