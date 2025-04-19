@@ -296,6 +296,17 @@ footer nav a:hover{
     height: 250px;
     width: 100%;
 }
+.certification {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s ease-in-out;
+}
+
+.certification.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Initially hide the certification section */
 
 .d-flex {
