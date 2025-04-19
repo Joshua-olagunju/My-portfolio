@@ -19,7 +19,7 @@ body, html{
 header{
     width: 100%;
     align-items: center;
-    height: 80px;
+    height: 120px;
     box-sizing: border-box; /* Ensure padding is included in the total width */
 }
 header:hover {
@@ -70,7 +70,6 @@ footer nav{
     color: #ffffff !important;/
 }
 header nav a:hover{
-    
     text-decoration: overline;
     transform: scale(1.3);
 }  
