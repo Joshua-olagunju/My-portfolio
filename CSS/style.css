@@ -216,16 +216,7 @@ footer nav a:hover{
     width: 100%;
     border-radius: 8px;
   }
-  .project-card {
-    opacity: 0;
-    transform: translateY(30px); /* Adjust the sliding amount */
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
 
-.project-card.fade-in {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 @media (max-width: 768px) {
     .techlist{
