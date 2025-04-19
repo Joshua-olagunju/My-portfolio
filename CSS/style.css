@@ -280,18 +280,36 @@ footer nav a:hover{
       }
 }
 .testimonial {
-    opacity: 0;
-    transform: translateX(-50px);
+    opacity: 0; /* Start with hidden */
+    transform: translateX(-50px); /* Start with moved position */
     transition: opacity 2s ease-out, transform 1s ease-out;
 }
+
 .testimonial.fade-in {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Make visible */
+    transform: translateY(0); /* Reset position */
 }
+
 .testimonial:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
+.testimonial2 {
+    opacity: 0;
+    transform: translateX(-50px); /* Initial off-screen position */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Add transition for both opacity and transform */
+}
+
+.testimonial2.fade-in {
+    opacity: 1;
+    transform: translateX(0); /* Animate back to normal position */
+}
+
+.testimonial2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
 .custom-certificate img{
     height: 250px;
     width: 100%;

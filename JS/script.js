@@ -97,6 +97,9 @@ function fadeInTestimonials() {
 // Run the fade-in effect when the page loads and on scroll
 window.addEventListener('load', fadeInTestimonials);
 window.addEventListener('scroll', fadeInTestimonials);
+
+
+
 /*line seven*/
 // Function to check if the element is in the viewport
 function isElementInViewport(el) {
