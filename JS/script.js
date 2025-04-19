@@ -36,51 +36,9 @@ const aboutObserver = new IntersectionObserver((entries) => {
 aboutObserver.observe(aboutText);
 aboutObserver.observe(aboutImage);
 /*line three*/
-const skillsSection = document.querySelector('#skills');
-const logoContainers = document.querySelectorAll('.logo-container');
 
-const skillsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            skillsSection.style.opacity = 1;
-            skillsSection.style.transform = 'translateY(0)';
-            
-            logoContainers.forEach((logo, index) => {
-                setTimeout(() => {
-                    logo.style.opacity = 1;
-                    logo.style.transform = 'translateX(0)';
-                }, index * 200); // Delay each logo slightly for a staggered effect
-            });
-        } else {
-            skillsSection.style.opacity = 0;
-            skillsSection.style.transform = 'translateY(50px)';
-            
-            logoContainers.forEach(logo => {
-                logo.style.opacity = 0;
-                logo.style.transform = 'translateX(-50px)';
-            });
-        }
-    });
-}, { threshold: 0.3 });
-
-skillsObserver.observe(skillsSection);
-logoContainers.forEach(logo => skillsObserver.observe(logo));
 
 /*line three 2 */
-function fadeInPlatforms() {
-    const items = document.querySelectorAll('.platform-item');
-    items.forEach(item => {
-        const rect = item.getBoundingClientRect();
-        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-            item.classList.add('fade-in');
-        } else {
-            item.classList.remove('fade-in');
-        }
-    });
-}
-
-window.addEventListener('scroll', fadeInPlatforms);
-window.addEventListener('load', fadeInPlatforms);
 
 /*line four*/
 
