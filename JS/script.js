@@ -79,6 +79,7 @@ function fadeInCertifications() {
 
 window.addEventListener('load', fadeInCertifications);
 window.addEventListener('scroll', fadeInCertifications);
+
 /*line eight */
 document.addEventListener("DOMContentLoaded", function () {
     const backToTopButton = document.getElementById('backToTop');
