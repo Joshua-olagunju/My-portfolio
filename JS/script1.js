@@ -46,3 +46,31 @@ function zoomInProjects() {
 // Run the zoom-in effect when the page loads and on scroll
 window.addEventListener('load', zoomInProjects);
 window.addEventListener('scroll', zoomInProjects);
+
+
+
+
+// Function to show or hide the Back to Top button
+function toggleBackToTop() {
+    const backToTopButton = document.getElementById('backToTop2');
+    
+    // Check if the page is scrolled down more than 200px
+    if (window.scrollY > 200) {
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+}
+
+// Scroll back to top smoothly when clicked
+document.getElementById('backToTop2').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Run the function when the page is loaded and on scroll
+window.addEventListener('load', toggleBackToTop);
+window.addEventListener('scroll', toggleBackToTop);

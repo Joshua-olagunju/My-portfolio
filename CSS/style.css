@@ -102,7 +102,7 @@ footer nav a:hover{
    }
    @media (max-width: 768px) {
     .footer{
-        height: 620px;
+        height: 650px;
     }
     .footer-title {
       text-align: center;
@@ -316,11 +316,7 @@ footer nav a:hover{
     justify-content: center;
     flex-wrap: wrap;
 } 
-.backtotop {
-    float: right;
-    bottom: 70px;
-    margin: 0;   
-}
+
 .backtotop img {
     width: 70px;          /* Set the width of the logo */
     height: auto;         /* Keep the aspect ratio */
@@ -340,6 +336,32 @@ footer nav a:hover{
 #backToTop.show {
     opacity: 1;
     visibility: visible;
+}
+/* Hide the button initially */
+.backtotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(100px);
+}
+
+.backtotop a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+
+.backtotop.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
