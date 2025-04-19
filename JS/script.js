@@ -36,6 +36,23 @@ const aboutObserver = new IntersectionObserver((entries) => {
 aboutObserver.observe(aboutText);
 aboutObserver.observe(aboutImage);
 /*line three*/
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.maincontainer1');
+
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(function (section) {
+        observer.observe(section);
+    });
+});
 
 
 /*line four */
