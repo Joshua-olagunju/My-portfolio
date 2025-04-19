@@ -195,11 +195,11 @@ footer nav a:hover{
     background-color: rgb(0, 0, 0);  
 } 
 @media screen and (max-width: 768px) {
-    .logo-container{
+    .logo-container, .logo-container2{
         margin-top: 10px;
         justify-content: center; 
     } 
-    .logo{
+    .logo, .logo2{
         width: auto;
         margin-top: 10px;
         margin-bottom: 1px;
