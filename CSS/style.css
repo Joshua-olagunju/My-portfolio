@@ -1,11 +1,9 @@
-body{ 
+body, html{ 
     margin: 0;
     padding: 0;
     position: relative;
-}
-html{
-    margin: 0;
-    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    
 }
 .custom-btn{
     transition: background-color 0.4s ease-in-out;  
