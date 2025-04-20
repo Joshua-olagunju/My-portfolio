@@ -29,7 +29,7 @@ header:hover {
 }
 footer {
     width: 100%;
-    height: 500px;
+    height: 250px;
     box-sizing: border-box;
     background-color: rgb(59, 61, 62);
     display: flex;
@@ -298,6 +298,23 @@ footer nav a:hover{
     width: 100%;
 }
 
+#contact img {
+    transition: transform 0.3s ease;
+}
+
+#contact img:hover {
+    transform: scale(1.1);
+}
+
+#contact form input,
+#contact form textarea {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#contact form button {
+    border-radius: 8px;
+}
 
 /* Initially hide the certification section */
 
