@@ -81,11 +81,22 @@ footer nav a:hover{
     width: 50px; /* Adjust the size of the icon */
     height: 50px;
 }
-
+@keyframes scalePulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 .social-icon img {
     width: 100%;
     height: auto;
     transition: transform 0.3s ease;
+    animation: scalePulse 1s infinite ease-in-out;
 }
 
 .social-icon img:hover {
