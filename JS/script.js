@@ -1,3 +1,7 @@
+ /* ========================
+        Hero Section
+   ======================== */
+
 const hero = document.getElementById('hero');
 
 const observer = new IntersectionObserver((entries) => {
@@ -13,7 +17,9 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.3 });
 
 observer.observe(hero);
-/* Line two */
+/* ========================
+        About Section
+   ======================== */
 const aboutText = document.querySelector('#about-text');
 const aboutImage = document.querySelector('#about-image');
 
@@ -35,7 +41,9 @@ const aboutObserver = new IntersectionObserver((entries) => {
 
 aboutObserver.observe(aboutText);
 aboutObserver.observe(aboutImage);
-/*line three*/
+/* ========================
+        Skills Section
+   ======================== */
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.maincontainer1');
 
@@ -53,9 +61,9 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(section);
     });
 });
-
-
-/*line four */
+/* ========================
+        Platform Section
+   ======================== */
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.maincontainer, .maincontainer1, .maincontainer2');
 
@@ -73,10 +81,9 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(section);
     });
 });
-
-/*line five*/
-
-/*line six*/
+/* ========================
+        Testimonial Section
+   ======================== */
 // Function to trigger the fade-in effect for testimonials
 function fadeInTestimonials() {
     const testimonials = document.querySelectorAll('.testimonial');
@@ -93,20 +100,20 @@ function fadeInTestimonials() {
         }
     });
 }
-
 // Run the fade-in effect when the page loads and on scroll
 window.addEventListener('load', fadeInTestimonials);
 window.addEventListener('scroll', fadeInTestimonials);
-
-
-
-/*line seven*/
+/* ========================
+        Optional Section
+   ======================== */
 // Function to check if the element is in the viewport
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
 }
-/*line eight */
+/* ========================
+        Back to top Section
+   ======================== */
 document.addEventListener("DOMContentLoaded", function () {
     const backToTopButton = document.getElementById('backToTop');
 

@@ -1,3 +1,6 @@
+/* ========================
+       Project.html Testimonial Section
+   ======================== */
 // Function to trigger the fade-in effect for testimonial2
 function fadeInTestimonials2() {
     const testimonials2 = document.querySelectorAll('.testimonial2');
@@ -26,7 +29,9 @@ window.addEventListener('load', fadeInTestimonials2);
 window.addEventListener('scroll', fadeInTestimonials2);
 
 
-
+/* ========================
+       Project.html Section
+   ======================== */
 
 function zoomInProjects() {
     const projectCards = document.querySelectorAll('.project-card');
@@ -42,14 +47,12 @@ function zoomInProjects() {
         }
     });
 }
-
 // Run the zoom-in effect when the page loads and on scroll
 window.addEventListener('load', zoomInProjects);
 window.addEventListener('scroll', zoomInProjects);
-
-
-
-
+/* ========================
+       Project.html Backtotop Section
+   ======================== */
 // Function to show or hide the Back to Top button
 function toggleBackToTop() {
     const backToTopButton = document.getElementById('backToTop2');
