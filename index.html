@@ -230,19 +230,19 @@
         
                 <!-- Contact Form -->
                 <div class="col-12 col-md-5">
-                    <form>
+                    <form action="https://formspree.io/f/mkgjdyrv" method="POST" autocomplete="on">
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required autocomplete="name">
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required autocomplete="email">
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                            <textarea name="message" class="form-control" rows="3" placeholder="Your Message" required autocomplete="off"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-dark w-100">Send Message</button>
+                        <button type="submit"s class="btn btn-dark w-100">Send Message</button>
                     </form>
-                </div>
+                </div>                
             </div>
         </section>
         
