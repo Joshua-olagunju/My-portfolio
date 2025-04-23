@@ -2,6 +2,7 @@ body, html{
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+ 
 }
   /* ========================
    Header and footer Section
@@ -11,11 +12,13 @@ body, html{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0); 
 }
+
 .maincontainer, .maincontainer1, .maincontainer2{
     margin-top: 90px !important;
     margin-bottom: 90px !important;
     padding-top: 50px;
     padding-bottom: 50px;    
+   
 }
 header{
     width: 100%;
@@ -144,7 +147,7 @@ header nav a:hover, footer nav a:hover{
 }
 .logo-container{
     box-shadow: 0px 1px 3px  rgb(74, 78, 79);
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-radius: 5px;
     width: 150px;
     margin: 10px;
@@ -172,7 +175,7 @@ header nav a:hover, footer nav a:hover{
 }
 .logo-container2{
     box-shadow: 0px 1px 3px  rgb(74, 78, 79);
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-radius: 5px;
     width: 150px;
     margin: 10px;
