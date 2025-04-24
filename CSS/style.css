@@ -2,14 +2,17 @@ body, html{
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    background: linear-gradient(135deg, #ffffff, #ffecc2);
+
  
 }
+
   /* ========================
    Header and footer Section
    ======================== */
-.custom-btn{
+.custom-btn1{
     transition: background-color 0.4s ease-in-out;  
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     color: rgb(0, 0, 0); 
 }
 
@@ -18,7 +21,6 @@ body, html{
     margin-bottom: 90px !important;
     padding-top: 50px;
     padding-bottom: 50px;    
-   
 }
 header{
     width: 100%;
