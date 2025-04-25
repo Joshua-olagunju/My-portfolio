@@ -2,7 +2,7 @@ body, html{
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    background: linear-gradient(135deg, #ffffff, #ffecc2);
+    background: linear-gradient(135deg, #fde1a5, #a4c1ff );
 
  
 }
@@ -84,18 +84,7 @@ header nav a:hover, footer nav a:hover{
     color: #ffffff !important;
      font-size: 0.9rem; 
    }
-.back-arrow{
-    font-size: larger;
-    margin-left: 10px;
-}
-.back-arrow a{
-    color:  rgb(0, 0, 0); 
-    text-decoration: none;
-}
-.back-arrow a:hover{
-    color: rgb(74, 78, 79); 
-    text-decoration: overline;
-}
+
    @media (max-width: 768px) {
     footer{
         height: 350px;
@@ -142,10 +131,7 @@ header nav a:hover, footer nav a:hover{
     .custom-img-one{
         width: 60%;  
     }
-    .back-arrow{
-        position: absolute;
-        left: 10px;
-    } 
+    
 }
 .logo-container{
     box-shadow: 0px 1px 3px  rgb(74, 78, 79);
