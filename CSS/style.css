@@ -4,7 +4,6 @@ body, html{
     overflow-x: hidden !important; /* Prevent horizontal scrolling */
    background-color: #000000;
 }
-
   /* ========================
    Header and footer Section
    ======================== */
@@ -13,7 +12,6 @@ body, html{
     background-color: #016444;
     color: rgb(255, 255, 255); 
 }
-
 .btn-dark:hover{
     background-color: #016444;
 }
@@ -24,7 +22,6 @@ body, html{
     padding-bottom: 50px;    
 }
 header{
-  
     align-items: center;
     height: 120px;
     box-sizing: border-box; /* Ensure padding is included in the total width */
@@ -76,7 +73,6 @@ header nav a:hover, footer nav a:hover {
     color: #ffffff !important;
      font-size: 0.9rem; 
    }
-
    @media (max-width: 768px) {
     footer{
         height: 350px;
@@ -97,7 +93,6 @@ header nav a:hover, footer nav a:hover {
         overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     }
-
 /* Custom animation class */
 
    /* ========================
@@ -121,7 +116,6 @@ header nav a:hover, footer nav a:hover {
     margin: 10px;
     margin-top: 10px;   
 }
-
 .logo{
     height: 70px;
     margin: 0;
@@ -188,6 +182,11 @@ header nav a:hover, footer nav a:hover {
 /* ========================
    Testimonials Section
    ======================== */
+   .certification, .testimoniala, .projecting, .platforming, .skilling {
+    background: linear-gradient(to bottom, #0a0a0a, #1a1a1a); /* or any style you pick */
+    padding: 50px 20px;
+    border-radius: 12px; /* optional, for rounded edges */
+}
 
 .custom-certificate img{
     height: 250px;
@@ -196,7 +195,6 @@ header nav a:hover, footer nav a:hover {
 /* ========================
    Contact Section
    ======================== */
-
 .d-flex {
     display: flex;
     flex-direction: row;
