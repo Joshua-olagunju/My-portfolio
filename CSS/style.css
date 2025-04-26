@@ -182,7 +182,7 @@ header nav a:hover, footer nav a:hover {
 /* ========================
    Testimonials Section
    ======================== */
-.certification, .testimoniala, .projecting, .platforming, .skilling {
+.certification, .testimoniala, .projecting{
     padding: 50px 20px;
     border-radius: 12px;
     border: 2px solid #007651; /* Green border */
