@@ -2,7 +2,7 @@ body, html{
     margin: 0;
     padding: 0;
     overflow-x: hidden !important; /* Prevent horizontal scrolling */
-    background: linear-gradient(135deg, #fde1a5, #a4c1ff );
+   background-color: #aeaeae;
 }
 
   /* ========================
@@ -10,8 +10,8 @@ body, html{
    ======================== */
 .custom-btn1{
     transition: background-color 0.4s ease-in-out;  
-    background-color: #ffffff;
-    color: rgb(0, 0, 0); 
+    background-color: #007651;
+    color: rgb(255, 255, 255); 
 }
 
 .maincontainer, .maincontainer1, .maincontainer2{
@@ -43,6 +43,9 @@ header nav a {
     color: #ffffff !important;
     display: inline-block; /* makes transform work better */
     transform-origin: center;
+}
+header nav a:hover, footer nav a:hover{
+    color:#007651 !important;
 }
 footer nav {
     gap: 50px;
@@ -112,6 +115,7 @@ header nav a:hover, footer nav a:hover {
     margin: 10px;
     margin-top: 10px;   
 }
+
 .logo{
     height: 70px;
     margin: 0;
@@ -162,7 +166,7 @@ header nav a:hover, footer nav a:hover {
    ======================== */
 .techstack-item {
     display: inline-block;
-    background-color: #000000;
+    background-color: #007651;
 }
 @media (max-width: 768px) {
     .techlist{
