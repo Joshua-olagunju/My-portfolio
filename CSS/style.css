@@ -1,7 +1,7 @@
 body, html{ 
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden !important; /* Prevent horizontal scrolling */
     background: linear-gradient(135deg, #fde1a5, #a4c1ff );
 
  
@@ -105,6 +105,9 @@ header nav a:hover, footer nav a:hover{
         margin: 0;
         margin-bottom: 30px;
         margin-top: 30px;
+    }
+    body{
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     }
    /* ========================
