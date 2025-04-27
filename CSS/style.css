@@ -9,11 +9,11 @@ body, html{
    ======================== */
 .custom-btn1{
     transition: background-color 0.4s ease-in-out;  
-    background-color: #016444;
+    background-color: #004d33;
     color: rgb(255, 255, 255); 
 }
 .btn-dark:hover{
-    background-color: #016444;
+    background-color: #004d33;
 }
 .maincontainer, .maincontainer1, .maincontainer2{
     margin-top: 90px !important;
@@ -59,7 +59,7 @@ header nav a:hover, footer nav a:hover {
     text-decoration: overline;
 }  
 .navbar .navbar-brand {
-    font-weight: bold;
+    
     margin: 0 15px;
 }
 .social-icon {
@@ -182,12 +182,33 @@ header nav a:hover, footer nav a:hover {
 /* ========================
    Testimonials Section
    ======================== */
-.certification, .testimoniala, .projecting{
+   .certification, .testimoniala, .projecting {
     padding: 50px 20px;
-    border-radius: 12px;
+    border-radius: 15px; /* Slightly larger for a more modern, rounded look */
     border: 2px solid #007651; /* Green border */
-    
+    background-color: #1a1a1a; /* Dark background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
+
+.certification:hover, .testimoniala:hover, .projecting:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow for hover */
+}
+
+.certification:before, .testimoniala:before, .projecting:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: -1;
+    border-radius: 15px;
+}
+
 
 .custom-certificate img{
     height: 250px;
