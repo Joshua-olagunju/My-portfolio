@@ -1,4 +1,4 @@
-// Define an array of messages
+// Hero sections
 const messages = [
     "JOSHUA OLAGUNJU",
     "A Passionate Front-End Developer",
@@ -14,8 +14,8 @@ const messages = [
   setInterval(() => {
     // Change the message
     document.getElementById("welcome").textContent = messages[index];
-  
+
     // Update the index to the next message (looping back to 0 when at the end)
     index = (index + 1) % messages.length; // This makes the index loop
-  }, 2000); // 2000ms = 2 seconds
+  }, 3000); // 3000ms = 3 seconds
   
