@@ -1,6 +1,6 @@
 // Hero sections
 const messages = [
-  "JOSHUA OLAGUNJU",
+  "JOSHUA OLAGUNJU SOJI",
   "A Passionate Front-End Developer",
   "A Creative UI/UX Designer"
 ];
