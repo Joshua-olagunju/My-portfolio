@@ -222,7 +222,7 @@ header nav a:hover, footer nav a:hover {
 /* ========================
    Testimonials Section
    ======================== */
-   .certification, .testimoniala, {
+   .certification{
     padding: 50px 20px;
     border-radius: 15px; /* Slightly larger for a more modern, rounded look */
     border: 2px solid #FF8C42;; /* Green border */
