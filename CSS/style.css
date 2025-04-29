@@ -2,18 +2,18 @@ body, html{
     margin: 0;
     padding: 0;
     overflow-x: hidden !important; /* Prevent horizontal scrolling */
-   background-color: #000000;
+   background-color: #1E293B;
 }
   /* ========================
    Header and footer Section
    ======================== */
 .custom-btn1{
     transition: background-color 0.4s ease-in-out;  
-    background-color: #FF8C42;
+    background-color: #3b82f6;
     color: rgb(255, 255, 255); 
 }
 .btn-dark:hover{
-    background-color: #FF8C42;
+    background-color: #3b82f6;
 }
 .maincontainer, .maincontainer1, .maincontainer2{
     margin-top: 90px !important;
@@ -27,7 +27,7 @@ header {
     justify-content: center;
     height: 120px;
     box-sizing: border-box;
-    background-color: #000000;         
+    background-color: #1E293B;         
 }
 
 footer {
@@ -54,7 +54,7 @@ header nav a {
     transform-origin: center;
 }
 header nav a:hover, footer nav a:hover{
-    color:#FF8C42 !important;
+    color:#3b82f6 !important;
     text-decoration: overline;
 }
 footer nav {
@@ -139,7 +139,7 @@ footer nav {
   }
 .logo-container figcaption {
     color: #ffffff;
-    background-color: #FF8C42;
+    background-color: #3b82f6;
 } 
 .maincontainer1.show {
     opacity: 1;
@@ -163,7 +163,7 @@ footer nav {
 }
 .logo-container2 figcaption {
     color: #ffffff;
-    background-color: #FF8C42;
+    background-color: #3b82f6;
 } 
 @media screen and (max-width: 768px) {
     .logo-container, .logo-container2{
@@ -230,15 +230,10 @@ footer nav {
    .certification,.projecting {
     padding: 50px 20px;
     border-radius: 15px; /* Slightly larger for a more modern, rounded look */
-    border: 2px solid #FF8C42;; /* Green border */
+    border: 2px solid #3b82f6;; /* Green border */
     background-color: #1a1a1a; /* Dark background for contrast */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.certification:hover, .testimoniala:hover, .projecting:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow for hover */
 }
 
 .certification:before, .testimoniala:before, .projecting:before {
