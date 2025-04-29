@@ -127,8 +127,10 @@ header nav a:hover, footer nav a:hover {
 }
 
 .logo-container.active, .logo-container2.active{
-    box-shadow: 0 0 5px 2px #ffffff;
-    transform: scale(1.1);
+    box-shadow: 0 0 3px 1px #ffffff;
+    transform: perspective(500px) rotateY(20deg) scale(1.1);
+
+
   }
 .logo-container figcaption {
     color: #ffffff;
