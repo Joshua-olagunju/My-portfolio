@@ -17,5 +17,5 @@ const messages = [
 
     // Update the index to the next message (looping back to 0 when at the end)
     index = (index + 1) % messages.length; // This makes the index loop
-  }, 3000); // 3000ms = 3 seconds
+  }, 2000); // 2000ms = 2 seconds
   
