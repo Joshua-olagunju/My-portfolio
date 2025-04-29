@@ -49,4 +49,4 @@ setInterval(() => {
 
   // Move to the next logo
   currentIndex2 = (currentIndex2 + 1) % logos2.length; // Use currentIndex2 to avoid mixing variables
-}, 2000); // Change logo every 2 seconds (adjust this if needed)
+}, 1000); // Change logo every 2 seconds (adjust this if needed)
