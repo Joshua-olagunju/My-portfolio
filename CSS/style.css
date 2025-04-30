@@ -323,9 +323,9 @@ footer nav {
     .menu {
         display: none;
         position: absolute;
-        top: 95px;
-        right: -8px;
-        background:  rgb(0, 0, 0); 
+        top: 85px;
+        right: 18px;
+        background:  #222831; 
         padding: 10px;
         border-radius: 5px;
         z-index: 999; /* Ensure the menu is on top */       
@@ -353,7 +353,7 @@ footer nav {
         position: absolute;
         top: 32px;
         right: 20px;
-        color: rgb(255, 255, 255); 
+        color: #FFD369; 
     }
     .menu-checkbox:checked ~ .menu {
         display: block;
