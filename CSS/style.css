@@ -9,11 +9,11 @@ body, html{
    ======================== */
 .custom-btn1{
     transition: background-color 0.4s ease-in-out;  
-    background-color: #000000;
+    background-color: #3b82f6;
     color: rgb(255, 255, 255); 
 }
 .btn-dark:hover{
-    background-color: #000000;
+    background-color: #3b82f6;
 }
 .maincontainer, .maincontainer1, .maincontainer2{
     margin-top: 90px !important;
@@ -27,7 +27,7 @@ header {
     justify-content: center;
     height: 120px;
     box-sizing: border-box;
-    background-color: #000000;         
+    background-color: #1E293B;         
 }
 
 footer {
@@ -181,7 +181,7 @@ footer nav {
    ======================== */
 .techstack-item {
     display: inline-block;
-    background-color: #424242;
+    background-color: #ffffff;
 }
 .project-slider {
     overflow: hidden;
