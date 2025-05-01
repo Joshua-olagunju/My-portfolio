@@ -85,7 +85,7 @@ footer nav a{
    }
    @media (max-width: 768px) {
     footer{
-        height: 420px;
+        height: 570px;
     }
     header nav{
         display: none;
