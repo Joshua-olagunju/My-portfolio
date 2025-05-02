@@ -21,7 +21,6 @@ body, html {
     margin-bottom: 90px !important;
     padding-top: 50px;
     padding-bottom: 50px;    
-   
 }
 header {
     display: flex;
@@ -42,6 +41,8 @@ footer {
     justify-content: center;
     margin-top: auto;
     background-color: #222831;
+      background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+   
 }
 h1, h2, h3, h4, h5 ,h6 ,p{
     color: rgb(255, 255, 255);
@@ -68,10 +69,8 @@ footer nav {
 }
 footer nav a{
     text-decoration: none;
-    color: #ffffff;
 }
-.navbar .navbar-brand {
-    
+.navbar .navbar-brand {  
     margin: 0 15px;
 }
 .social-icon {
@@ -106,7 +105,8 @@ footer nav a{
     height: auto;
     width: 20%;
     order: 2;  
-} 
+}
+
 
 @media screen and (max-width: 768px){
     .custom-img-one{
