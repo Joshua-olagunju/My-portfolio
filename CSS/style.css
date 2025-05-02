@@ -2,7 +2,8 @@ body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden !important;
-    background: linear-gradient(135deg, #1E293B, #393E46); /* Darker blue to mid-blue */
+   
+    background-color: #1E293B;
 }
 
   /* ========================
