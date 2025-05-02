@@ -16,6 +16,7 @@ body, html {
 }
 .btn-dark:hover{
     background-color: #FFD369;
+    color: #000000;
 }
 .maincontainer, .maincontainer1, .maincontainer2{
     margin-top: 90px !important;
@@ -29,7 +30,7 @@ header {
     justify-content: center;
     height: 120px;
     box-sizing: border-box;
-    background-color: #222831;         
+    background-color: #1d1d1d;         
 }
 
 footer {
@@ -41,8 +42,8 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: auto;
-    background-color: #222831;
-      background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+    background-color: #1d1d1d;
+     
    
 }
 h1, h2, h3, h4, h5 ,h6 ,p{
