@@ -9,15 +9,7 @@ body, html {
   /* ========================
    Header and footer Section
    ======================== */
-.custom-btn1{
-    transition: background-color 0.4s ease-in-out;  
-    background-color: #FFD369;
-    color: rgb(0, 0, 0); 
-}
-.btn-dark:hover{
-    background-color: #FFD369;
-    color: #000000;
-}
+
 .maincontainer, .maincontainer1, .maincontainer2{
     margin-top: 90px !important;
     margin-bottom: 90px !important;
@@ -58,9 +50,10 @@ header nav a {
     color: #ffffff !important;
     display: inline-block; /* makes transform work better */
     transform-origin: center;
+    font-weight: bold;
 }
 header nav a:hover, footer nav a:hover{
-    color:#FFD369 !important;
+    color:#ffc107 !important;
     text-decoration: overline;
 }
 footer nav {
@@ -71,6 +64,7 @@ footer nav {
 }
 footer nav a{
     text-decoration: none;
+    font-weight: bold;
 }
 .navbar .navbar-brand {  
     margin: 0 15px;
@@ -85,6 +79,7 @@ footer nav a{
 .footer-copy {
     color: #ffffff !important;
      font-size: 0.9rem; 
+     font-weight: bold;
    }
    @media (max-width: 768px) {
     footer{
@@ -93,13 +88,11 @@ footer nav a{
     header nav{
         display: none;
     }
-   
     body{
         overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     }
 /* Custom animation class */
-
    /* ========================
    Hero Section
    ======================== */
@@ -108,8 +101,6 @@ footer nav a{
     width: 20%;
     order: 2;  
 }
-
-
 @media screen and (max-width: 768px){
     .custom-img-one{
         width: 60%;  
@@ -132,16 +123,13 @@ footer nav a{
     border-radius: 5px;  
      
 }
-
 .logo-container.active, .logo-container2.active{
     box-shadow: 0 0 3px 1px #ffffff;
     transform: perspective(500px) rotateY(20deg) scale(1.1);
-
-
   }
 .logo-container figcaption {
     color: #000000;
-    background-color: #FFD369;
+    background-color: #ffc107
 } 
 .maincontainer1.show {
     opacity: 1;
@@ -165,7 +153,7 @@ footer nav a{
 }
 .logo-container2 figcaption {
     color: #000000;
-    background-color: #FFD369;
+    background-color: #ffc107
 } 
 @media screen and (max-width: 768px) {
     .logo-container, .logo-container2{
@@ -183,7 +171,7 @@ footer nav a{
    ======================== */
 .techstack-item {
     display: inline-block;
-    background-color: #FFD369;
+    background-color: #ffc107
 }
 .project-slider {
     overflow: hidden;
@@ -193,28 +181,24 @@ footer nav a{
     margin: auto;
     padding: 20px 0;
   }
-  
   .slide-track {
     display: flex;
     width: calc(250px * 8); /* Width = slide width * number of slides */
     animation: scroll 20s linear infinite;
   }
-  
   .slide {
     width: 250px;
     height: 160px;
-    margin: 0 10px;
-    border-radius: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
     object-fit: cover;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
   }
-  
   /* Animation */
   @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
-  
 @media (max-width: 768px) {
     .techlist{
         font-size: 11px; 
@@ -354,7 +338,7 @@ footer nav a{
         position: absolute;
         top: 32px;
         right: 20px;
-        color: #FFD369; 
+        color: #ffc107 
     }
     .menu-checkbox:checked ~ .menu {
         display: block;
