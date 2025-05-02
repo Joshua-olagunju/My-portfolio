@@ -115,6 +115,16 @@ footer nav a{
     margin-top: 10px;   
     transition: all 0.5s ease;
 }
+.logo-container-project{
+    background: linear-gradient(145deg, #1f2a3a, #263446); /* Smooth dark background blend */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 8px rgba(255, 255, 255, 0.02);
+    padding-bottom: 5px;
+    border-radius: 5px;
+    width: 90px;
+    margin: 0;
+    margin-top: 0px;   
+    transition: all 0.5s ease;
+}
 .logo{
     height: 70px;
     margin: 0;
@@ -127,7 +137,7 @@ footer nav a{
     box-shadow: 0 0 3px 1px #ffffff;
     transform: perspective(500px) rotateY(20deg) scale(1.1);
   }
-.logo-container figcaption {
+.logo-container figcaption,.logo-container-project figcaption {
     color: #000000;
     background-color: #ffc107
 } 
