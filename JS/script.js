@@ -49,3 +49,24 @@ setInterval(() => {
   // Move to the next logo
   currentIndex2 = (currentIndex2 + 1) % logos2.length; // Use currentIndex2 to avoid mixing variables
 }, 1000); // Change logo every 1 seconds (adjust this if needed)
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTopButton = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+          backToTopButton.classList.add('show');
+      } else {
+          backToTopButton.classList.remove('show');
+      }
+  });
+
+  backToTopButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+  });
+});

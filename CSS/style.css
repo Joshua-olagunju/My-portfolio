@@ -274,6 +274,7 @@ footer nav a{
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
+
 #backToTop.show {
     opacity: 1;
     visibility: visible;
