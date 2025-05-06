@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden !important;
-    background-color: #1c0024;
+    background-color: #1E293B;
 }
 
   /* ========================
@@ -21,7 +21,7 @@ header {
     justify-content: center;
     height: 120px;
     box-sizing: border-box;
-    background-color: #110016;         
+    background-color: #1d1d1d;         
 }
 
 footer {
@@ -33,7 +33,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: auto;
-    background-color: #110016; 
+    background-color: #1d1d1d;
      
    
 }
@@ -264,7 +264,7 @@ footer nav a{
     height: auto;         /* Keep the aspect ratio */
     margin-bottom: 10px;
     padding: 0;
-    margin-right: 20px;  
+    margin-right: 20px;   
 }
 #backToTop {
     position: fixed;
@@ -286,7 +286,6 @@ footer nav a{
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
     transform: translateY(100px);
-    
 }
 .backtotop a {
     display: block;
@@ -297,7 +296,6 @@ footer nav a{
     text-align: center;
     margin-right: 30px;
     margin-bottom: 30px;
-   
 }
 .backtotop.show {
     opacity: 1;
