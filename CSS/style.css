@@ -68,13 +68,6 @@ footer nav a{
 .navbar .navbar-brand {  
     margin: 0 15px;
 }
-.social-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px; /* Adjust the size of the icon */
-    height: 50px;
-}
 .footer-copy {
     color: #ffffff !important;
      font-size: 0.9rem; 
