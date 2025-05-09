@@ -78,12 +78,7 @@ footer nav a{
      font-size: 0.9rem; 
      font-weight: ;
    }
-.social-icon {
-    display: inline-block;
-    font-size: 3rem;
-    text-align: center;
-   
-}
+
 
    @media (max-width: 768px) {
     footer{
