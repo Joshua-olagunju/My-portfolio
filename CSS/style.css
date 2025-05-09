@@ -54,6 +54,7 @@ header nav a {
     color: #ffffff !important;
     display: inline-block; /* makes transform work better */
     transform-origin: center;
+    font-weight: bold;
     
 }
 header nav a:hover, footer nav a:hover{
@@ -68,6 +69,7 @@ footer nav {
 }
 footer nav a{
     text-decoration: none;
+     font-weight: bold;
     
 }
 .navbar .navbar-brand {  
@@ -95,10 +97,12 @@ footer nav a{
    /* ========================
    Hero Section
    ======================== */
+   
   .custom-img-one{
     height: auto;
     width: 70%;
     order: 2;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 @media screen and (max-width: 768px){
     .custom-img-one{
