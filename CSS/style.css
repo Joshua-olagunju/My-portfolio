@@ -12,8 +12,8 @@ body, html {
 .maincontainer, .maincontainer1, .maincontainer2{
     margin-top: 90px !important;
     margin-bottom: 90px !important;
-    padding-top: 50px;
-    padding-bottom: 50px;    
+    padding-top: 30px;
+    padding-bottom: 30px;    
 }
 header {
     display: flex;
@@ -21,7 +21,7 @@ header {
     justify-content: center;
     height: 120px;
     box-sizing: border-box;
-    background-color: #1d1d1d;         
+           
 }
 
 footer {
