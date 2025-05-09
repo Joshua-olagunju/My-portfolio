@@ -20,7 +20,8 @@ header {
     align-items: center;
     justify-content: center;
     height: 120px;
-    box-sizing: border-box;        
+    box-sizing: border-box;  
+    background-color: ;      
 }
 header:hover {
     transform: translateY(5px); /* Move down */
