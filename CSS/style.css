@@ -20,8 +20,12 @@ header {
     align-items: center;
     justify-content: center;
     height: 120px;
-    box-sizing: border-box;
-           
+    box-sizing: border-box;        
+}
+header:hover {
+    transform: translateY(5px); /* Move down */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
 }
 
 footer {
@@ -315,7 +319,7 @@ footer nav a{
         position: absolute;
         top: 85px;
         right: 18px;
-        background:  #222831; 
+        background:  #2f2f2f; 
         padding: 10px;
         border-radius: 5px;
         z-index: 999; /* Ensure the menu is on top */       
