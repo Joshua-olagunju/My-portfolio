@@ -109,6 +109,20 @@ footer nav a{
         width: 60%;  
     }
 }
+.platform-description {
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+/* Remove margin for mobile (screens under 768px) */
+@media (max-width: 768px) {
+  .platform-description {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
 .logo-container{
     background: linear-gradient(145deg, #282828, #000000); /* Smooth dark background blend */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 8px rgba(255, 255, 255, 0.02);
