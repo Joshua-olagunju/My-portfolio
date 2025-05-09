@@ -152,6 +152,11 @@ footer nav a{
     border-radius: 5px;  
      
 }
+.logo-yellow {
+    filter: brightness(0) saturate(100%) invert(84%) sepia(90%) saturate(330%) hue-rotate(360deg) brightness(65%) contrast(110%);
+}
+
+
 .logo-container.active, .logo-container2.active{
     box-shadow: 0 0 3px 1px #ffffff;
     transform: perspective(500px) rotateY(20deg) scale(1.1);
