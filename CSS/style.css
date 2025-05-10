@@ -27,12 +27,22 @@ header:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
     transition: transform 0.3s ease-in-out; /* Smooth animation */
 }
-.btn:hover {
-  transform: scale(1.05);
-  transition: all 0.6s ease-in-out;
+.btn1{
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+}
 
- 
- 
+.btn:hover, .btn1:hover, .btn2:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+}
+.btn2{
+    color: #ffffff;
+    background-color: #2f2f2f;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 
