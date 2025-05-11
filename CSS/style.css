@@ -413,7 +413,7 @@ footer nav a{
         letter-spacing: 1px;
         padding: 10px 0;
         text-transform: uppercase; /* Letter design effect */
-        font-weight: bold;
+        
         border-bottom: 2px solid transparent;
         transition: all 0.3s ease;
     }
