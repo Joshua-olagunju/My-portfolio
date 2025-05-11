@@ -30,7 +30,7 @@ header:hover {
 .btn1{
     color: #000000;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 8px;
     text-decoration: none;
 }
 
@@ -41,7 +41,7 @@ header:hover {
 .btn2{
     color: #000000;
     background-color: #ffc107;
-    border-radius: 10px;
+    border-radius: 8px;
     text-decoration: none;
 }
 
@@ -345,45 +345,23 @@ footer nav a{
      /* ========================
    Drop down menu mobile Section
    ======================== */
+/* Desktop Navigation Styles */
 @media (min-width: 768px) {
     .menu-label, .menu-checkbox, .menu {
-        display: none;
+        display: none; /* Hide the mobile menu for larger screens */
     }
     .desktop-nav {
         display: block; /* Show desktop navigation */
     }
 }
+
 /* Mobile Navigation Styles */
 @media screen and (max-width: 767px) {
     .desktop-nav {
         display: none; /* Hide desktop nav on mobile */
     }
-    .menu {
-        display: none;
-        position: absolute;
-        top: 85px;
-        right: 18px;
-        background:  #2f2f2f; 
-        padding: 10px;
-        border-radius: 5px;
-        z-index: 999; /* Ensure the menu is on top */       
-    }
-    .menu ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .menu ul li {
-        margin: 10px 0;
-    }
-    .menu ul li a {
-        color: rgb(255, 255, 255) !important;
-        text-decoration: none;
-        display: block;
-    }
-    .menu-checkbox {
-        display: none;
-    }
+
+    /* Mobile menu button (Hamburger) */
     .menu-label {
         font-size: 35px;
         cursor: pointer;
@@ -391,9 +369,63 @@ footer nav a{
         position: absolute;
         top: 32px;
         right: 20px;
-        color: #ffc107 
+        color: #ffc107;
+        font-weight: bold;
     }
+
+    /* Hidden checkbox that controls the menu */
+    .menu-checkbox {
+        display: none;
+    }
+
+    /* Menu container (hidden by default) */
+    .menu {
+        display: none;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        background: #2f2f2f;
+        padding: 20px 10px;
+        
+        z-index: 999;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* List style inside the menu */
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* Menu item styling */
+    .menu ul li {
+        margin: 15px 0;
+    }
+
+    .menu ul li a {
+        color: #fff !important;
+        text-decoration: none;
+        display: block;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        padding: 10px 0;
+        text-transform: uppercase; /* Letter design effect */
+        font-weight: bold;
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s ease;
+    }
+
+    /* Hover effect for menu items */
+    .menu ul li a:hover {
+        color: #ffc107;
+        border-color: #ffc107;
+    }
+
+    /* When the checkbox is checked, show the menu */
     .menu-checkbox:checked ~ .menu {
         display: block;
-    }  
+    }
 }
