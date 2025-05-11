@@ -14,35 +14,30 @@
     
     </head>
     <body>
-        <header class="d-flex align-items-center justify-content-between px-3 py-3 bg-black text-white w-100">
-  <!-- Mobile Menu Toggle -->
-  <input type="checkbox" id="menu-toggle" class="menu-checkbox d-md-none">
-  <label for="menu-toggle" class="menu-label d-md-none">☰</label>
+         <header class="d-flex justify-content-between px-3 py-3">
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="menu-label">☰</label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="certificate.html">Certificates</a></li>
+                    <li><a href="index.html#contact" class="text-warning text-decoration-none ">Lets Talk</a></li>
+                </ul>
+            </nav>
+            
+            <div style="font-size: x-large; color: #ffc107;" class="ms-md-5 fw-semibold">
+  Joshua O.
+  <div style="font-size: 0.9rem; color: #bbb;">Front-End Developer & UI/UX Designer</div>
+</div>
 
-  <!-- Logo and Role -->
-  <div style="font-size: x-large; color: #ffc107;" class="fw-semibold">
-    JOSHUA . O
-    <div style="font-size: 0.9rem; color: #bbb;">Front-End Developer & UI/UX Designer</div>
-  </div>
-
-  <!-- Desktop Navigation -->
-  <nav class="d-none d-md-flex align-items-center gap-4 me-4">
-    <a href="#skills" class="text-warning text-decoration-none">Skills</a>
-    <a href="projects.html" class="text-warning text-decoration-none">Projects</a>
-    <a href="certificate.html" class="text-warning text-decoration-none">Certificates</a>
-   
-  </nav>
-
-  <!-- Mobile Navigation -->
-  <nav class="menu d-md-none">
-    <ul class="list-unstyled text-center m-0">
-      <li><a href="#skills" class="text-warning text-decoration-none d-block py-2">Skills</a></li>
-      <li><a href="projects.html" class="text-warning text-decoration-none d-block py-2">Projects</a></li>
-      <li><a href="certificate.html" class="text-warning text-decoration-none d-block py-2">Certificates</a></li>
-      <li><a href="#contact" class="text-warning text-decoration-none d-block py-2">Let's Talk</a></li>
-    </ul>
-  </nav>
-</header>
+            <nav class="navbar gap-4 me-3">             
+                <a href="#skills" class="text-warning text-decoration-none ">Skills</a>
+                <a href="projects.html" class="text-warning text-decoration-none ">Projects</a>
+                <a href="certificate.html" class="text-warning text-decoration-none ">Certificates</a>
+              
+            </nav>
+        </header>
 
         
      <section id="hero" class="container my-5 maincontainer" data-aos="fade-left">
