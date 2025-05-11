@@ -234,11 +234,11 @@ footer nav a{
   .slide-track {
     display: flex;
     width: calc(250px * 8); /* Width = slide width * number of slides */
-    animation: scroll 20s linear infinite;
+    animation: scroll 10s linear infinite;
   }
   .slide {
-    width: 250px;
-    height: 160px;
+    width: 200px;
+    height: 100px;
     margin: 0 5px;
     border-radius: 5px;
     object-fit: cover;
