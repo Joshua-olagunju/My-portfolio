@@ -17,11 +17,13 @@ body, html {
 }
 header {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    box-sizing: border-box;  
-    background-color: black   
+    align-items: center;            /* Vertically center the content */
+    justify-content: space-between;  /* Space out the items in the header */
+    height: 120px;                  /* Define the height of the header */
+    padding: 0 20px;                /* Add padding for better spacing */
+    box-sizing: border-box;         /* Ensure padding doesn't affect width/height */
+    background-color: #111;         /* Slightly lighter black for better contrast */
+    color: #ffc107;                 /* Text color for contrast against black background */
 }
 header:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
