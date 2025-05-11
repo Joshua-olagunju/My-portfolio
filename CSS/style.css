@@ -22,7 +22,7 @@ header {
     height: 120px;                  /* Define the height of the header */
     padding: 0 20px;                /* Add padding for better spacing */
     box-sizing: border-box;         /* Ensure padding doesn't affect width/height */
-    background-color: #111;         /* Slightly lighter black for better contrast */
+   border-bottom: 1px solid #ffd865;        /* Slightly lighter black for better contrast */
     color: #ffc107;                 /* Text color for contrast against black background */
 }
 header:hover {
