@@ -86,9 +86,7 @@ footer nav {
     overflow: hidden;
 }
 footer nav a{
-    text-decoration: none;
-     font-weight: bold;
-    
+    text-decoration: none;    
 }
 .navbar .navbar-brand {  
     margin: 0 15px;
