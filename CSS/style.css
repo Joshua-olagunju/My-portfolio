@@ -20,21 +20,21 @@ body, html {
     margin-top: 190px !important;
 }
 header {
-    display: flex;                        /* Flexbox for easy alignment of content */
-    align-items: center;                  /* Vertically center the content */
-    justify-content: space-between;       /* Space out items (logo on the left, menu on the right) */
-    height: 120px;                        /* Height of the header */
-    padding: 0 20px;                      /* Horizontal padding to space out the content */
-    box-sizing: border-box;               /* Ensures padding is included in the height and width calculations */
-    border-bottom: 1px solid #ffd865;     /* A bottom border with a soft yellow color */
-    color: #ffc107;                       /* Text color */
-    position: fixed;                      /* Fix the header at the top of the page */
-    top: 0;                               /* Ensure it's aligned to the top of the page */
-    left: 0;                              /* Align it to the left edge */
-    right: 0;                             /* Ensure it's stretched across the page width */
-    z-index: 1000;                        /* High z-index to ensure it's always on top */
-    background-color: #1a1a1a;            /* Dark background for contrast with the text color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow to give depth */
+    display: flex; 
+    align-items: center;               
+    justify-content: space-between;       
+    height: 120px;                     
+    padding: 0 20px;                 
+    box-sizing: border-box;             
+    border-bottom: 1px solid #ffd865;    
+    color: #ffc107;                       
+    position: fixed;                 
+    top: 0;                             
+    left: 0;                           
+    right: 0;                           
+    z-index: 1000;                     
+    background-color: #000000;        
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 
