@@ -499,8 +499,8 @@ footer nav a{
 
     /* Hover effect for menu items */
     .menu ul li a:hover {
-      color: rgb(255, 35, 35);
-        border-color:rgb(255, 35, 35);
+      color: #00bfa6;
+        border-color:#00bfa6;
     }
 
     /* When the checkbox is checked, show the menu */
