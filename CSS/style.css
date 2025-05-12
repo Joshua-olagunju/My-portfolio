@@ -110,7 +110,7 @@ header:hover {
 .social-icon img {
   width: 45px;
   height: 45px;
-  background-color: #ffffff;
+
   padding: 5px;
   border-radius: 50%;
   transition: transform 0.3s ease-in-out;
@@ -149,7 +149,7 @@ header nav a {
 }
 
 header nav a:hover, footer nav a:hover{
-    color: aqua !important;
+    color: rgb(255, 35, 35) !important;
     text-decoration: overline !important;
 }
 footer nav {
@@ -496,8 +496,8 @@ footer nav a{
 
     /* Hover effect for menu items */
     .menu ul li a:hover {
-        color: #ffc107;
-        border-color: #ffc107;
+      color: rgb(255, 35, 35);
+        border-color:rgb(255, 35, 35);
     }
 
     /* When the checkbox is checked, show the menu */
