@@ -134,7 +134,7 @@ footer {
     border-top: 1px solid #ffd865;
 }
 h1, h2, h3, h4, h5 ,h6 ,p{
-    color: #bbb;
+    color: #e9e9e9;
 }
 header nav {
     display: flex;
@@ -189,21 +189,28 @@ footer nav a{
    Hero Section
    ======================== */
    
-  .custom-img-one{
-    height: auto;
-    width: 70%;
-    order: 2;  
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+ .feature-box {
+  background-color: transparent;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.feature-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
+}
+
+#about-text span {
+  color: #ffffff !important;
+}
+
 @media screen and (max-width: 768px){
     .custom-img-one{
         width: 60%;  
     }
 }
-.platform-description {
-  margin-right: 150px;
-  margin-left: 150px;
-}
+
 
 /* Remove margin for mobile (screens under 768px) */
 @media (max-width: 768px) {
@@ -222,16 +229,36 @@ footer nav a{
 }
 }
 
-.logo-container{
-    background: linear-gradient(145deg, #282828, #000000); /* Smooth dark background blend */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 8px rgba(255, 255, 255, 0.02);
-    padding-bottom: 10px;
-    border-radius: 5px;
-    width: 120px;
-    margin: 20px;
-    margin-top: 10px;   
-    transition: all 0.5s ease;
+.logo-container, .logo-container2 {
+  background: linear-gradient(145deg, #282828, #000000); /* smooth dark blend */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 8px rgba(255, 255, 255, 0.02);
+  padding-bottom: 5px;
+  border-radius: 5px;
+  width: 120px;
+  margin: 20px 10px;
+  transition: all 0.5s ease;
+  text-align: center;
 }
+
+.logo-container:hover, .logo-container2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.2);
+}
+
+.logo, .logo2 {
+  height: 60px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+ 
+}
+
+.logo-container figcaption, .logo-container2 figcaption {
+  color: #000000;
+  background-color: #ffffff;
+  
+}
+
 .logo-container-project{
     background: linear-gradient(145deg, #282828, #000000); /* Smooth dark background blend */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 8px rgba(255, 255, 255, 0.02);
@@ -242,14 +269,7 @@ footer nav a{
     margin-top: 0px;   
     transition: all 0.5s ease;
 }
-.logo{
-    height: 60px;
-    margin: 0;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;  
-     
-}
+
 .logo-yellow {
     filter: brightness(0) saturate(100%) invert(84%) sepia(90%) saturate(330%) hue-rotate(360deg) brightness(65%) contrast(110%);
 }
@@ -259,7 +279,7 @@ footer nav a{
     box-shadow: 0 0 3px 1px #ffffff;
     transform: perspective(500px) rotateY(20deg) scale(1.1);
   }
-.logo-container figcaption,.logo-container-project figcaption {
+.logo-container-project figcaption {
     color: #000000;
     background-color: #ffc107
 } 
@@ -267,27 +287,7 @@ footer nav a{
     opacity: 1;
     transform: translateX(0);
 }
-.logo-container2{
-    background: linear-gradient(145deg, #282828, #000000); /* Smooth dark background blend */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 8px rgba(255, 255, 255, 0.02);
-    padding-bottom: 10px;
-    border-radius: 5px;
-    width: 120px;
-    margin: 20px;
-    margin-top: 10px;   
-    transition: all 0.5s ease;
-}
-.logo2{
-    height: 60px;
-    margin: 0;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;   
-}
-.logo-container2 figcaption {
-    color: #000000;
-    background-color: #ffc107
-} 
+
 @media screen and (max-width: 768px) {
     .logo-container, .logo-container2{
         margin-top: 10px;
