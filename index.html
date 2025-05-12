@@ -40,50 +40,53 @@
 
 
         
-     <section id="hero" class="container heroo my-5 maincontainer" data-aos="fade-left">
+    <section id="hero" class="container heroo my-5 maincontainer" data-aos="fade-left">
   <div class="row align-items-center">
     
     <!-- Image Column - comes first on mobile -->
     <div class="col-md-5 text-center mb-5 mt-md-0 order-1 order-md-2">
-      <img src="Images/Profile.jpg" class="img-fluid rounded-circle shadow-lg" id="about-image" alt="Profile Picture" 
-           style="max-width: 280px; border: 4px solid #ffffff;">
+      <img src="Images/Profile.jpg" class="img-fluid rounded-circle " id="about-image" alt="Profile Picture" 
+           style="max-width: 380px; border: 4px solid #ffffff;">
     </div>
 
     <!-- Text Column - comes second on mobile -->
     <div class="col-md-7 text-center text-md-start d-flex flex-column align-items-center align-items-md-start order-2 order-md-1">
-      <p class=" mb-1 text-light">Hello, I’m</p>
-      <p class="fs-3 fw-semibold  text-warning mb-1" id="welcome"></p>
-      <p class=" text-white mb-3">
+      <p class="mb-1 text-light">Hello, I’m <span role="img" aria-label="wave">👋</span></p>
+      <p class="fs-3 fw-semibold text-warning mb-1" id="welcome">Joshua O. <span role="img" aria-label="coder">💻</span></p>
+      <p class="text-white mb-3">
         "Passionate Front-End Developer crafting clean, interactive, and responsive websites with
-           a focus on great UI/UX."
+           a focus on great UI/UX. <span role="img" aria-label="sparkles">✨</span>"
       </p>
 
-     <div class="d-flex flex-wrap gap-2 mt-2">
-    <button class="btn2 btn-outline-warning  px-4 py-2">
-        <i class="bi bi-collection"></i> Projects
-    </button>
-    <button class="btn1 text-dark  px-4 py-2">
-        <i class="bi bi-file-earmark-pdf"></i> Resume
-    </button>
-    <button class="btn2 btn-outline-warning  px-4 py-2">
-        <i class="bi bi-briefcase"></i> Hire Me
-    </button>
-</div>
+      <!-- Action Buttons (using <button>) -->
+      <div class="d-flex flex-wrap gap-2 mt-2 justify-content-center">
+        <button class="btn2 btn-outline-warning px-4 py-2" onclick="window.location.href='projects.html'">
+          <i class="bi bi-collection"></i> Projects 
+        </button>
+        <button class="btn1 text-dark px-4 py-2" onclick="window.open('https://drive.google.com/file/d/1MVO7jpCrmMEcRGx_KLPr4ZGpEB6bav0k/view?usp=sharing', '_blank')">
+          <i class="bi bi-file-earmark-pdf"></i> Resume 
+        </button>
+        <button class="btn2 btn-outline-warning px-4 py-2" onclick="window.location.href='mailto:olagunjujoshua11@gmail.com'">
+          <i class="bi bi-briefcase"></i> Hire Me
+        </button>
+      </div>
 
-
-     <div class="d-flex gap-3 mt-4 justify-content-center">
-    <a href="https://github.com/Joshua-olagunju" target="_blank">
-        <img src="Images/github.svg" alt="GitHub" class="social-icon">
-    </a>
-    <a href="https://www.linkedin.com/in/joshuaolagunju/" target="_blank">
-        <img src="Images/linkedin-svgrepo-com(3).svg" alt="LinkedIn" class="social-icon">
-    </a>
+      <!-- Social Media Links -->
+    <div class="d-flex gap-3 mt-4 justify-content-center">
+  <a href="https://github.com/Joshua-olagunju" target="_blank" class="social-icon">
+    <img src="Images/github.svg" alt="GitHub" class="img-fluid rounded-circle shadow-lg">
+  </a>
+  <a href="https://www.linkedin.com/in/joshuaolagunju/" target="_blank" class="social-icon">
+    <img src="Images/linkedin-svgrepo-com(3).svg" alt="LinkedIn" class="img-fluid rounded-circle shadow-lg">
+  </a>
 </div>
 
     </div>
 
   </div>
 </section>
+
+
 
 
 
@@ -270,10 +273,12 @@
                   </blockquote>
 
                     <!-- Hire Me Button -->
-                    <div class="mt-4 text-center text-md-start">
-                        <a href="mailto:olagunjujoshua11@gmail.com" class=" btn1 text-dark px-4 py-2">
-                          <i class="bi bi-briefcase"></i>  Hire Me</a>
-                    </div>
+                 <div class="mt-4 text-center text-md-start">
+  <button class="btn1 text-dark px-4 py-2" onclick="window.location.href='mailto:olagunjujoshua11@gmail.com'">
+    <i class="bi bi-briefcase"></i> Hire Me
+  </button>
+</div>
+
                     
                 </div>
           
@@ -304,11 +309,12 @@
       Explore the projects I've built to showcase my skills in front-end development and design.
     </p>
 
-    <div class="d-flex justify-content-center mt-4">
-      <a href="projects.html" class="btn1 btn-outline-warning px-4 py-2">
-        <i class="bi bi-collection"></i> View All Projects
-      </a>
-    </div>
+   <div class="d-flex justify-content-center mt-4">
+  <button class="btn1 btn-outline-warning px-4 py-2" onclick="window.location.href='projects.html'">
+    <i class="bi bi-collection"></i> View All Projects
+  </button>
+</div>
+
 
   </div>
 </div>
@@ -422,10 +428,10 @@
               <div class="col-md-5 d-flex flex-column align-items-center mb-4 mb-md-0" >
                 <img src="Images/Profile2.jpg" alt="Hire Me" class="img-fluid rounded-circle mb-3" style="max-width: 250px;  border: 4px solid #ffffff;">
                  
-                <a href="mailto:olagunjujoshua11@gmail.com" target="_blank" 
-                  class="btn1  px-4 py-2">
-                  <i class="bi bi-briefcase me-2"></i> Hire Me
-                </a>
+                <button class="btn1 px-4 py-2" onclick="window.location.href='mailto:olagunjujoshua11@gmail.com'">
+  <i class="bi bi-briefcase me-2"></i> Hire Me
+</button>
+
               </div>
           
               <!-- Center Text -->

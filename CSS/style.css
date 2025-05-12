@@ -57,27 +57,53 @@ header:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.btn1{
+.btn1 {
     color: #000000 !important;
     background-color: #bbb;
-    border-radius: 8px;
+    border: 2px solid #bbb;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer; /* Make sure it behaves like a button */
+    display: inline-flex; /* Make sure content aligns well */
+    align-items: center; /* Aligns the icon and text */
+    justify-content: center; /* Center the content */
 }
 
-.btn:hover, .btn1:hover, .btn2:hover, a:hover{
+.btn1:hover {
+    background-color: #ddd; /* Hover effect */
+    border-color: #888; /* Border change on hover */
+    transform: scale(1.05); /* Slight scale-up effect */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.btn2 i, .btn1 i {
+    margin-right: 8px; /* Space between the icon and the text */
+}
+a:hover{
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
 }
-.btn2{
+.btn2 {
     color: #000000;
     background-color: #ffc107;
-    border-radius: 8px;
-    text-decoration: none;
+    border: 2px solid #ffc107; /* Border matching the background color */
+    border-radius: 5px;
     font-weight: bold;
+    padding: 10px 20px; /* Adjust padding to control button size */
+    text-decoration: none;
+    cursor: pointer; /* Indicate the button is clickable */
+    display: inline-flex; /* Align icon and text */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
-
+.btn2:hover {
+    background-color: #e0a800; /* Slightly darker shade on hover */
+    border-color: #e0a800; /* Darker border on hover */
+    transform: scale(1.05); /* Scale up effect */
+}
 footer {
     width: 100%;
     height: 300px;
