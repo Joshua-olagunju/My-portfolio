@@ -140,7 +140,7 @@ header nav {
     overflow: hidden;
 }
 header nav a {
-    color: #ffffff !important;
+    color: #bbb !important;
     display: inline-block; /* makes transform work better */
     transform-origin: center;
     
