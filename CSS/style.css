@@ -23,7 +23,7 @@ header {
     display: flex; 
     align-items: center;               
     justify-content: space-between;       
-    height: 120px;                     
+    height: 150px;                     
     padding: 0 20px;                 
     box-sizing: border-box;             
     border-bottom: 1px solid #ffd865;    
@@ -42,6 +42,30 @@ header:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
     transition: transform 0.3s ease-in-out; /* Smooth animation */
 }
+/* Mobile styles - apply on screens 900px and below */
+@media screen and (max-width: 900px) {
+     .social-media-links {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    order: 3; /* Push below */
+  }
+}
+
+/* Desktop styles - screens above 900px */
+@media screen and (min-width: 901px) {
+    .social-media-links {
+        display: flex;
+        flex-direction: row;          /* Arrange icons horizontally */
+        justify-content: center;      /* Center them horizontally */
+        align-items: center;
+        gap: 15px;
+        margin-top: 0;
+    }
+}
+
+
 .btn1{
     color: #000000 !important;
     background-color: #bbb;
