@@ -384,6 +384,9 @@ footer nav a{
     margin-right: 20px;  
     filter: invert(1);    /* Invert the colors of the image */ 
 }
+.git{
+    filter: invert(1);
+}
 #backToTop {
     position: fixed;
     bottom: 20px;
