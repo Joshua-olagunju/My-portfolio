@@ -44,13 +44,15 @@ header:hover {
 }
 /* Mobile styles - apply on screens 900px and below */
 @media screen and (max-width: 900px) {
-     .social-media-links {
+   .social-media-links {
     width: 100%;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
     order: 3; /* Push below */
+      flex-direction: row; 
   }
+
 }
 
 /* Desktop styles - screens above 900px */
