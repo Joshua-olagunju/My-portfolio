@@ -110,7 +110,6 @@ header:hover {
 .social-icon img {
   width: 45px;
   height: 45px;
-
   padding: 5px;
   border-radius: 50%;
   transition: transform 0.3s ease-in-out;
@@ -219,8 +218,8 @@ footer nav a{
     text-align: center;
   }
 }
-#skills {
-    scroll-margin-top: 150px; /* Adjust this to match the height of your header */
+#skills, #about {
+    scroll-margin-top: 180px; /* Adjust this to match the height of your header */
 }
 @media (max-width: 768px) {
   #skills {
