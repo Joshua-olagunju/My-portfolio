@@ -58,9 +58,9 @@ header:hover {
 }
 
 .btn1 {
-    color: #000000 !important;
-    background-color: #bbb;
-    border: 2px solid #bbb;
+    color: #ffffff !important;
+    background-color: #000000;
+    border: 1px solid #bbb;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -71,8 +71,9 @@ header:hover {
 }
 
 .btn1:hover {
-    background-color: #ddd; /* Hover effect */
-    border-color: #888; /* Border change on hover */
+    color: #000000 !important;
+    background-color: #ffffff; /* Hover effect */
+    border-color: #000000; /* Border change on hover */
     transform: scale(1.05); /* Slight scale-up effect */
     transition: all 0.3s ease-in-out; /* Smooth transition */
 }
@@ -85,24 +86,24 @@ a:hover{
   transition: all 0.5s ease-in-out;
 }
 .btn2 {
-    color: #000000;
-    background-color: #ffc107;
-    border: 2px solid #ffc107; /* Border matching the background color */
+color: #ffffff !important;
+    background-color: #000000;
+    border: 1px solid #bbb;
     border-radius: 5px;
-    font-weight: bold;
-    padding: 10px 20px; /* Adjust padding to control button size */
     text-decoration: none;
-    cursor: pointer; /* Indicate the button is clickable */
-    display: inline-flex; /* Align icon and text */
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+    font-weight: bold;
+    cursor: pointer; /* Make sure it behaves like a button */
+    display: inline-flex; /* Make sure content aligns well */
+    align-items: center; /* Aligns the icon and text */
+    justify-content: center; /* Center the content */
 }
 
 .btn2:hover {
-    background-color: #e0a800; /* Slightly darker shade on hover */
-    border-color: #e0a800; /* Darker border on hover */
-    transform: scale(1.05); /* Scale up effect */
+    color: #000000 !important;
+    background-color: #ffffff; /* Hover effect */
+    border-color: #000000; /* Border change on hover */
+    transform: scale(1.05); /* Slight scale-up effect */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 footer {
     width: 100%;
