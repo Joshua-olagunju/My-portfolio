@@ -287,7 +287,8 @@ footer nav a{
    .certification,.projecting {
     padding: 50px 20px;
     border-radius: 5px; /* Slightly larger for a more modern, rounded look */
-    background-color: #1a1a1a; /* Dark background for contrast */
+    background-color: #131313; /* Dark background for contrast */
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
