@@ -42,35 +42,27 @@ header:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
     transition: transform 0.3s ease-in-out; /* Smooth animation */
 }
-/* Mobile styles - apply on screens 900px and below */
-@media screen and (max-width: 900px) {
-     .social-media-links {
-    width: 100%;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    order: 3; /* Push below */
-  }
+.social-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Desktop styles - screens above 900px */
-@media screen and (min-width: 901px) {
-    .social-media-links {
-        display: flex;
-        flex-direction: row;          /* Arrange icons horizontally */
-        justify-content: center;      /* Center them horizontally */
-        align-items: center;
-        gap: 15px;
-        margin-top: 0;
-    }
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-
 
 .btn1{
     color: #000000 !important;
     background-color: #bbb;
     border-radius: 8px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .btn:hover, .btn1:hover, .btn2:hover, a:hover{
@@ -82,6 +74,7 @@ header:hover {
     background-color: #ffc107;
     border-radius: 8px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 
@@ -112,6 +105,7 @@ header nav a {
     font-size: large;
     
 }
+
 header nav a:hover, footer nav a:hover{
     color:#ffc107 !important;
     text-decoration: overline !important;
