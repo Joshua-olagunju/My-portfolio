@@ -70,3 +70,19 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+
+
+// Get all the links in the mobile menu
+const menuLinks = document.querySelectorAll('.menu ul li a');
+
+// Loop through the links and add event listeners
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Get the checkbox that controls the mobile menu
+        const menuCheckbox = document.querySelector('.menu-checkbox');
+        
+        // Uncheck the checkbox to close the menu
+        menuCheckbox.checked = false;
+    });
+});

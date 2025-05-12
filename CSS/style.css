@@ -13,18 +13,31 @@ body, html {
     margin-top: 90px !important;
     margin-bottom: 90px !important;
     padding-top: 30px;
-    padding-bottom: 30px;    
+    padding-bottom: 30px; 
+    scroll-margin-top: 1120px; /* Adjust this to match the height of your header */
+}   
+.heroo{
+    margin-top: 190px !important;
 }
 header {
-    display: flex;
-    align-items: center;            /* Vertically center the content */
-    justify-content: space-between;  /* Space out the items in the header */
-    height: 120px;                  /* Define the height of the header */
-    padding: 0 20px;                /* Add padding for better spacing */
-    box-sizing: border-box;         /* Ensure padding doesn't affect width/height */
-   border-bottom: 1px solid #ffd865;        /* Slightly lighter black for better contrast */
-    color: #ffc107;                 /* Text color for contrast against black background */
+    display: flex;                        /* Flexbox for easy alignment of content */
+    align-items: center;                  /* Vertically center the content */
+    justify-content: space-between;       /* Space out items (logo on the left, menu on the right) */
+    height: 120px;                        /* Height of the header */
+    padding: 0 20px;                      /* Horizontal padding to space out the content */
+    box-sizing: border-box;               /* Ensures padding is included in the height and width calculations */
+    border-bottom: 1px solid #ffd865;     /* A bottom border with a soft yellow color */
+    color: #ffc107;                       /* Text color */
+    position: fixed;                      /* Fix the header at the top of the page */
+    top: 0;                               /* Ensure it's aligned to the top of the page */
+    left: 0;                              /* Align it to the left edge */
+    right: 0;                             /* Ensure it's stretched across the page width */
+    z-index: 1000;                        /* High z-index to ensure it's always on top */
+    background-color: #1a1a1a;            /* Dark background for contrast with the text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow to give depth */
 }
+
+
 header:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
     transition: transform 0.3s ease-in-out; /* Smooth animation */
@@ -137,6 +150,14 @@ footer nav a{
     margin-left: 0;
     text-align: center;
   }
+}
+#skills {
+    scroll-margin-top: 150px; /* Adjust this to match the height of your header */
+}
+@media (max-width: 768px) {
+  #skills {
+    scroll-margin-top: 250px; /* Adjust this to match the height of your header */
+}
 }
 
 .logo-container{
@@ -385,7 +406,6 @@ footer nav a{
         width: 100%;
         background: #2f2f2f;
         padding: 20px 10px;
-        
         z-index: 999;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
@@ -427,3 +447,4 @@ footer nav a{
         display: block;
     }
 }
+
