@@ -54,11 +54,11 @@ header:hover {
 }
 .btn1 {
   color: #000000 !important;
-  background-color: #ffffff;
+  background-color: #00bfa6;
   border: 1px solid #000000;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
+
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -67,12 +67,12 @@ header:hover {
 }
 
 .btn2 {
-  color: #ffffff !important;
-  background-color: #000000;
+  color: #000000 !important;
+  background-color:  #ff9800;
   border: 1px solid #bbb;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
+
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -81,7 +81,7 @@ header:hover {
 }
 
 .btn1:hover, .btn2:hover {
-  background-color: #00bfa6;
+  background-color: #008c70;
   color: #000000 !important;
   border-color: #000000;
   transform: scale(1.05);
