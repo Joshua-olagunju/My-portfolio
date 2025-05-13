@@ -140,12 +140,9 @@ header nav {
 header nav a {
     color: #bbb !important;
     display: inline-block; /* makes transform work better */
-    transform-origin: center;
-    
-    font-size: large;
-    
+    transform-origin: center;   
+    font-size: large;    
 }
-
 header nav a:hover, footer nav a:hover{
     color: #00bfa6 !important;
     text-decoration: overline !important;
@@ -165,10 +162,7 @@ footer nav a{
 .footer-copy {
     color: #ffffff !important;
      font-size: 0.9rem; 
-     font-weight: ;
    }
-
-
    @media (max-width: 768px) {
     footer{
         height: 570px;
@@ -191,23 +185,18 @@ footer nav a{
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .feature-box:hover {
   transform: scale(1.03);
   box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
 }
-
 #about-text span {
   color: #ffffff !important;
 }
-
 @media screen and (max-width: 768px){
     .custom-img-one{
         width: 60%;  
     }
 }
-
-
 /* Remove margin for mobile (screens under 768px) */
 @media (max-width: 768px) {
   .platform-description {
@@ -255,32 +244,17 @@ footer nav a{
   
 }
 
-.logo-container-project{
-    background: linear-gradient(145deg, #282828, #000000); /* Smooth dark background blend */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 8px rgba(255, 255, 255, 0.02);
-    padding-bottom: 5px;
-    border-radius: 5px;
-    width: 80px;
-    margin: 0;
-    margin-top: 0px;   
-    transition: all 0.5s ease;
-}
-
 .logo-yellow {
     filter: brightness(0) saturate(100%) invert(84%) sepia(90%) saturate(330%) hue-rotate(360deg) brightness(65%) contrast(110%);
 }
-
-
 .logo-container.active, .logo-container2.active{
     box-shadow: 0 0 3px 1px #ffffff;
     transform: perspective(500px) rotateY(20deg) scale(1.1);
   }
-
 .maincontainer1.show {
     opacity: 1;
     transform: translateX(0);
 }
-
 @media screen and (max-width: 768px) {
     .logo-container, .logo-container2{
         margin-top: 10px;
@@ -293,77 +267,18 @@ footer nav a{
     } 
 }
 /* ========================
-   Projects Section
-   ======================== */
-.techstack-item {
-    display: inline-block;
-    background-color: #ffc107
-}
-.project-slider {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px 0;
-  }
-  .slide-track {
-    display: flex;
-    width: calc(250px * 8); /* Width = slide width * number of slides */
-    animation: scroll 10s linear infinite;
-  }
-  .slide {
-    width: 200px;
-    height: 100px;
-    margin: 0 5px;
-    border-radius: 5px;
-    object-fit: cover;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  }
-  /* Animation */
-  @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-@media (max-width: 768px) {
-    .techlist{
-        font-size: 11px; 
-    }
-      .navbar, .custom-nav{
-        display: none;
-      }
-      .custom-img-two{
-        margin-top: 150px !important;      
-      }
-}
-/* ========================
    Testimonials Section
    ======================== */
-   .certification,.projecting {
-    padding: 50px 20px;
-    border-radius: 5px; /* Slightly larger for a more modern, rounded look */
-    background-color: #131313; /* Dark background for contrast */
-    
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
-}
-.certification:before, .testimoniala:before, .projecting:before {
+.testimoniala:before{
     content: '';
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    
+    bottom: 0; 
     z-index: -1;
     border-radius: 15px;
-}
-
-
-.custom-certificate img{
-    height: 250px;
-    width: 100%;
 }
 /* ========================
    Contact Section
@@ -393,7 +308,6 @@ footer nav a{
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
-
 #backToTop.show {
     opacity: 1;
     visibility: visible;
@@ -432,13 +346,11 @@ footer nav a{
         display: block; /* Show desktop navigation */
     }
 }
-
 /* Mobile Navigation Styles */
 @media screen and (max-width: 767px) {
     .desktop-nav {
         display: none; /* Hide desktop nav on mobile */
     }
-
     /* Mobile menu button (Hamburger) */
     .menu-label {
         font-size: 35px;
@@ -450,12 +362,10 @@ footer nav a{
         color: #ffffff;
         font-weight: bold;
     }
-
     /* Hidden checkbox that controls the menu */
     .menu-checkbox {
         display: none;
     }
-
     /* Menu container (hidden by default) */
     .menu {
         display: none;
@@ -468,7 +378,6 @@ footer nav a{
         z-index: 999;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
-
     /* List style inside the menu */
     .menu ul {
         list-style: none;
@@ -476,12 +385,10 @@ footer nav a{
         margin: 0;
         font-family: 'Arial', sans-serif;
     }
-
     /* Menu item styling */
     .menu ul li {
         margin: 15px 0;
     }
-
     .menu ul li a {
         color: #fff !important;
         text-decoration: none;
@@ -489,21 +396,17 @@ footer nav a{
         font-size: 1.2rem;
         letter-spacing: 1px;
         padding: 10px 0;
-        text-transform: uppercase; /* Letter design effect */
-        
+        text-transform: uppercase; /* Letter design effect */        
         border-bottom: 2px solid transparent;
         transition: all 0.3s ease;
     }
-
     /* Hover effect for menu items */
     .menu ul li a:hover {
       color: #00bfa6;
         border-color:#00bfa6;
     }
-
     /* When the checkbox is checked, show the menu */
     .menu-checkbox:checked ~ .menu {
         display: block;
     }
 }
-
