@@ -17,7 +17,7 @@ body, html {
     scroll-margin-top: 1120px; /* Adjust this to match the height of your header */
 }   
 .heroo{
-    margin-top: 190px !important;
+    margin-top: 100px !important;
 }
 header {
     display: flex; 
@@ -128,7 +128,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: auto;  
-    background-color: #222222; 
+    background-color: #0f0f0f; 
    
 }
 h1, h2, h3, h4, h5 ,h6 ,p{
