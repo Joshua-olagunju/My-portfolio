@@ -218,7 +218,7 @@ footer nav a{
     text-align: center;
   }
 }
-#skills, #about, #contact{
+#skills, #about, #contact, #projects{
     scroll-margin-top: 180px; /* Adjust this to match the height of your header */
 }
 @media (max-width: 768px) {
