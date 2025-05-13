@@ -9,7 +9,7 @@ body, html {
    Header and footer Section
    ======================== */
 
-.maincontainer, .maincontainer1, .maincontainer2{
+ .maincontainer1, .maincontainer2{
     margin-top: 90px !important;
     margin-bottom: 90px !important;
     padding-top: 30px;
@@ -54,7 +54,7 @@ header:hover {
 }
 .btn1 {
   color: #000000 !important;
-  background-color: #00bfa6;
+  background-color: #ffffff;
   border: 1px solid #000000;
   border-radius: 5px;
   text-decoration: none;
@@ -164,7 +164,16 @@ footer nav a{
    /* ========================
    Hero Section
    ======================== */
-   
+.heroo {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('../Images/premium_photo-1672053732675-3e008b635afa.jpeg') center/cover no-repeat;
+  color: white;
+  margin: 0;
+ padding: 50px;
+}
+
+
+
  .feature-box {
   background-color: transparent;
   color: #ffffff;
@@ -181,6 +190,9 @@ footer nav a{
 @media screen and (max-width: 768px){
     .custom-img-one{
         width: 60%;  
+    }
+    .heroo{
+        padding: 30px;
     }
 }
 /* Remove margin for mobile (screens under 768px) */
