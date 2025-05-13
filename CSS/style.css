@@ -16,9 +16,7 @@ body, html {
     padding-bottom: 30px; 
     scroll-margin-top: 1120px; /* Adjust this to match the height of your header */
 }   
-.heroo{
-    margin-top: 100px !important;
-}
+
 header {
     display: flex; 
     align-items: center;               
