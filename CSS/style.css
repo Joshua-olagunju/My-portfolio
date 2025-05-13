@@ -112,7 +112,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: auto;  
-    background-color: #0f0f0f; 
+    background-color: #000000; 
    
 }
 h1, h2, h3, h4, h5 ,h6 ,p{
@@ -169,7 +169,7 @@ footer nav a{
               url('../Images/luke-chesser-eICUFSeirc0-unsplash.jpg') center/cover no-repeat;
   color: white;
   margin: 0;
- padding: 50px;
+ padding: 60px;
 }
 
 
