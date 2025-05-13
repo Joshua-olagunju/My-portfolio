@@ -18,8 +18,6 @@ setInterval(() => {
 }, 2000); // 2 seconds interval
 
 
-
-  
   const logos = document.querySelectorAll('.logo-container'); // Add dot here for class
   let currentIndex = 0;
   

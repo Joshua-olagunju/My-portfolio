@@ -52,23 +52,9 @@ header:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-
-.btn1 {
-    color: #ffffff !important;
-    background-color: #000000;
-    border: 1px solid #bbb;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer; /* Make sure it behaves like a button */
-    display: inline-flex; /* Make sure content aligns well */
-    align-items: center; /* Aligns the icon and text */
-    justify-content: center; /* Center the content */
-}
-
 .btn1 {
   color: #000000 !important;
-  background-color: #ffffff;
+  background-color: #00bfa6;
   border: 1px solid #000000;
   border-radius: 5px;
   text-decoration: none;
@@ -130,7 +116,7 @@ footer {
    
 }
 h1, h2, h3, h4, h5 ,h6 ,p{
-    color: #ffffff;
+    color: #b0b0b0;
 }
 header nav {
     display: flex;
