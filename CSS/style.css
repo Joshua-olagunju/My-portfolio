@@ -215,6 +215,34 @@ footer nav a{
     margin-right: 500px;
     margin-left: 70px;
 }
+.TechnicalBox {
+    background: linear-gradient(to bottom, #000000, #2c2c2c);
+    padding: 20px 80px 20px 20px;
+    border-radius: 10px;
+}
+
+.logoooo{
+    height: 50px;
+    background-color: #131313;
+    margin: 10px;
+    padding: 13px;
+    width: 50px;
+    border-radius: 10px;
+   
+}
+progress {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+progress::-webkit-progress-bar {
+  background-color: #000000;
+}
+progress::-webkit-progress-value {
+  background-color: #008c70;
+}
+
 .logo-container, .logo-container2 {
   background: linear-gradient(145deg, #282828, #000000); /* smooth dark blend */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 8px rgba(255, 255, 255, 0.02);
@@ -238,6 +266,7 @@ footer nav a{
   border-radius: 5px;
  
 }
+
 
 .logo-container figcaption, .logo-container2 figcaption, .logo-container-project figcaption  {
   color: #000000;
