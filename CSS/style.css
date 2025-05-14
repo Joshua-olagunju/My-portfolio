@@ -216,14 +216,16 @@ footer nav a{
     margin-left: 70px;
 }
 .TechnicalBox {
-    background: linear-gradient(to bottom, #000000, #2c2c2c);
-    padding: 20px 80px 20px 20px;
+    background: black;
+    border: 1px solid white;
+    padding: 15px 80px 20px 15px;
     border-radius: 10px;
 }
 
 .logoooo{
     height: 50px;
-    background-color: #131313;
+    background-color: #000000;
+    border: 1px solid #ffffff;
     margin: 10px;
     padding: 13px;
     width: 50px;
@@ -237,10 +239,10 @@ progress {
   overflow: hidden;
 }
 progress::-webkit-progress-bar {
-  background-color: #000000;
+  background-color: #858585;
 }
 progress::-webkit-progress-value {
-  background-color: #008c70;
+  background-color: #ff9705;
 }
 
 .logo-container, .logo-container2 {
