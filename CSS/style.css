@@ -344,6 +344,7 @@ progress::-webkit-progress-value {
 #backToTop.show {
     opacity: 1;
     visibility: visible;
+    z-index: 9999;
 }
 .backtotop {
     position: fixed;
