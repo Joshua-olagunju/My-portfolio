@@ -1,6 +1,6 @@
 // Hero sections
 const messages = [
-  "A Passionate Front-End Developer",
+  "A Front-End Developer",
   "A Creative UI/UX Designer"
 ];
 

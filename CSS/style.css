@@ -18,20 +18,22 @@ body, html {
 }   
 
 header {
-    display: flex; 
-    align-items: center;               
-    justify-content: space-between;       
-    height: 150px;                     
-    padding: 0 20px;                 
-    box-sizing: border-box;                                    
-    position: fixed;                 
-    top: 0;                             
-    left: 0;                           
-    right: 0;                           
-    z-index: 1000;                     
-    background-color:#000000;        
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
+
 
 
 header:hover {
@@ -209,7 +211,10 @@ footer nav a{
     scroll-margin-top: 250px; /* Adjust this to match the height of your header */
 }
 }
-
+.TechnicalText{
+    margin-right: 500px;
+    margin-left: 70px;
+}
 .logo-container, .logo-container2 {
   background: linear-gradient(145deg, #282828, #000000); /* smooth dark blend */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 8px rgba(255, 255, 255, 0.02);
@@ -261,6 +266,9 @@ footer nav a{
         margin-top: 10px;
         margin-bottom: 1px;
     } 
+    .TechnicalText{
+        margin: 0;
+    }
 }
 /* ========================
    Testimonials Section
