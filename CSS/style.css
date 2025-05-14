@@ -116,7 +116,7 @@ footer {
    
 }
 h1, h2, h3, h4, h5 ,h6 ,p{
-    color: #b0b0b0;
+    color: #ffffff;
 }
 header nav {
     display: flex;
@@ -165,10 +165,7 @@ footer nav a{
    Hero Section
    ======================== */
 .heroo {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-              url('../Images/luke-chesser-eICUFSeirc0-unsplash.jpg') center/cover no-repeat;
-  color: white;
-  margin: 0;
+    margin-top: 190PX;
  padding: 60px;
 }
 
