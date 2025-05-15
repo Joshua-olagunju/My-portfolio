@@ -1,4 +1,4 @@
-// Hero sections
+// Hero sections pop Messages
 const messages = [
   "A Front-End Developer",
   "A Creative UI/UX Designer"
@@ -9,7 +9,6 @@ const welcomeElement = document.getElementById("welcome");
 
 // Immediately show the first message
 welcomeElement.textContent = messages[index];
-
 // Start the loop
 setInterval(() => {
   index = (index + 1) % messages.length;
@@ -17,9 +16,7 @@ setInterval(() => {
 }, 2000); // 2 seconds interval
 
 
- 
-
-
+// BackToTop Section
 document.addEventListener("DOMContentLoaded", function () {
   const backToTopButton = document.getElementById('backToTop');
 
@@ -40,8 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
+// Mobile Menu Section
 // Get all the links in the mobile menu
 const menuLinks = document.querySelectorAll('.menu ul li a');
 
