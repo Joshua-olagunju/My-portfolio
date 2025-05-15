@@ -58,6 +58,7 @@ To view or run this project locally:
 ```bash
 # Clone the repository
 git clone https://github.com/Joshua-olagunju/My-portfolio.git
+```
 
 # Navigate into the project directory
 cd My-portfolio
