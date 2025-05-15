@@ -449,3 +449,14 @@ progress::-webkit-progress-value {
         display: block;
     }
 }
+
+
+ <!-- Quote Box -->
+     <div class="bg-dark p-4 shadow-sm border-start border-4 border-warning" 
+     style="box-shadow: 0 4px 20px rgba(255, 193, 7, 0.1); border-left: 5px solid #ffc107;">
+        <p class="fst-italic mb-0" style="color: #e0e0e0;">
+        Good design isn’t just about beauty — it’s about purpose, 
+        clarity, and connection. I believe every pixel should have a reason, and every interaction
+         should feel natural. That’s where creativity meets usability.”</p>
+        <span class="fw-bold d-block mt-3 text-end text-warning">– Joshua Olagunju</span>
+      </div>
