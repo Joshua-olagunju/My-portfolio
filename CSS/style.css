@@ -4,19 +4,19 @@ body, html {
     overflow-x: hidden !important;
     background-color: #000000;
 }
-
-  /* ========================
-   Header and footer Section
-   ======================== */
-
- .maincontainer1, .maincontainer2{
+.maincontainer1, .maincontainer2{
     margin-top: 90px !important;
     margin-bottom: 90px !important;
     padding-top: 30px;
     padding-bottom: 30px; 
     scroll-margin-top: 1120px; /* Adjust this to match the height of your header */
 }   
-
+h1, h2, h3, h4, h5 ,h6 ,p{
+    color: #ffffff;
+}
+  /* ========================
+   Header and footer Section
+   ======================== */
 header {
     display: flex;
     align-items: center;
@@ -33,89 +33,9 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
 }
-
-
-
 header:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
     transition: transform 0.3s ease-in-out; /* Smooth animation */
-}
-.btn1 {
-  color: #ffffff !important;
-  background: linear-gradient(135deg, #001f1d, #261200, #130b00);
-  border: 2px solid #ffffff;
-  border-radius: 5px;
-  text-decoration: none;
-    font-weight: 500;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn2 {
-  color: #000000 !important;
-  background-color:  #008c70;
-  border: 2px solid #ffffff;
-  border-radius: 5px;
-  text-decoration: none;
-    font-weight: 500;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn1:hover, .btn2:hover {
-  background-color: #008c70;
-  color: #ffffff !important;
-  border-color: #000000;
-  transform: scale(1.05);
-}
-
-.btn1 i, .btn2 i {
-  margin-right: 8px;
-}
-
-.social-icons a i {
-  font-size: 1.5rem;
-  color: white;
-  transition: transform 0.3s, color 0.3s;
-}
-
-.social-icons a:hover i.bi-github { color: #ccc; transform: scale(1.2); }
-.social-icons a:hover i.bi-linkedin { color: #0A66C2; transform: scale(1.2); }
-.social-icons a:hover i.bi-whatsapp { color: #25D366; transform: scale(1.2); }
-.social-icons a:hover i.bi-twitter{ color: #1DA1F2; transform: scale(1.2); }
-.social-icons a:hover i.bi-facebook { color: #1877F2; transform: scale(1.2); }
-.social-icons a:hover i.bi-instagram { color: #C13584; transform: scale(1.2); }
-.social-icons a:hover i.bi-tiktok { color: #7d08ec; transform: scale(1.2); }
-
-.social-icons1 a i {
-  font-size: 2.5rem;
-  color: white;
-  transition: transform 0.3s, color 0.3s;
-}
-
-.social-icons1 a:hover i.bi-github { color: #ccc; transform: scale(1.2); }
-.social-icons1 a:hover i.bi-linkedin { color: #0A66C2; transform: scale(1.2); }
-
-footer {
-    width: 100%;
-    height: 380px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: auto;  
-    background-color: #131313; 
-   
-}
-h1, h2, h3, h4, h5 ,h6 ,p{
-    color: #ffffff;
 }
 header nav {
     display: flex;
@@ -133,6 +53,17 @@ header nav a:hover, footer nav a:hover{
     color: #00bfa6 !important;
     text-decoration: overline !important;
 }
+footer {
+    width: 100%;
+    height: 380px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;  
+    background-color: #131313;   
+}
 footer nav {
     display: flex;
     gap: 50px;
@@ -142,18 +73,72 @@ footer nav {
 footer nav a{
     text-decoration: none;    
 }
-.navbar .navbar-brand {  
-    margin: 0 15px;
-}
 .footer-copy {
     color: #ffffff !important;
      font-size: 0.9rem; 
-   }
-.footer-icons{
-    background-color: #1d1d1d;
-    padding: 10px 200px;
-    border-radius: 5px;
 }
+  /* ========================
+            Buttons 
+      ======================== */
+.btn1 {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #001f1d, #261200, #130b00);
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.btn2 {
+    color: #000000 !important;
+    background-color:  #008c70;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.btn1:hover, .btn2:hover {
+    background-color: #008c70;
+    color: #ffffff !important;
+    border-color: #000000;
+    transform: scale(1.05);
+}
+.btn1 i, .btn2 i {
+    margin-right: 8px;
+}
+
+.social-icons a i {
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+}
+.social-icons a:hover i.bi-github { color: #ccc; transform: scale(1.2); }
+.social-icons a:hover i.bi-linkedin { color: #0A66C2; transform: scale(1.2); }
+.social-icons a:hover i.bi-whatsapp { color: #25D366; transform: scale(1.2); }
+.social-icons a:hover i.bi-twitter{ color: #1DA1F2; transform: scale(1.2); }
+.social-icons a:hover i.bi-facebook { color: #1877F2; transform: scale(1.2); }
+.social-icons a:hover i.bi-instagram { color: #C13584; transform: scale(1.2); }
+.social-icons a:hover i.bi-tiktok { color: #7d08ec; transform: scale(1.2); }
+
+.social-icons1 a i {
+    font-size: 2.5rem;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+}
+.social-icons1 a:hover i.bi-github { color: #ccc; transform: scale(1.2); }
+.social-icons1 a:hover i.bi-linkedin { color: #0A66C2; transform: scale(1.2); }
+  /* ========================
+   Mobile Responsiveness Section
+   ======================== */
    @media (max-width: 768px) {
     footer{
         height: 600px;
@@ -165,64 +150,53 @@ footer nav a{
         overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     }
-/* Custom animation class */
    /* ========================
    Hero Section
    ======================== */
 .heroo {
     margin-top: 190PX;
- padding: 60px;
+    padding: 60px;
 }
-
-
-
- .feature-box {
-  background-color: transparent;
-  color: #ffffff;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.feature-box {
+    background-color: transparent;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(44, 44, 44, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .feature-box:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
-}
-#about-text span {
-  color: #ffffff !important;
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(41, 41, 41, 0.15);
 }
 @media screen and (max-width: 768px){
-    .custom-img-one{
-        width: 60%;  
-    }
     .heroo{
         padding:50px 7px;
     }
 }
-/* Remove margin for mobile (screens under 768px) */
-@media (max-width: 768px) {
-  .platform-description {
-    margin-right: 0;
-    margin-left: 0;
-    text-align: center;
-  }
-}
-#skills, #about, #contact, #projects{
+/* ========================
+   Scroll margin Section
+   ======================== */
+    #skills, #about, #contact, #projects{
     scroll-margin-top: 180px; /* Adjust this to match the height of your header */
 }
+ /* ========================
+   Mobile Responsiveness Section
+   ======================== */
 @media (max-width: 768px) {
   #skills {
     scroll-margin-top: 250px; /* Adjust this to match the height of your header */
 }
 }
+/* ========================
+   Skills Section
+   ======================== */
 .TechnicalText{
     margin-right: 100px;
-   
 }
 .TechnicalBox {
- background: linear-gradient(135deg, #001f1d, #261200, #130b00);
-padding: 10px 50px 15px 10px;
-border-radius: 10px;
+    background: linear-gradient(135deg, #001f1d, #261200, #130b00);
+    padding: 10px 50px 15px 10px;
+    border-radius: 10px;
 }
-
 .logoooo{
     height: 50px;
     background-color: #000000;
@@ -233,66 +207,50 @@ border-radius: 10px;
     border-radius: 10px; 
 }
 progress {
-  width: 200px;
-  height: 6px;
-  border-radius: 10px;
-  overflow: hidden;
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 progress::-webkit-progress-bar {
-  background-color: #858585;
+    background-color: #858585;
 }
 progress::-webkit-progress-value {
-  background-color: #ff9705;
+    background-color: #ff9705;
 }
-
 .logo-container, .logo-container2 {
-  background: linear-gradient(145deg, #282828, #000000); /* smooth dark blend */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 8px rgba(255, 255, 255, 0.02);
-  padding-bottom: 5px;
-  border-radius: 5px;
-  width: 120px;
-  margin: 20px 10px;
-  transition: all 0.5s ease;
-  text-align: center;
+    background: linear-gradient(145deg, #282828, #000000); /* smooth dark blend */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 8px rgba(255, 255, 255, 0.02);
+    padding-bottom: 5px;
+    border-radius: 5px;
+    width: 120px;
+    margin: 20px 10px;
+    transition: all 0.5s ease;
+    text-align: center;
 }
-
-.logo-container:hover, .logo-container2:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.2);
+.logo-container2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 193, 7, 0.2);
 }
-
-.logo, .logo2 {
-  height: 60px;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 5px;
- 
+.logo2 {
+    height: 60px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
-
-
-.logo-container figcaption, .logo-container2 figcaption, .logo-container-project figcaption  {
-  color: #000000;
-  background-color: #ffffff;
-  
+.logo-container2 figcaption{
+    color: #000000;
+    background-color: #ffffff;
 }
-
-.logo-yellow {
-    filter: brightness(0) saturate(100%) invert(84%) sepia(90%) saturate(330%) hue-rotate(360deg) brightness(65%) contrast(110%);
-}
-.logo-container.active, .logo-container2.active{
-    box-shadow: 0 0 3px 1px #ffffff;
-    transform: perspective(500px) rotateY(20deg) scale(1.1);
-  }
-.maincontainer1.show {
-    opacity: 1;
-    transform: translateX(0);
-}
+ /* ========================
+   Mobile Responsiveness Section
+   ======================== */
 @media screen and (max-width: 768px) {
-    .logo-container, .logo-container2{
+    .logo-container2{
         margin-top: 10px;
         justify-content: center; 
     } 
-    .logo, .logo2{
+    .logo2{
         width: auto;
         margin-top: 10px;
         margin-bottom: 1px;
@@ -301,29 +259,9 @@ progress::-webkit-progress-value {
         margin: 0;
     }
 }
-/* ========================
-   Testimonials Section
+ /* ========================
+   BackToTop Section
    ======================== */
-.testimoniala:before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; 
-    z-index: -1;
-    border-radius: 15px;
-}
-/* ========================
-   Contact Section
-   ======================== */
-.d-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-} 
 .backtotop img {
     width: 50px;          /* Set the width of the logo */
     height: auto;         /* Keep the aspect ratio */
@@ -331,9 +269,6 @@ progress::-webkit-progress-value {
     padding: 0;
     margin-right: 20px;  
     filter: invert(1);    /* Invert the colors of the image */ 
-}
-.git{
-    filter: invert(1);
 }
 #backToTop {
     position: fixed;
@@ -373,7 +308,6 @@ progress::-webkit-progress-value {
      /* ========================
    Drop down menu mobile Section
    ======================== */
-/* Desktop Navigation Styles */
 @media (min-width: 768px) {
     .menu-label, .menu-checkbox, .menu {
         display: none; /* Hide the mobile menu for larger screens */
@@ -446,14 +380,3 @@ progress::-webkit-progress-value {
         display: block;
     }
 }
-
-
- <!-- Quote Box -->
-     <div class="bg-dark p-4 shadow-sm border-start border-4 border-warning" 
-     style="box-shadow: 0 4px 20px rgba(255, 193, 7, 0.1); border-left: 5px solid #ffc107;">
-        <p class="fst-italic mb-0" style="color: #e0e0e0;">
-        Good design isn’t just about beauty — it’s about purpose, 
-        clarity, and connection. I believe every pixel should have a reason, and every interaction
-         should feel natural. That’s where creativity meets usability.”</p>
-        <span class="fw-bold d-block mt-3 text-end text-warning">– Joshua Olagunju</span>
-      </div>
