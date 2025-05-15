@@ -242,6 +242,9 @@ progress::-webkit-progress-value {
     color: #000000;
     background-color: #ffffff;
 }
+.git{
+    filter: invert(1);
+}
  /* ========================
    Mobile Responsiveness Section
    ======================== */
