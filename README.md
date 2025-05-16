@@ -9,6 +9,8 @@ Welcome to my portfolio! This project showcases my skills and growth as a front-
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [How to View](#how-to-view)
+- [Challenges Faced](#challenges-faced)
+- [Lessons Learned](#lessons-learned)
 - [Contact](#contact)
 - [License](#license)
 
@@ -47,6 +49,15 @@ Whether you're a recruiter, a collaborator, or just curious, this is where you c
 
 ---
 
+## 🖼️ Portfolio Preview
+
+![Display1](Images/Display1.jpg)
+![Display2](Images/Display2.jpg)
+![Display3](Images/Display3.jpg)
+![Display4](Images/Display4.jpg)
+
+---
+
 ## 🔍 How to View
 
 ### 🔗 [Live Demo](https://joshua-olagunju.github.io/My-portfolio/)
@@ -61,10 +72,26 @@ git clone https://github.com/Joshua-olagunju/My-portfolio.git
 ```
 
 # Navigate into the project directory
+```bash
 cd My-portfolio
+```
 
 # Open the index.html file in your browser
 No additional setup is needed to view this portfolio locally.
+
+## ⚙️ Challenges Faced
+
+- Ensuring the portfolio was fully responsive across all devices required extensive testing and adjustments, especially with media queries and layout spacing.
+- Aligning elements using CSS and Bootstrap was tricky at first, and I had to rework some sections multiple times to get the UI/UX right.
+- I also faced challenges working with `<div>` elements — managing their positioning and nesting properly took some trial and error, but I became stronger and more confident as I figured it out.
+
+## 🎯 Lessons Learned
+
+- I improved my understanding of responsive design and layout structure using CSS and Bootstrap.
+- I learned how to effectively use Git from the command line interface (CLI) for version control and project collaboration.
+- I developed better critical thinking and problem-solving skills during the development process.
+- I also became more confident using Bootstrap components and grid system to speed up my design workflow.
+- Lastly, I learned how to organize and present my work clearly using GitHub README files, making my projects more professional and accessible.
 
 ## Contact
 Feel free to get in touch with me!
