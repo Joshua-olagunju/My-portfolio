@@ -50,11 +50,13 @@ Whether you're a recruiter, a collaborator, or just curious, this is where you c
 ---
 
 ## 🖼️ Portfolio Preview
+<h3>🖼️ Portfolio Preview</h3>
 
-![Display1](Images/Display1.jpg)
-![Display2](Images/Display2.jpg)
-![Display3](Images/Display3.jpg)
-![Display4](Images/Display4.jpg)
+<img src="./Images/Display1.jpg" alt="Mobile view of portfolio - About" height="400" style="display:block; margin-bottom:10px; object-fit:contain;" />
+<img src="./Images/Display2.jpg" alt="Mobile view of portfolio - footer section" height="400" style="display:block; margin-bottom:10px; object-fit:contain;" />
+<img src="./Images/Display3.png" alt="Desktop view of portfolio - Footer" width="500" style="display:block; margin-bottom:10px; object-fit:contain;" />
+<img src="./Images/Display5.png" alt="Desktop view of portfolio - Skill section" width="500" style="display:block; margin-bottom:10px; object-fit:contain;" />
+<img src="./Images/Display6.png" alt="Desktop view of portfolio - About section" width="500" style="display:block; margin-bottom:10px; object-fit:contain;" />
 
 ---
 
@@ -93,7 +95,7 @@ No additional setup is needed to view this portfolio locally.
 - I also became more confident using Bootstrap components and grid system to speed up my design workflow.
 - Lastly, I learned how to organize and present my work clearly using GitHub README files, making my projects more professional and accessible.
 
-## Contact
+## 📞 Contact
 Feel free to get in touch with me!
 
 Email: olagunjujoshua11@gmail.com
@@ -104,5 +106,5 @@ GitHub: [https://github.com/Joshua-olagunju](https://github.com/Joshua-olagunju)
 
 I look forward to hearing from you!
 
-## License
+## 🧾 License
 This project is licensed under the MIT License - see the LICENSE file for details.
