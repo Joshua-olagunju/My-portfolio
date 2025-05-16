@@ -51,8 +51,9 @@ Whether you're a recruiter, a collaborator, or just curious, this is where you c
 
 ## 🖼️ Portfolio Preview
 
-
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/6fbf57dd-f6ea-4c1f-99a8-d82cdb610747" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/92dfaadb-5952-46db-9359-4e60a377a28c" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/c8a88e03-b321-4525-96f1-b4f61fb9fddc" />
 
 ---
 
