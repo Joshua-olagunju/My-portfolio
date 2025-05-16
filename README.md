@@ -50,19 +50,12 @@ Whether you're a recruiter, a collaborator, or just curious, this is where you c
 ---
 
 ## 🖼️ Portfolio Preview
-<h3>🖼️ Portfolio Preview</h3>
 
-<<<<<<< HEAD
 <img src="./Images/Display1.jpg" alt="Mobile view of portfolio - About" height="400" style="display:block; margin-bottom:10px; object-fit:contain;" />
 <img src="./Images/Display2.jpg" alt="Mobile view of portfolio - footer section" height="400" style="display:block; margin-bottom:10px; object-fit:contain;" />
 <img src="./Images/Display3.png" alt="Desktop view of portfolio - Footer" width="500" style="display:block; margin-bottom:10px; object-fit:contain;" />
 <img src="./Images/Display5.png" alt="Desktop view of portfolio - Skill section" width="500" style="display:block; margin-bottom:10px; object-fit:contain;" />
 <img src="./Images/Display6.png" alt="Desktop view of portfolio - About section" width="500" style="display:block; margin-bottom:10px; object-fit:contain;" />
-=======
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/6fbf57dd-f6ea-4c1f-99a8-d82cdb610747" />
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/71ee1522-3c2d-48eb-814a-fb6cfa8f3ef3" />
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/b570cfde-e92f-4fc7-9474-2b2022eaaf17" />
->>>>>>> aa1036651b7f99075b477344ff9ecc8aae01fbee
 
 ---
 
