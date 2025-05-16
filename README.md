@@ -53,8 +53,8 @@ Whether you're a recruiter, a collaborator, or just curious, this is where you c
 
 ![Display1](Images/Display1.jpg)
 ![Display2](Images/Display2.jpg)
-![Display3](Images/Display3.jpg)
-![Display4](Images/Display4.jpg)
+![Display3](Images/Display3.png)
+![Display4](Images/Display4.png)
 
 ---
 
