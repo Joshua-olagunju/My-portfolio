@@ -51,8 +51,6 @@ Whether you're a recruiter, a collaborator, or just curious, this is where you c
 
 ## 🖼️ Portfolio Preview
 
-<img src="./Images/Display1.jpg" alt="Mobile view of portfolio - About" height="400" style="display:block; margin-bottom:10px; object-fit:contain;" />
-<img src="./Images/Display2.jpg" alt="Mobile view of portfolio - footer section" height="400" style="display:block; margin-bottom:10px; object-fit:contain;" />
 <img src="./Images/Display3.png" alt="Desktop view of portfolio - Footer" width="500" style="display:block; margin-bottom:10px; object-fit:contain;" />
 <img src="./Images/Display5.png" alt="Desktop view of portfolio - Skill section" width="500" style="display:block; margin-bottom:10px; object-fit:contain;" />
 <img src="./Images/Display6.png" alt="Desktop view of portfolio - About section" width="500" style="display:block; margin-bottom:10px; object-fit:contain;" />
