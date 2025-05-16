@@ -77,6 +77,28 @@ footer nav a{
     color: #ffffff !important;
      font-size: 0.9rem; 
 }
+.libutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 16px;
+    text-align: center;
+    outline: none;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    width: fit-content;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #0A66C2;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+
+  .libutton:hover {
+    background-color: #004182;
+  }
   /* ========================
             Buttons 
       ======================== */
