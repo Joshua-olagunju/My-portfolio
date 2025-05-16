@@ -51,9 +51,9 @@ Whether you're a recruiter, a collaborator, or just curious, this is where you c
 
 ## 🖼️ Portfolio Preview
 
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/6fbf57dd-f6ea-4c1f-99a8-d82cdb610747" />
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/92dfaadb-5952-46db-9359-4e60a377a28c" />
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/c8a88e03-b321-4525-96f1-b4f61fb9fddc" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/6fbf57dd-f6ea-4c1f-99a8-d82cdb610747" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/71ee1522-3c2d-48eb-814a-fb6cfa8f3ef3" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/b570cfde-e92f-4fc7-9474-2b2022eaaf17" />
 
 ---
 
