@@ -2,60 +2,37 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-   /* subtle square grid pattern */
-   background-color: #2d2d2d;
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 120px 120px; /* size of each square */
-    width: 100%;
-}
+   background-color: #fcfcfc;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 
-.maincontainer1, .maincontainer2{
-    margin-top: 90px !important;
-    margin-bottom: 90px !important;   
-    padding-top: 30px;
-    padding-bottom: 30px; 
-    
-}   
+
+
+} 
 h1, h2, h3, h4, h5 ,h6 ,p{
-    color: #ffffff;
+    color: #000000;
 }
   /* ========================
    Header and footer Section
    ======================== */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 150px;
+    height: 80px;
     padding: 0 20px;
     box-sizing: border-box;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-     background-color: #2d2d2d;
-
- 
-}
-header nav {
-    display: flex;
-    gap: 20px;
-    overflow: hidden;
+     background-color: #ffffff;
 }
 header nav a {
-    color: #bbb !important;
     display: inline-block; /* makes transform work better */
     transform-origin: center;   
     font-size: medium;   
      font-weight: 500; 
 }
 header nav a:hover, footer nav a:hover{
-    color: #00bfa6 !important;
-    text-decoration: overline !important;
+    color: #0049a2 !important;
 }
 footer {
     width: 100%;
@@ -99,7 +76,6 @@ footer nav a{
     font-weight: 600;
     transition: background-color 0.3s ease;
   }
-
   .libutton:hover {
     background-color: #004182;
   }
@@ -108,14 +84,28 @@ footer nav a{
       ======================== */
 .btn1 {
     color: #ffffff !important;
-    background-color: transparent;
+    background-color: #0f7deb;
     border: 1px solid #ffffff;
-    border-radius: 5px;
+    border-radius: 20px;
+    padding: 7px 120px;
     text-decoration: none;
-    font-weight: 500;
-    display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+.btn2{
+  color: #0f7deb;
+  background-color: #ffffff;
+   border: 1px solid #c9c9c9;
+    border-radius: 20px;
+    padding: 7px 120px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+.btn1:hover, .btn2:hover {
+    background-color: #0A66C2;
+    color: #ffffff !important;
+    transition: ease-in-out 0.5s;
 }
 .btn3 {
     background-color: transparent;
@@ -133,28 +123,8 @@ footer nav a{
     border-color: #000000;
     border: 1px solid #ffffff;
 }
-.btn2 {
-    color: #000000 !important;
-    background-color:  #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 500;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.btn1:hover, .btn2:hover {
-    background-color: #ffffff;
-    color: #000000 !important;
-    border-color: #000000;
-    border: 1px solid #ffffff;
-}
-.btn1 i, .btn2 i {
-    margin-right: 8px;
-}
+
+
 
 .social-icons a i {
     font-size: 1.5rem;
@@ -191,41 +161,33 @@ footer nav a{
    Hero Section
    ======================== */
 .heroo {
-    margin-top: 150PX;
+    margin-top: 80PX;
     padding: 60px;
-     background-color: #2d2d2d;
-  /* subtle square grid pattern */
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 120px 120px; /* size of each square */
+    background-color: #000000;
+    position: relative;
 }
-.wallpaper{
-  padding: 60px 0px;
-       background-color: #2d2d2d;
-  /* subtle square grid pattern */
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 120px 120px; /* size of each square */
-
+.Available{
+  color: #00ff00;
+  font-weight: normal;
+  background-color: #e0ffeb;
+  width: fit-content;
 }
 .blinking-dot {
-  height: 10px;
-  width: 10px;
+  height: 5px;
+  width: 5px;
   background-color: #00ff00;
   border-radius: 50%;
   display: inline-block;
-  animation: blink 1s infinite;
-
+  animation: blink 1s infinite
 }
-
 @keyframes blink {
   0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; }
 }
-
+.main-container{
+  margin-top: 80px;
+}
 .feature-box {
     background-color: transparent;
     color: #ffffff;
@@ -301,29 +263,6 @@ footer nav a{
   flex-shrink: 0;
 }
 
-.TechnicalBox > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-progress {
-  width: 100%;
-  max-width: 180px;
-  height: 6px;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-top: 6px;
-}
-
-progress::-webkit-progress-bar {
-  background-color: #858585;
-}
-
-progress::-webkit-progress-value {
-  background-color: #ff9705;
-}
-
 /* ========================
    Mobile Responsiveness Section
    ======================== */
@@ -373,12 +312,10 @@ progress::-webkit-progress-value {
     border-radius: 5px;
 }
 .logo-container2 figcaption{
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #000000;
 }
-.git{
-    filter: invert(1);
-}
+
  /* ========================
    BackToTop Section
    ======================== */
@@ -388,7 +325,6 @@ progress::-webkit-progress-value {
     margin-bottom: 10px;
     padding: 0;
     margin-right: 20px;  
-    filter: invert(1);    /* Invert the colors of the image */ 
 }
 #backToTop {
     position: fixed;
@@ -448,9 +384,9 @@ progress::-webkit-progress-value {
         cursor: pointer;
         display: block;
         position: absolute;
-        top: 42px;
+        top: 12px;
         right: 20px;
-        color: #ffffff;
+        color: #000000;
         font-weight: bold;
     }
     /* Hidden checkbox that controls the menu */
@@ -461,7 +397,7 @@ progress::-webkit-progress-value {
     .menu {
         display: none;
         position: absolute;
-        top: 150px;
+        top: 80px;
         left: 0;
         width: 100%;
         background: #2b2b2b;

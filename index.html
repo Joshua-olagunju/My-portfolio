@@ -13,18 +13,15 @@
     </head>
 
     <body>
-      <header class="d-flex justify-content-between align-items-center  py-3 position-fixed">
-  <div class="fw-bold" style="font-size: xx-large; color: #00bfa6;">
+      <header class="d-flex justify-content-between align-items-center position-fixed">
+  <div class="fw-bold" style="font-size: xx-large; color: #000000;">
     Joshua O.
-    <div style="font-size: 0.8rem; color: #bbb;">
-      Front-End Developer & UI/UX Designer
-    </div>
   </div>
   <nav class="position-absolute top-50 start-50 translate-middle-x d-none d-md-flex gap-5">
-    <a href="#skills" class="text-decoration-none">SKILLS</a>
-    <a href="#about" class="text-decoration-none">ABOUT</a>
-    <a href="#projects" class="text-decoration-none">PROJECTS</a>
-    <a href="#contact" class="text-decoration-none text-warning" >CONTACT</a>
+    <a href="#skills" class="text-decoration-none text-dark">SKILLS</a>
+    <a href="#about" class="text-decoration-none text-dark">ABOUT</a>
+    <a href="#projects" class="text-decoration-none text-dark">PROJECTS</a>
+    <a href="#contact" class="text-decoration-none" style="color: #0049a2;" >CONTACT</a>
   </nav>
   <div class="d-flex align-items-center gap-3">
     <!-- Mobile Menu -->
@@ -36,7 +33,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact" class="text-decoration-none text-warning ">CONTACT</a></li>
+        <li><a href="#contact" class="text-decoration-none">CONTACT</a></li>
         </ul>
       </nav>
     </div>
@@ -45,35 +42,28 @@
 
 
         
-   <section id="hero" class="heroo">
-  <div class="row mx-1">
-    <div class="col-md-5 mb-5 mt-md-0 order-1 order-md-2 d-flex justify-content-start">
-      <img src="Images/Profile.jpg" class="img-fluid rounded feature-box" id="about-image" alt="Profile Picture" 
-           style="max-width: 250px; max-height: 250px; border: 4px solid #ffffff;">
+  <section id="hero" class="heroo">
+    <p class="text-center fs-2 fw-bold mb-3 text-white" id="welcome"></p>
+    <div class="d-flex justify-content-center align-items-center position-absolute start-50 end-50">
+      <img src="Images/Profile.jpg" class="img-fluid rounded-circle feature-box" id="about-image" alt="Profile Picture" 
+           style="max-width: 120px; max-height: 120px; border: 4px solid #ffffff;">
     </div>
-    <div class="col-md-7 align-items-start text-start d-flex flex-column order-2 order-md-1">
-      <div class="mb-3">
-        <span class="badge Available px-3 py-2 d-inline-flex align-items-center gap-2" style="font-size: 0.95rem;">
-          <span class="blinking-dot"></span> Available for Freelancing
-        </span>
-      </div>
-      <p class="mb-1 fs-1 fw-semibold">I’m <span style="color: #00bfa6;">Joshua Olagunju</span></p>
-      <p class="fs-2 fw-semibold mb-1" id="welcome"></p>
-      <p class="mb-3">
-        Passionate Front-End Developer crafting clean, interactive, and responsive websites with
-        a focus on great UI/UX. <span role="img" aria-label="sparkles">✨</span>
-      </p>
-      <div class="d-flex flex-wrap justify-content-start align-items-start gap-2 mt-2">
-        <button class="btn1 btn-outline-warning px-3 py-2 small" onclick="window.location.href='mailto:olagunjujoshua11@gmail.com'">
-          <i class="bi bi-briefcase"></i> Hire Me
-        </button>
-      </div>
-     
+  </section>
+
+        <section class="mt-5 text-center">
+  <h3 class="main-container fw-bold">Joshua Olagunju</h3>
+  <span class="badge Available d-flex align-items-center gap-2 justify-content-center mx-auto"
+    style="font-size: 0.7rem;">
+    <span class="blinking-dot"></span> Available Now (Freelance)
+  </span>
+  <p class="mt-2 mb-1 fs-6"><i class="bi bi-briefcase-fill me-2"></i>Available for Freelance & Fulltime</p>
+  <p class="fs-6 mb-1"><i class="bi bi-code-slash me-2"></i>Front-End development | UI/UX design | Web development</p>
+  <p class="fs-6"><i class="bi bi-geo-alt-fill me-2"></i>Lagos, Nigeria </p>
+  <div class="d-flex flex-column align-items-center mx-auto gap-1">
+  <a href="mailto:olagunjujoshua11@gmail.com" target="_blank" class="btn1 small fw-semibold"><i class="bi bi-briefcase me-2"></i>Hire Me</a>
+  <a href="#projects" class="btn2 small fw-semibold"><i class="bi bi-kanban-fill me-2"></i>Projects</a>
   </div>
-
-  
-
-</section>
+        </section>
 
 
 
@@ -83,7 +73,7 @@
   <div class="row align-items-center py-5">
     
     <!-- Left Column: Profile Image + Hire Me Button -->
-    <div class="col-md-5 d-flex flex-column align-items-center mb-4 mb-md-0 d-none d-md-flex">
+    <div class="col-md-5 d-flex flex-column align-items-center mb-4 mb-md-0">
       <img src="Images/467865609_122128371410443868_6691633975994226230_n (1).jpg" 
            alt="Hire Me" 
            class="img-fluid rounded mb-3 feature-box"
@@ -118,9 +108,9 @@
   <!-- Skill Buttons -->
   <div class="d-flex justify-content-center my-3">
     <div class="d-flex gap-3">
-      <button class="btn btn-outline-light skill-btn active" data-skill="languages" onclick="showSkill('languages')">Languages</button>
-      <button class="btn btn-outline-light skill-btn" data-skill="frontend" onclick="showSkill('frontend')">Front-End</button>
-      <button class="btn btn-outline-light skill-btn" data-skill="uiux" onclick="showSkill('uiux')">UI/UX</button>
+      <button class="btn btn-outline-dark skill-btn active" data-skill="languages" onclick="showSkill('languages')">Languages</button>
+      <button class="btn btn-outline-dark skill-btn" data-skill="frontend" onclick="showSkill('frontend')">Front-End</button>
+      <button class="btn btn-outline-dark skill-btn" data-skill="uiux" onclick="showSkill('uiux')">UI/UX</button>
     </div>
   </div>
 
@@ -130,7 +120,7 @@
 
       <!-- Languages Tab -->
       <div id="languages" class="skill-section">
-        <div class="d-flex gap-3 flex-wrap justify-content-center align-items-center">
+        <div class="d-flex flex-wrap justify-content-center align-items-center">
           <figure class="logo-container2">
             <img src="Images/javascript-svgrepo-com.svg" alt="JavaScript Logo" class="logo2">
             <figcaption>JavaScript</figcaption>
@@ -144,7 +134,7 @@
 
       <!-- Front-End Tab -->
       <div id="frontend" class="skill-section" style="display:none;">
-        <div class="d-flex gap-3 flex-wrap justify-content-center align-items-center">
+        <div class="d-flex flex-wrap justify-content-center align-items-center">
           <figure class="logo-container2">
             <img src="Images/html-5-svgrepo-com.svg" alt="HTML Logo" class="logo2">
             <figcaption>HTML</figcaption>
@@ -166,7 +156,7 @@
 
       <!-- UI/UX Tab -->
       <div id="uiux" class="skill-section" style="display:none;">
-        <div class="d-flex gap-3 flex-wrap justify-content-center align-items-center">
+        <div class="d-flex flex-wrap justify-content-center align-items-center">
           <figure class="logo-container2">
             <img src="Images/figma-svgrepo-com.svg" alt="Figma Logo" class="logo2">
             <figcaption>Figma</figcaption>
@@ -346,17 +336,17 @@
           
           
     <section class="wallpaper my-5 bg-dark-subtle-section">
-  <h2 class="text-center mb-4 fw-semibold text-white">Client Feedback</h2>
+  <h2 class="text-center mb-4 fw-semibold">Client Feedback</h2>
   <div class="row g-4 justify-content-center">
     
     <!-- Testimonial 1 -->
     <div class="col-md-4 col-sm-6">
-    <div class="rounded p-4 h-100 text-white" >
+    <div class="rounded p-4 h-100 " >
         <div class="d-flex align-items-center gap-2 mb-2">
           <div class="bg-warning text-dark fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">D</div>
           <span class="small fw-semibold">Daniel Rotimi · Backend Dev</span>
         </div>
-        <p class="fst-italic text-white-50 small mb-2">“Joshua's precision and responsive design made collaboration seamless.”</p>
+        <p class="fst-italic small mb-2">“Joshua's precision and responsive design made collaboration seamless.”</p>
         <div class="text-warning">
           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
         </div>
@@ -365,12 +355,12 @@
 
     <!-- Testimonial 2 -->
     <div class="col-md-4 col-sm-6">
-     <div class="rounded p-4 h-100 text-white " >
+     <div class="rounded p-4 h-100 " >
         <div class="d-flex align-items-center gap-2 mb-2">
           <div class="bg-warning text-dark fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">R</div>
           <span class="small fw-semibold">Raymond Okoh · Product Manager</span>
         </div>
-        <p class="fst-italic text-white-50 small mb-2">“Impressed by the clean UI and how Joshua communicates. Very professional.”</p>
+        <p class="fst-italic  small mb-2">“Impressed by the clean UI and how Joshua communicates. Very professional.”</p>
         <div class="text-warning">
           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
         </div>
@@ -379,12 +369,12 @@
 
     <!-- Testimonial 3 -->
     <div class="col-md-4 col-sm-6">
-    <div class="rounded p-4 h-100 text-white " >
+    <div class="rounded p-4 h-100  " >
         <div class="d-flex align-items-center gap-2 mb-2">
           <div class="bg-warning text-dark fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">M</div>
           <span class="small fw-semibold">Mary O. · Customer Support</span>
         </div>
-        <p class="fst-italic text-white-50 small mb-2">“Every layout showed skill and care. Looking forward to more projects together.”</p>
+        <p class="fst-italic  small mb-2">“Every layout showed skill and care. Looking forward to more projects together.”</p>
         <div class="text-warning">
           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
         </div>
