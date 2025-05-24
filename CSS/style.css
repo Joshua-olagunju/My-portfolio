@@ -29,7 +29,7 @@ header nav a {
     display: inline-block; /* makes transform work better */
     transform-origin: center;   
     font-size: medium;   
-     font-weight: 500; 
+     font-weight:bold
 }
 header nav a:hover, footer nav a:hover{
     color: #0049a2 !important;
