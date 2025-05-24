@@ -1,0 +1,119 @@
+
+// Hero sections pop Messages
+const messages = [
+  "Front-End Developer",
+  "Creative UI/UX Designer"
+];
+
+let index = 0;
+const welcomeElement = document.getElementById("welcome");
+
+// Immediately show the first message
+welcomeElement.textContent = messages[index];
+// Start the loop
+setInterval(() => {
+  index = (index + 1) % messages.length;
+  welcomeElement.textContent = messages[index];
+}, 2000); // 2 seconds interval
+
+
+
+
+
+// BackToTop Section
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTopButton = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+          backToTopButton.classList.add('show');
+      } else {
+          backToTopButton.classList.remove('show');
+      }
+  });
+
+  backToTopButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+  });
+});
+
+// Mobile Menu Section
+// Get all the links in the mobile menu
+const menuLinks = document.querySelectorAll('.menu ul li a');
+
+// Loop through the links and add event listeners
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Get the checkbox that controls the mobile menu
+        const menuCheckbox = document.querySelector('.menu-checkbox');
+        
+        // Uncheck the checkbox to close the menu
+        menuCheckbox.checked = false;
+    });
+});
+
+
+
+// About Section message toggle
+ function showSection(section) {
+    const about = document.getElementById('aboutSection');
+    const experience = document.getElementById('experienceSection');
+
+    const btnAbout = document.getElementById('btnAbout');
+    const btnExperience = document.getElementById('btnExperience');
+
+    if (section === 'about') {
+      about.style.display = 'block';
+      experience.style.display = 'none';
+
+      btnAbout.classList.add('btn-light');
+      btnAbout.classList.remove('btn-outline-light');
+      btnExperience.classList.add('btn-outline-light');
+      btnExperience.classList.remove('btn-light');
+    } else {
+      about.style.display = 'none';
+      experience.style.display = 'block';
+
+      btnExperience.classList.add('btn-light');
+      btnExperience.classList.remove('btn-outline-light');
+      btnAbout.classList.add('btn-outline-light');
+      btnAbout.classList.remove('btn-light');
+    }
+  }
+
+  // Optional: Set default on page load
+  document.addEventListener('DOMContentLoaded', function () {
+    showSection('about');
+  });
+
+
+
+
+
+
+// Skill Section Event listener Messages
+
+function showSkill(sectionId) {
+  // Hide all skill sections
+  const sections = document.querySelectorAll('.skill-section');
+  sections.forEach(section => {
+    section.style.display = 'none';
+  });
+
+  // Show the selected section
+  document.getElementById(sectionId).style.display = 'block';
+
+  // Remove 'active' class from all buttons
+  const buttons = document.querySelectorAll('.skill-btn');
+  buttons.forEach(btn => btn.classList.remove('active'));
+
+  // Add 'active' class to the clicked button
+  const clickedBtn = document.querySelector(`[data-skill="${sectionId}"]`);
+  if (clickedBtn) {
+    clickedBtn.classList.add('active');
+  }
+}

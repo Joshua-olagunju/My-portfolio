@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link rel="icon" href="Images/letter-o-svgrepo-com.svg" type="image/svg+xml" sizes="16x16 32x32">
+    <title>Joshua Olagunju Portfolio</title>
+    <meta name="Description" content="Joshua Olagunju - Showcasing web development, UI/UX design, and cybersecurity projects.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    </head>
+
+    <body>
+      <header class="d-flex justify-content-between align-items-center  py-3 position-fixed">
+  <div class="fw-bold" style="font-size: xx-large; color: #00bfa6;">
+    Joshua O.
+    <div style="font-size: 0.8rem; color: #bbb;">
+      Front-End Developer & UI/UX Designer
+    </div>
+  </div>
+  <nav class="position-absolute top-50 start-50 translate-middle-x d-none d-md-flex gap-5">
+    <a href="#skills" class="text-decoration-none">SKILLS</a>
+    <a href="#about" class="text-decoration-none">ABOUT</a>
+    <a href="#projects" class="text-decoration-none">PROJECTS</a>
+    <a href="#contact" class="text-decoration-none text-warning" >CONTACT</a>
+  </nav>
+  <div class="d-flex align-items-center gap-3">
+    <!-- Mobile Menu -->
+    <div class="d-md-none">
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+      <label for="menu-toggle" class="menu-label">☰</label>
+      <nav class="menu">
+        <ul>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="text-decoration-none text-warning ">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+        </header>
+
+
+        
+   <section id="hero" class="mx-4  heroo" data-aos="-left">
+  <div class="row">
+    <div class="col-md-5 mb-5 mt-md-0 order-1 order-md-2 d-flex justify-content-start">
+      <img src="Images/Profile.jpg" class="img-fluid rounded feature-box" id="about-image" alt="Profile Picture" 
+           style="max-width: 250px; max-height: 250px; border: 4px solid #ffffff;">
+    </div>
+    <div class="col-md-7 align-items-start text-start d-flex flex-column order-2 order-md-1">
+      <div class="mb-3">
+        <span class="badge Available px-3 py-2 d-inline-flex align-items-center gap-2" style="font-size: 0.95rem;">
+          <span class="blinking-dot"></span> Available for Freelancing
+        </span>
+      </div>
+      <p class="mb-1 fs-1 fw-semibold">I’m <span style="color: #00bfa6;">Joshua Olagunju</span></p>
+      <p class="fs-2 fw-semibold mb-1" id="welcome" style="color: #aeaeae;"></p>
+      <p class="mb-3" style="color: #bbb;">
+        Passionate Front-End Developer crafting clean, interactive, and responsive websites with
+        a focus on great UI/UX. <span role="img" aria-label="sparkles">✨</span>
+      </p>
+      <div class="d-flex flex-wrap justify-content-start align-items-start gap-2 mt-2">
+        <button class="btn1 btn-outline-warning px-3 py-2 small" onclick="window.location.href='mailto:olagunjujoshua11@gmail.com'">
+          <i class="bi bi-briefcase"></i> Hire Me
+        </button>
+      </div>
+     
+  </div>
+
+  
+
+</section>
+
+
+
+
+    <!-- ABOUT SECTION -->
+<section class="container py-5 text-white" id="about">
+  <div class="row align-items-center">
+    
+    <!-- Left Column: Profile Image + Hire Me Button -->
+    <div class="col-md-5 d-flex flex-column align-items-center mb-4 mb-md-0 d-none d-md-flex">
+      <img src="Images/467865609_122128371410443868_6691633975994226230_n (1).jpg" 
+           alt="Hire Me" 
+           class="img-fluid rounded mb-3 feature-box"
+           style="max-width: 250px; border: 4px solid #000000;">
+    </div>
+
+    <!-- Right Column: About Me Text -->
+    <div class="col-md-7 text-start">
+      <h6 class="text-uppercase text-warning">Know more</h6>
+      <div id="aboutSection">
+        <h2 class="fw-semibold mb-3" style="color:#00bfa6">About Me</h2>
+        <p style="color: #bbb;">
+          A Frontend Developer skilled in HTML, CSS, JavaScript, Linux, and Python, with a growing interest in 
+          backend development and web security. I build user-friendly, accessible websites while exploring 
+          ethical hacking & cybersecurity to help secure the web. Passionate about clean code, 
+          UI/UX design, and continuous learning.
+        </p> 
+        <button class="btn1 text-dark px-3 py-2 small" onclick="window.open('https://drive.google.com/file/d/1MVO7jpCrmMEcRGx_KLPr4ZGpEB6bav0k/view?usp=sharing', '_blank')">
+          <i class="bi bi-file-earmark-pdf"></i> Resume 
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SKILLS SECTION -->
+<section class="container text-white" id="skills">
+  <h5 class="text-warning fw-bold mb-4 text-center">Skills</h5>
+
+  <!-- Skill Buttons -->
+  <div class="d-flex justify-content-center my-3">
+    <div class="d-flex gap-3">
+      <button class="btn btn-outline-light skill-btn active" data-skill="languages" onclick="showSkill('languages')">Languages</button>
+      <button class="btn btn-outline-light skill-btn" data-skill="frontend" onclick="showSkill('frontend')">Front-End</button>
+      <button class="btn btn-outline-light skill-btn" data-skill="uiux" onclick="showSkill('uiux')">UI/UX</button>
+    </div>
+  </div>
+
+  <!-- Skill Tabs -->
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+
+      <!-- Languages Tab -->
+      <div id="languages" class="skill-section">
+        <div class="d-flex gap-3 flex-wrap justify-content-center align-items-center">
+          <figure class="logo-container2">
+            <img src="Images/javascript-svgrepo-com.svg" alt="JavaScript Logo" class="logo2">
+            <figcaption>JavaScript</figcaption>
+          </figure>
+          <figure class="logo-container2">
+            <img src="Images/python-svgrepo-com(1).svg" alt="Python Logo" class="logo2">
+            <figcaption>Python</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Front-End Tab -->
+      <div id="frontend" class="skill-section" style="display:none;">
+        <div class="d-flex gap-3 flex-wrap justify-content-center align-items-center">
+          <figure class="logo-container2">
+            <img src="Images/html-5-svgrepo-com.svg" alt="HTML Logo" class="logo2">
+            <figcaption>HTML</figcaption>
+          </figure>
+          <figure class="logo-container2">
+            <img src="Images/css-svgrepo-com.svg" alt="CSS Logo" class="logo2">
+            <figcaption>CSS</figcaption>
+          </figure>
+          <figure class="logo-container2">
+            <img src="Images/bootstrap-4-logo-svgrepo-com.svg" alt="Bootstrap Logo" class="logo2">
+            <figcaption>Bootstrap</figcaption>
+          </figure>
+          <figure class="logo-container2">
+            <img src="Images/tailwindcss-icon-svgrepo-com.svg" alt="TailwindCSS Logo" class="logo2">
+            <figcaption>TailwindCSS</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- UI/UX Tab -->
+      <div id="uiux" class="skill-section" style="display:none;">
+        <div class="d-flex gap-3 flex-wrap justify-content-center align-items-center">
+          <figure class="logo-container2">
+            <img src="Images/figma-svgrepo-com.svg" alt="Figma Logo" class="logo2">
+            <figcaption>Figma</figcaption>
+          </figure>
+          <figure class="logo-container2">
+            <img src="Images/adobe-xd-1-logo-svgrepo-com.svg" alt="Adobe XD Logo" class="logo2">
+            <figcaption>Adobe XD</figcaption>
+          </figure>
+          <figure class="logo-container2">
+            <img src="Images/FigJam-technology (1).svg" alt="Figjam Logo" class="logo2">
+            <figcaption>Figjam</figcaption>
+          </figure>
+          <figure class="logo-container2">
+            <img src="Images/miro.svg" alt="Miro Logo" class="logo2">
+            <figcaption>Miro</figcaption>
+          </figure>
+          <figure class="logo-container2">
+            <img src="Images/canva-icon.svg" alt="Canva Logo" class="logo2">
+            <figcaption>Canva</figcaption>
+          </figure>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <section class="text-center mx-md-5 mx-2 mt-5">
+    <h5 class="text-white">Platforms and Version Control</h5>
+        <!-- First Row - 3 Tools -->
+        <div class="d-flex flex-wrap align-items-center justify-content-center">
+             <figure class="logo-container2 platform-item">
+            <img src="Images/figma-svgrepo-com.svg" alt="Figma Logo" class="logo2">
+            <figcaption>Figma</figcaption>
+        </figure>
+            <figure class="logo-container2 ">
+            <img src="Images/github.svg" alt="GitHub Logo" class="logo2 git">
+            <figcaption>GitHub</figcaption>
+        </figure>
+          
+           <figure class="logo-container2 platform-item">
+            <img src="Images/visual-studio-code-svgrepo-com.svg" alt="VS Code Logo" class="logo2">
+            <figcaption>VS Code</figcaption>
+        </figure>
+            <figure class="logo-container2 platform-item">
+            <img src="Images/discord-icon-svgrepo-com.svg" alt="Discord Logo" class="logo2">
+            <figcaption>Discord</figcaption>
+        </figure>
+            <figure class="logo-container2 platform-item">
+            <img src="Images/chrome-dev-svgrepo-com.svg" alt="Chrome DevTools Logo" class="logo2">
+            <figcaption>DevTools</figcaption>
+        </figure>
+        <figure class="logo-container2 platform-item">
+            <img src="Images/git-svgrepo-com(2).svg" alt="Git Logo" class="logo2 ">
+            <figcaption>Git</figcaption>
+        </figure>
+        </div>
+    </section>
+    
+    
+    <section class="container py-5 align-items-center justify-content-center " style="margin-top: 100px;">
+      <div class="mb-5 align-items-center justify-content-center">
+        <div class="mb-4 text-md-center">
+          <h1 id="projects" class="fw-semibold mb-5">Projects</h1>
+      
+
+
+    <div class="row g-4">
+      <!-- Project 1 -->
+      <div class="col-md-6 col-sm-6" data-aos="-up">
+  <div class=" card text-white h-100 border border-light shadow feature-box d-flex flex-column">
+    <img src="Images/Hero.png" class="card-img-top" alt="Project 1">
+   <div class="card-body d-flex flex-column" style="-webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);">
+
+      <h6 class="card-title text-warning fw-semibold">Joshua Olagunju Portfolio (Me)</h6>
+      <p class="card-text" style="font-size: 0.9rem;">
+        My personal portfolio showcasing front-end skills with clean UI, responsive design, and smooth navigation using HTML, CSS, JS & Bootstrap.
+      </p>
+      <div class="d-flex gap-2 justify-content-between mt-auto">
+        <a href="https://github.com/Joshua-olagunju/My-portfolio/blob/main/index.html" class="btn mt-2 btn-outline-light btn-dark btn-sm" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+         <a href="https://github.com/Joshua-olagunju/My-portfolio/blob/main/README.md" class="btn mt-2 btn-outline-light btn-success btn-sm" target="_blank"><i class="bi bi-file-earmark-text"></i> Case Study</a>
+        <a href="https://joshua-olagunju.github.io/My-portfolio/" class="btn mt-2 btn-outline-light btn-danger btn-sm" target="_blank"><i class="bi bi-record-circle"></i> Live</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 2 -->
+<div class="col-md-6 col-sm-6" data-aos="-up">
+  <div class="card  text-white h-100 border border-light shadow feature-box d-flex flex-column">
+    <img src="Images/Screenshot 2025-04-19 203233.png" class="card-img-top" alt="Project 2">
+    <div class="card-body d-flex flex-column" style="-webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);">
+
+      <h6 class="card-title text-warning fw-semibold">DriftTech Website</h6>
+      <p class="card-text" style="font-size: 0.9rem;">
+        A company site for web dev, cybersecurity & IT consulting. I handled 
+        front-end layout, UX, and responsiveness using HTML, CSS, JS & PHP.</p>
+      <div class="d-flex gap-2 justify-content-between mt-auto">
+         <a href="https://github.com/Joshua-olagunju/ReadMe-DriftTech/blob/main/README.md" class="btn mt-2 btn-outline-light btn-success btn-sm" target="_blank"><i class="bi bi-file-earmark-text"></i> Case Study</a>
+        <a href="https://drifttech.com.ng/index.php" class="btn mt-2 btn-outline-light btn-danger btn-sm" target="_blank"><i class="bi bi-record-circle"></i> View Live</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 3 -->
+<div class="col-md-6 col-sm-6" data-aos="-up">
+  <div class="card  text-white h-100 border border-light shadow feature-box d-flex flex-column">
+    <img src="Images/Screenshot 2025-04-21 154408.png" class="card-img-top" alt="Project 3">
+    <div class="card-body d-flex flex-column" style="-webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);">
+
+      <h6 class="card-title text-warning fw-semibold">Spacefit Sneakers</h6>
+      <p class="card-text" style="font-size: 0.9rem;">
+        A sleek landing page for showcasing stylish sneakers with responsive design
+         and smooth UX. Built with HTML, Bootstrap, CSS, and JavaScript.</p>
+      <div class="d-flex gap-2 justify-content-between mt-auto">
+        <a href="https://github.com/Joshua-olagunju/Spacefit-sneakers/blob/main/index.html" class="btn mt-2 btn-outline-light btn-dark btn-sm" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+        <a href="https://github.com/Joshua-olagunju/Spacefit-sneakers/blob/main/README.md" class="btn mt-2 btn-outline-light btn-success btn-sm" target="_blank"><i class="bi bi-file-earmark-text"></i> Case Study</a>
+        <a href="https://joshua-olagunju.github.io/Spacefit-sneakers/" class="btn mt-2 btn-outline-light btn-danger btn-sm" target="_blank"><i class="bi bi-record-circle"></i> Live</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 4 -->
+<div class="col-md-6 col-sm-6" data-aos="-up">
+  <div class="card  text-white h-100 border border-light shadow feature-box d-flex flex-column">
+    <img src="Images/Screenshot 2025-04-23 221322.png" class="card-img-top" alt="Project 4">
+   <div class="card-body d-flex flex-column" style="-webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);">
+
+      <h6 class="card-title text-warning fw-semibold">Portfolio Website (Temitayo Rotimi)</h6>
+      <p class="card-text" style="font-size: 0.9rem;">
+        A responsive, modern site built with HTML, CSS & JS to showcase the client’s work and contact info.</p>
+      <div class="d-flex gap-2 justify-content-between mt-auto">
+        <a href="https://github.com/Temitayo-Rotimi/My-portfolio" class="btn mt-2 btn-outline-light btn-dark btn-sm" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+        <a href="https://temitayo-rotimi.github.io/My-portfolio/" class="btn mt-2 btn-outline-light btn-danger btn-sm" target="_blank"><i class="bi bi-record-circle"></i> Live</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-sm-6" data-aos="-up">
+  <div class="card  text-white h-100 border border-light shadow feature-box d-flex flex-column">
+    <img src="Images/Screenshot 2025-05-15 132502.png" class="card-img-top" alt="Project 4">
+    <div class="card-body d-flex flex-column" style="-webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);">
+
+      <h6 class="card-title text-warning fw-semibold">Nmap Scanner (Python CLI Tool)</h6>
+        <p class="card-text" style="font-size: 0.9rem;">
+          A Python-based command-line tool for performing Nmap scans (SYN, TCP, UDP, OS Detection
+          ) and saving results to a file. Ideal for learning basic network scanning in cybersecurity.</p>
+          <div class="d-flex gap-2 justify-content-between mt-auto">
+        <a href="https://github.com/Joshua-olagunju/Nmap-Scanner/blob/main/nmapScan.py" class="btn mt-2 btn-outline-light btn-dark btn-sm" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+        <a href="https://github.com/Joshua-olagunju/Nmap-Scanner/blob/main/README.md" class="btn mt-2 btn-outline-light btn-success btn-sm" target="_blank"><i class="bi bi-file-earmark-text"></i> Case Study</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-6 col-sm-6" data-aos="-up">
+  <div class="card  text-white h-100 border border-light shadow feature-box d-flex flex-column">
+    <img src="Images/Screenshot 2025-05-22 103023.png" class="card-img-top" alt="Project 4">
+    <div class="card-body d-flex flex-column" style="-webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);">
+
+      <h6 class="card-title text-warning fw-semibold">Tech Blog</h6>
+      <p class="card-text" style="font-size: 0.9rem;">
+         My Personal Blog, about my Tech story, Journey and Lessons</p>
+      <div class="d-flex gap-2 justify-content-between mt-auto">
+        <a href="https://github.com/Joshua-olagunju/My-Blog/blob/main/index.html" class="btn mt-2 btn-outline-light btn-dark btn-sm" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+        <a href="https://joshua-olagunju.github.io/My-Blog/" class="btn mt-2 btn-outline-light btn-danger btn-sm" target="_blank"><i class="bi bi-record-circle"></i> Live</a>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+      </div>
+  </div>
+</div>
+  </section>
+          
+          
+    <section class="container py-5 bg-dark-subtle-section">
+  <h2 class="text-center mb-4 fw-semibold text-white">Client Feedback</h2>
+  <div class="row g-4 justify-content-center">
+    
+    <!-- Testimonial 1 -->
+    <div class="col-md-4 col-sm-6">
+    <div class="rounded p-4 h-100 text-white" >
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <div class="bg-warning text-dark fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">D</div>
+          <span class="small fw-semibold">Daniel Rotimi · Backend Dev</span>
+        </div>
+        <p class="fst-italic text-white-50 small mb-2">“Joshua's precision and responsive design made collaboration seamless.”</p>
+        <div class="text-warning">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="col-md-4 col-sm-6">
+     <div class="rounded p-4 h-100 text-white " >
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <div class="bg-warning text-dark fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">R</div>
+          <span class="small fw-semibold">Raymond Okoh · Product Manager</span>
+        </div>
+        <p class="fst-italic text-white-50 small mb-2">“Impressed by the clean UI and how Joshua communicates. Very professional.”</p>
+        <div class="text-warning">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="col-md-4 col-sm-6">
+    <div class="rounded p-4 h-100 text-white " >
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <div class="bg-warning text-dark fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">M</div>
+          <span class="small fw-semibold">Mary O. · Customer Support</span>
+        </div>
+        <p class="fst-italic text-white-50 small mb-2">“Every layout showed skill and care. Looking forward to more projects together.”</p>
+        <div class="text-warning">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+      
+      <section>
+          <div class="backtotop" id="backToTop">
+            <a href="#"><img src="Images\top-up-direction-move-svgrepo-com.svg" alt="back to top"></a>
+          </div>
+      </section>
+
+    <section id="contact" class="container py-5 align-items-start justify-content-start">
+            <h2  class="fw-semibold text-center mt-5 " >Let's Connect!</h2>
+            <p class="text-center" style="color: #bbb;">Feel free to reach out for collaborations, projects, or inquiries!</p>
+        <div class="row align-items-center mt-5">
+              <!-- Left Side: Image + Hire Me Button -->
+            <div class="col-md-5 d-flex flex-column align-items-center align-items-md-center mb-4 mb-md-0 " >
+      <img src="Images/467865609_122128371410443868_6691633975994226230_n (1).jpg" alt="Hire Me" class="img-fluid rounded-circle mb-3 feature-box"
+       style="max-width: 250px;  border: 4px solid #000000;">
+ 
+       <button class="btn1 px-3 py-2 small" onclick="window.location.href='mailto:olagunjujoshua11@gmail.com'">
+        <i class="bi bi-briefcase me-2"></i> Hire Me</button>
+        </div>
+          
+        <!-- Center Text -->
+        <div class="col-md-2 text-center my-3 my-md-0">
+            <span class="fw-bold text-white" style="font-size: 1.2rem;">OR</span>
+        </div>
+          
+         <!-- Right Side: Contact Form -->
+    <div class="col-md-5 d-flex flex-column align-items-center">
+      <form action="https://formspree.io/f/mkgjdyrv" method="POST" autocomplete="on" class="w-100" style="max-width: 400px;">
+        <div class="mb-3">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required autocomplete="name">
+        </div>
+        <div class="mb-3">
+          <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required autocomplete="email">
+        </div>
+        <div class="mb-3">
+      <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required autocomplete="off"></textarea>
+        </div>
+      <button type="submit" class="btn1  w-100 py-2 small">
+      <i class="bi bi-send me-2"></i> Send Message</button>
+      </form>
+    </div>
+  </section>
+            
+    <script src="JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1700,  // Duration of the animation
+        once: false,     // Make sure animation happens only once
+        mirror: true,
+    });
+    </script>
+
+    </body>
+    <footer class="footer py-5 text-white">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+          <!-- Left Section - Navigation Links -->
+          <div class="col-md-4 text-md-start text-center mt-2 mb-md-0">
+            <nav class="d-flex flex-column justify-content-md-left align-items-md-start align-items-start gap-2" style="font-size: larger;">
+              <p class="fw-bold mb-0" style="color: #00bfa6;">Quick Links</p>
+                        <a href="#skills" class="text-white small" style="padding: 2px 4px;">Skills</a>
+                        <a href="#about" class="text-white small" style="padding: 2px 4px;">About</a>
+                        <a href="#projects" class="text-white small" style="padding: 2px 4px;">Projects</a>          
+            </nav>
+          </div>
+
+          <div class="col-md-4 text-center mt-4 mt-md-0">
+                <p class="fw-bold" style="color: #00bfa6;">Connect with me</p>
+              <div class="mx-5 d-flex flex-wrap justify-content-center gap-4 social-icons">
+        <a href="https://github.com/Joshua-olagunju" target="_blank"><i class="bi bi-github "></i></a>
+        <a href="https://www.linkedin.com/in/joshuaolagunju/" target="_blank"><i class="bi bi-linkedin "></i></a>
+        <a href="https://wa.me/+2349037498695" target="_blank"><i class="bi bi-whatsapp "></i></a> 
+              </div>
+              <div class="d-flex justify-content-center mt-3">
+        <a class="libutton" href="https://www.linkedin.com/in/joshuaolagunju" target="_blank">Follow me on LinkedIn</a>
+              </div>
+          </div>
+
+          <!-- Right Section - Contact Information -->
+          <div class="col-md-4 d-flex justify-content-end align-items-end mt-5 mb-md-0">
+                <div class="text-end">
+                  <p class=" fw-bold" style="color: #00bfa6;">Contact me at:</p>
+                  <p><a href="mailto:olagunjujoshua11@gmail.com" class="text-white small">olagunjujoshua11@gmail.com</a></p>
+                  <p><a href="tel:+2349037498695" class="text-white small">+234 9037 498695</a></p>
+                </div>
+          </div>
+    <!-- Footer Bottom Section -->
+          <div class="row justify-content-center mt-4">
+            <div class="col-12 text-center">
+                <hr style="border-color: #fff;">
+                <p class="footer-copy text-muted small">© 2025 Joshua Olagunju — All Rights Reserved.</p>
+            </div>
+          </div>
+    </div>
+    </footer>   
+</html>   
