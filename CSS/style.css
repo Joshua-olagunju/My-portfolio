@@ -43,7 +43,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: auto;  
-    background-color: #2b2b2b;   
+    background-color: #121212;   
 }
 footer nav {
     display: flex;
@@ -134,14 +134,13 @@ footer nav a{
 .social-icons a:hover i.bi-github { color: #ccc; transform: scale(1.2); }
 .social-icons a:hover i.bi-linkedin { color: #0A66C2; transform: scale(1.2); }
 .social-icons a:hover i.bi-whatsapp { color: #25D366; transform: scale(1.2); }
+.social-icons a:hover i.bi-twitter { color: #0A66C2; transform: scale(1.2); }
 
 .social-icons1 a i {
     font-size: 2.1rem;
     color: white;
     transition: transform 0.3s, color 0.3s;
 }
-.social-icons1 a:hover i.bi-github { color: #ccc; transform: scale(1.2); }
-.social-icons1 a:hover i.bi-linkedin { color: #0A66C2; transform: scale(1.2); }
   /* ========================
    Mobile Responsiveness Section
    ======================== */
@@ -220,81 +219,13 @@ footer nav a{
 /* ========================
    Skills Section
    ======================== */
-.skill-section {
-  /* Remove max-height and overflow so no scroll */
-  max-height: none;
-  overflow-y: visible;
-  padding-right: 0;
-  
-  display: flex;
-  flex-direction: column; /* stacked vertically */
-  gap: 1rem;
-  align-items: center; /* center skill boxes */
-}
-
-.TechnicalBox {
-  background-color: #2b2b2b;
-  padding: 16px 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  color: #f1f1f1;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-  width: 230px; /* fixed width like desktop */
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
-
-.TechnicalBox:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-}
-
-.logoooo {
-  height: 50px;
-  background-color: #000000;
-  border: 1px solid #ffffff;
-  margin: 0;
-  padding: 12px;
-  width: 50px;
-  border-radius: 10px;
-  flex-shrink: 0;
-}
-
-/* ========================
-   Mobile Responsiveness Section
-   ======================== */
-@media screen and (max-width: 768px) {
-  .skill-section {
-    /* keep stacked vertically and centered */
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .TechnicalBox {
-    width: 230px; /* keep same width, no full width */
-    max-width: 90vw; /* but allow some responsiveness */
-  }
-  
-  .logoooo {
-    margin-right: 10px;
-  }
-  
-  progress {
-    max-width: 100%;
-  }
-}
-
 .logo-container, .logo-container2 {
   background: rgba(255, 255, 255, 0.05); /* soft glass effect */
   backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   width: 120px;
-  margin: 10px 10px;
+  margin: 5px;
   padding: 8px;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -307,7 +238,6 @@ footer nav a{
 }
 .logo2 {
     height: 50px;
-    margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
 }
