@@ -1,12 +1,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  background-color: #2d2d2d;
-  /* subtle square grid pattern */
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 120px 120px; /* size of each square */
+  overflow-x: hidden;
 }
 
 
@@ -120,7 +115,22 @@ footer nav a{
     align-items: center;
     justify-content: center;
 }
-
+.btn3 {
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn3:hover{
+    background-color: #000000;
+    color: #ffffff !important;
+    border-color: #000000;
+    border: 1px solid #ffffff;
+}
 .btn2 {
     color: #000000 !important;
     background-color:  #ffffff;
@@ -179,8 +189,24 @@ footer nav a{
    Hero Section
    ======================== */
 .heroo {
-    margin-top: 190PX;
+    margin-top: 150PX;
     padding: 60px;
+     background-color: #2d2d2d;
+  /* subtle square grid pattern */
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 120px 120px; /* size of each square */
+}
+.wallpaper{
+  padding: 60px 0px;
+       background-color: #2d2d2d;
+  /* subtle square grid pattern */
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 120px 120px; /* size of each square */
+
 }
 .blinking-dot {
   height: 10px;
