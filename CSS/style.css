@@ -1,0 +1,391 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+   background-color: #fcfcfc;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+h1, h2, h3, h4, h5 ,h6 ,p{
+    color: #000000;
+}
+  /* ========================
+   Header and footer Section
+   ======================== */
+header {
+    height: 80px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+     background-color: #ffffff;
+}
+header nav a {
+    display: inline-block; /* makes transform work better */
+    transform-origin: center;   
+    font-size: medium;   
+     font-weight: 600;
+     text-decoration: none;
+}
+header nav a:hover, footer nav a:hover{
+    text-decoration: overline !important;
+}
+footer {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;  
+    
+}
+footer nav {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+footer nav a{
+    text-decoration: none;    
+}
+.footer-copy {
+    color: #ffffff !important;
+     font-size: 0.9rem; 
+}
+.libutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 16px;
+    text-align: center;
+    outline: none;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    width: fit-content;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #0A66C2;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  .libutton:hover {
+    background-color: #004182;
+  }
+  /* ========================
+            Buttons 
+      ======================== */
+.btn1 {
+    color: #ffffff !important;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 10px;          /* smaller radius */
+    padding: 8px 20px;          /* less horizontal padding */
+    text-decoration: none;
+    display: inline-flex;        /* to center icon/text if any */
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn2 {
+    color:  #ffb413;
+    background-color: #ffffff;
+    border: 1px solid #c9c9c9;
+    border-radius: 10px;          /* smaller radius */
+    padding: 8px 20px;          /* less horizontal padding */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: #e7a009;
+    color: #ffffff !important;
+}
+
+.social-icons a i {
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+}
+.social-icons a:hover i.bi-github { color: #ccc; transform: scale(1.2); }
+.social-icons a:hover i.bi-linkedin { color: #0A66C2; transform: scale(1.2); }
+.social-icons a:hover i.bi-whatsapp { color: #25D366; transform: scale(1.2); }
+.social-icons a:hover i.bi-twitter { color: #0A66C2; transform: scale(1.2); }
+
+.social-icons1 a i {
+    font-size: 2.1rem;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s, color 0.3s;
+}
+.social-icons1 a:hover i.bi-github { color: #ccc; transform: scale(1.2); }
+.social-icons1 a:hover i.bi-linkedin { color: #0A66C2; transform: scale(1.2); }
+  /* ========================
+   Mobile Responsiveness Section
+   ======================== */
+   @media (max-width: 768px) {
+    footer{
+        height: 630px;
+    }
+    header nav{
+        display: none;
+    }
+    body{
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    }
+   /* ========================
+   Hero Section
+   ======================== */
+.heroo {
+  margin-top: 80px;
+  padding: 60px;
+  
+  position: relative;
+  
+}
+
+.Available {
+  color: #00b200;
+  font-weight: normal;
+  background-color: #f0fff4;
+  border-radius: 25px;
+  padding: 6px 12px;
+  box-shadow: 0 0 5px rgba(0, 178, 0, 0.3);
+  width: fit-content;
+}
+
+.blinking-dot {
+  height: 6px;
+  width: 6px;
+  background-color: #00ff9d;
+  border-radius: 50%;
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.scroll-down-indicator {
+  animation: bounce 2s infinite;
+  z-index: 999;
+  cursor: pointer;
+  color: #00ffcc;
+  font-weight: 500;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* NEW: Signature watermark */
+body::before {
+  content: "Joshua Olagunju";
+  position: fixed;
+  bottom: 200px;
+  right: 50px;
+  opacity: 0.04;
+  font-size: 3rem;
+  transform: rotate(-30deg);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.scroll-text {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.main-container{
+  margin-top: 80px;
+}
+.feature-box {
+    background-color: transparent;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(44, 44, 44, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-box:hover {
+    transform: scale(1.01);
+    box-shadow: 0 3px 6px rgba(41, 41, 41, 0.15);
+}
+@media screen and (max-width: 768px){
+    .heroo{
+        padding:50px 7px;
+    }
+}
+/* ========================
+   Scroll margin Section
+   ======================== */
+    #skills, #about, #contact, #projects{
+    scroll-margin-top: 180px; /* Adjust this to match the height of your header */
+}
+ /* ========================
+   Mobile Responsiveness Section
+   ======================== */
+@media (max-width: 768px) {
+  #skills {
+    scroll-margin-top: 250px; /* Adjust this to match the height of your header */
+}
+}
+/* ========================
+   Skills Section
+   ======================== */
+.logo-container, .logo-container2 {
+  background: rgba(255, 255, 255, 0.05); /* soft glass effect */
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  width: 120px;
+  margin: 5px;
+  padding: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.logo-container2:hover {
+    transform: scale(1.05);
+}
+.logo2 {
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.logo-container2 figcaption{
+    color: #ffffff;
+    background-color: #000000;
+}
+ /* ========================
+   BackToTop Section
+   ======================== */
+.backtotop img {
+    width: 50px;          /* Set the width of the logo */
+    height: auto;         /* Keep the aspect ratio */
+    margin-bottom: 10px;
+    padding: 0;
+    margin-right: 20px;  
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+    z-index: 9999;
+}
+.backtotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(100px);
+    z-index: 9999;
+}
+.backtotop a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.backtotop.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+     /* ========================
+   Drop down menu mobile Section
+   ======================== */
+@media (min-width: 768px) {
+    .menu-label, .menu-checkbox, .menu {
+        display: none; /* Hide the mobile menu for larger screens */
+    }
+    .desktop-nav {
+        display: block; /* Show desktop navigation */
+    }
+}
+/* Mobile Navigation Styles */
+@media screen and (max-width: 767px) {
+    .desktop-nav {
+        display: none; /* Hide desktop nav on mobile */
+    }
+    /* Mobile menu button (Hamburger) */
+    .menu-label {
+        font-size: 35px;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 12px;
+        right: 20px;
+        color: #000000;
+        font-weight: bold;
+    }
+    /* Hidden checkbox that controls the menu */
+    .menu-checkbox {
+        display: none;
+    }
+    /* Menu container (hidden by default) */
+    .menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #2b2b2b;
+        padding: 20px 10px;
+        z-index: 999;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    /* List style inside the menu */
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+    }
+    /* Menu item styling */
+    .menu ul li {
+        margin: 15px 0;
+    }
+    .menu ul li a {
+        color: #fff !important;
+        text-decoration: none;
+        display: block;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        padding: 10px 0;
+        text-transform: uppercase; /* Letter design effect */        
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s ease;
+    }
+    /* Hover effect for menu items */
+    .menu ul li a:hover {
+      color: #00bfa6;
+        border-color:#00bfa6;
+    }
+    /* When the checkbox is checked, show the menu */
+    .menu-checkbox:checked ~ .menu {
+        display: block;
+    }
+}
