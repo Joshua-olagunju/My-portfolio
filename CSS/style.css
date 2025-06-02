@@ -206,7 +206,7 @@ body::before {
   border-radius: 10px;
   width: 120px;
   margin: 5px;
-  padding: 8px;
+  padding: 8px 0px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
