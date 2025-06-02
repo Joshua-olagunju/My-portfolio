@@ -39,8 +39,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: auto;  
-    
+    margin-top: auto;    
 }
 footer nav {
     display: flex;
@@ -76,40 +75,6 @@ footer nav a{
   .libutton:hover {
     background-color: #004182;
   }
-  /* ========================
-            Buttons 
-      ======================== */
-.btn1 {
-    color: #ffffff !important;
-    background-color: #000000;
-    border: 1px solid #ffffff;
-    border-radius: 10px;          /* smaller radius */
-    padding: 8px 20px;          /* less horizontal padding */
-    text-decoration: none;
-    display: inline-flex;        /* to center icon/text if any */
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
-
-.btn2 {
-    color:  #ffb413;
-    background-color: #ffffff;
-    border: 1px solid #c9c9c9;
-    border-radius: 10px;          /* smaller radius */
-    padding: 8px 20px;          /* less horizontal padding */
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
-
-.btn1:hover, .btn2:hover {
-    background-color: #e7a009;
-    color: #ffffff !important;
-}
-
 .social-icons a i {
     font-size: 1.5rem;
     color: white;
@@ -146,12 +111,9 @@ footer nav a{
    ======================== */
 .heroo {
   margin-top: 80px;
-  padding: 60px;
-  
+  padding: 60px; 
   position: relative;
-  
 }
-
 .Available {
   color: #00b200;
   font-weight: normal;
@@ -161,7 +123,6 @@ footer nav a{
   box-shadow: 0 0 5px rgba(0, 178, 0, 0.3);
   width: fit-content;
 }
-
 .blinking-dot {
   height: 6px;
   width: 6px;
@@ -170,13 +131,11 @@ footer nav a{
   display: inline-block;
   animation: blink 1s infinite;
 }
-
 @keyframes blink {
   0% { opacity: 1; }
   50% { opacity: 0; transform: scale(0.9); }
   100% { opacity: 1; transform: scale(1); }
 }
-
 .scroll-down-indicator {
   animation: bounce 2s infinite;
   z-index: 999;
@@ -184,12 +143,10 @@ footer nav a{
   color: #00ffcc;
   font-weight: 500;
 }
-
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(8px); }
 }
-
 /* NEW: Signature watermark */
 body::before {
   content: "Joshua Olagunju";
@@ -202,13 +159,11 @@ body::before {
   z-index: 0;
   pointer-events: none;
 }
-
 .scroll-text {
   font-size: 0.75rem;
   letter-spacing: 1px;
   color: #000000;
 }
-
 .main-container{
   margin-top: 80px;
 }
