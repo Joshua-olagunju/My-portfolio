@@ -222,6 +222,12 @@ body::before {
     color: #ffffff;
     background-color: #000000;
 }
+
+.card-img-top {
+  height: 150px; /* or any fixed height you want */
+  object-fit: cover;
+}
+
  /* ========================
    BackToTop Section
    ======================== */
