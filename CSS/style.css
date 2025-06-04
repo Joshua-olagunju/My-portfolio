@@ -68,7 +68,7 @@ footer nav a{
     background-color: #0A66C2;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     transition: background-color 0.3s ease;
   }
   .libutton:hover {
