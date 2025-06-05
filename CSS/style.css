@@ -253,10 +253,7 @@ body::before {
     color: #005ebc;
 }
  /* ========================
-   B     text-decoration: none;
-    color: #000000;
-    font-size: small;
-    mackToTop Section
+   BackToTop Section
    ======================== */
 .backtotop img {
     width: 50px;          /* Set the width of the logo */
