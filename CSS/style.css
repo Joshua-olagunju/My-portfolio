@@ -77,7 +77,7 @@ footer nav a{
     background-color: #004182;
   }
 .btn{
-    border-radius: 0px;
+    border-radius: 10px;
     color: #cc6666;
     background-color: #1f1f1f;
     border: 1px solid #cc6666;
@@ -131,12 +131,13 @@ footer nav a{
   margin-top: 80px;
   margin-bottom: 80px;
   padding: 60px; 
+  position: relative;
 }
 .Available {
   color: #cc6666; /* your accent color */
   background-color: #1f1f1f; /* dark background for badge */
   border: 1px solid #cc6666;
-  border-radius: 0px;
+  border-radius: 10px;
   padding: 6px 12px;
   width: fit-content;
 }
@@ -155,7 +156,7 @@ footer nav a{
   color: #aaa;
   border: 1px solid #cc6666 !important;
   transition: all 0.3s ease;
-  border-radius: 0% !important;
+  border-radius: 10px !important;
 }
 .strength-pill:hover {
   background-color: #cc6666;
@@ -165,7 +166,7 @@ footer nav a{
   background-color: #171717; /* dark card bg */
   border: 1px solid #cc666655;
   width: 100%;
-  border-radius: 0px;
+  border-radius: 10px;
 }
 /* Card title */
 .card-title {
@@ -248,7 +249,7 @@ body::before {
   background: rgba(255, 255, 255, 0.05); /* soft glass effect */
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 0px;
+  border-radius: 10px;
   width: 100px;
   margin: 5px;
   padding: 8px 0px;
@@ -275,7 +276,7 @@ body::before {
 .card-img-top {
   height: 150px; /* or any fixed height you want */
   object-fit: cover;
-  border-radius: 0%; 
+  border-radius: 10px; 
 }
 .readmore{
     text-decoration: none;
@@ -291,7 +292,7 @@ body::before {
   color: #000000;
   padding: 6px 14px;
   font-size: 0.75rem;
-  border-radius: 0px;
+  border-radius: 10px;
   transition: all 0.3s ease;
   text-decoration: none;
 }
