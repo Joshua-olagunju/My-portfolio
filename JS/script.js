@@ -80,3 +80,5 @@ function showSkill(sectionId) {
     clickedBtn.classList.add('active');
   }
 }
+
+
