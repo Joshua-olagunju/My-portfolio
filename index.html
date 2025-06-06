@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+        <head>
     <link rel="icon" href="Images/letter-o-svgrepo-com.svg" type="image/svg+xml" sizes="16x16 32x32">
     <title>Joshua Olagunju Portfolio</title>
     <meta name="Description" content="Joshua Olagunju - Showcasing web development, UI/UX design, and cybersecurity projects.">
@@ -10,19 +10,21 @@
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="CSS/style.css">
-    </head>
+        </head>
 
     <body>
-      <header class="d-flex justify-content-between align-items-center position-fixed">
-  <div class="fw-bold" style="font-size:xx-large; color: #000000;">
-  <i class="bi bi-code-slash me-2"></i>
+
+    <!-- HEADER SECTION -->
+    <header class="d-flex justify-content-between align-items-center position-fixed">
+  <div class="fw-bold d-flex" style="font-size:xx-large;"><a href="" style="text-decoration: none; color: #cc6666;">
+  <span style="color: #aaa;">C</span><i class="bi bi-code-slash"></i><span style="color: #aaa;">DE</span></a>
   </div>
   <nav class=" d-none d-md-flex gap-5">
-    <a href="#skills" class="text-dark">SKILLS</a>
-    <a href="#about" class=" text-dark">ABOUT</a>
-    <a href="#projects" class=" text-dark">PROJECTS</a>
-    <a href="#experience" class=" text-dark">EXPERIENCE</a>
-    <a href="#contact" class="btn btn-dark btn-sm px-4">CONTACT</a>
+    <a href="#skills" style="color: #aaa;"><i class="bi bi-tools"></i> SKILLS</a>
+    <a href="#about" style="color: #aaa;"><i class="bi bi-person"></i> ABOUT</a>
+    <a href="#projects" style="color: #aaa;"><i class="bi bi-window-stack"></i> PROJECTS</a>
+    <a href="#experience" style="color: #aaa;"><i class="bi bi-briefcase"></i> EXPERIENCE</a>
+    <a href="#contact" style="color: #cc6666;"><i class="bi bi-envelope"></i> CONTACT</a>
   </nav>
   <div class="d-flex align-items-center gap-3">
     <!-- Mobile Menu -->
@@ -31,51 +33,51 @@
       <label for="menu-toggle" class="menu-label">☰</label>
       <nav class="menu">
         <ul>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact" class="text-decoration-none">CONTACT</a></li>
+          <li><a href="#skills" style="color: #aaa;"><i class="bi bi-tools"></i> Skills</a></li>
+          <li><a href="#about" style="color: #aaa;"><i class="bi bi-person"></i> About</a></li>
+          <li><a href="#projects" style="color: #aaa;"><i class="bi bi-window-stack"></i> Projects</a></li>
+          <li><a href="#experience" style="color: #aaa;"><i class="bi bi-briefcase"></i> Experience</a></li>
+          <li><a href="#contact" style="color: #cc6666;"><i class="bi bi-envelope"></i> CONTACT</a></li>
         </ul>
       </nav>
     </div>
   </div>
-        </header>
-    
-  <section id="hero" class="heroo bg-dark">
-    <p class="text-center fs-2 fw-semibold mb-3 text-white" id="welcome"></p>
-    <div class="d-flex justify-content-center align-items-center position-absolute start-50 end-50">
-      <img src="Images/Profile.jpg" class="img-fluid rounded-circle feature-box" id="about-image" alt="Profile Picture" 
-           style="max-width: 120px; max-height: 120px; border: 4px solid #ffffff;">
-    </div>
-  </section>
+    </header>
 
-  <section class="mt-5 mx-3 text-center text-md-start ms-md-5 d-md-flex justify-content-between align-items-start gap-4">
+    <!-- HERO SECTION -->
+    <section id="hero" class="heroo">
+    <p class="text-center fs-2 fw-semibold mb-3" style="color: #cc6666;" id="welcome"></p>
+    <div class="d-flex justify-content-center align-items-center position-absolute start-50 end-50">
+        <img src="Images/Profile.jpg" class="img-fluid rounded-circle feature-box" id="about-image" alt="Profile Picture" 
+         style="max-width: 120px; max-height: 120px; border: 3px solid #cc6666;">
+    </div>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section class="mt-5 mx-3 text-center text-md-start ms-md-5 d-md-flex justify-content-between align-items-start gap-4">
 
         <div class="flex-grow-1 " style="max-width: 400px;">
-    <h3 class="main-container fw-bold fs-4 mt-md-5 mb-3 text-dark">Joshua Olagunju</h3>
+    <h3 class="fw-bold fs-4 mt-md-5 mb-3 " style="color: #cc6666;">Joshua Olagunju</h3>
     <div class="badge Available py-2 px-3 align-items-center align-items-md-start gap-2 justify-content-center justify-content-md-start" style="font-size: 0.7rem;">
-      <span class="blinking-dot"></span> Currently Open for Freelance Projects
+      <span class="blinking-dot me-2"></span> Currently Open for Freelance Projects
     </div>
-    <p class="mt-2 mb-1" style="font-size: 0.9rem;">
+    <p class="mt-2 mb-1 small">
       <i class="bi bi-briefcase-fill me-2"></i>Available for Freelance & Fulltime Jobs</p>
-    <p class="my-2" style="font-size: 0.9rem;">
+    <p class="my-2 small">
       <i class="bi bi-code-slash me-2"></i>Front-End development | UI/UX design | Web development</p>
-    <p style="font-size: 0.9rem;">
+    <p class="small">
       <i class="bi bi-globe me-2"></i>Lagos, Nigeria</p>
     <div class="d-flex flex-column align-items-center align-items-md-start mx-auto gap-1 my-3">
       <a href="mailto:olagunjujoshua11@gmail.com" target="_blank" class="btn btn-dark btn-sm px-4">
-     <i class="bi bi-link-45deg me-2"></i> Hire Me
+     <i class="bi-person-workspace me-2"></i>Hire Me
       </a>
     </div>
         </div>
-
   <!-- Right: Project card -->
         <div class="d-flex justify-content-center mt-4">
-      <div class="card shadow-sm p-4" style="max-width: 350px; width: 100%;">
+      <div class="card p-4" style="max-width: 350px; width: 100%;">
     <h5 class="card-title fw-semibold mb-2 text-center">Strengths</h5>
-
-    <div class="d-flex flex-wrap justify-content-center gap-2 mt-2 small text-dark">
+    <div class="d-flex flex-wrap justify-content-center gap-2 mt-2 small ">
   <span class="px-3 py-1 border rounded-pill small strength-pill">Problem Solver</span>
   <span class="px-3 py-1 border rounded-pill small strength-pill">Creative Thinker</span>
   <span class="px-3 py-1 border rounded-pill small strength-pill">Attention to Detail</span>
@@ -90,57 +92,56 @@
       </div>
         </div>
   <!-- Scroll Down Indicator -->
-    <div class="scroll-down-indicator position-fixed bottom-0 end-50 m-3 d-none d-md-flex flex-column align-items-center text-dark">
+    <div class="scroll-down-indicator position-fixed bottom-0 end-50 m-3 d-none d-md-flex flex-column align-items-center">
     <span class="scroll-text small mb-1">Scroll Down</span>
     <i class="bi bi-arrow-down-short fs-4"></i>
     </div>
     </section>
 
     <!-- ABOUT SECTION -->
-      <section class="mx-md-5 mx-3 py-5 text-white" id="about">
-        <div class="row align-items-center py-5">
-    
+    <section class="mx-md-5 mx-3 py-5 text-white" id="about">
+  <div class="row align-items-center py-5">
     <!-- Left Column: About Me Text -->
-       <div class="col-md-7 text-start order-md-1 order-2">
+    <div class="col-md-7 text-start order-md-1 order-2">
       <div class="d-flex align-items-center mb-3">
-        <h3 class="fw-bold mb-0" style="color:#000000;">About Me</h3>  
+        <h3 class="fw-bold mb-0" style="color: #cc6666;">About Me</h3>  
       </div>
-      <p style="font-size: 0.9rem; line-height: 1.6;">
-       I'm a Front-End Developer passionate about creating responsive, accessible, and 
-       user-friendly websites. With strong skills in HTML, CSS, JavaScript, WordPress,
+      <p style="line-height: 1.6;" class="small">
+        I'm a Front-End Developer passionate about creating responsive, accessible, and 
+        user-friendly websites. With strong skills in HTML, CSS, JavaScript, WordPress,
         and Git, I build clean, maintainable code and intuitive interfaces that offer 
         smooth user experiences. I'm also growing my expertise in UI/UX design to better
-         combine visual appeal with functionality, always striving to learn, adapt,
-         and improve in every project.
+        combine visual appeal with functionality, always striving to learn, adapt,
+        and improve in every project.
       </p> 
-      <button class="btn btn-dark btn-sm px-4" onclick="window.open('https://drive.google.com/file/d/1G__40qK4gq5oz7v5vtF2el1IEmk_tS7o/view?usp=sharing', '_blank')">
-          <i class="bi bi-file-earmark-pdf me-2"></i> Resume 
-        </button>
-        </div>
+      <button class="btn btn-sm px-4"
+              onclick="window.open('https://drive.google.com/file/d/1G__40qK4gq5oz7v5vtF2el1IEmk_tS7o/view?usp=sharing', '_blank')">
+        <i class="bi bi-file-earmark-pdf me-2"></i> Resume 
+      </button>
+    </div>
 
     <!-- Right Column: Profile Image -->
     <div class="col-md-5 d-flex justify-content-center order-md-2 order-1 mb-4 mb-md-0">
       <img src="Images/467865609_122128371410443868_6691633975994226230_n (1).jpg" 
            alt="Joshua Olagunju" 
            class="img-fluid rounded-circle feature-box shadow-lg"
-           style="max-width: 220px; border: 4px solid #494949;">
+           style="max-width: 220px; border: 2px solid #cc6666;">
     </div>
-        </div>
-        </section>
-
-
-<!-- SKILLS SECTION -->
-      <section class="text-center text-white" id="skills">
-          <h3 class="fw-bold mb-3" style="color:#000000">Skills</h3>
+  </div>
+    </section>
+  
+    <!-- SKILLS SECTION -->
+    <section class="text-center text-white" id="skills">
+  <h3 class="fw-bold mb-4" >Skills</h3>
 
   <!-- Skill Buttons -->
-        <div class="d-flex justify-content-center my-3">
+  <div class="d-flex justify-content-center my-3">
     <div class="d-flex gap-3">
-      <button class="btn btn-outline-dark btn-sm skill-btn active" data-skill="languages" onclick="showSkill('languages')">Languages</button>
-      <button class="btn btn-outline-dark btn-sm skill-btn" data-skill="frontend" onclick="showSkill('frontend')">Front-End</button>
-      <button class="btn btn-outline-dark btn-sm skill-btn" data-skill="uiux" onclick="showSkill('uiux')">UI/UX</button>
+      <button class="btn  btn-sm skill-btn active" data-skill="languages" onclick="showSkill('languages')">Languages</button>
+      <button class="btn  btn-sm skill-btn" data-skill="frontend" onclick="showSkill('frontend')">Front-End</button>
+      <button class="btn btn-sm skill-btn" data-skill="uiux" onclick="showSkill('uiux')">UI/UX</button>
     </div>
-        </div>
+  </div>
 
   <!-- Skill Tabs -->
   <div class="row justify-content-center">
@@ -211,52 +212,53 @@
     </div>
   </div>
 
-   <h5 class="fs-5 text-dark text-center mt-5">Platforms & Version Control</h5>
-        <div class="d-flex flex-wrap align-items-center justify-content-center">
-             <figure class="logo-container2 platform-item">
-            <img src="Images/figma-svgrepo-com.svg" alt="Figma Logo" class="logo2">
-            <figcaption>Figma</figcaption>
-        </figure>
-            <figure class="logo-container2 ">
-            <img src="Images/github.svg" alt="GitHub Logo" class="logo2 git">
-            <figcaption>GitHub</figcaption>
-        </figure>
-           <figure class="logo-container2 platform-item">
-            <img src="Images/visual-studio-code-svgrepo-com.svg" alt="VS Code Logo" class="logo2">
-            <figcaption>VS Code</figcaption>
-        </figure>
-        <figure class="logo-container2 platform-item">
-            <img src="Images/git-svgrepo-com(2).svg" alt="Git Logo" class="logo2 ">
-            <figcaption>Git</figcaption>
-        </figure>
-         <figure class="logo-container2 platform-item">
-            <img src="Images/wordpress-svgrepo-com.svg" alt="WordPress Logo" class="logo2 ">
-            <figcaption>WordPress</figcaption>
-        </figure>
-        </div>
+  <h5 class="fs-5 text-center mt-5">Platforms & Version Control</h5>
+  <div class="d-flex flex-wrap align-items-center justify-content-center">
+    <figure class="logo-container2 platform-item">
+      <img src="Images/figma-svgrepo-com.svg" alt="Figma Logo" class="logo2">
+      <figcaption>Figma</figcaption>
+    </figure>
+    <figure class="logo-container2">
+      <img src="Images/github.svg" alt="GitHub Logo" class="logo2 git">
+      <figcaption>GitHub</figcaption>
+    </figure>
+    <figure class="logo-container2 platform-item">
+      <img src="Images/visual-studio-code-svgrepo-com.svg" alt="VS Code Logo" class="logo2">
+      <figcaption>VS Code</figcaption>
+    </figure>
+    <figure class="logo-container2 platform-item">
+      <img src="Images/git-svgrepo-com(2).svg" alt="Git Logo" class="logo2">
+      <figcaption>Git</figcaption>
+    </figure>
+    <figure class="logo-container2 platform-item">
+      <img src="Images/wordpress-svgrepo-com.svg" alt="WordPress Logo" class="logo2">
+      <figcaption>WordPress</figcaption>
+    </figure>
+  </div>
 
-  <p class="d-flex flex-wrap justify-content-center gap-1 mt-2 small text-dark container">
-  <strong class="me-1 ">Other tools:</strong>
-  <span class="px-3 py-1 border rounded-pill small me-1 strength-pill">Discord</span>
-  <span class="px-3 py-1 border rounded-pill small me-1 strength-pill">Chrome DevTools</span>
-  <span class="px-3 py-1 border rounded-pill small me-1  strength-pill">XAMPP</span>
-  <span class="px-3 py-1 border rounded-pill small me-1  strength-pill">WooCommerce</span>
+  <p class="d-flex flex-wrap justify-content-center gap-1 mt-2 small text-light container">
+    <strong class="me-1 mb-0" style="color: #aaa;">Other tools:</strong>
+    <span class="px-3 py-1 border rounded-pill small strength-pill">Discord</span>
+    <span class="px-3 py-1 border rounded-pill small strength-pill">Chrome DevTools</span>
+    <span class="px-3 py-1 border rounded-pill small strength-pill">XAMPP</span>
+    <span class="px-3 py-1 border rounded-pill small strength-pill">WooCommerce</span>
   </p>
-</section>
+    </section>
     
+    <!-- PROJECTS SECTION -->
     <section class="project container mb-5 align-items-center justify-content-center " style="margin-top: 100px;">
       <div class="mb-5 align-items-center justify-content-center">
         <div class="mb-4 text-md-center">
-          <h3 id="projects" class="fw-bold mb-3 text-dark"> Featured projects</h3>
+          <h3 id="projects" class="fw-bold mb-3" style="color: #cc6666;"> Featured projects</h3>
 
-      <div class="row g-2">
+      <div class="row g-3">
         <div class="col-md-4">
           <div class="card h-100 feature-box">
-       <img src="Images/Screenshot 2025-06-05 162852.png" class="card-img-top" alt="Project 1">
+       <img src="Images/Screenshot 2025-06-06 160008.png" class="card-img-top" alt="Project 1">
        <div class="mx-3 d-flex flex-column h-100">
         <div class="mb-5">
-       <h6 class="card-title text-dark fw-semibold mt-4 text-start" >Portfolio Website</h6>
-       <p class="card-text text-start" style="font-size: 0.8rem;">
+       <h6 class="card-title fw-semibold mt-4 text-start" >Portfolio Website</h6>
+       <p class="card-text text-start small">
         My personal portfolio showcasing front-end skills with clean UI, responsive design,
          and smooth navigation using HTML, CSS, JS & Bootstrap...
           <a href="https://github.com/Joshua-olagunju/My-portfolio/blob/main/README.md"
@@ -275,8 +277,8 @@
        <img src="Images/Screenshot 2025-04-21 154408.png" class="card-img-top" alt="Project 3">
        <div class="mx-3 d-flex flex-column h-100">
         <div class="mb-5">
-       <h6 class="card-title text-dark fw-semibold mt-4 text-start" >Spacefit Sneakers</h6>
-       <p class="card-text text-start" style="font-size: 0.8rem;">
+       <h6 class="card-title fw-semibold mt-4 text-start" >Spacefit Sneakers</h6>
+       <p class="card-text text-start small">
          A sleek landing page for showcasing stylish sneakers with responsive design
          and smooth UX. Built with HTML, Bootstrap, CSS, and JavaScript...
               <a href="https://github.com/Joshua-olagunju/Spacefit-sneakers/blob/main/README.md" 
@@ -295,8 +297,8 @@
        <img src="Images/Screenshot 2025-05-22 103023.png" class="card-img-top" alt="Project 4">
        <div class="mx-3 d-flex flex-column h-100">
         <div class="mb-5">
-       <h6 class="card-title text-dark fw-semibold mt-4 text-start" >Tech Blog</h6>
-       <p class="card-text text-start" style="font-size: 0.8rem;">
+       <h6 class="card-title fw-semibold mt-4 text-start" >Tech Blog</h6>
+       <p class="card-text text-start small">
          My Personal Blog, about my Tech story, Journey and Lessons.</p>
         </div>
          <div class="d-flex gap-2 mb-3 justify-content-between mt-auto ">
@@ -312,8 +314,8 @@
        <img src="Images/Screenshot 2025-06-05 162108.png" class="card-img-top" alt="Project 2">
        <div class="mx-3 d-flex flex-column h-100">
         <div class="mb-5">
-       <h6 class="card-title text-dark fw-semibold mt-4 text-start" >DriftTech Website</h6>
-       <p class="card-text text-start" style="font-size: 0.8rem;">
+       <h6 class="card-title  fw-semibold mt-4 text-start" >DriftTech Website</h6>
+       <p class="card-text text-start small">
          A company site for web dev, cybersecurity & IT consulting. I handled 
         front-end layout, UX, and responsiveness using HTML, CSS, JS & PHP...
       <a href="https://github.com/Joshua-olagunju/ReadMe-DriftTech/blob/main/README.md"
@@ -331,8 +333,8 @@
        <img src="Images/Screenshot 2025-06-05 001509.png" class="card-img-top" alt="Project 4">
        <div class="mx-3 d-flex flex-column h-100">
         <div class="mb-5">
-       <h6 class="card-title text-dark fw-semibold mt-4 text-start" >Web Dev Portfolio</h6>
-       <p class="card-text text-start" style="font-size: 0.8rem;">
+       <h6 class="card-title fw-semibold mt-4 text-start" >Web Dev Portfolio</h6>
+       <p class="card-text text-start small" >
         A responsive, modern site built with HTML, CSS & JS to showcase the client’s work and contact info.</p>
       </div>
          <div class="d-flex gap-2 mb-3 justify-content-between mt-auto">
@@ -348,22 +350,22 @@
         </div>
     </section>
       
-
- <section class="container">
-  <h3 id="experience" class="text-start text-md-center mb-3 mt-4 fw-bold text-dark">Professional Experience</h3>
+    <!-- EXPERIENCE SECTION -->
+    <section class="container">
+  <h3 id="experience" class="text-start text-md-center mb-3 mt-4 fw-bold" style="color: #aaa;">Professional Experience</h3>
   <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
 
     <div class="card container text-start feature-box">
-      <h6 class="mt-4 ms-3 text-dark fw-semibold">Front-End Intern (Web Content Uploader)</h6>
+      <h6 class="mt-4 ms-3 fw-semibold" style="color: #cc6666;">Front-End Intern (Web Content Uploader)</h6>
       <p class="small mb-1 ms-3 fw-semibold">GAOTek Inc.</p>
-      <p class="small ms-3">
+      <p class="small ms-3" style="color: #cc6666;">
         <i class="bi bi-calendar-range me-2"></i>June 2025 - Present
       </p>
       <p class="ms-3 me-3 small">
         Work on front-end development and content management of WordPress sites with
         a focus on clean, responsive design.
       </p>
-      <ul style="font-size: 0.8rem; line-height: 1.5rem; color: #575757;">
+      <ul style="font-size: 0.8rem; line-height: 1.5rem; color: #aaa;">
         <li>Upload and manage product listings, images, and content using WordPress and WooCommerce.</li>
         <li>Collaborate with developers to update website layouts and resolve content-related issues.</li>
         <li>Ensure content is consistently formatted and optimized for user experience and SEO.</li>
@@ -372,112 +374,128 @@
     </div>
 
     <div class="card container text-start feature-box">
-      <h6 class="mt-4 ms-3 text-dark fw-semibold">Front-End Developer</h6>
+      <h6 class="mt-4 ms-3 fw-semibold" style="color: #cc6666;">Front-End Developer</h6>
       <p class="small mb-1 ms-3 fw-semibold">Freelance</p>
-      <p class="small ms-3">
+      <p class="small ms-3" style="color: #cc6666;">
         <i class="bi bi-calendar-range me-2"></i>July 2024 - Present
       </p>
       <p class="ms-3 me-3 small">
        Independently design and develop responsive, high-performance websites focused on
         clean code and user experience.
       </p>
-      <ul style="font-size: 0.8rem; line-height: 1.5rem; color: #575757;">
+      <ul style="font-size: 0.8rem; line-height: 1.5rem; color: #aaa;">
         <li>Design and develop responsive websites using HTML, CSS, and JavaScript.</li>
         <li>Customize layouts and implement interactive features to enhance user experience.</li>
         <li>Use Git and GitHub for version control and project collaboration.</li>
         <li>Communicate with clients to understand requirements and deliver tailored solutions.</li>
       </ul>
     </div>
-
   </div>
-</section>
-
-               
-    <section class="pt-5 bg-dark-subtle-section">
-  <h3 class="text-center mb-3 mt-4 fw-bold text-dark">Client Feedback</h3>
+    </section>
+           
+    <!-- FEEDBACK SECTION -->
+    <section class="pt-5">
+  <h3 class="text-center mb-3 mt-4 fw-bold" style="color: #aaa;">Client Feedback</h3>
   <div class="container">
-    <div class="row g-4 justify-content-center">
+    <div class="row justify-content-center">
 
       <!-- Testimonial 1 -->
-      <div class="col-md-4 col-sm-6">
-        <article class="rounded p-4 h-100 shadow-sm bg-white">
-          <div class="d-flex align-items-center gap-2 mb-2" style="background-color: #000000;">
-            <div class="text-white fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">D</div>
-            <span class="small text-white fw-semibold">Daniel Rotimi · Backend Dev</span>
-          </div>
-          <p class="fst-italic small mb-2">“Joshua's precision and responsive design made collaboration seamless.”</p>
-          <div style="color: #e7a009;">
-            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-          </div>
-        </article>
+      <div class="col-md-4 col-sm-6 mb-2"> <!-- Added mb-4 for vertical gap -->
+        <div class="feature-box h-100" style="background-color: #171717; border: 1px solid #cc666655;">
+          <article class="rounded p-4 h-100">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class=" fw-semibold rounded-circle d-flex align-items-center justify-content-center"
+                   style="width: 32px; height: 32px; background-color: #cc6666; color: #000000;">D</div>
+              <span class="small fw-semibold" style="color: #cc6666;">Daniel Rotimi · Backend Dev</span>
+            </div>
+            <p class="fst-italic small mb-2">“Joshua's precision and responsive design made collaboration seamless.”</p>
+            <div style="color: #e7a009;">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            </div>
+          </article>
+        </div>
       </div>
 
       <!-- Testimonial 2 -->
-      <div class="col-md-4 col-sm-6">
-        <article class="rounded p-4 h-100 shadow-sm bg-white">
-          <div class="d-flex align-items-center gap-2 mb-2" style="background-color: #000000;">
-            <div class="text-white fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">R</div>
-            <span class="small text-white fw-semibold">Raymond Okoh · Product Manager</span>
-          </div>
-          <p class="fst-italic small mb-2">“Impressed by the clean UI and how Joshua communicates. Very professional.”</p>
-          <div style="color: #e7a009;">
-            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-          </div>
-        </article>
+      <div class="col-md-4 col-sm-6 mb-2">
+        <div class="feature-box h-100" style="background-color: #171717; border: 1px solid #cc666655;">
+          <article class="rounded p-4 h-100">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="fw-semibold rounded-circle d-flex align-items-center justify-content-center"
+                   style="width: 32px; height: 32px; background-color: #cc6666; color: #000000;">R</div>
+              <span class="small fw-semibold" style="color: #cc6666;">Raymond Okoh · Product Manager</span>
+            </div>
+            <p class="fst-italic small mb-2">“Impressed by the clean UI and how Joshua communicates. Very professional.”</p>
+            <div style="color: #e7a009;">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+          </article>
+        </div>
       </div>
 
       <!-- Testimonial 3 -->
-      <div class="col-md-4 col-sm-6">
-        <article class="rounded p-4 h-100 shadow-sm bg-white">
-          <div class="d-flex align-items-center gap-2 mb-2" style="background-color: #000000;">
-            <div class="text-white fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">M</div>
-            <span class="small text-white fw-semibold">Mary O. · Customer Support</span>
-          </div>
-          <p class="fst-italic small mb-2">“Every layout showed skill and care. Looking forward to more projects together.”</p>
-          <div style="color: #e7a009;">
-            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-          </div>
-        </article>
+      <div class="col-md-4 col-sm-6 mb-2">
+        <div class="feature-box h-100" style="background-color: #171717; border: 1px solid #cc666655;">
+          <article class="rounded p-4 h-100">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="fw-semibold rounded-circle d-flex align-items-center justify-content-center"
+                   style="width: 32px; height: 32px; background-color: #cc6666; color: #000000;">M</div>
+              <span class="small fw-semibold" style="color: #cc6666;">Mary O. · Customer Support</span>
+            </div>
+            <p class="fst-italic small mb-2">“Every layout showed skill and care. Looking forward to more projects together.”</p>
+            <div style="color: #e7a009;">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+            </div>
+          </article>
+        </div>
       </div>
 
     </div>
-    <!-- Optional CTA -->
+
+    <!-- CTA -->
     <div class="text-center mt-4">
-      <a href="#" class="btn btn-outline-dark btn-sm ">Leave Your Feedback</a>
+      <a href="#" class="btn btn-sm px-4">
+        Leave Your Feedback
+      </a>
     </div>
   </div>
-</section>
+    </section>
 
-
+    <!-- BACKTOTOP SECTION -->
     <section>
           <div class="backtotop" id="backToTop">
             <a href="#"><img src="Images\top-up-direction-move-svgrepo-com.svg" alt="back to top"></a>
           </div>
     </section>
 
-      <section id="contact" class="mb-5 d-flex flex-column align-items-center justify-content-center">
-    <h3 class="fw-bold text-center mt-5 text-dark">Let's Connect!</h3>
-  <p class="text-center">Feel free to reach out for collaborations, projects, or inquiries!</p>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="mb-5 d-flex flex-column align-items-center justify-content-center">
+  <h3 class="fw-bold text-center mt-5" style="color: #cc6666;">Let's Connect!</h3>
+  <p class="text-center" style="color: #ccc;">Feel free to reach out for collaborations, projects, or inquiries!</p>
 
   <div class="w-100 d-flex justify-content-center px-3">
     <form action="https://formspree.io/f/mkgjdyrv" method="POST" autocomplete="on" class="w-100" style="max-width: 400px;">
-      <div class="mb-3">
-        <input type="text" name="name" class="form-control" placeholder="Your Name" required autocomplete="name" />
+      <div class="mb-2">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required autocomplete="name"
+          style="background-color: #121212; border: 1px solid #cc666655; color: #fff;" />
       </div>
-      <div class="mb-3">
-        <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required autocomplete="email" />
+      <div class="mb-2">
+        <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required autocomplete="email"
+          style="background-color: #121212; border: 1px solid #cc666655; color: #fff;" />
       </div>
-      <div class="mb-3">
-        <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required autocomplete="off"></textarea>
+      <div class="mb-2">
+        <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required autocomplete="off"
+          style="background-color: #121212; border: 1px solid #cc666655; color: #fff;"></textarea>
       </div>
-      <button type="submit" class="w-100 py-2 small" style="color: #fff; background-color: #000000;">
+      <button type="submit" class="w-100 py-2 small btn"
+      >
         <i class="bi bi-send me-2"></i> Send Message
       </button>
     </form>
   </div>
-        </section>
+    </section>
 
-        
+  
     <script src="JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
@@ -490,23 +508,38 @@
 
     </body>
     <hr>
+
+    <!-- FOOTER SECTION -->
     <footer class="footer py-5">
         <div class="container">
             <div class="row align-items-center justify-content-between">
           <!-- Left Section - Navigation Links -->
           <div class="col-md-4 text-md-start text-center mt-2 mb-md-0">
             <nav class="d-flex flex-column justify-content-md-left align-items-md-start align-items-start gap-2">
-              <p class="fw-bold mb-0" style="color: #000000;">Quick Links</p>
-                  <a href="#skills" class="small" style="padding: 2px 4px; color: #494949;">SKILLS</a>
-                  <a href="#about" class="small" style="padding: 2px 4px; color: #494949;">ABOUT</a>
-                  <a href="#projects" class="small" style="padding: 2px 4px; color: #494949;">PROJECT</a>
-                  <a href="#experience" class="small" style="padding: 2px 4px; color: #494949;">EXPERIENCE</a>
-                  <a href="https://joshua-olagunju.github.io/My-Blog/" class="small" style="padding: 2px 4px; color: #494949;">BLOG</a>       
+              <p class="fw-bold mb-0" style="color: #cc6666;">Quick Links</p>
+                  <a href="#skills" class="small" style="padding: 2px 4px; color: #aaa;">SKILLS</a>
+                  <a href="#about" class="small" style="padding: 2px 4px; color: #aaa;">ABOUT</a>
+                  <a href="#projects" class="small" style="padding: 2px 4px; color: #aaa;">PROJECT</a>
+                  <a href="#experience" class="small" style="padding: 2px 4px; color: #aaa;">EXPERIENCE</a>
+                  <a href="https://joshua-olagunju.github.io/My-Blog/" class="small" style="padding: 2px 4px; color: #aaa;">BLOG</a>       
             </nav>
           </div>
 
+          
+
           <div class="col-md-4 text-center mt-4 mt-md-0">
-                <p class="fw-bold" style="color: #000000;">Connect with me</p>
+            <!-- Logo in Footer -->
+<div class="row justify-content-center mt-4">
+  <div class="col-auto">
+    <div class="fw-bold d-flex align-items-center justify-content-center" style="font-size: xx-large; color: #cc6666;">
+      <p style="color: #aaa;" class="mb-0">C</p>
+      <i class="bi bi-code-slash mx-1"></i>
+      <p style="color: #aaa;" class="mb-0">DE</p>
+    </div>
+  </div>
+</div>
+
+                <p class="fw-bold" style="color: #cc6666;">Connect with me</p>
               <div class="mx-5 d-flex flex-wrap justify-content-center gap-4 social-icons">
         <a href="https://github.com/Joshua-olagunju" target="_blank"><i class="bi bi-github "></i></a>
         <a href="https://www.linkedin.com/in/joshuaolagunju/" target="_blank"><i class="bi bi-linkedin "></i></a>
@@ -514,19 +547,20 @@
         <a href="https://x.com/soji_olagunju37" target="_blank"><i class="bi bi-twitter "></i></a> 
               </div>
               <div class="d-flex justify-content-center mt-3">
-        <a class="libutton" href="https://www.linkedin.com/in/joshuaolagunju" target="_blank">Follow me on LinkedIn</a>
+        <a class="libutton small" href="https://www.linkedin.com/in/joshuaolagunju" target="_blank">Follow me on LinkedIn</a>
               </div>
           </div>
 
           <!-- Right Section - Contact Information -->
           <div class="col-md-4 d-flex justify-content-end align-items-end mt-5 mb-md-0">
                 <div class="text-end">
-                  <p class=" fw-bold" style="color: #000000;">Contact me at:</p>
-                  <p><a href="mailto:olagunjujoshua11@gmail.com" class=" small" style="color: #494949;">olagunjujoshua11@gmail.com</a></p>
-                  <p><a href="tel:+2349037498695" class=" small" style="color: #494949;">+234 9037 498695</a></p>
+                  <p class=" fw-bold" style="color: #cc6666;">Contact me at:</p>
+                  <p><a href="mailto:olagunjujoshua11@gmail.com" class=" small" style="color: #aaa;">olagunjujoshua11@gmail.com</a></p>
+                  <p><a href="tel:+2349037498695" class=" small" style="color: #aaa;">+234 9037 498695</a></p>
                   <p><i class="bi bi-globe me-2"></i>Lagos, Nigeria</p>
                 </div>
           </div>
+          
     <!-- Footer Bottom Section -->
           <div class="row justify-content-center mt-4">
             <div class="col-12 text-center">
@@ -535,5 +569,5 @@
             </div>
           </div>
     </div>
-      </footer>   
+    </footer>   
 </html>   

@@ -2,11 +2,11 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-   background-color: #fcfcfc;
-   font-family: Arial, Helvetica, sans-serif;
-}
-h1, h2, h3, h4, h5 ,h6 ,p{
-    color: #575757;
+  font-family: Arial, Helvetica, sans-serif;
+  background: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(135deg, #000000, #000000);
+  background-size: 20px 20px, 100% 100%;
 }
   /* ========================
    Header and footer Section
@@ -19,7 +19,11 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
-     background-color: #ffffff;
+      background-color: #242424; /* soft light gray */
+ background: 
+    radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(135deg, #000000, #1a1a1a);
+  background-size: 20px 20px, 100% 100%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Bottom shadow */
 }
 header nav a {
@@ -27,9 +31,10 @@ header nav a {
     transform-origin: center;   
     font-size: medium;   
      text-decoration: none;
+     
 }
 header nav a:hover, footer nav a:hover{
-    text-decoration: overline !important;
+    color: #cc6666 !important;
 }
 footer {
     width: 100%;
@@ -57,29 +62,35 @@ footer nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 7px 16px;
+    padding: 9px 14px;
     text-align: center;
-    outline: none;
+    font-size: small;
     text-decoration: none !important;
     color: #ffffff !important;
     width: fit-content;
-    height: 40px;
     border-radius: 20px;
     background-color: #0A66C2;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     transition: background-color 0.3s ease;
   }
   .libutton:hover {
     background-color: #004182;
   }
 .btn{
-    border-radius: 8px;
+    border-radius: 0px;
+    color: #cc6666;
+    background-color: #1f1f1f;
+    border: 1px solid #cc6666;
+     font-weight: 500;
+}
+.btn:hover{
+  background-color: #cc6666;
+  color: #000;
+ 
 }
 .social-icons a i {
     font-size: 1.5rem;
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     transition: transform 0.3s, color 0.3s;
 }
 .social-icons a:hover i.bi-github { color: #3e3e3e; transform: scale(1.2); }
@@ -111,40 +122,59 @@ footer nav a{
    /* ========================
    Hero Section
    ======================== */
+   #hero {
+  background-color: rgba(11, 11, 11, 0.7);
+  background-image: radial-gradient(circle, rgba(112, 69, 69, 0.15) 1px, transparent 1px);
+  background-size: 15px 15px;
+}
 .heroo {
   margin-top: 80px;
+  margin-bottom: 80px;
   padding: 60px; 
-  position: relative;
 }
 .Available {
-  color: #00b200;
-  font-weight: normal;
-  background-color: #f0fff4;
-  border-radius: 25px;
+  color: #cc6666; /* your accent color */
+  background-color: #1f1f1f; /* dark background for badge */
+  border: 1px solid #cc6666;
+  border-radius: 0px;
   padding: 6px 12px;
-  box-shadow: 0 0 5px rgba(0, 178, 0, 0.3);
   width: fit-content;
 }
+/* Adjust blinking dot to match accent */
 .blinking-dot {
   height: 6px;
   width: 6px;
-  background-color: #00ff9d;
+  background-color: #03d562;
   border-radius: 50%;
   display: inline-block;
   animation: blink 1s infinite;
 }
 .strength-pill {
-  background-color: #f0f0f0;
+  background-color: #1f1f1f; 
   padding: 6px 12px;
-  border-radius: 25px;
-  font-size: 0.75rem;
-  color: #333;
+  color: #aaa;
+  border: 1px solid #cc6666 !important;
   transition: all 0.3s ease;
+  border-radius: 0% !important;
 }
-
 .strength-pill:hover {
-  background-color: #000000;
-  color: #fff;
+  background-color: #cc6666;
+  color: #000;
+}
+.card {
+  background-color: #171717; /* dark card bg */
+  border: 1px solid #cc666655;
+  width: 100%;
+  border-radius: 0px;
+}
+/* Card title */
+.card-title {
+  color: #aaa;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+p, h1, h2, h3, h4, h5, h6{
+  color: #aaa;
 }
 @keyframes blink {
   0% { opacity: 1; }
@@ -155,7 +185,7 @@ footer nav a{
   animation: bounce 2s infinite;
   z-index: 999;
   cursor: pointer;
-  color: #00ffcc;
+  color: #cc6666;
   font-weight: 500;
 }
 @keyframes bounce {
@@ -177,14 +207,9 @@ body::before {
 .scroll-text {
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #000000;
-}
-.main-container{
-  margin-top: 80px;
+  color: #cc6666;
 }
 .feature-box {
-   
-    
     box-shadow: 0 4px 10px rgba(44, 44, 44, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -214,11 +239,16 @@ body::before {
 /* ========================
    Skills Section
    ======================== */
+
+  .active{
+    background-color: #cc6666 !important;
+    color: #000 !important;
+  }
 .logo-container, .logo-container2 {
   background: rgba(255, 255, 255, 0.05); /* soft glass effect */
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  border-radius: 0px;
   width: 100px;
   margin: 5px;
   padding: 8px 0px;
@@ -235,44 +265,40 @@ body::before {
     border-radius: 5px;
 }
 .logo-container2 figcaption{
-    color: #ffffff;
-    background-color: #000000;
+    color: #000000;
+    background-color: #cc6666;
     font-size: smaller;
 }
-.card{
-    border-radius: 20px;
-}
+/* ========================
+   Projects Section
+   ======================== */
 .card-img-top {
   height: 150px; /* or any fixed height you want */
   object-fit: cover;
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px;
+  border-radius: 0%; 
 }
 .readmore{
     text-decoration: none;
     color: #005ebc;
-
     margin-top: auto;
     font-size: 0.8rem;
 }
+.readmore:hover{
+    text-decoration: underline;
+}
 .live {
-  background-color: #f1f1f1;
-  color: #000;
+  background-color: #cc6666;
+  color: #000000;
   padding: 6px 14px;
   font-size: 0.75rem;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+  border-radius: 0px;
   transition: all 0.3s ease;
   text-decoration: none;
 }
-
 .live:hover {
-  background-color: #000000;
-  color: #fff;
-  border-color: #000000;
-}
-.readmore:hover{
-    color: #005ebc;
+  background-color: #1f1f1f;
+  color: #cc6666;
+  border: 1px solid #cc6666;
 }
  /* ========================
    BackToTop Section
@@ -283,6 +309,7 @@ body::before {
     margin-bottom: 10px;
     padding: 0;
     margin-right: 20px;  
+    filter: brightness(0) saturate(100%) invert(34%) sepia(76%) saturate(1081%) hue-rotate(322deg) brightness(93%) contrast(86%);
 }
 #backToTop {
     position: fixed;
@@ -342,9 +369,9 @@ body::before {
         cursor: pointer;
         display: block;
         position: absolute;
-        top: 22px;
+        top: 10px;
         right: 20px;
-        color: #000000;
+        color: #aaa;
         font-weight: bold;
     }
     /* Hidden checkbox that controls the menu */
@@ -358,7 +385,7 @@ body::before {
         top: 80px;
         left: 0;
         width: 100%;
-        background: #2b2b2b;
+        background: #141414;
         padding: 20px 10px;
         z-index: 999;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -375,7 +402,6 @@ body::before {
         margin: 15px 0;
     }
     .menu ul li a {
-        color: #fff !important;
         text-decoration: none;
         display: block;
         font-size: 1.2rem;
@@ -384,11 +410,6 @@ body::before {
         text-transform: uppercase; /* Letter design effect */        
         border-bottom: 2px solid transparent;
         transition: all 0.3s ease;
-    }
-    /* Hover effect for menu items */
-    .menu ul li a:hover {
-      color: #00bfa6;
-        border-color:#00bfa6;
     }
     /* When the checkbox is checked, show the menu */
     .menu-checkbox:checked ~ .menu {
