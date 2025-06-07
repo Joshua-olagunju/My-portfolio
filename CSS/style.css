@@ -34,7 +34,7 @@ header nav a {
      
 }
 header nav a:hover, footer nav a:hover{
-    color: #cc6666 !important;
+    color: #2c6d9e !important;
 }
 footer {
     width: 100%;
@@ -80,11 +80,11 @@ footer nav a{
     border-radius: 5px;
     color: #aaa;
     background-color: #1f1f1f;
-    border: 1px solid #cc6666;
+    border: 1px solid #2c6d9e;
      font-weight: 500;
 }
 .btn:hover{
-  background-color: #cc6666;
+  background-color: #2c6d9e;
   color: #000;
  
 }
@@ -136,7 +136,7 @@ footer nav a{
 .Available {
   color: #aaa; /* your accent color */
   background-color: #1f1f1f; /* dark background for badge */
-  border: 1px solid #cc6666;
+  border: 1px solid #2c6d9e;
   border-radius: 5px;
   padding: 6px 12px;
   width: fit-content;
@@ -154,17 +154,17 @@ footer nav a{
   background-color: #1f1f1f; 
   padding: 6px 12px;
   color: #aaa;
-  border: 1px solid #cc6666 !important;
+  border: 1px solid #2c6d9e !important;
   transition: all 0.3s ease;
   border-radius: 5px !important;
 }
 .strength-pill:hover {
-  background-color: #cc6666;
+  background-color: #2c6d9e;
   color: #000;
 }
 .card {
   background-color: #171717; /* dark card bg */
-  border: 1px solid #cc666655;
+  border: 1px solid #2c6d9e55;
   width: 100%;
   border-radius: 5px;
 }
@@ -186,7 +186,7 @@ p, h1, h2, h3, h4, h5, h6{
   animation: bounce 2s infinite;
   z-index: 999;
   cursor: pointer;
-  color: #cc6666;
+  color: #2c6d9e;
   font-weight: 500;
 }
 @keyframes bounce {
@@ -208,7 +208,7 @@ body::before {
 .scroll-text {
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #cc6666;
+  color: #2c6d9e;
 }
 .feature-box {
     box-shadow: 0 4px 10px rgba(44, 44, 44, 0.05);
@@ -242,7 +242,7 @@ body::before {
    ======================== */
 
   .active{
-    background-color: #cc6666 !important;
+    background-color: #2c6d9e !important;
     color: #000 !important;
   }
 .logo-container, .logo-container2 {
@@ -288,7 +288,7 @@ body::before {
     text-decoration: underline;
 }
 .live {
-  background-color: #cc6666;
+  background-color: #2c6d9e;
   color: #000000;
   padding: 6px 14px;
   font-size: 0.75rem;
@@ -298,8 +298,8 @@ body::before {
 }
 .live:hover {
   background-color: #1f1f1f;
-  color: #cc6666;
-  border: 1px solid #cc6666;
+  color: #2c6d9e;
+  border: 1px solid #2c6d9e;
 }
  /* ========================
    BackToTop Section
