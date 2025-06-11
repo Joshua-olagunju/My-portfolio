@@ -82,3 +82,14 @@ function showSkill(sectionId) {
 }
 
 
+ const toggleBtn = document.getElementById("toggle-projects");
+  const hiddenProjects = document.querySelectorAll(".extra-project");
+
+  toggleBtn.addEventListener("click", () => {
+    hiddenProjects.forEach((project) => {
+      project.classList.toggle("d-none");
+    });
+
+    toggleBtn.textContent =
+      toggleBtn.textContent === "Show More" ? "Show Less" : "Show More";
+  });

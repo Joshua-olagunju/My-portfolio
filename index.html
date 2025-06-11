@@ -244,16 +244,18 @@
     <span class="px-3 py-1 border rounded-pill small strength-pill">WooCommerce</span>
   </p>
     </section>
-    
-    <!-- PROJECTS SECTION -->
-    <section class="project container mb-5 align-items-center justify-content-center " style="margin-top: 100px;">
-      <div class="mb-5 align-items-center justify-content-center">
-        <div class="mb-4 text-md-center">
-          <h3 id="projects" class="fw-bold mb-3" style="color: #aaa;"> Featured projects</h3>
 
-      <div class="row g-3">
-        <div class="col-md-4">
-          <div class="card h-100 feature-box">
+    <!-- PROJECTS SECTION -->
+    <section class="project container mb-5 align-items-center justify-content-center" style="margin-top: 100px;">
+  <div class="mb-5 align-items-center justify-content-center">
+    <div class="mb-4 text-md-center">
+      <h3 id="projects" class="fw-bold mb-3" style="color: #aaa;">Featured projects</h3>
+    </div>
+
+    <div class="row g-3" id="project-container">
+      <!-- Project 1 -->
+      <div class="col-md-4">
+       <div class="card h-100 feature-box">
        <img src="Images/Screenshot 2025-06-06 160008.png" class="card-img-top" alt="Project 1">
        <div class="mx-3 d-flex flex-column h-100">
         <div class="mb-5">
@@ -270,10 +272,30 @@
         </div>
       </div>
           </div>
-        </div>
+      </div>
 
-          <div class="col-md-4">
-          <div class="card h-100 feature-box">
+      <!-- Project 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 feature-box">
+    <img src="Images/Screenshot 2025-06-11 114315.png" class="card-img-top" alt="WooCommerce Project">
+    <div class="mx-3 d-flex flex-column h-100">
+      <div class="mb-5">
+        <h6 class="card-title fw-semibold mt-4 text-start">WooCommerce Store Setup</h6>
+        <p class="card-text text-start small">
+          A local WordPress store built with XAMPP, WooCommerce, and Astra Theme. Tasks included product CSV import, plugin setup, and UI customization via WordPress Customizer.
+        </p>
+      </div>
+      <div class="d-flex mb-3 justify-content-between mt-auto">
+        <a href="https://github.com/your-username/woocommerce-task" class="btn-dark btn btn-sm" target="_blank">Read More <i class="bi bi-book-half"></i></a>
+        <a href="https://drive.google.com/your-folder-link" class="live" target="_blank">View Demo <i class="bi bi-box-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 feature-box">
        <img src="Images/Screenshot 2025-04-21 154408.png" class="card-img-top" alt="Project 3">
        <div class="mx-3 d-flex flex-column h-100">
         <div class="mb-5">
@@ -290,10 +312,11 @@
         </div>
       </div>
           </div>
-          </div>
+      </div>
 
-          <div class="col-md-4">
-            <div class="card h-100 feature-box">
+      <!-- Hidden Projects Start -->
+      <div class="col-md-4 extra-project d-none">
+         <div class="card h-100 feature-box">
        <img src="Images/Screenshot 2025-05-22 103023.png" class="card-img-top" alt="Project 4">
        <div class="mx-3 d-flex flex-column h-100">
         <div class="mb-5">
@@ -307,11 +330,10 @@
       </div>
       </div>
             </div>
-          </div>
-          
+      </div>
 
-           <div class="col-md-4">
-            <div class="card h-100 feature-box">
+      <div class="col-md-4 extra-project d-none">
+         <div class="card h-100 feature-box">
        <img src="Images/Screenshot 2025-06-05 162108.png" class="card-img-top" alt="Project 2">
        <div class="mx-3 d-flex flex-column h-100">
         <div class="mb-5">
@@ -327,10 +349,10 @@
       </div>
       </div>
             </div>
-          </div>
+      </div>
 
-        <div class="col-md-4">
-  <div class="card h-100 feature-box">
+      <div class="col-md-4 extra-project d-none">
+      <div class="card h-100 feature-box">
     <img src="Images\Screenshot 2025-06-06 234215.png" class="card-img-top" alt="Quiz Project">
     <div class="mx-3 d-flex flex-column h-100">
       <div class="mb-5">
@@ -346,11 +368,10 @@
       </div>
     </div>
   </div>
-        </div>
+      </div>
 
-
-           <div class="col-md-4">
-            <div class="card h-100 feature-box">
+      <div class="col-md-4 extra-project d-none">
+         <div class="card h-100 feature-box">
        <img src="Images/Screenshot 2025-06-05 001509.png" class="card-img-top" alt="Project 4">
        <div class="mx-3 d-flex flex-column h-100">
         <div class="mb-5">
@@ -364,13 +385,16 @@
       </div>
       </div>
             </div>
-          </div>
-
       </div>
-        </div>
-        </div>
+    </div>
+
+    <!-- Show More / Less Button -->
+    <div class="text-center mt-4">
+      <button id="toggle-projects" class="btn btn-primary btn-sm">Show More Projects</button>
+    </div>
+  </div>
     </section>
-      
+
     <!-- EXPERIENCE SECTION -->
     <section class="container">
   <h3 id="experience" class="text-start text-md-center mb-3  fw-bold" style="color: #aaa; margin-top: 100px;">Professional Experience</h3>
