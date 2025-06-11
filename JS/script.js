@@ -91,5 +91,5 @@ function showSkill(sectionId) {
     });
 
     toggleBtn.textContent =
-      toggleBtn.textContent === "Show More" ? "Show Less" : "Show More";
+      toggleBtn.textContent === "Show Less" ? "Show More" : "Show Less";
   });
