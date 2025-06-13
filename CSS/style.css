@@ -443,7 +443,7 @@ body::before {
         cursor: pointer;
         display: block;
         position: absolute;
-        top: 21px;
+        top: 15px;
         right: 20px;
         color: #aaa;
         font-weight: bold;
