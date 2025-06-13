@@ -15,41 +15,64 @@
     <body>
 
     <!-- HEADER SECTION -->
-    <header class="d-flex justify-content-between align-items-center position-fixed">
-  <div class="fw-bold d-flex" style="font-size:xx-large;"><a href="" style="text-decoration: none; color: #2c6d9e;">
-  <span style="color: #aaa;">C</span><i class="bi bi-code-slash"></i><span style="color: #aaa;">DE</span></a>
+  <header class="d-flex justify-content-between align-items-center px-3 py-2 position-fixed w-100 bg-dark">
+  <!-- Logo -->
+  <div class="fw-bold" style="font-size: xx-large;">
+    <a href="#" style="text-decoration: none;">
+      <span style="color: #cacaca;">C</span><i class="bi bi-code-slash logo"></i><span style="color: #cacaca;">DE</span>
+    </a>
   </div>
-  <nav class=" d-none d-md-flex gap-5">
-    <a href="#skills" style="color: #aaa;"><i class="bi bi-tools"></i> SKILLS</a>
-    <a href="#about" style="color: #aaa;"><i class="bi bi-person"></i> ABOUT</a>
-    <a href="#projects" style="color: #aaa;"><i class="bi bi-window-stack"></i> PROJECTS</a>
-    <a href="#experience" style="color: #aaa;"><i class="bi bi-briefcase"></i> EXPERIENCE</a>
-    <a href="#contact" style="color: #2c6d9e;"><i class="bi bi-envelope"></i> CONTACT</a>
+
+  <!-- Navigation (Only on md and above) -->
+  <nav class="d-none d-md-flex gap-4">
+    <a href="#skills" style="color: #cacaca;">SKILLS</a>
+    <a href="#about" style="color: #cacaca;">ABOUT</a>
+    <a href="#projects" style="color: #cacaca;">PROJECTS</a>
+    <a href="#experience" style="color: #cacaca;">EXPERIENCE</a>
+    <a href="#contact" class="snav">CONTACT</a>
   </nav>
+
+  <!-- Right Section (theme toggle + mobile menu) -->
   <div class="d-flex align-items-center gap-3">
+    
+    <!-- Theme Toggle Icon -->
+    <div class="d-md-block d-none">
+      <button id="toggleTheme" class="fs-2 bg-transparent border-0 text-light">
+        <i class="bi bi-sun-fill"></i>
+      </button>
+    </div>
+
+    <!-- Theme Toggle for Mobile (Centered) -->
+    <div class="d-md-none position-absolute start-50 translate-middle-x">
+      <button id="toggleThemeMobile" class="fs-2 bg-transparent border-0 text-light">
+        <i class="bi bi-sun-fill"></i>
+      </button>
+    </div>
+
     <!-- Mobile Menu -->
     <div class="d-md-none">
       <input type="checkbox" id="menu-toggle" class="menu-checkbox">
       <label for="menu-toggle" class="menu-label">☰</label>
       <nav class="menu">
         <ul>
-          <li><a href="#skills" style="color: #aaa;"><i class="bi bi-tools"></i> Skills</a></li>
-          <li><a href="#about" style="color: #aaa;"><i class="bi bi-person"></i> About</a></li>
-          <li><a href="#projects" style="color: #aaa;"><i class="bi bi-window-stack"></i> Projects</a></li>
-          <li><a href="#experience" style="color: #aaa;"><i class="bi bi-briefcase"></i> Experience</a></li>
-          <li><a href="#contact" style="color: #2c6d9e;"><i class="bi bi-envelope"></i> CONTACT</a></li>
+          <li><a href="#skills" style="color: #cacaca;"> Skills</a></li>
+          <li><a href="#about" style="color: #cacaca;"> About</a></li>
+          <li><a href="#" style="color: #cacaca;"> Projects</a></li>
+          <li><a href="#experience" style="color: #cacaca;"> Experience</a></li>
+          <li><a href="#contact" class="snav"> CONTACT</a></li>
         </ul>
       </nav>
     </div>
   </div>
-    </header>
+</header>
+
 
     <!-- HERO SECTION -->
     <section id="hero" class="heroo">
-    <p class="text-center fs-2 fw-semibold mb-3" style="color: #aaa;" id="welcome"></p>
+    <p class="text-center fs-2 fw-semibold mb-3 welcomeid" id="welcome"></p>
     <div class="d-flex justify-content-center align-items-center position-absolute start-50 end-50">
         <img src="Images/Profile.jpg" class="img-fluid rounded-circle feature-box" id="about-image" alt="Profile Picture" 
-         style="max-width: 120px; max-height: 120px; border: 3px solid #aaa;">
+         style="max-width: 120px; max-height: 120px; border: 3px solid #0185a5;">
     </div>
     </section>
 
@@ -57,18 +80,18 @@
     <section class="mt-5 mx-3 text-center text-md-start ms-md-5 d-md-flex justify-content-between align-items-start gap-4">
 
         <div class="flex-grow-1 " style="max-width: 400px;">
-    <h3 class="fw-bold fs-4 mt-md-5 mb-3 " style="color: #aaa;">Joshua Olagunju</h3>
-    <div class="badge Available py-2 px-3 align-items-center align-items-md-start gap-2 justify-content-center justify-content-md-start" style="font-size: 0.7rem;">
+    <h3 class="fw-bold fs-4 mt-md-5 mb-3 hero-2-text">Joshua Olagunju</h3>
+    <div class="badge Available py-2 px-3 align-items-center align-items-md-start gap-2 justify-content-center justify-content-md-start">
       <span class="blinking-dot me-2"></span> Currently Open for Freelance Projects
     </div>
-    <p class="mt-2 mb-1 small">
+    <p class="mt-2 mb-1 small hero-2-text">
       <i class="bi bi-briefcase-fill me-2"></i>Available for Freelance & Fulltime Jobs</p>
-    <p class="my-2 small">
+    <p class="my-2 small hero-2-text">
       <i class="bi bi-code-slash me-2"></i>Front-End development | UI/UX design | Web development</p>
-    <p class="small">
+    <p class="small hero-2-text">
       <i class="bi bi-globe me-2"></i>Lagos, Nigeria</p>
     <div class="d-flex flex-column align-items-center align-items-md-start mx-auto gap-1 my-3">
-      <a href="mailto:olagunjujoshua11@gmail.com" target="_blank" class="btn btn-dark btn-sm px-4">
+      <a href="mailto:olagunjujoshua11@gmail.com" target="_blank" class="btn btn-sm px-4">
      <i class="bi-person-workspace me-2"></i>Hire Me
       </a>
     </div>
@@ -104,7 +127,7 @@
     <!-- Left Column: About Me Text -->
     <div class="col-md-7 text-start order-md-1 order-2">
       <div class="d-flex align-items-center mb-3">
-        <h3 class="fw-bold mb-0" style="color: #2c6d9e;">About Me</h3>  
+        <h3 class="fw-bold mb-0" style="color: #0185a5;">About Me</h3>  
       </div>
       <p style="line-height: 1.6;" class="small">
         I'm a Front-End Developer passionate about creating responsive, accessible, and 
@@ -125,7 +148,7 @@
       <img src="Images/467865609_122128371410443868_6691633975994226230_n (1).jpg" 
            alt="Joshua Olagunju" 
            class="img-fluid rounded-circle feature-box shadow-lg"
-           style="max-width: 220px; border: 2px solid #aaa;">
+           style="max-width: 220px; border: 2px solid #0185a5;">
     </div>
   </div>
     </section>
@@ -241,7 +264,7 @@
   </div>
 
   <p class="d-flex flex-wrap justify-content-center gap-1 mt-2 small text-light container">
-    <strong class="me-1 mb-0" style="color: #aaa;">Other tools:</strong>
+    <strong class="me-1 mb-0" style="color: var(--text-color);">Other tools:</strong>
     <span class="px-3 py-1 border rounded-pill small strength-pill">Discord</span>
     <span class="px-3 py-1 border rounded-pill small strength-pill">Chrome DevTools</span>
     <span class="px-3 py-1 border rounded-pill small strength-pill">WooCommerce</span>
@@ -252,26 +275,23 @@
     <section class="project container mb-5 align-items-center justify-content-center" style="margin-top: 100px;">
   <div class="mb-5 align-items-center justify-content-center">
     <div class="mb-4 text-md-center">
-      <h3 id="projects" class="fw-bold mb-3" style="color: #aaa;">Featured projects</h3>
+      <h3 id="projects" class="fw-bold mb-3">Featured projects</h3>
     </div>
 
     <div class="row g-3" id="project-container">
       <!-- Project 1 -->
       <div class="col-md-4">
-       <div class="card h-100 feature-box">
-       <img src="Images/Screenshot 2025-06-06 160008.png" class="card-img-top" alt="Project 1">
-       <div class="mx-3 d-flex flex-column h-100">
-        <div class="mb-5">
+       <div class="card  custom-card feature-box">
+       <img src="Images/Screenshot 2025-06-13 182913.png" class="card-img-top" alt="Project 1">
+       <div class="card-body mx-3 d-flex flex-column mt-0">
        <h6 class="card-title fw-semibold mt-4 text-start" >Portfolio Website</h6>
-       <p class="card-text text-start small">
+       <p class="card-text text-start small text">
         My personal portfolio showcasing front-end skills with clean UI, responsive design,
-         and smooth navigation using HTML, CSS, JS & Bootstrap</p>
-          
-        </div>
-        <div class="d-flex gap-2 mb-3 justify-content-between mt-auto">
-        <a href="https://github.com/Joshua-olagunju/My-portfolio/blob/main/index.html" class="btn btn-dark btn-sm" target="_blank">Code <i class="bi bi-code-slash"></i></a>
-        <a href="https://joshua-olagunju.github.io/My-portfolio/" class="live" target="_blank">View Live <i class="bi bi-box-arrow-up-right"></i></a>
-        <a href="https://github.com/Joshua-olagunju/My-portfolio/blob/main/README.md" class="live" target="_blank">Read More <i class="bi bi-arrow-right"></i></a>
+         and smooth navigation using HTML, CSS, JS & Bootstrap</p>       
+        <div class="d-flex gap-2 justify-content-between mt-auto">
+        <a href="https://github.com/Joshua-olagunju/My-portfolio/blob/main/index.html" class="btn btn-sm" target="_blank">Code <i class="bi bi-code-slash"></i></a>
+        <a href="https://joshua-olagunju.github.io/My-portfolio/" class="btn btn1 btn-sm" target="_blank">View Live <i class="bi bi-box-arrow-up-right"></i></a>
+        <a href="https://github.com/Joshua-olagunju/My-portfolio/blob/main/README.md" class="btn btn-sm" target="_blank">Read More <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
           </div>
@@ -279,18 +299,16 @@
 
       <!-- Project 2 -->
       <div class="col-md-4">
-        <div class="card h-100 feature-box">
+        <div class="card custom-card feature-box">
     <img src="Images/Screenshot 2025-06-11 114315.png" class="card-img-top" alt="WooCommerce Project">
-    <div class="mx-3 d-flex flex-column h-100">
-      <div class="mb-5">
+    <div class="card-body mx-3 d-flex flex-column mt-0">
         <h6 class="card-title fw-semibold mt-4 text-start">WooCommerce Store Setup</h6>
-        <p class="card-text text-start small">
+        <p class="card-text text-start small text">
           A local WordPress store built with XAMPP, WooCommerce, and Astra Theme. Tasks included product CSV import, plugin setup, and UI customization via WordPress Customizer.
         </p>
-      </div>
-      <div class="d-flex mb-3 justify-content-between mt-auto">
-        <a href="https://github.com/Joshua-olagunju/ReadMe-WooCommerce/tree/main" class="live" target="_blank">Read More <i class="bi bi-arrow-right"></i></a>
-        <a href="https://drive.google.com/drive/folders/1NFXhBKiJlzMrghmNRfj2yG6DlJ00snWy?usp=sharing" class="live" target="_blank">View Demo <i class="bi bi-box-arrow-up-right"></i></a>
+      <div class="d-flex gap-2  justify-content-between mt-auto">
+        <a href="https://github.com/Joshua-olagunju/ReadMe-WooCommerce/tree/main" class="btn btn-sm" target="_blank">Read More <i class="bi bi-arrow-right"></i></a>
+        <a href="https://drive.google.com/drive/folders/1NFXhBKiJlzMrghmNRfj2yG6DlJ00snWy?usp=sharing" class="btn btn1 btn-sm" target="_blank">View Demo <i class="bi bi-box-arrow-up-right"></i></a>
       </div>
     </div>
   </div>
@@ -298,20 +316,19 @@
 
       <!-- Project 3 -->
       <div class="col-md-4">
-        <div class="card h-100 feature-box">
-       <img src="Images/Screenshot 2025-04-21 154408.png" class="card-img-top" alt="Project 3">
-       <div class="mx-3 d-flex flex-column h-100">
-        <div class="mb-5">
+        <div class="card custom-card feature-box">
+       <img src="Images/Screenshot 2025-06-13 183102.png" class="card-img-top" alt="Project 3">
+       <div class="card-body mx-3 d-flex flex-column mt-0">
        <h6 class="card-title fw-semibold mt-4 text-start" >Spacefit Sneakers</h6>
-       <p class="card-text text-start small">
+       <p class="card-text text-start small text">
          A sleek landing page for showcasing stylish sneakers with responsive design
          and smooth UX. Built with HTML, Bootstrap, CSS, and JavaScript...
               </p>
-        </div>
-         <div class="d-flex gap-2 mb-3 justify-content-between mt-auto">
-        <a href="https://github.com/Joshua-olagunju/Spacefit-sneakers/blob/main/index.html" class="btn btn-dark btn-sm" target="_blank">Code <i class="bi bi-code-slash"></i></a>
-        <a href="https://joshua-olagunju.github.io/Spacefit-sneakers/" class="live" target="_blank">View Live <i class="bi bi-box-arrow-up-right"></i></a>
-        <a href="https://github.com/Joshua-olagunju/Spacefit-sneakers/blob/main/README.md" class="live" target="_blank">Read More <i class="bi bi-arrow-right"></i></a>
+     
+         <div class="d-flex gap-2  justify-content-between mt-auto">
+        <a href="https://github.com/Joshua-olagunju/Spacefit-sneakers/blob/main/index.html" class="btn  btn-sm" target="_blank">Code <i class="bi bi-code-slash"></i></a>
+        <a href="https://joshua-olagunju.github.io/Spacefit-sneakers/" class="btn btn1 btn-sm" target="_blank">View Live <i class="bi bi-box-arrow-up-right"></i></a>
+        <a href="https://github.com/Joshua-olagunju/Spacefit-sneakers/blob/main/README.md" class="btn btn-sm" target="_blank">Read More <i class="bi bi-arrow-right"></i></a>
       </div>
       </div>
           </div>
@@ -319,72 +336,68 @@
 
       <!-- Hidden Projects Start -->
       <div class="col-md-4 extra-project d-none">
-         <div class="card h-100 feature-box">
+         <div class="card custom-card feature-box">
        <img src="Images/Screenshot 2025-05-22 103023.png" class="card-img-top" alt="Project 4">
-       <div class="mx-3 d-flex flex-column h-100">
-        <div class="mb-5">
+       <div class="card-body mx-3 d-flex flex-column mt-0">
        <h6 class="card-title fw-semibold mt-4 text-start" >Tech Blog</h6>
-       <p class="card-text text-start small">
+       <p class="card-text text-start small text">
          My Personal Blog, about my Tech story, Journey and Lessons.</p>
-        </div>
-         <div class="d-flex gap-2 mb-3 justify-content-between mt-auto ">
-        <a href="https://github.com/Joshua-olagunju/My-Blog/blob/main/index.html" class="btn btn-dark btn-sm" target="_blank">Code <i class="bi bi-code-slash"></i></a>
-        <a href="https://joshua-olagunju.github.io/My-Blog/" class="live" target="_blank">View Live <i class="bi bi-box-arrow-up-right"></i></a>
+        
+         <div class="d-flex gap-2 justify-content-between mt-auto ">
+        <a href="https://github.com/Joshua-olagunju/My-Blog/blob/main/index.html" class="btn  btn-sm" target="_blank">Code <i class="bi bi-code-slash"></i></a>
+        <a href="https://joshua-olagunju.github.io/My-Blog/" class="btn btn1 btn-sm" target="_blank">View Live <i class="bi bi-box-arrow-up-right"></i></a>
       </div>
       </div>
             </div>
       </div>
 
       <div class="col-md-4 extra-project d-none">
-         <div class="card h-100 feature-box">
-       <img src="Images/Screenshot 2025-06-05 162108.png" class="card-img-top" alt="Project 2">
-       <div class="mx-3 d-flex flex-column h-100">
-        <div class="mb-5">
+         <div class="card  custom-card feature-box">
+       <img src="Images/Screenshot 2025-06-13 183620.png" class="card-img-top" alt="Project 2">
+       <div class="card-body mx-3 d-flex flex-column mt-0">
        <h6 class="card-title  fw-semibold mt-4 text-start" >DriftTech Website</h6>
-       <p class="card-text text-start small">
+       <p class="card-text text-start small text">
          A company site for web dev, cybersecurity & IT consulting. I handled 
         front-end layout, UX, and responsiveness using HTML, CSS, JS & PHP...
       </p>
-      </div>
-        <div class="d-flex  mb-3 justify-content-between mt-auto">
-        <a href="https://drifttech.com.ng/index.php" class="live" target="_blank">View Live <i class="bi bi-box-arrow-up-right"></i></a>
-          <a href="https://github.com/Joshua-olagunju/ReadMe-DriftTech/blob/main/README.md" class="live" target="_blank">Read More <i class="bi bi-arrow-right"></i></a>
+    
+        <div class="d-flex justify-content-between mt-auto">
+        <a href="https://drifttech.com.ng/index.php" class="btn btn1 btn-sm" target="_blank">View Live <i class="bi bi-box-arrow-up-right"></i></a>
+          <a href="https://github.com/Joshua-olagunju/ReadMe-DriftTech/blob/main/README.md" class="btn btn-sm" target="_blank">Read More <i class="bi bi-arrow-right"></i></a>
       </div>
       </div>
             </div>
       </div>
 
       <div class="col-md-4 extra-project d-none">
-      <div class="card h-100 feature-box">
+      <div class="card custom-card feature-box">
     <img src="Images\Screenshot 2025-06-06 234215.png" class="card-img-top" alt="Quiz Project">
-    <div class="mx-3 d-flex flex-column h-100">
-      <div class="mb-5">
+    <div class="card-body mx-3 d-flex flex-column mt-0">
         <h6 class="card-title fw-semibold mt-4 text-start">Quiz Generator App</h6>
-        <p class="card-text text-start small">
+        <p class="card-text text-start small text">
           A personalized quiz application built with HTML, CSS, Bootstrap & JavaScript. 
           It features multiple-choice questions, score tracking, and dynamic rendering.
         </p>
-      </div>
-      <div class="d-flex mb-3 justify-content-between mt-auto">
-        <a href="https://github.com/Joshua-olagunju/Quiz/blob/main/index.html" class="btn-dark btn btn-sm" target="_blank">Code <i class="bi bi-code-slash"></i></a>
-        <a href="https://joshua-olagunju.github.io/Quiz/" class="live" target="_blank">View Live <i class="bi bi-box-arrow-up-right"></i></a>
+   
+      <div class="d-flex justify-content-between mt-auto">
+        <a href="https://github.com/Joshua-olagunju/Quiz/blob/main/index.html" class=" btn btn-sm" target="_blank">Code <i class="bi bi-code-slash"></i></a>
+        <a href="https://joshua-olagunju.github.io/Quiz/" class="btn btn1 btn-sm" target="_blank">View Live <i class="bi bi-box-arrow-up-right"></i></a>
       </div>
     </div>
   </div>
       </div>
 
       <div class="col-md-4 extra-project d-none">
-         <div class="card h-100 feature-box">
-       <img src="Images/Screenshot 2025-06-05 001509.png" class="card-img-top" alt="Project 4">
-       <div class="mx-3 d-flex flex-column h-100">
-        <div class="mb-5">
+        <div class="card custom-card feature-box">
+       <img src="Images/Screenshot 2025-06-13 183233.png" class="card-img-top" alt="Project 4">
+       <div class="card-body mx-3 d-flex flex-column mt-0">
        <h6 class="card-title fw-semibold mt-4 text-start" >Web Dev Portfolio</h6>
-       <p class="card-text text-start small" >
+       <p class="card-text text-start small text" >
         A responsive, modern site built with HTML, CSS & JS to showcase the client’s work and contact info.</p>
-      </div>
-         <div class="d-flex gap-2 mb-3 justify-content-between mt-auto">
-        <a href="https://github.com/Temitayo-Rotimi/My-portfolio" class="btn-dark btn btn-sm" target="_blank">Code <i class="bi bi-code-slash"></i></a>
-        <a href="https://temitayo-rotimi.github.io/My-portfolio/" class="live" target="_blank">View Live <i class="bi bi-box-arrow-up-right"></i></a>
+   
+         <div class="d-flex gap-2 justify-content-between mt-auto">
+        <a href="https://github.com/Temitayo-Rotimi/My-portfolio" class=" btn btn-sm" target="_blank">Code <i class="bi bi-code-slash"></i></a>
+        <a href="https://temitayo-rotimi.github.io/My-portfolio/" class="btn btn1 btn-sm" target="_blank">View Live <i class="bi bi-box-arrow-up-right"></i></a>
       </div>
       </div>
             </div>
@@ -400,20 +413,20 @@
 
     <!-- EXPERIENCE SECTION -->
     <section class="container">
-  <h3 id="experience" class="text-start text-md-center mb-3  fw-bold" style="color: #aaa; margin-top: 100px;">Professional Experience</h3>
+  <h3 id="experience" class="text-start text-md-center mb-3  fw-bold" style="margin-top: 100px;">Professional Experience</h3>
   <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
 
     <div class="card container text-start feature-box">
-      <h6 class="mt-4 ms-3 fw-semibold" style="color: #2c6d9e;">Front-End Intern (Web Content Uploader)</h6>
+      <h6 class="mt-4 ms-3 fw-semibold" style="color: #0185a5;">Front-End Intern (Web Content Uploader)</h6>
       <p class="small mb-1 ms-3 fw-semibold">GAOTek Inc.</p>
-      <p class="small ms-3" style="color: #aaa;">
+      <p class="small ms-3">
         <i class="bi bi-calendar-range me-2"></i>June 2025 - Present
       </p>
       <p class="ms-3 me-3 small">
         Work on front-end development and content management of WordPress sites with
         a focus on clean, responsive design.
       </p>
-      <ul style="font-size: 0.8rem; line-height: 1.5rem; color: #aaa;">
+      <ul style="font-size: 0.8rem; line-height: 1.5rem; color:var(--text-color)">
         <li>Upload and manage product listings, images, and content using WordPress and WooCommerce.</li>
         <li>Collaborate with developers to update website layouts and resolve content-related issues.</li>
         <li>Ensure content is consistently formatted and optimized for user experience and SEO.</li>
@@ -422,16 +435,16 @@
     </div>
 
     <div class="card container text-start feature-box">
-      <h6 class="mt-4 ms-3 fw-semibold" style="color: #2c6d9e;">Front-End Developer</h6>
+      <h6 class="mt-4 ms-3 fw-semibold" style="color: #0185a5;">Front-End Developer</h6>
       <p class="small mb-1 ms-3 fw-semibold">Freelance</p>
-      <p class="small ms-3" style="color: #aaa;">
+      <p class="small ms-3">
         <i class="bi bi-calendar-range me-2"></i>July 2024 - Present
       </p>
       <p class="ms-3 me-3 small">
        Independently design and develop responsive, high-performance websites focused on
         clean code and user experience.
       </p>
-      <ul style="font-size: 0.8rem; line-height: 1.5rem; color: #aaa;">
+       <ul style="font-size: 0.8rem; line-height: 1.5rem; color:var(--text-color)">
         <li>Design and develop responsive websites using HTML, CSS, and JavaScript.</li>
         <li>Customize layouts and implement interactive features to enhance user experience.</li>
         <li>Use Git and GitHub for version control and project collaboration.</li>
@@ -443,21 +456,21 @@
            
     <!-- FEEDBACK SECTION -->
     <section class="pt-5">
-  <h3 class="text-center mb-3 fw-bold" style="color: #aaa;">Client Feedback</h3>
+  <h3 class="text-center mb-3 fw-bold">Client Feedback</h3>
   <div class="container">
     <div class="row justify-content-center">
 
       <!-- Testimonial 1 -->
       <div class="col-md-4 col-sm-6 mb-2"> <!-- Added mb-4 for vertical gap -->
-        <div class="feature-box h-100" style="border-radius: 10px; background-color: #171717; border: 1px solid #2c6d9e55;">
+        <div class="feature-box h-100" style="border-radius: 10px; background-color: var(--available-color); border: 2px solid var(--border-color)">
           <article class="rounded p-4 h-100">
             <div class="d-flex align-items-center gap-2 mb-2">
               <div class=" fw-semibold rounded-circle d-flex align-items-center justify-content-center"
-                   style="width: 32px; height: 32px; background-color: #aaa; color: #000000;">D</div>
-              <span class="small fw-semibold" style="color: #2c6d9e;">Daniel Rotimi · Backend Dev</span>
+                   style="width: 32px; height: 32px; background-color: #aaa; color: var(--text-color);">D</div>
+              <span class="small fw-semibold" style="color: #0185a5;">Daniel Rotimi · Backend Dev</span>
             </div>
             <p class="fst-italic small mb-2">“Joshua's precision and responsive design made collaboration seamless.”</p>
-            <div style="color: #e7a009;">
+            <div style="color: #0185a5;">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
             </div>
           </article>
@@ -466,15 +479,15 @@
 
       <!-- Testimonial 2 -->
       <div class="col-md-4 col-sm-6 mb-2">
-        <div class="feature-box h-100" style="border-radius: 10px; background-color: #171717; border: 1px solid #2c6d9e55;">
+        <div class="feature-box h-100" style="border-radius: 10px; background-color: var(--available-color); border: 2px solid var(--border-color)">
           <article class="rounded p-4 h-100">
             <div class="d-flex align-items-center gap-2 mb-2">
               <div class="fw-semibold rounded-circle d-flex align-items-center justify-content-center"
                    style="width: 32px; height: 32px; background-color: #aaa; color: #000000;">R</div>
-              <span class="small fw-semibold" style="color: #2c6d9e;">Raymond Okoh · Product Manager</span>
+              <span class="small fw-semibold" style="color: #0185a5;">Raymond Okoh · Product Manager</span>
             </div>
             <p class="fst-italic small mb-2">“Impressed by the clean UI and how Joshua communicates. Very professional.”</p>
-            <div style="color: #e7a009;">
+            <div style="color: #0185a5;">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
             </div>
           </article>
@@ -483,15 +496,15 @@
 
       <!-- Testimonial 3 -->
       <div class="col-md-4 col-sm-6 mb-2">
-        <div class="feature-box h-100" style="border-radius: 10px; background-color: #171717; border: 1px solid #2c6d9e55;">
+        <div class="feature-box h-100" style="border-radius: 10px; background-color: var(--available-color); border: 2px solid var(--border-color)">
           <article class="rounded p-4 h-100">
             <div class="d-flex align-items-center gap-2 mb-2">
               <div class="fw-semibold rounded-circle d-flex align-items-center justify-content-center"
                    style="width: 32px; height: 32px; background-color: #aaa; color: #000000;">M</div>
-              <span class="small fw-semibold" style="color: #2c6d9e;">Mary O. · Customer Support</span>
+              <span class="small fw-semibold" style="color: #0185a5;">Mary O. · Customer Support</span>
             </div>
             <p class="fst-italic small mb-2">“Every layout showed skill and care. Looking forward to more projects together.”</p>
-            <div style="color: #2c6d9e;">
+            <div style="color: #0185a5;">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
             </div>
           </article>
@@ -518,22 +531,22 @@
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="mb-5 d-flex flex-column align-items-center justify-content-center">
-  <h3 class="fw-bold text-center mt-5" style="color: #aaa;">Let's Connect!</h3>
-  <p class="text-center" style="color: #ccc;">Feel free to reach out for collaborations, projects, or inquiries!</p>
+  <h3 class="fw-bold text-center mt-5">Let's Connect!</h3>
+  <p class="text-center">Feel free to reach out for collaborations, projects, or inquiries!</p>
 
   <div class="w-100 d-flex justify-content-center px-3">
     <form action="https://formspree.io/f/mkgjdyrv" method="POST" autocomplete="on" class="w-100" style="max-width: 400px;">
       <div class="mb-2">
         <input type="text" name="name" class="form-control" placeholder="Your Name" required autocomplete="name"
-          style="background-color: #121212; border: 1px solid #2c6d9e55; color: #fff;" />
+          style="background-color: var(--available-color); border: 1px solid var(--border-color); color: var(--text-color)" />
       </div>
       <div class="mb-2">
         <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required autocomplete="email"
-          style="background-color: #121212; border: 1px solid #2c6d9e55; color: #fff;" />
+          style="background-color: var(--available-color); border: 1px solid var(--border-color); color: var(--text-color)" />
       </div>
       <div class="mb-2">
         <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required autocomplete="off"
-          style="background-color: #121212; border: 1px solid #2c6d9e55; color: #fff;"></textarea>
+          style="background-color: var(--available-color); border: 1px solid var(--border-color); color: var(--text-color)"></textarea>
       </div>
       <button type="submit" class="w-100 py-2 small btn"
       >
@@ -555,7 +568,7 @@
     </script>
 
     </body>
-    <hr style="color: #aaa;">
+    <hr style="color: var(--text-color)">
 
     <!-- FOOTER SECTION -->
     <footer class="footer py-5">
@@ -564,12 +577,12 @@
           <!-- Left Section - Navigation Links -->
           <div class="col-md-4 text-md-start text-center mt-2 mb-md-0">
             <nav class="d-flex flex-column justify-content-md-left align-items-md-start align-items-start gap-2">
-              <p class="fw-bold mb-0" style="color: #2c6d9e;">Quick Links</p>
-                  <a href="#skills" class="small" style="padding: 2px 4px; color: #aaa;">SKILLS</a>
-                  <a href="#about" class="small" style="padding: 2px 4px; color: #aaa;">ABOUT</a>
-                  <a href="#projects" class="small" style="padding: 2px 4px; color: #aaa;">PROJECT</a>
-                  <a href="#experience" class="small" style="padding: 2px 4px; color: #aaa;">EXPERIENCE</a>
-                  <a href="https://joshua-olagunju.github.io/My-Blog/" class="small" style="padding: 2px 4px; color: #aaa;">BLOG</a>       
+              <p class="fw-bold mb-0" style="color: #0185a5;">Quick Links</p>
+                  <a href="#skills" class="small" style="padding: 2px 4px; color: var(--text-color)">SKILLS</a>
+                  <a href="#about" class="small" style="padding: 2px 4px; color: var(--text-color)">ABOUT</a>
+                  <a href="#projects" class="small" style="padding: 2px 4px; color: var(--text-color)">PROJECT</a>
+                  <a href="#experience" class="small" style="padding: 2px 4px; color: var(--text-color)">EXPERIENCE</a>
+                  <a href="https://joshua-olagunju.github.io/My-Blog/" class="small" style="padding: 2px 4px; color: var(--text-color);">BLOG</a>       
             </nav>
           </div>
 
@@ -579,15 +592,15 @@
             <!-- Logo in Footer -->
 <div class="row justify-content-center mt-4">
   <div class="col-auto">
-    <div class="fw-bold d-flex align-items-center justify-content-center" style="font-size: xx-large; color: #2c6d9e;">
-      <p style="color: #aaa;" class="mb-0">C</p>
+    <div class="fw-bold d-flex align-items-center justify-content-center" style="font-size: xx-large; color: #0185a5;">
+      <p style="color: var(--text-color)" class="mb-0">C</p>
       <i class="bi bi-code-slash mx-1"></i>
-      <p style="color: #aaa;" class="mb-0">DE</p>
+      <p style="color: var(--text-color)" class="mb-0">DE</p>
     </div>
   </div>
 </div>
 
-                <p class="fw-bold" style="color: #aaa;">Connect with me</p>
+                <p class="fw-bold" >Connect with me</p>
               <div class="mx-5 d-flex flex-wrap justify-content-center gap-4 social-icons">
         <a href="https://github.com/Joshua-olagunju" target="_blank"><i class="bi bi-github "></i></a>
         <a href="https://www.linkedin.com/in/joshuaolagunju/" target="_blank"><i class="bi bi-linkedin "></i></a>
@@ -602,9 +615,9 @@
           <!-- Right Section - Contact Information -->
           <div class="col-md-4 d-flex justify-content-end align-items-end mt-5 mb-md-0">
                 <div class="text-end">
-                  <p class=" fw-bold" style="color: #2c6d9e;">Contact me at:</p>
-                  <p><a href="mailto:olagunjujoshua11@gmail.com" class=" small" style="color: #aaa;">olagunjujoshua11@gmail.com</a></p>
-                  <p><a href="tel:+2349037498695" class=" small" style="color: #aaa;">+234 9037 498695</a></p>
+                  <p class=" fw-bold" style="color: #0185a5;">Contact me at:</p>
+                  <p><a href="mailto:olagunjujoshua11@gmail.com" class=" small" style="color: var(--text-color);" >olagunjujoshua11@gmail.com</a></p>
+                  <p><a href="tel:+2349037498695" class=" small" style="color: var(--text-color);" >+234 9037 498695</a></p>
                   <p><i class="bi bi-globe me-2"></i>Lagos, Nigeria</p>
                 </div>
           </div>
@@ -612,7 +625,7 @@
     <!-- Footer Bottom Section -->
           <div class="row justify-content-center mt-4">
             <div class="col-12 text-center">
-                <hr style="color: #aaa;">
+                <hr style="color: var(--text-color)">
                 <p class="footer-copy small">© 2025 Joshua Olagunju — All Rights Reserved.</p>
             </div>
           </div>

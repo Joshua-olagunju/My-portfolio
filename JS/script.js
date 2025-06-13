@@ -81,6 +81,19 @@ function showSkill(sectionId) {
   }
 }
 
+document.querySelectorAll("#toggleTheme, #toggleThemeMobile").forEach(btn => {
+  btn.addEventListener("click", function () {
+    document.body.classList.toggle("light-mode");
+    const theme = document.body.classList.contains("light-mode") ? "light" : "dark";
+    localStorage.setItem("theme", theme);
+  });
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light-mode");
+  }
+});
 
  const toggleBtn = document.getElementById("toggle-projects");
   const hiddenProjects = document.querySelectorAll(".extra-project");
@@ -93,3 +106,5 @@ function showSkill(sectionId) {
     toggleBtn.textContent =
       toggleBtn.textContent === "Show Less" ? "Show More" : "Show Less";
   });
+
+  

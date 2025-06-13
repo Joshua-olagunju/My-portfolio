@@ -1,12 +1,52 @@
+:root {
+  --bg-color: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(135deg, #000000, #000000);
+  --text-color: #cacaca;
+  --logo-color: rgb(236, 167, 64);
+  --hero-text-color: #cacaca;
+  --snav-color: rgb(236, 167, 64);
+  --hero-bg-color: #080808;
+  --hero-2-text-color: #cacaca;
+  --available-color: #171717;
+  --border-color: #0185a5;
+  --btn-color:#0185a5;
+  --btn1-color: #171717;
+  --skills-bg-color:#171717;
+}
+body.light-mode {
+  --bg-color: #ffffff;
+  --text-color: #3b3b3b;
+  --logo-color: rgb(236, 167, 64);
+  --hero-text-color: #0185a5;
+  --snav-color: rgb(236, 167, 64);
+  --hero-bg-color: #f7f7f7;
+  --hero-2-text-color: #0185a5;
+  --available-color:  #cacaca;
+  --border-color: #0185a5;
+  --btn-color:#0185a5;
+  --btn1-color: #cacaca;
+  --skills-bg-color:#ffffff;
+}
 body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
-  background: 
-    radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(135deg, #000000, #000000);
+  background: var(--bg-color);
   background-size: 20px 20px, 100% 100%;
+  color: var(--text-color);
+  transition: all 0.4s ease;
+}
+button {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+p, h1, h2, h3, h4, h5, h6{
+  color: var(--text-color);
 }
   /* ========================
    Header and footer Section
@@ -25,22 +65,27 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
-      background-color: #242424; /* soft light gray */
+    
  background: 
     radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(135deg, #000000, #000000);
+    linear-gradient(135deg, #0185a5, #000000);
   background-size: 20px 20px, 100% 100%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Bottom shadow */
+}
+.logo{
+  color: var(--logo-color) !important;
 }
 header nav a {
     display: inline-block; /* makes transform work better */
     transform-origin: center;   
     font-size: medium;   
-     text-decoration: none;
-     
+     text-decoration: none;    
+}
+.snav{
+  color: var(--snav-color);
 }
 header nav a:hover, footer nav a:hover{
-    color: #2c6d9e !important;
+    color: var(--snav-color) !important;
 }
 footer {
     width: 100%;
@@ -82,21 +127,9 @@ footer nav a{
   .libutton:hover {
     background-color: #004182;
   }
-.btn{
-    border-radius: 5px;
-    color: #aaa;
-    background-color: #1f1f1f;
-    border: 1px solid #2c6d9e;
-     font-weight: 500;
-}
-.btn:hover{
-  background-color: #2c6d9e;
-  color: #000;
- 
-}
 .social-icons a i {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: var(--text-color);
     transition: transform 0.3s, color 0.3s;
 }
 .social-icons a:hover i.bi-github { color: #3e3e3e; transform: scale(1.2); }
@@ -129,9 +162,15 @@ footer nav a{
    Hero Section
    ======================== */
    #hero {
-  background-color: rgba(11, 11, 11, 0.7);
+  background-color:var(--hero-bg-color);
   background-image: radial-gradient(circle, rgba(112, 69, 69, 0.15) 1px, transparent 1px);
   background-size: 15px 15px;
+}
+.welcomeid{
+  color: var(--text-color);
+}
+.hero-2-text{
+  color: var(--text-color);
 }
 .heroo {
   margin-top: 80px;
@@ -140,9 +179,9 @@ footer nav a{
   position: relative;
 }
 .Available {
-  color: #aaa; /* your accent color */
-  background-color: #1f1f1f; /* dark background for badge */
-  border: 1px solid #2c6d9e;
+  color: var(--text-color);
+  background-color: var(--available-color);
+  border: 2px solid var(--border-color);
   border-radius: 5px;
   padding: 6px 12px;
   width: fit-content;
@@ -156,32 +195,50 @@ footer nav a{
   display: inline-block;
   animation: blink 1s infinite;
 }
+.btn{
+  background-color: var(--btn-color);
+  color: var(--hero-bg-color);
+  border: 2px solid var(--text-color);
+}
+.btn:hover{
+  background-color: var(--btn-color);
+  color: #cacaca;
+  border: 2px solid var(--text-color);
+}
+.btn1{
+  background-color: var(--btn1-color);
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+.btn1:hover{
+  background-color: var(--btn-color);
+  color: #cacaca;
+  border: 2px solid var(--text-color);
+}
 .strength-pill {
-  background-color: #1f1f1f; 
+  background-color: var(--available-color);
+  font-weight: medium;
   padding: 6px 12px;
-  color: #aaa;
-  border: 1px solid #2c6d9e !important;
+  color: var(--text-color);
+  border: 2px solid var(--border-color) !important;
   transition: all 0.3s ease;
   border-radius: 5px !important;
+  cursor: pointer;
 }
 .strength-pill:hover {
-  background-color: #2c6d9e;
-  color: #000;
+  background-color: #0185a5;
 }
 .card {
-  background-color: #171717; /* dark card bg */
-  border: 1px solid #2c6d9e55;
+  background-color: var(--available-color);
+  border: 2px solid var(--border-color);
   width: 100%;
   border-radius: 5px;
 }
 /* Card title */
 .card-title {
-  color: #aaa;
+  color: var(--text-color);
   font-weight: 600;
   margin-bottom: 1rem;
-}
-p, h1, h2, h3, h4, h5, h6{
-  color: #aaa;
 }
 @keyframes blink {
   0% { opacity: 1; }
@@ -192,7 +249,7 @@ p, h1, h2, h3, h4, h5, h6{
   animation: bounce 2s infinite;
   z-index: 999;
   cursor: pointer;
-  color: #2c6d9e;
+  color: var(--border-color);
   font-weight: 500;
 }
 @keyframes bounce {
@@ -246,13 +303,13 @@ body::before {
 /* ========================
    Skills Section
    ======================== */
-
   .active{
-    background-color: #2c6d9e !important;
+    background-color: #0185a5 !important;
     color: #000 !important;
+    border: 2px solid var(--text-color) !important;
   }
-.logo-container, .logo-container2 {
-  background: #171717;
+.logo-container2 {
+  background: var(--skills-bg-color);
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
@@ -272,17 +329,27 @@ body::before {
     border-radius: 5px;
 }
 .logo-container2 figcaption{
-    color: #000000;
-    background-color: #aaa;
+    color: var(--hero-bg-color);
+    background-color: var(--btn-color);
     font-size: smaller;
 }
 /* ========================
    Projects Section
    ======================== */
+.custom-card {
+  height: 550px; /* Or whatever height you prefer */
+  display: flex;
+  flex-direction: column;
+}
 .card-img-top {
-  height: 150px; /* or any fixed height you want */
+  height: 60%;
   object-fit: cover;
-  border-radius: 5px; 
+}
+.card-body {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .readmore{
     text-decoration: none;
