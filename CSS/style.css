@@ -421,6 +421,10 @@ body::before {
     opacity: 1;
     transform: translateY(0);
 }
+input::placeholder, textarea::placeholder{
+  color:var(--text-color) !important;
+  opacity: 0.4 !important;
+}
      /* ========================
    Drop down menu mobile Section
    ======================== */
