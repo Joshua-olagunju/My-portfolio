@@ -383,7 +383,7 @@ body::before {
     margin-bottom: 10px;
     padding: 0;
     margin-right: 20px;  
-    filter: brightness(0) saturate(100%) invert(34%) sepia(76%) saturate(1081%) hue-rotate(322deg) brightness(93%) contrast(86%);
+   filter: invert(39%) sepia(85%) saturate(3777%) hue-rotate(202deg) brightness(95%) contrast(55%);
 }
 #backToTop {
     position: fixed;
