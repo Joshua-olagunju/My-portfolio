@@ -95,6 +95,8 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
+
  const toggleBtn = document.getElementById("toggle-projects");
   const hiddenProjects = document.querySelectorAll(".extra-project");
 
