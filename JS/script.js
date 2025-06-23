@@ -110,3 +110,92 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   
+
+
+
+//  let contacts = [
+//   {
+//     name: "Maxwell Wright",
+//     phone: "(0191) 719 6495",
+//     email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+//   },
+//   {
+//     name: "Raja Villarreal",
+//     phone: "0866 398 2895",
+//     email: "posuere.vulputate@sed.com"
+//   },
+//   {
+//     name: "Helen Richards",
+//     phone: "0800 1111",
+//     email: "libero@convallis.edu"
+//   }
+// ];
+
+// // 👇 This will only show the contacts when button is clicked
+// document.getElementById("bee").addEventListener("click", () => {
+//   let newName = prompt("Enter your name:");
+//   let newNumber = prompt("Enter your number:");
+//   let newEmail = prompt("Enter your email:");
+
+//   let newContact = {
+//     name: newName,
+//     phone: newNumber,
+//     email: newEmail
+//   };
+
+//   contacts.push(newContact);
+
+//   console.log("Updated contact list:");
+//   console.log(contacts);
+// });
+
+
+
+// let contacts = [{
+//     name: "Maxwell Wright",
+//     phone: "(0191) 719 6495",
+//     email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+// }, {
+//     name: "Raja Villarreal",
+//     phone: "0866 398 2895",
+//     email: "posuere.vulputate@sed.com"
+// }, {
+//     name: "Helen Richards",
+//     phone: "0800 1111",
+//     email: "libero@convallis.edu"
+// }];
+
+
+
+// let newName = prompt("Enter your name:");
+// let newNumber = prompt("Enter your number:");
+// let newEmail = prompt("Enter your email:");
+
+// let numberValue = Number(newNumber);
+
+// if (typeof newName === "string" && newName !== "") {
+//   if(!isNaN (numberValue)) {
+//       if(typeof newEmail === "string" && newEmail !== ""){
+//         let newContact = {
+//         name: newName,
+//         phone: numberValue,
+//         email: newEmail
+//       };
+      
+//      contacts.push(newContact);
+//      console.log("New contact added");
+//      console.log(contacts);
+//      alert("Thank you, all input correct");
+//       }
+     
+//      else{
+//          console.log("Invalid name");
+//      }
+//      }else{
+//             console.log("Invalid number");
+//      }
+
+//      }else{
+//          console.log("Invalid email");
+//      }
+     
