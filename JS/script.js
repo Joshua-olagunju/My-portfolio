@@ -222,6 +222,6 @@ document.getElementById("contact").addEventListener("submit",function(e){
     showToast("Submission Cancelled")
   }
   else{
-    showToast("Submitting your message...Please wait")
+    showToast("Sending... Please Wait");
   }
 });

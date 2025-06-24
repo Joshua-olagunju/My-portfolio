@@ -441,8 +441,8 @@ input::placeholder, textarea::placeholder{
   position: fixed;
   z-index: 1;
   left: 50%;
-  bottom: 10%;
-  font-size: 17px;
+  bottom: 30%;
+  font-size: 1rem;
   transition: all 0.5s ease-in-out;
 }
      /* ========================
