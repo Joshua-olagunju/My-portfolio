@@ -199,3 +199,29 @@ window.addEventListener("DOMContentLoaded", () => {
 //          console.log("Invalid email");
 //      }
      
+
+// Show the toast
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.style.visibility = "visible";
+  toast.style.opacity = "1";
+
+  setTimeout(() => {
+    toast.style.visibility = "hidden";
+    toast.style.opacity = "0";
+  }, 3000);
+}
+
+document.getElementById("contact").addEventListener("submit",function(e){
+  const name = document.getElementById("name").value;
+  const confirmSend = confirm(`Hi ${name}, are you sure you want to submit?`);
+
+  if (!confirmSend){
+    e.preventDefault();
+    showToast("Submission Cancelled")
+  }
+  else{
+    showToast("Submitting your message...Please wait")
+  }
+});

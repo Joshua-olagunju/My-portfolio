@@ -425,6 +425,26 @@ input::placeholder, textarea::placeholder{
   color:var(--text-color) !important;
   opacity: 0.4 !important;
 }
+
+#toast{
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background: var(--skills-bg-color);
+  backdrop-filter: blur(6px);
+   border: 1px solid #2c6d9e;
+  border-radius: 5px;
+  color: var(--text-color);
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 10%;
+  font-size: 17px;
+  transition: all 0.5s ease-in-out;
+}
      /* ========================
    Drop down menu mobile Section
    ======================== */
