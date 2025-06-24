@@ -199,6 +199,31 @@ window.addEventListener("DOMContentLoaded", () => {
 //          console.log("Invalid email");
 //      }
      
+// // Show the toast
+// function showToast(message) {
+//   const toast = document.getElementById("feedback");
+//   toast.textContent = message;
+//   toast.style.visibility = "visible";
+//   toast.style.opacity = "1";
+
+//   setTimeout(() => {
+//     toast.style.visibility = "hidden";
+//     toast.style.opacity = "0";
+//   }, 3000);
+// }
+
+document.getElementById("submitFeedback").addEventListener("click",function() {
+
+  const feed = document.getElementById("feedbackText").value.trim();
+
+  if (feed === ""){
+    alert("Please enter something before submitting.");
+    return;
+  }
+   document.getElementById("feedback").style.display = "none";
+  document.getElementById("thankYouMsg").style.display = "block";
+});
+
 
 // Show the toast
 function showToast(message) {

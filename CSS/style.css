@@ -374,6 +374,16 @@ body::before {
   color: #2c6d9e;
   border: 1px solid #2c6d9e;
 }
+
+#thankYouMsg{
+  color: var(--text-color);
+  background-color: var(--available-color);
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  padding: 6px 12px;
+  width: fit-content;
+  margin: 0 auto;
+}
  /* ========================
    BackToTop Section
    ======================== */

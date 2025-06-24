@@ -545,11 +545,19 @@
     </div>
 
     <!-- CTA -->
-    <div class="text-center mt-4">
-      <a  href="#" class="btn btn-sm px-4">
-        Leave Your Feedback
-      </a>
-    </div>
+<div class="text-center mt-4">
+  <!-- Feedback input section -->
+  <div id="feedback">
+    <textarea id="feedbackText" rows="3" class="form-control mb-2" 
+    placeholder="Write your feedback..." style="background-color: var(--available-color);
+     border: 1px solid var(--border-color); color: var(--text-color)"></textarea>
+    <button id="submitFeedback" class="btn btn-sm px-4">Submit Feedback</button>
+  </div>
+
+  <!-- Thank you message hidden initially -->
+  <p id="thankYouMsg" class="fw-semibold mt-2" style="display: none;">Thank you for your feedback!!!</p>
+</div>
+
   </div>
     </section>
 
