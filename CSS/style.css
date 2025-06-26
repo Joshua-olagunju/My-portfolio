@@ -5,28 +5,30 @@
   --text-color: #cacaca;
   --logo-color: rgb(236, 167, 64);
   --hero-text-color: #cacaca;
-  --snav-color: rgb(236, 167, 64);
+  --snav-color: #f4a261;
   --hero-bg-color: #080808;
   --hero-2-text-color: #cacaca;
   --available-color: #171717;
-  --border-color: #0185a5;
-  --btn-color:#0185a5;
+  --border-color: #f4a261;
+  --btn-color:	#f4a261;
   --btn1-color: #171717;
   --skills-bg-color:#171717;
+  --border-width: 1px;
 }
 body.light-mode {
   --bg-color: #ffffff;
   --text-color: #3b3b3b;
   --logo-color: rgb(236, 167, 64);
   --hero-text-color: #0185a5;
-  --snav-color: rgb(236, 167, 64);
+  --snav-color: #f4a261;
   --hero-bg-color: #f7f7f7;
   --hero-2-text-color: #0185a5;
   --available-color:  #cacaca;
-  --border-color: #0185a5;
-  --btn-color:#0185a5;
+  --border-color:#f4a261;
+  --btn-color:#f4a261;
   --btn1-color: #cacaca;
   --skills-bg-color:#ffffff;
+  --border-width:2px;
 }
 body, html {
   margin: 0;
@@ -179,9 +181,13 @@ footer nav a{
   position: relative;
 }
 .Available {
+   background: var(--skills-bg-color);
+  backdrop-filter: blur(6px);
   color: var(--text-color);
-  border: 1px solid var(--text-color);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.30);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 6px 12px;
   width: fit-content;
 }
@@ -195,8 +201,9 @@ footer nav a{
   animation: blink 1s infinite;
 }
 .btn{
+  color: var(--text-color);
   border: 1px solid var(--text-color);
-  color: var(--text-color)
+  backdrop-filter: blur(6px);
 }
 .btn:hover{
   background-color: var(--btn-color);
@@ -204,13 +211,13 @@ footer nav a{
   
 }
 .btn1{
-  background-color: var(--border-color);
+  background-color: var(--text-color);
   color: var(--hero-bg-color);
   border: 1px solid var(--text-color);
 }
 .btn1:hover{
-  background-color: var(--available-color);
-  color: var(--text-color);
+  background-color: var(--btn-color);
+  color: var(--hero-bg-color);
   border: 1px solid var(--text-color);
 }
 .strength-pill {
@@ -223,14 +230,17 @@ footer nav a{
   cursor: pointer;
 }
 .strength-pill:hover {
-  background-color: #0185a5;
-  color: #ffffff;
+  background-color: var(--snav-color);
+  color: var(--hero-bg-color);
 }
 .card {
-  background-color: var(--available-color);
-  border: 1px solid var(--text-color);
-  width: 100%;
+    background: var(--skills-bg-color);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.30);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
 }
 /* Card title */
 .card-title {
@@ -272,12 +282,16 @@ body::before {
   color: #2c6d9e;
 }
 .feature-box {
-    box-shadow: 0 4px 10px rgba(44, 44, 44, 0.05);
+  background: var(--skills-bg-color);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.30);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .feature-box:hover {
     transform: scale(1.01);
-    box-shadow: 0 3px 6px rgba(41, 41, 41, 0.15);
 }
 @media screen and (max-width: 768px){
     .heroo{
@@ -311,12 +325,12 @@ body::before {
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.30);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100px;
   margin: 5px;
   padding: 8px 0px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .logo-container2:hover {
     transform: scale(1.05);
@@ -328,7 +342,7 @@ body::before {
 }
 .logo-container2 figcaption{
     color: var(--hero-bg-color);
-    background-color: var(--btn-color);
+    background-color: var(--text-color);
     font-size: smaller;
 }
 /* ========================
@@ -338,6 +352,12 @@ body::before {
   height: 550px; /* Or whatever height you prefer */
   display: flex;
   flex-direction: column;
+   background: var(--skills-bg-color);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.30);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card-img-top {
   height: 60%;
@@ -452,6 +472,13 @@ input::placeholder, textarea::placeholder{
   bottom: 30%;
   font-size: 1rem;
   transition: all 0.5s ease-in-out;
+}
+.feedback{
+  background: var(--skills-bg-color);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.30);
 }
      /* ========================
    Drop down menu mobile Section

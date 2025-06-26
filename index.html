@@ -24,7 +24,7 @@
   </div>
 
   <!-- Navigation (Only on md and above) -->
-  <nav class="d-none d-md-flex gap-4">
+  <nav class="d-none d-md-flex gap-5">
     <a href="#skills" style="color: #cacaca;">SKILLS</a>
     <a href="#about" style="color: #cacaca;">ABOUT</a>
     <a href="#projects" style="color: #cacaca;">PROJECTS</a>
@@ -416,7 +416,7 @@
   <h3 id="experience" class="text-start text-md-center mb-3 fw-bold" style="margin-top: 100px;">
     Professional Experience
   </h3>
-  <div class="row gy-4">
+  <div class="row">
     <!-- Abvakon -->
     <div class="col-12 col-md-6">
       <div class="card container text-start feature-box h-100">
@@ -493,12 +493,10 @@
 
       <!-- Testimonial 1 -->
       <div class="col-md-4 col-sm-6 mb-2"> <!-- Added mb-4 for vertical gap -->
-        <div class="feature-box h-100" style="border-radius: 10px; background-color: var(--available-color);  border: 1px solid var(--text-color); ">
+        <div class="feature-box h-100">
           <article class="rounded p-4 h-100">
             <div class="d-flex align-items-center gap-2 mb-2">
-              <div class=" fw-semibold rounded-circle d-flex align-items-center justify-content-center"
-                   style="width: 32px; height: 32px; background-color: #aaa; color: #000000">D</div>
-              <span class="small fw-semibold" style="color: #0185a5;">Daniel Rotimi · Backend Dev</span>
+              <span class="small fw-semibold" style="color: #0185a5;">Daniel Rotimi ___ Backend Dev</span>
             </div>
             <p class="fst-italic small mb-2">“Joshua's precision and responsive design made collaboration seamless.”</p>
             <div style="color: #0185a5;">
@@ -510,12 +508,10 @@
 
       <!-- Testimonial 2 -->
       <div  class="col-md-4 col-sm-6 mb-2">
-        <div class="feature-box h-100" style="border-radius: 10px; background-color: var(--available-color);  border: 1px solid var(--text-color); ">
+        <div class="feature-box h-100">
           <article class="rounded p-4 h-100">
             <div class="d-flex align-items-center gap-2 mb-2">
-              <div class="fw-semibold rounded-circle d-flex align-items-center justify-content-center"
-                   style="width: 32px; height: 32px; background-color: #aaa; color: #000000;">R</div>
-              <span class="small fw-semibold" style="color: #0185a5;">Raymond Okoh · Product Manager</span>
+              <span class="small fw-semibold" style="color: #0185a5;">Raymond Okoh___Product Manager</span>
             </div>
             <p class="fst-italic small mb-2">“Impressed by the clean UI and how Joshua communicates. Very professional.”</p>
             <div style="color: #0185a5;">
@@ -527,12 +523,10 @@
 
       <!-- Testimonial 3 -->
       <div class="col-md-4 col-sm-6 mb-2">
-        <div class="feature-box h-100" style="border-radius: 10px; background-color: var(--available-color); border: 1px solid var(--text-color); ">
+        <div class="feature-box h-100">
           <article class="rounded p-4 h-100">
             <div class="d-flex align-items-center gap-2 mb-2">
-              <div class="fw-semibold rounded-circle d-flex align-items-center justify-content-center"
-                   style="width: 32px; height: 32px; background-color: #aaa; color: #000000;">M</div>
-              <span class="small fw-semibold" style="color: #0185a5;">Mary O. · Customer Support</span>
+              <span class="small fw-semibold" style="color: #0185a5;">Mary O___Customer Support</span>
             </div>
             <p class="fst-italic small mb-2">“Every layout showed skill and care. Looking forward to more projects together.”</p>
             <div style="color: #0185a5;">
@@ -548,9 +542,8 @@
 <div class="text-center mt-4">
   <!-- Feedback input section -->
   <div id="feedback">
-    <textarea id="feedbackText" rows="3" class="form-control mb-2" 
-    placeholder="Write your feedback..." style="background-color: var(--available-color);
-      color: var(--text-color);  border: 1px solid var(--text-color); "></textarea>
+    <textarea id="feedbackText" rows="3" class="form-control mb-2 feedback" 
+    placeholder="Write your feedback..."></textarea>
     <button id="submitFeedback" class="btn btn-sm px-4">Submit Feedback</button>
   </div>
 
@@ -580,15 +573,15 @@
     <form action="https://formspree.io/f/mkgjdyrv" method="POST" autocomplete="on" class="w-100" style="max-width: 400px;">
       <div class="mb-2" style="  border: 1px solid var(--text-color); border-radius: 8px;">
         <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required autocomplete="name"
-          style="background-color: var(--available-color); " />
+         />
       </div>
       <div class="mb-2" style="  border: 1px solid var(--text-color); border-radius: 8px;">
         <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required autocomplete="email"
-          style="background-color: var(--available-color); " />
+           />
       </div>
       <div class="mb-2" style="  border: 1px solid var(--text-color); border-radius: 8px;">
         <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required autocomplete="off"
-          style="background-color: var(--available-color); "></textarea>
+  ></textarea>
       </div>
       <button type="submit" class="w-100 py-2 small btn"
       >
@@ -619,7 +612,7 @@
           <!-- Left Section - Navigation Links -->
           <div class="col-md-4 text-md-start text-center mt-2 mb-md-0">
             <nav class="d-flex flex-column justify-content-md-left align-items-md-start align-items-start gap-2">
-              <p class="fw-bold mb-0" style="color: #0185a5;">Quick Links</p>
+              <p class="fw-bold mb-0" style="color: var(--snav-color)">Quick Links</p>
                   <a href="#skills" class="small" style="padding: 2px 4px; color: var(--text-color)">SKILLS</a>
                   <a href="#about" class="small" style="padding: 2px 4px; color: var(--text-color)">ABOUT</a>
                   <a href="#projects" class="small" style="padding: 2px 4px; color: var(--text-color)">PROJECT</a>
@@ -657,7 +650,7 @@
           <!-- Right Section - Contact Information -->
           <div class="col-md-4 d-flex justify-content-end align-items-end mt-5 mb-md-0">
                 <div class="text-end">
-                  <p class=" fw-bold" style="color: #0185a5;">Contact me at:</p>
+                  <p class=" fw-bold" style="color: var(--snav-color)">Contact me at:</p>
                   <p><a href="mailto:olagunjujoshua11@gmail.com" class=" small" style="color: var(--text-color);" >olagunjujoshua11@gmail.com</a></p>
                   <p><a href="tel:+2349037498695" class=" small" style="color: var(--text-color);" >+234 9037 498695</a></p>
                   <p><i class="bi bi-globe me-2"></i>Lagos, Nigeria</p>
