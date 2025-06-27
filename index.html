@@ -15,39 +15,50 @@
     <body>
 
     <!-- HEADER SECTION -->
-  <header class="d-flex justify-content-between align-items-center px-3 py-2 position-fixed w-100 bg-dark">
+  <header class="d-flex justify-content-between align-items-center px-3 py-2 position-fixed w-100 bg-light">
   <!-- Logo -->
-  <div class="fw-bold" style="font-size: xx-large;">
+  <div class="fw-bold" style="font-size: x-large;">
     <a href="#" style="text-decoration: none;">
-      <span style="color: #cacaca;">C</span><i class="bi bi-code-slash logo"></i><span style="color: #cacaca;">DE</span>
+      <span style="color: #171717;">S</span><i class="bi bi-code-slash logo"></i><span style="color: #171717;">JI</span>
     </a>
   </div>
 
   <!-- Navigation (Only on md and above) -->
   <nav class="d-none d-md-flex gap-5">
-    <a href="#skills" style="color: #cacaca;" class="small">SKILLS</a>
-    <a href="#about" style="color: #cacaca;" class="small">ABOUT</a>
-    <a href="#projects" style="color: #cacaca;" class="small">PROJECTS</a>
-    <a href="#experience" style="color: #cacaca;" class="small">EXPERIENCE</a>
-    <a href="#contact" class="snav" class="small">CONTACT</a>
+    <a href="#skills" style="color: #171717;" class="">Skills</a>
+    <a href="#about" style="color: #171717;" class="">About</a>
+    <a href="#projects" style="color: #171717;" class="">Projects</a>
+    <a href="#experience" style="color: #171717;" class="">Experience</a>
+    <a href="#contact" class="snav" class="">Contact</a>
+    
   </nav>
+
+  <div class="social-icons d-flex gap-4">
+     <a href="https://github.com/Joshua-olagunju" target="_blank"><i class="bi bi-github "></i></a>
+     <a href="https://www.linkedin.com/in/joshuaolagunju/" target="_blank"><i class="bi bi-linkedin
+       " style="color: #0185a5;"></i></a>
+         <button class="btn btn-sm px-2"
+              onclick="window.open('https://drive.google.com/file/d/1xzaIUa8uzm1uUI1nE6kT2k2kyN_xaQ0n/view?usp=sharing', '_blank')">
+        <i class="bi bi-file-earmark-pdf me-2"></i> Resume 
+      </button>
+  </div>
 
   <!-- Right Section (theme toggle + mobile menu) -->
   <div class="d-flex align-items-center gap-3">
     
-    <!-- Theme Toggle Icon -->
+    <!-- Theme Toggle Icon
     <div class="d-md-block d-none">
-      <button id="toggleTheme" class="fs-2 bg-transparent border-0 text-light">
+      <button id="toggleTheme" class="fs-2 bg-transparent border-0 text-dark">
         <i class="bi bi-sun-fill"></i>
       </button>
     </div>
 
-    <!-- Theme Toggle for Mobile (Centered) -->
+    Theme Toggle for Mobile (Centered)
     <div class="d-md-none position-absolute start-50 translate-middle-x">
       <button id="toggleThemeMobile" class="fs-2 bg-transparent border-0 text-light">
         <i class="bi bi-sun-fill"></i>
       </button>
-    </div>
+    </div> -->
 
     <!-- Mobile Menu -->
     <div class="d-md-none">
@@ -68,19 +79,21 @@
 
 
     <!-- HERO SECTION -->
-    <section id="hero" class="heroo">
-    <p class="text-center fs-2 fw-semibold mb-3 welcomeid" id="welcome"></p>
+    <section id="hero" class="heroo mt-0">
+    <p class="text-center fs-3 mb-3 welcomeid" id="welcome"></p>
     <div class="d-flex justify-content-center align-items-center position-absolute start-50 end-50">
+      <div class="border-glow">
         <img src="Images/Profile.jpg" class="img-fluid rounded-circle feature-box" id="about-image" alt="Profile Picture" 
-         style="max-width: 190px; max-height: 190px; border: 3px solid #0185a5;">
+         style="max-width: 190px; max-height: 190px;">
+      </div>
     </div>
     </section>
 
     <!-- HERO2 SECTION -->
-    <section class="mt-5 mx-3 text-center text-md-start ms-md-5 d-md-flex justify-content-between align-items-center gap-5">
+    <section class="my-5 mx-3 text-center text-md-start ms-md-5 d-md-flex justify-content-between align-items-center gap-5 ">
 
         <div class="flex-grow-1" style="max-width: 400px;">
-    <h3 class="fw-bold fs-2 mt-md-5 mb-3 hero-2-text">Joshua Olagunju</h3>
+    <h3 class="fw-semibold fs-2 mt-md-5 mb-3 hero-2-text-big">Joshua Olagunju</h3>
     <div class="badge Available py-2 px-3 align-items-center align-items-md-start gap-2 justify-content-center justify-content-md-start">
       <span class="blinking-dot me-2"></span> Currently Open for Freelance Projects
     </div>
@@ -122,8 +135,8 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section class="mx-md-5 mx-3 py-5 text-white" id="about">
-  <div class="row align-items-center justify-content-center py-5">
+    <section class="py-5 text-white bg-light" id="about">
+  <div class="row align-items-center justify-content-center py-5 mx-2">
     <!-- Left Column: About Me Text -->
     <div class="col-md-6 text-start order-md-1 order-2">
       <div class="d-flex align-items-center mb-3">
@@ -145,16 +158,17 @@
 
     <!-- Right Column: Profile Image -->
     <div class="col-md-5 d-flex justify-content-center order-md-2 order-1 mb-4 mb-md-0">
+      <div class="border-glow">
       <img src="Images/467865609_122128371410443868_6691633975994226230_n (1).jpg" 
            alt="Joshua Olagunju" 
-           class="img-fluid rounded-circle feature-box shadow-lg"
-           style="max-width: 320px; border: 2px solid #0185a5;">
+           class="img-fluid rounded-circle feature-box shadow-lg">
+      </div>
     </div>
   </div>
     </section>
   
     <!-- SKILLS SECTION -->
-    <section class="text-center text-white" id="skills">
+    <section class="text-center text-white py-5" id="skills">
   <h3 class="fw-bold mb-4" >Skills</h3>
 
   <!-- Skill Buttons -->
@@ -167,7 +181,7 @@
   </div>
 
   <!-- Skill Tabs -->
-  <div class="row justify-content-center">
+  <div class="row justify-content-center ">
     <div class="col-md-10">
 
       <!-- Languages Tab -->
@@ -272,8 +286,8 @@
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="project container mb-5 align-items-center justify-content-center" style="margin-top: 100px;">
-  <div class="mb-5 align-items-center justify-content-center">
+    <section class="mb-5 align-items-center justify-content-center bg-light py-5">
+  <div class="mb-5 align-items-center justify-content-center mx-2">
     <div class="mb-4 text-md-center">
       <h3 id="projects" class="fw-bold mb-3">Featured projects</h3>
     </div>
@@ -412,7 +426,7 @@
     </section>
 
     <!-- EXPERIENCE SECTION -->
-   <section class="container">
+   <section class="container py-5">
   <h3 id="experience" class="text-start text-md-center mb-3 fw-bold" style="margin-top: 100px;">
     Professional Experience
   </h3>
@@ -486,7 +500,7 @@
 
            
     <!-- FEEDBACK SECTION -->
-    <section class="pt-5">
+    <section class="py-5 bg-light">
   <h3 class="text-center mb-3 fw-bold">Client Feedback</h3>
   <div class="container">
     <div class="row justify-content-center">
@@ -612,12 +626,12 @@
           <!-- Left Section - Navigation Links -->
           <div class="col-md-4 text-md-start text-center mt-2 mb-md-0">
             <nav class="d-flex flex-column justify-content-md-left align-items-md-start align-items-start gap-2">
-              <p class="fw-bold mb-0" style="color: var(--snav-color)">Quick Links</p>
-                  <a href="#skills" class="small" style="padding: 2px 4px; color: var(--text-color)">SKILLS</a>
-                  <a href="#about" class="small" style="padding: 2px 4px; color: var(--text-color)">ABOUT</a>
-                  <a href="#projects" class="small" style="padding: 2px 4px; color: var(--text-color)">PROJECT</a>
-                  <a href="#experience" class="small" style="padding: 2px 4px; color: var(--text-color)">EXPERIENCE</a>
-                  <a href="https://joshua-olagunju.github.io/My-Blog/" class="small" style="padding: 2px 4px; color: var(--text-color);">BLOG</a>       
+              <p class="fw-bold mb-0" style="color: #0185a5;">Quick Links</p>
+                  <a href="#skills" class="small" style="padding: 2px 4px; color: #171717;">SKILLS</a>
+                  <a href="#about" class="small" style="padding: 2px 4px; color: #171717;">ABOUT</a>
+                  <a href="#projects" class="small" style="padding: 2px 4px; color: #171717;">PROJECT</a>
+                  <a href="#experience" class="small" style="padding: 2px 4px; color: #171717;">EXPERIENCE</a>
+                  <a href="https://joshua-olagunju.github.io/My-Blog/" class="small" style="padding: 2px 4px; color: #171717">BLOG</a>       
             </nav>
           </div>
 
@@ -628,9 +642,9 @@
 <div class="row justify-content-center mt-4">
   <div class="col-auto">
     <div class="fw-bold d-flex align-items-center justify-content-center" style="font-size: xx-large; color: #0185a5;">
-      <p style="color: var(--text-color)" class="mb-0">C</p>
+      <p style="color: var(--text-color)" class="mb-0">S</p>
       <i class="bi bi-code-slash mx-1"></i>
-      <p style="color: var(--text-color)" class="mb-0">DE</p>
+      <p style="color: var(--text-color)" class="mb-0">JI</p>
     </div>
   </div>
 </div>
@@ -638,9 +652,9 @@
                 <p class="fw-bold" >Connect with me</p>
               <div class="mx-5 d-flex flex-wrap justify-content-center gap-4 social-icons">
         <a href="https://github.com/Joshua-olagunju" target="_blank"><i class="bi bi-github "></i></a>
-        <a href="https://www.linkedin.com/in/joshuaolagunju/" target="_blank"><i class="bi bi-linkedin "></i></a>
-        <a href="https://wa.me/+2349037498695" target="_blank"><i class="bi bi-whatsapp "></i></a> 
-        <a href="https://x.com/soji_olagunju37" target="_blank"><i class="bi bi-twitter "></i></a> 
+        <a href="https://www.linkedin.com/in/joshuaolagunju/" target="_blank"><i class="bi bi-linkedin " style="color: #0185a5;"></i></a>
+        <a href="https://wa.me/+2349037498695" target="_blank"><i class="bi bi-whatsapp" style="color: rgb(0, 201, 0);"></i></a> 
+        <a href="https://x.com/soji_olagunju37" target="_blank"><i class="bi bi-twitter " style="color: #0185a5;"></i></a> 
               </div>
               <div class="d-flex justify-content-center mt-3">
         <a class="libutton small" href="https://www.linkedin.com/in/joshuaolagunju" target="_blank">Follow me on LinkedIn</a>
@@ -650,7 +664,7 @@
           <!-- Right Section - Contact Information -->
           <div class="col-md-4 d-flex justify-content-end align-items-end mt-5 mb-md-0">
                 <div class="text-end">
-                  <p class=" fw-bold" style="color: var(--snav-color)">Contact me at:</p>
+                  <p class=" fw-bold" style="color: #0185a5;">Contact me at:</p>
                   <p><a href="mailto:olagunjujoshua11@gmail.com" class=" small" style="color: var(--text-color);" >olagunjujoshua11@gmail.com</a></p>
                   <p><a href="tel:+2349037498695" class=" small" style="color: var(--text-color);" >+234 9037 498695</a></p>
                   <p><i class="bi bi-globe me-2"></i>Lagos, Nigeria</p>

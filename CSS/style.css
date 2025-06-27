@@ -1,5 +1,21 @@
 :root {
-  --bg-color: 
+  --bg-color: #fbf6ef;
+  --text-color: #4f4f4f;
+  --logo-color: rgb(236, 167, 64);
+  --hero-text-color: #0185a5;
+  --snav-color: #f4a261;
+  --hero-bg-color: #fefaf5;
+  --hero-2-text-color: #1843cf;
+  --available-color:  #cacaca;
+  --border-color:#f4a261;
+  --btn-color:#f4a261;
+  --btn1-color: #cacaca;
+  --skills-bg-color:#fbf6ef;
+  --border-width:2px;
+}
+
+body.light-mode {
+   --bg-color: 
     /* radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px), */
     linear-gradient(135deg, #00050f, #000000);
   --text-color: #cacaca;
@@ -15,26 +31,10 @@
   --skills-bg-color:#171717;
   --border-width: 1px;
 }
-body.light-mode {
-  --bg-color: #ffffff;
-  --text-color: #3b3b3b;
-  --logo-color: rgb(236, 167, 64);
-  --hero-text-color: #0185a5;
-  --snav-color: #f4a261;
-  --hero-bg-color: #f7f7f7;
-  --hero-2-text-color: #0185a5;
-  --available-color:  #cacaca;
-  --border-color:#f4a261;
-  --btn-color:#f4a261;
-  --btn1-color: #cacaca;
-  --skills-bg-color:#ffffff;
-  --border-width:2px;
-}
 body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: Arial, Helvetica, sans-serif;
   background: var(--bg-color);
   background-size: 20px 20px, 100% 100%;
   color: var(--text-color);
@@ -60,34 +60,35 @@ p, h1, h2, h3, h4, h5, h6{
 	-webkit-line-clamp: 3;
 }
 header {
-    height: 90px;
+    height: 60px;
     padding: 0 20px;
     box-sizing: border-box;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    
- background: 
+}    
+ /* background: 
     /* radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px),
     linear-gradient(135deg, #0185a5, #000000);
   background-size: 20px 20px, 100% 100%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  */
-}
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  */ 
+
 .logo{
-  color: var(--logo-color) !important;
+  color: var(--hero-text-color);
 }
 header nav a {
     display: inline-block; /* makes transform work better */
     transform-origin: center;   
     font-size: medium;   
-     text-decoration: none;    
+     text-decoration: none;   
+      
 }
 .snav{
-  color: var(--snav-color);
+  color: var(--hero-text-color);
 }
 header nav a:hover, footer nav a:hover{
-    color: var(--snav-color) !important;
+    color: var(--hero-2-text-color) !important;
 }
 footer {
     width: 100%;
@@ -163,21 +164,63 @@ footer nav a{
    /* ========================
    Hero Section
    ======================== */
-   #hero {
+   /* #hero {
   background-color:var(--hero-bg-color);
   background-image: radial-gradient(circle, rgba(112, 69, 69, 0.15) 1px, transparent 1px);
   background-size: 15px 15px;
-}
+} */
 .welcomeid{
+  color: var(--text-color);
+}
+.border-glow {
+  position: relative;
+  border-radius: 50%;
+  z-index: 1;
+}
+.border-glow::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    #0185a5,
+    orange,
+    #0185a5,
+    orange,
+    #0185a5
+  );
+  animation: rotateBorder 1s linear infinite;
+  z-index: -1;
+}
+.border-glow img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+/* Animation */
+@keyframes rotateBorder {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hero-2-text-big{
   color: var(--text-color);
 }
 .hero-2-text{
   color: var(--text-color);
-  font-size: medium;
 }
 .heroo {
-  margin-top: 80px;
-  margin-bottom: 150px;
+  padding-top: 120px !important;
+  margin-bottom: 160px;
   padding: 60px; 
   position: relative;
 }
@@ -187,15 +230,15 @@ footer nav a{
   color: var(--text-color);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.30);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.30);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 6px 12px;
   width: fit-content;
 }
 /* Adjust blinking dot to match accent */
 .blinking-dot {
-  height: 6px;
-  width: 6px;
+  height: 8px;
+  width: 8px;
   background-color: #03d562;
   border-radius: 50%;
   display: inline-block;
@@ -208,7 +251,7 @@ footer nav a{
 }
 .btn:hover{
   background-color: var(--btn-color);
-  color: var(--hero-bg-color);
+  color: var(--text-color);
   
 }
 .btn1{
@@ -232,14 +275,14 @@ footer nav a{
 }
 .strength-pill:hover {
   background-color: var(--snav-color);
-  color: var(--hero-bg-color);
+  color: rgb(30, 30, 30);
 }
 .card {
     background: var(--skills-bg-color);
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.30);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.30);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
 }
@@ -326,7 +369,7 @@ body::before {
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.30);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.30);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 150px;
   margin: 5px;
