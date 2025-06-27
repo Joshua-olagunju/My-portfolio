@@ -546,8 +546,8 @@ input::placeholder, textarea::placeholder{
         cursor: pointer;
         display: block;
         position: absolute;
-        top: 15px;
-        right: 20px;
+        top: 3px;
+        right: 15px;
         color: #aaa;
         font-weight: bold;
     }
