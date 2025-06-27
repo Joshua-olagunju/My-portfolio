@@ -81,19 +81,19 @@ function showSkill(sectionId) {
   }
 }
 
-document.querySelectorAll("#toggleTheme, #toggleThemeMobile").forEach(btn => {
-  btn.addEventListener("click", function () {
-    document.body.classList.toggle("light-mode");
-    const theme = document.body.classList.contains("light-mode") ? "light" : "dark";
-    localStorage.setItem("theme", theme);
-  });
-});
+// document.querySelectorAll("#toggleTheme, #toggleThemeMobile").forEach(btn => {
+//   btn.addEventListener("click", function () {
+//     document.body.classList.toggle("light-mode");
+//     const theme = document.body.classList.contains("light-mode") ? "light" : "dark";
+//     localStorage.setItem("theme", theme);
+//   });
+// });
 
-window.addEventListener("DOMContentLoaded", () => {
-  if (localStorage.getItem("theme") === "light") {
-    document.body.classList.add("light-mode");
-  }
-});
+// window.addEventListener("DOMContentLoaded", () => {
+//   if (localStorage.getItem("theme") === "light") {
+//     document.body.classList.add("light-mode");
+//   }
+// });
 
 
 
