@@ -572,7 +572,7 @@ input::placeholder, textarea::placeholder{
         list-style: none;
         padding: 0;
         margin: 0;
-        font-family: 'Arial', sans-serif;
+      
     }
     /* Menu item styling */
     .menu ul li {
@@ -581,10 +581,9 @@ input::placeholder, textarea::placeholder{
     .menu ul li a {
         text-decoration: none;
         display: block;
-        font-size: 1.2rem;
+        font-size: 1rem;
         letter-spacing: 1px;
-        padding: 10px 0;
-        text-transform: uppercase; /* Letter design effect */        
+        padding: 10px 0;       
         border-bottom: 2px solid transparent;
         transition: all 0.3s ease;
     }
