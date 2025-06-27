@@ -1,7 +1,7 @@
 :root {
   --bg-color: 
-    radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(135deg, #000000, #000000);
+    /* radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px), */
+    linear-gradient(135deg, #00050f, #000000);
   --text-color: #cacaca;
   --logo-color: rgb(236, 167, 64);
   --hero-text-color: #cacaca;
@@ -69,10 +69,10 @@ header {
     z-index: 1000;
     
  background: 
-    radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px),
+    /* radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px),
     linear-gradient(135deg, #0185a5, #000000);
   background-size: 20px 20px, 100% 100%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Bottom shadow */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  */
 }
 .logo{
   color: var(--logo-color) !important;
@@ -173,10 +173,11 @@ footer nav a{
 }
 .hero-2-text{
   color: var(--text-color);
+  font-size: medium;
 }
 .heroo {
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 150px;
   padding: 60px; 
   position: relative;
 }
@@ -327,9 +328,9 @@ body::before {
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.30);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100px;
+  width: 150px;
   margin: 5px;
-  padding: 8px 0px;
+  padding: 15px 0px;
   text-align: center;
 }
 .logo-container2:hover {
