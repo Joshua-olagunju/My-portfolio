@@ -548,7 +548,7 @@ input::placeholder, textarea::placeholder{
         position: absolute;
         top: 3px;
         right: 15px;
-        color: #aaa;
+        color: #000000;
         font-weight: bold;
     }
     /* Hidden checkbox that controls the menu */
@@ -559,10 +559,10 @@ input::placeholder, textarea::placeholder{
     .menu {
         display: none;
         position: absolute;
-        top: 80px;
+        top: 60px;
         left: 0;
         width: 100%;
-        background: #141414;
+        background: #fbf6ef;
         padding: 20px 10px;
         z-index: 999;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
