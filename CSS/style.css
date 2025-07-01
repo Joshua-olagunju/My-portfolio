@@ -8,7 +8,7 @@
   --hero-2-text-color: #1843cf;
   --available-color:  #cacaca;
   --border-color:#f4a261;
-  --btn-color:#f4a261;
+  --btn-color:#0150c7;
   --btn1-color: #cacaca;
   --skills-bg-color:#fbf6ef;
   --border-width:2px;
@@ -40,13 +40,13 @@ body, html {
   color: var(--text-color);
   transition: all 0.4s ease;
 }
-button {
+/* button {
   background-color: var(--accent-color);
   color: #fff;
   border: none;
   padding: 8px 16px;
   border-radius: 8px;
-}
+} */
 p, h1, h2, h3, h4, h5, h6{
   color: var(--text-color);
 }
@@ -67,6 +67,7 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
+    background-color: var(--bg-color);
 }    
  /* background: 
     /* radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px),
@@ -87,8 +88,19 @@ header nav a {
 .snav{
   color: var(--hero-text-color);
 }
+.mylogo{
+  width: auto;
+  height: 1.7rem;
+}
+.ll{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+}
 header nav a:hover, footer nav a:hover{
-    color: var(--hero-2-text-color) !important;
+    color: var(--hero-text-color) !important;
+    text-decoration: underline;
 }
 footer {
     width: 100%;
@@ -230,7 +242,7 @@ footer nav a{
   color: var(--text-color);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 30px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.30);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.30);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 6px 12px;
   width: fit-content;
@@ -250,8 +262,8 @@ footer nav a{
   backdrop-filter: blur(6px);
 }
 .btn:hover{
-  background-color: var(--btn-color);
-  color: var(--text-color);
+  background-color: #0185a5;
+  color: white;
   
 }
 .btn1{
@@ -260,9 +272,8 @@ footer nav a{
   border: 1px solid var(--text-color);
 }
 .btn1:hover{
-  background-color: var(--btn-color);
+  background-color: var(--hero-text-color);
   color: var(--hero-bg-color);
-  border: 1px solid var(--text-color);
 }
 .strength-pill {
   font-weight: medium;
@@ -274,8 +285,8 @@ footer nav a{
   cursor: pointer;
 }
 .strength-pill:hover {
-  background-color: var(--snav-color);
-  color: rgb(30, 30, 30);
+  background-color: var(--hero-text-color);
+  color: white;
 }
 .card {
     background: var(--skills-bg-color);
@@ -330,12 +341,8 @@ body::before {
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.30);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.feature-box:hover {
-    transform: scale(1.01);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+ 
 }
 @media screen and (max-width: 768px){
     .heroo{
@@ -400,8 +407,7 @@ body::before {
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.30);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
 .card-img-top {
   height: 60%;
@@ -421,20 +427,6 @@ body::before {
 }
 .readmore:hover{
     text-decoration: underline;
-}
-.live {
-  background-color: #2c6d9e;
-  color: #000000;
-  padding: 6px 14px;
-  font-size: 0.75rem;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-.live:hover {
-  background-color: #1f1f1f;
-  color: #2c6d9e;
-  border: 1px solid #2c6d9e;
 }
 
 #thankYouMsg{
