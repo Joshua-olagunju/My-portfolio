@@ -102,7 +102,7 @@ header nav a {
 }
 header nav a:hover, footer nav a:hover{
     color: var(--hero-text-color) !important;
-    /* text-decoration: underline; */
+    text-decoration: underline;
     
 }
 footer {
