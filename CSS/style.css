@@ -82,7 +82,8 @@ header nav a {
     display: inline-block; /* makes transform work better */
     transform-origin: center;   
     font-size: medium;   
-     text-decoration: none;   
+     text-decoration: none;  
+     transition: color 0,4sec; 
       
 }
 .snav{
