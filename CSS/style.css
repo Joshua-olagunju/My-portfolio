@@ -1,8 +1,9 @@
 :root {
-  --bg-color: #fbf6ef;
-  --text-color: #4f4f4f;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --text2-color: #2e2e2e;
   --logo-color: rgb(236, 167, 64);
-  --hero-text-color: #0185a5;
+  --hero-text-color: #000000;
   --snav-color: #f4a261;
   --hero-bg-color: #fefaf5;
   --hero-2-text-color: #1843cf;
@@ -10,7 +11,7 @@
   --border-color:#f4a261;
   --btn-color:#0150c7;
   --btn1-color: #cacaca;
-  --skills-bg-color:#fbf6ef;
+  --skills-bg-color:#ffffff;
   --border-width:2px;
 }
 
@@ -48,7 +49,7 @@ body, html {
   border-radius: 8px;
 } */
 p, h1, h2, h3, h4, h5, h6{
-  color: var(--text-color);
+  color: var(--text2-color);
 }
   /* ========================
    Header and footer Section
@@ -76,14 +77,14 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  */ 
 
 .logo{
-  color: var(--hero-text-color);
+  filter: brightness(0%) invert(100%);
 }
 header nav a {
     display: inline-block; /* makes transform work better */
     transform-origin: center;   
     font-size: medium;   
      text-decoration: none;  
-     transition: color 0,4sec; 
+     transition: color 0.4s ease-in-out; 
       
 }
 .snav{
@@ -101,7 +102,8 @@ header nav a {
 }
 header nav a:hover, footer nav a:hover{
     color: var(--hero-text-color) !important;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    
 }
 footer {
     width: 100%;
@@ -120,7 +122,8 @@ footer nav {
     overflow: hidden;
 }
 footer nav a{
-    text-decoration: none;    
+    text-decoration: none; 
+    transition: color 0.4s ease-in-out;    
 }
 .footer-copy {
      font-size: 0.9rem; 
@@ -240,13 +243,14 @@ footer nav a{
 .Available {
    background: var(--skills-bg-color);
   backdrop-filter: blur(6px);
-  color: var(--text-color);
+  color: var(--text2-color);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.30);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 6px 12px;
   width: fit-content;
+  font-weight: normal;
 }
 /* Adjust blinking dot to match accent */
 .blinking-dot {
@@ -261,9 +265,10 @@ footer nav a{
   color: var(--text-color);
   border: 1px solid var(--text-color);
   backdrop-filter: blur(6px);
+  transition: background-color 1s ease-out;
 }
 .btn:hover{
-  background-color: #0185a5;
+  background-color: #000000;
   color: white;
   
 }
@@ -368,7 +373,7 @@ body::before {
    Skills Section
    ======================== */
   .active{
-    background-color: #0185a5 !important;
+    background-color: #000000 !important;
     color:white !important;
     border: 1px solid var(--text-color) !important;
   }
