@@ -318,7 +318,7 @@ footer nav a{
   animation: bounce 2s infinite;
   z-index: 999;
   cursor: pointer;
-  color: var(--border-color);
+  color: var(--text2-color);
   font-weight: 500;
 }
 @keyframes bounce {
@@ -340,7 +340,7 @@ body::before {
 .scroll-text {
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #2c6d9e;
+  color: #000000;
 }
 .feature-box {
   background: var(--skills-bg-color);
@@ -453,7 +453,7 @@ body::before {
     margin-bottom: 10px;
     padding: 0;
     margin-right: 20px;  
-   filter: invert(39%) sepia(85%) saturate(3777%) hue-rotate(202deg) brightness(95%) contrast(55%);
+ 
 }
 #backToTop {
     position: fixed;
