@@ -363,7 +363,7 @@ footer nav a{
    Projects Section
    ======================== */
 .custom-card {
-  height: 550px;
+  height: 40rem;
   display: flex;
   flex-direction: column;
    background: var(--skills-bg-color);
