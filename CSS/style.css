@@ -154,9 +154,9 @@ header {
     color: #ffffff;
     transition: transform 0.3s, color 0.3s;
 }
-.social-icons a:hover i.bi-facebook { color: #5470e1; transform: scale(1.2); }
+.social-icons a:hover i.bi-github { color: #555555; transform: scale(1.2); }
 .social-icons a:hover i.bi-linkedin { color: #0A66C2; transform: scale(1.2); }
-.social-icons a:hover i.bi-instagram { color: #cd3318; transform: scale(1.2); }
+.social-icons a:hover i.bi-whatsapp { color: #54cd18; transform: scale(1.2); }
 .social-icons a:hover i.bi-twitter { color: #0A66C2; transform: scale(1.2); }
 
 .social-icons1 a i {
@@ -251,9 +251,9 @@ header {
   background: conic-gradient(
     from 0deg,
     #0185a5,
-    orange,
+    green,
     #0185a5,
-    orange,
+    green,
     #0185a5
   );
   animation: rotateBorder 1s linear infinite;
