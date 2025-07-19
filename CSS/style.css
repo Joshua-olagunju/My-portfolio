@@ -388,12 +388,12 @@ footer nav a{
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
-@media (min-width: 0px) and (max-width: 763px) {
+@media (min-width: 0px) and (max-width: 965px) {
   .project-section{
     grid-template-columns: repeat(1, 1fr);
   }
 }
-@media (min-width: 764px) and (max-width: 1024px) {
+@media (min-width: 966px) and (max-width: 1024px) {
   .project-section{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -408,6 +408,18 @@ footer nav a{
   width: fit-content;
   margin: 0 auto;
 }
+
+.experience-section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 0px) and (max-width: 1024px) {
+  .experience-section{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
  /* ========================
    BackToTop Section
    ======================== */
@@ -419,6 +431,7 @@ footer nav a{
     margin-right: 20px;  
  
 }
+
 #backToTop {
     position: fixed;
     bottom: 20px;
