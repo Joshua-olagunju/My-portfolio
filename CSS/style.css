@@ -109,8 +109,10 @@ header {
 }
 
 .footeri {
-    height: 380px;
     display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 15rem;
      
 }
 .foot-nav {
@@ -129,7 +131,8 @@ header {
 @media (min-width: 0px) and (max-width: 1024px) {
   .footeri{
     height: 55rem;
-    flex-direction: row;
+    flex-direction: column;
+    align-items:start;
     gap: 1rem;
   }
 }
