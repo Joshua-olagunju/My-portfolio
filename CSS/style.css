@@ -320,7 +320,7 @@ footer nav a{
     font-size: smaller;
 }
 .card {
-    background: var(--skills-bg-color);
+ 
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
@@ -330,7 +330,7 @@ footer nav a{
 }
 /* Card title */
 .card-title {
-  color: var(--text-color);
+
   font-weight: 600;
   margin-bottom: 1rem;
 }
