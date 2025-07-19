@@ -1,113 +1,116 @@
-:root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --text2-color: #2e2e2e;
-  --logo-color: rgb(236, 167, 64);
-  --hero-text-color: #000000;
-  --snav-color: #f4a261;
-  --hero-bg-color: #fefaf5;
-  --hero-2-text-color: #1843cf;
-  --available-color:  #cacaca;
-  --border-color:#f4a261;
-  --btn-color:#0150c7;
-  --btn1-color: #cacaca;
-  --skills-bg-color:#ffffff;
-  --border-width:2px;
-}
-
-body.light-mode {
-   --bg-color: 
-    /* radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px), */
-    linear-gradient(135deg, #00050f, #000000);
-  --text-color: #cacaca;
-  --logo-color: rgb(236, 167, 64);
-  --hero-text-color: #cacaca;
-  --snav-color: #f4a261;
-  --hero-bg-color: #080808;
-  --hero-2-text-color: #cacaca;
-  --available-color: #171717;
-  --border-color: #f4a261;
-  --btn-color:	#f4a261;
-  --btn1-color: #171717;
-  --skills-bg-color:#171717;
-  --border-width: 1px;
-}
-body, html {
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body, html {
   overflow-x: hidden;
-  background: var(--bg-color);
-  background-size: 20px 20px, 100% 100%;
-  color: var(--text-color);
-  transition: all 0.4s ease;
 }
-/* button {
-  background-color: var(--accent-color);
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-} */
-p, h1, h2, h3, h4, h5, h6{
-  color: var(--text2-color);
-}
+
   /* ========================
    Header and footer Section
    ======================== */
-.text{
-  overflow:hidden;
-	display:-webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 3;
-}
-header {
-    height: 60px;
-    padding: 0 20px;
-    box-sizing: border-box;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: var(--bg-color);
-}    
- /* background: 
-    /* radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(135deg, #0185a5, #000000);
-  background-size: 20px 20px, 100% 100%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  */ 
 
-.logo{
-  filter: brightness(0%) invert(100%);
+header {
+    box-sizing: border-box;
 }
-header nav a {
-    display: inline-block; /* makes transform work better */
-    transform-origin: center;   
-    font-size: medium;   
-     text-decoration: none;  
-     transition: color 0.4s ease-in-out; 
+.web-nav li a {
+    display: inline-block; /* makes transform work better */  
+    text-decoration: none;  
+    transition: color 0.4s ease-in-out;
+    color: #ffffff;
       
 }
-.snav{
-  color: var(--hero-text-color);
+.web-nav li a:hover { 
+    color: #ec8638;   
 }
-.mylogo{
-  width: auto;
-  height: 1.7rem;
+.mobile-nav{
+  display: none;
 }
-.ll{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.1rem;
+@media (min-width: 0px) and (max-width: 1024px) {
+  .web-nav{
+    display: none;
+  }
+  .mobile-nav{
+    display: block;
+  }
 }
-header nav a:hover, footer nav a:hover{
-    color: var(--hero-text-color) !important;
-    text-decoration: underline;
-    
+     /* ========================
+   Drop down menu mobile Section
+   ======================== */
+@media (min-width: 768px) {
+    .menu-label, .menu-checkbox, .menu {
+        display: none; /* Hide the mobile menu for larger screens */
+    }
+    .desktop-nav {
+        display: block; /* Show desktop navigation */
+    }
 }
+/* Mobile Navigation Styles */
+@media (min-width: 0px) and (max-width: 1024px) {
+    .desktop-nav {
+        display: none; /* Hide desktop nav on mobile */
+    }
+    /* Mobile menu button (Hamburger) */
+    .menu-label {
+        font-size: 35px;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 13px;
+        right: 15px;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    /* Hidden checkbox that controls the menu */
+    .menu-checkbox {
+        display: none;
+    }
+    /* Menu container (hidden by default) */
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #fbf6ef;
+        padding: 20px 10px;
+        z-index: 999;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    /* List style inside the menu */
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      
+    }
+    /* Menu item styling */
+    .menu ul li {
+        margin: 15px 0;
+    }
+    .menu ul li a {
+        text-decoration: none;
+        color:#ffffff;
+        display: block;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        padding: 10px 0;       
+        border-bottom: 2px solid transparent;
+        transition: color 0.3s ease;
+    }
+    /* When the checkbox is checked, show the menu */
+    .menu-checkbox:checked ~ .menu {
+        display: block;
+    }
+    .menu li a:hover { 
+    color: #ec8638;   
+}
+}
+
 footer {
     width: 100%;
-    height: 330px;
+    height: 630px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -163,31 +166,75 @@ footer nav a{
 }
 .social-icons1 a:hover i.bi-github { color: #ccc; transform: scale(1.2); }
 .social-icons1 a:hover i.bi-linkedin { color: #0A66C2; transform: scale(1.2); }
-  /* ========================
-   Mobile Responsiveness Section
-   ======================== */
-   @media (max-width: 768px) {
-    footer{
-        height: 680px;
-    }
-    header nav{
-        display: none;
-    }
-    body{
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
-    }
+
    /* ========================
    Hero Section
    ======================== */
-   /* #hero {
-  background-color:var(--hero-bg-color);
-  background-image: radial-gradient(circle, rgba(112, 69, 69, 0.15) 1px, transparent 1px);
-  background-size: 15px 15px;
-} */
-.welcomeid{
-  color: var(--text-color);
+
+/* ========================
+   Hero Section 2 styling
+   ======================== */
+   @keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
 }
+.scroll-down-indicator {
+  animation: bounce 2s infinite;
+  z-index: 999;
+  cursor: pointer;
+  color: var(--text2-color);
+  font-weight: 500;
+}
+.scroll-text {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #000000;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+.blinking-dot {
+  height: 8px;
+  width: 8px;
+  background-color: #03d562;
+  border-radius: 50%;
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+.strength-pill {
+  font-weight: medium;
+  padding: 6px 12px;
+  color: var(--text-color);
+  border: 1px solid #000000;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.strength-pill:hover {
+  background-color: #313131;
+  color: #ffffff;
+}
+.strength{
+  border: 1px solid #3c3c3c;
+  border-radius: 0.5rem;
+}
+.second-hero{
+  display: flex;
+  gap: 5rem;
+}
+
+@media (min-width: 0px) and (max-width: 924px) {
+  .second-hero{
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* ========================
+   About Section styling
+   ======================== */
 .border-glow {
   position: relative;
   border-radius: 50%;
@@ -228,71 +275,49 @@ footer nav a{
     transform: rotate(360deg);
   }
 }
-.hero-2-text-big{
-  color: var(--text-color);
+
+.about-section{
+  display: flex;
+  gap: 10rem;
 }
-.hero-2-text{
-  color: var(--text-color);
+@media (min-width: 0px) and (max-width: 1024px) {
+  .about-section{
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
-.heroo {
-  padding-top: 120px !important;
-  margin-bottom: 160px;
-  padding: 60px; 
-  position: relative;
-}
-.Available {
-   background: var(--skills-bg-color);
+
+/* ========================
+   Skills Section styling
+   ======================== */
+  .active{
+    background-color: #181818 !important;
+    color:white !important;
+    border: 1px solid var(--text-color) !important;
+  }
+.logo-container2 {
   backdrop-filter: blur(6px);
-  color: var(--text2-color);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 30px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.30);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 6px 12px;
-  width: fit-content;
-  font-weight: normal;
-}
-/* Adjust blinking dot to match accent */
-.blinking-dot {
-  height: 8px;
-  width: 8px;
-  background-color: #03d562;
-  border-radius: 50%;
-  display: inline-block;
-  animation: blink 1s infinite;
-}
-.btn{
-  color: var(--text-color);
-  border: 1px solid var(--text-color);
-  backdrop-filter: blur(6px);
-  transition: background-color 1s ease-out;
-}
-.btn:hover{
-  background-color: #000000;
-  color: white;
-  
-}
-.btn1{
-  background-color: var(--text-color);
-  color: var(--hero-bg-color);
-  border: 1px solid var(--text-color);
-}
-.btn1:hover{
-  background-color: var(--hero-text-color);
-  color: var(--hero-bg-color);
-}
-.strength-pill {
-  font-weight: medium;
-  padding: 6px 12px;
-  color: var(--text-color);
-  border: 1px solid var(--text-color) !important;
-  transition: all 0.3s ease;
   border-radius: 5px;
-  cursor: pointer;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.30);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100px;
+  margin: 5px;
+  padding: 15px 0px;
+  text-align: center;
 }
-.strength-pill:hover {
-  background-color: var(--hero-text-color);
-  color: white;
+.logo-container2:hover {
+    transform: scale(1.05);
+}
+.logo2 {
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.logo-container2 figcaption{
+    color: #ffffff;
+    background-color: #000000;
+    font-size: smaller;
 }
 .card {
     background: var(--skills-bg-color);
@@ -309,39 +334,8 @@ footer nav a{
   font-weight: 600;
   margin-bottom: 1rem;
 }
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; transform: scale(0.9); }
-  100% { opacity: 1; transform: scale(1); }
-}
-.scroll-down-indicator {
-  animation: bounce 2s infinite;
-  z-index: 999;
-  cursor: pointer;
-  color: var(--text2-color);
-  font-weight: 500;
-}
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
-}
-/* NEW: Signature watermark */
-body::before {
-  content: "Joshua Olagunju";
-  position: fixed;
-  bottom: 200px;
-  right: 50px;
-  opacity: 0.04;
-  font-size: 3rem;
-  transform: rotate(-30deg);
-  z-index: 0;
-  pointer-events: none;
-}
-.scroll-text {
-  font-size: 0.75rem;
-  letter-spacing: 1px;
-  color: #000000;
-}
+
+
 .feature-box {
   background: var(--skills-bg-color);
   backdrop-filter: blur(6px);
@@ -349,11 +343,6 @@ body::before {
   border-radius: 5px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
  
-}
-@media screen and (max-width: 768px){
-    .heroo{
-        padding:50px 7px;
-    }
 }
 /* ========================
    Scroll margin Section
@@ -369,44 +358,12 @@ body::before {
     scroll-margin-top: 250px; /* Adjust this to match the height of your header */
 }
 }
-/* ========================
-   Skills Section
-   ======================== */
-  .active{
-    background-color: #000000 !important;
-    color:white !important;
-    border: 1px solid var(--text-color) !important;
-  }
-.logo-container2 {
-  background: var(--skills-bg-color);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.30);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 150px;
-  margin: 5px;
-  padding: 15px 0px;
-  text-align: center;
-}
-.logo-container2:hover {
-    transform: scale(1.05);
-}
-.logo2 {
-    height: 50px;
-    padding: 10px;
-    border-radius: 5px;
-}
-.logo-container2 figcaption{
-    color: var(--hero-bg-color);
-    background-color: var(--text-color);
-    font-size: smaller;
-}
+
 /* ========================
    Projects Section
    ======================== */
 .custom-card {
-  height: 550px; /* Or whatever height you prefer */
+  height: 550px;
   display: flex;
   flex-direction: column;
    background: var(--skills-bg-color);
@@ -425,14 +382,21 @@ body::before {
   flex-direction: column;
   justify-content: space-between;
 }
-.readmore{
-    text-decoration: none;
-    color: #005ebc;
-    margin-top: auto;
-    font-size: 0.8rem;
+
+.project-section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
-.readmore:hover{
-    text-decoration: underline;
+@media (min-width: 0px) and (max-width: 763px) {
+  .project-section{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 764px) and (max-width: 1024px) {
+  .project-section{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 #thankYouMsg{
@@ -521,72 +485,4 @@ input::placeholder, textarea::placeholder{
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.30);
-}
-     /* ========================
-   Drop down menu mobile Section
-   ======================== */
-@media (min-width: 768px) {
-    .menu-label, .menu-checkbox, .menu {
-        display: none; /* Hide the mobile menu for larger screens */
-    }
-    .desktop-nav {
-        display: block; /* Show desktop navigation */
-    }
-}
-/* Mobile Navigation Styles */
-@media screen and (max-width: 767px) {
-    .desktop-nav {
-        display: none; /* Hide desktop nav on mobile */
-    }
-    /* Mobile menu button (Hamburger) */
-    .menu-label {
-        font-size: 35px;
-        cursor: pointer;
-        display: block;
-        position: absolute;
-        top: 3px;
-        right: 15px;
-        color: #000000;
-        font-weight: bold;
-    }
-    /* Hidden checkbox that controls the menu */
-    .menu-checkbox {
-        display: none;
-    }
-    /* Menu container (hidden by default) */
-    .menu {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: #fbf6ef;
-        padding: 20px 10px;
-        z-index: 999;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-    /* List style inside the menu */
-    .menu ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      
-    }
-    /* Menu item styling */
-    .menu ul li {
-        margin: 15px 0;
-    }
-    .menu ul li a {
-        text-decoration: none;
-        display: block;
-        font-size: 1rem;
-        letter-spacing: 1px;
-        padding: 10px 0;       
-        border-bottom: 2px solid transparent;
-        transition: all 0.3s ease;
-    }
-    /* When the checkbox is checked, show the menu */
-    .menu-checkbox:checked ~ .menu {
-        display: block;
-    }
 }
