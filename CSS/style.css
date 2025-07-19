@@ -22,7 +22,7 @@ header {
       
 }
 .web-nav li a:hover { 
-    color: #ec8638;   
+    color: rgb(9, 156, 51);   
 }
 .mobile-nav{
   display: none;
@@ -104,37 +104,31 @@ header {
         display: block;
     }
     .menu li a:hover { 
-    color: #ec8638;   
+    color: rgb(9, 156, 51);
 }
 }
 
-.footeri {
+.my-footer{
     display: flex;
-    justify-content: center;
-    align-items:center;
-    gap: 15rem;
-     
+    gap: 3rem;
 }
-.foot-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.footer-description{
+    width: 30rem;
 }
-.foot-nav a{
-  color: #ffffff;
-  text-decoration: none;
-  transition: color 0.5s ease-in-out;
+.foot li a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.5s ease-in-out;
 }
-.foot-nav a:hover{
-  color: #ec8638; 
+.foot li a:hover{
+    color: rgb(9, 156, 51);
 }
+
 @media (min-width: 0px) and (max-width: 1024px) {
-  .footeri{
-    height: 55rem;
-    flex-direction: column;
-    align-items:start;
-    gap: 1rem;
-  }
+    .my-footer{
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 
 .libutton {
@@ -160,9 +154,9 @@ header {
     color: #ffffff;
     transition: transform 0.3s, color 0.3s;
 }
-.social-icons a:hover i.bi-github { color: #3e3e3e; transform: scale(1.2); }
+.social-icons a:hover i.bi-facebook { color: #5470e1; transform: scale(1.2); }
 .social-icons a:hover i.bi-linkedin { color: #0A66C2; transform: scale(1.2); }
-.social-icons a:hover i.bi-whatsapp { color: #25D366; transform: scale(1.2); }
+.social-icons a:hover i.bi-instagram { color: #cd3318; transform: scale(1.2); }
 .social-icons a:hover i.bi-twitter { color: #0A66C2; transform: scale(1.2); }
 
 .social-icons1 a i {
