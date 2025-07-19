@@ -108,8 +108,9 @@ header {
 }
 }
 
-footer {
+.footeri {
     height: 380px;
+    display: flex;
      
 }
 .foot-nav {
@@ -126,8 +127,10 @@ footer {
   color: #ec8638; 
 }
 @media (min-width: 0px) and (max-width: 1024px) {
-  footer{
+  .footeri{
     height: 55rem;
+    flex-direction: row;
+    gap: 1rem;
   }
 }
 
