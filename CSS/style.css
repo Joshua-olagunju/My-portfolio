@@ -362,6 +362,35 @@ header {
 /* ========================
    Projects Section
    ======================== */
+
+.project-grid{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.project-grid-images img{
+    height: 18rem;
+  width: 21rem;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+  
+}
+@media (min-width: 0px) and (max-width: 700px) {
+  .project-grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 701px) and (max-width: 1024px) {
+  .project-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+} 
+
+/* 
 .custom-card {
   height: 40rem;
   display: flex;
@@ -397,7 +426,7 @@ header {
   .project-section{
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} */
 
 #thankYouMsg{
   color: var(--text-color);

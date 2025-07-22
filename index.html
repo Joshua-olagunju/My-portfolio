@@ -19,10 +19,10 @@
      ===========-->
     <header class="d-flex justify-content-between align-items-center px-3 py-4 bg-dark">
   <!-- Logo -->
-      <div class="fw-bold " style="font-size: x-large;">
+      <div class=" " style="font-size: x-large;">
         <a href="#" style="text-decoration: none;">
           <div class="">
-              <span class="text-success">SOJI</span>
+              <span class="text-white fs-2">Joshua</span>
           </div>
         </a>
       </div>
@@ -30,12 +30,12 @@
   <!-- Navigation (Only on md and above) -->
       <div class="">
         <nav class="web-nav">
-          <ul  class="gap-5 d-flex m-0">
+          <ul  class="gap-5 d-flex mb-0">
             <li><a href="#" class="">Home</a></li>
             <li><a href="#about" class="">About</a></li>
             <li><a href="#projects" class="">Projects</a></li>
             <li><a href="#experience" class="">Experience</a></li>
-            <li><a href="#contact" class="">Contact</a></li>
+            <li><a href="#contact" class="btn btn-success">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -62,7 +62,7 @@
      HERO SECTION
      ===========-->
     <section id="hero" class="heroo pt-5 mt-0">
-      <p class="text-center text-success fs-1 mb-3 welcomeid fw-bold" id="welcome"></p>
+      <p class="text-center  fs-1 mb-3 welcomeid fw-bold" id="welcome"></p>
         <div class="d-flex justify-content-center align-items-center">
           <div class="border-glow">
             <img src="Images/Profile.jpg" class="img-fluid rounded-circle feature-box"
@@ -80,7 +80,7 @@
       <div class="second-hero">
 
         <div class="" >
-          <h3 class="fw-bold text-success fs-2">Joshua Olagunju</h3>
+          <h3 class="fw-bold  fs-2">Joshua Olagunju</h3>
             <div class="badge py-2 mb-2 px-3 gap-2 bg-light shadow-lg text-dark">
               <span class="blinking-dot me-2"></span> Currently Open for Freelance Projects
             </div>
@@ -130,7 +130,7 @@
     <!-- Left Column: About Me Text -->
       <div>
         <div class="mb-3">
-          <h3 class="fw-bold mb-0 text-success">About Me</h3>  
+          <h3 class="fw-bold mb-0 ">About Me</h3>  
         </div>
           <p style="line-height: 1.6;">
             I'm a Front-End Developer passionate about creating responsive, accessible, and 
@@ -277,17 +277,90 @@
             </p>
     </section>
 
+
     <!--=========
      PROJECTS SECTION
      ===========-->
-    <section class="container py-5">
+    <section class="container text-center my-5">
+
+      <h2 class="fw-bold ">Projects Section</h2>
+      <p class="text-muted mb-5">Explore all my works here, focucing on User Experience, Logic, and Satisfaction</p>
+
+
+      <div class="project-grid">
+
+        <div class="project-grid-images">
+          <img src="./Images/Port Image.png" alt="Screenshot of Portfolio Website" 
+          class="img-fluid rounded shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <h6 class="mb-0 fw-semibold small">Portfolio Website</h6>
+                <a href="https://joshua-olagunju.github.io/My-portfolio/" target="_blank"
+                 class="btn btn-sm btn-outline-secondary px-3">
+                  Live <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-grid-images">
+          <img src="./Images/Abvakon Image.png" alt="Screenshot of Abvakon Website" 
+          class="img-fluid rounded shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <h6 class="mb-0 fw-semibold small"> Fintech Company Website</h6>
+                <a href="https://abvakonmobilesolutions.com/" target="_blank"
+                 class="btn btn-sm btn-outline-secondary px-3">
+                  Live <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-grid-images">
+          <img src="./Images/Tech Image.png" alt="Screenshot of a tech blog" 
+          class="img-fluid rounded shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <h6 class="mb-0 fw-semibold small">A Blog Page</h6>
+                <a href="https://joshua-olagunju.github.io/My-Blog/" target="_blank"
+                 class="btn btn-sm btn-outline-secondary px-3">
+                  Live <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-grid-images">
+          <img src="./Images/Calculator Image (2).png" alt="Screenshot of a Calculator" 
+          class="img-fluid rounded shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <h6 class="mb-0 fw-semibold small">Calculator With JavaScript</h6>
+                <a href="https://joshua-olagunju.github.io/Quiz/" target="_blank"
+                 class="btn btn-sm btn-outline-secondary px-3">
+                  Live <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-grid-images">
+          <img src="./Images/SpaceFit Image.png" alt="Screenshot of Sneakers Website" 
+          class="img-fluid rounded shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <h6 class="mb-0 fw-semibold small">Sneakers Website</h6>
+                <a href="https://joshua-olagunju.github.io/Spacefit-sneakers/" target="_blank"
+                 class="btn btn-sm btn-outline-secondary px-3">
+                  Live <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <!-- <section class="container py-5">
       <div class="mb-5 align-items-center justify-content-center">
         <div class="mb-4 text-md-center">
           <h3 id="projects" class="fw-bold mb-3 text-success">Featured projects</h3>
         </div>
 
     <div class="project-section" id="project-container">
-      <!-- Project 1 -->
+      
       <div class="">
        <div class="card custom-card feature-box">
        <img src="Images/Screenshot 2025-06-28 085512.png" class="card-img-top" alt="Project 1">
@@ -312,7 +385,7 @@
           </div>
       </div>
 
-      <!-- Project 2 -->
+    
       <div class="">
         <div class="card custom-card feature-box">
     <img src="Images/Screenshot 2025-06-11 114315.png" class="card-img-top" alt="WooCommerce Project">
@@ -331,7 +404,7 @@
   </div>
       </div>
 
-       <!-- Project 3 -->
+      
       <div class="">
         <div class="card custom-card feature-box">
        <img src="Images/Sky.png" class="card-img-top" alt="Project 3">
@@ -354,9 +427,7 @@
           </div>
       </div>
 
-      <!-- Hidden Projects Start -->
-
-      <!-- Project 3 -->
+      
       <div class=" extra-project d-none">
         <div class="card custom-card feature-box">
        <img src="Images/Screenshot 2025-06-13 183102.png" class="card-img-top" alt="Project 3">
@@ -479,24 +550,24 @@
       </div>
     </div>
 
-    <!-- Show More / Less Button -->
+    
     <div class="text-center mt-4">
       <button id="toggle-projects" class="btn btn-success"><i class="bi bi-kanban me-2"></i>More Projects</button>
     </div>
   </div>
-    </section>
+    </section> -->
 
     <!--=========
      EXPEREINCE SECTION
      ===========-->
     <section class="container pb-5">
-        <h3 id="experience" class="text-start text-md-center text-success mb-3 fw-bold">
+        <h3 id="experience" class="text-start text-md-center mb-3 fw-bold">
         Professional Experience
         </h3>
           <div class="experience-section">
     <!-- Abvakon -->
               <div class="text-start feature-box h-100">
-                <h6 class="mt-4 ms-3 fw-semibold text-success">Front-End Developer (Contract)</h6>
+                <h6 class="mt-4 ms-3 fw-semibold ">Front-End Developer (Contract)</h6>
                   <p class="small mb-1 ms-3 fw-semibold">Abvakon Mobile Solutions Ltd.</p>
                   <p class="small ms-3">
                     <i class="bi bi-calendar-range me-2"></i>June 2025 - Present
@@ -512,7 +583,7 @@
     <!-- GAOTek -->
             
               <div class="text-start feature-box h-100">
-                <h6 class="mt-4 ms-3 fw-semibold text-success">Front-End Intern (Web Content Uploader)</h6>
+                <h6 class="mt-4 ms-3 fw-semibold ">Front-End Intern (Web Content Uploader)</h6>
                   <p class="small mb-1 ms-3 fw-semibold">GAOTek Inc.</p>
                   <p class="small ms-3">
                     <i class="bi bi-calendar-range me-2"></i>June 2025 - Present
@@ -523,7 +594,7 @@
                       <li>Collaborated with developers to improve design and fix bugs.</li>
                     </ul>
 
-                      <h6 class="ms-3 fw-semibold text-success">Squad Leader</h6>
+                      <h6 class="ms-3 fw-semibold">Squad Leader</h6>
                         <p class="small ms-3">
                           <i class="bi bi-calendar-range me-2"></i>July 2025 - Present
                         </p>
@@ -535,7 +606,7 @@
               </div>
   <!-- Freelance Centered -->             
                 <div class="text-start feature-box h-100">
-                  <h6 class="mt-4 ms-3 fw-semibold text-success">Front-End Developer</h6>
+                  <h6 class="mt-4 ms-3 fw-semibold ">Front-End Developer</h6>
                     <p class="small mb-1 ms-3 fw-semibold">Freelance</p>
                       <p class="small ms-3">
                         <i class="bi bi-calendar-range me-2"></i>July 2024 - Present
@@ -555,7 +626,7 @@
            
     <!-- FEEDBACK SECTION -->
     <section class="py-5 bg-light">
-  <h3 class="text-center mb-3 fw-bold text-success">Client Feedback</h3>
+  <h3 class="text-center mb-3 fw-bold">Client Feedback</h3>
   <div class="container">
     <div class="row justify-content-center">
 
@@ -634,7 +705,7 @@
       <!-- Toast container -->
 <div id="toast">
 </div>
-  <h3 class="fw-bold text-center text-success mt-5">Let's Connect!</h3>
+  <h3 class="fw-bold text-center  mt-5">Let's Connect!</h3>
   <p class="text-center">Feel free to reach out for collaborations, projects, or inquiries!</p>
 
   <div class="w-100 d-flex justify-content-center px-3">
@@ -705,9 +776,8 @@
         <h5 class="fw-bold text-success">Follow Us</h5>
         <div class="d-flex social-icons">
         <a href="#" class=" me-3 fs-5"><i class="bi bi-github"></i></a>
-        <a href="#" class=" me-3 fs-5"><i class="bi bi-whatsapp"></i></a>
-        <a href="#" class="me-3 fs-5"><i class="bi bi-twitter"></i></a>
-        <a href="#" class=" fs-5"><i class="bi bi-linkedin"></i></a>
+        <a href="https://wa.me/+2349037498695" class=" me-3 fs-5"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/joshuaolagunju/" class=" fs-5"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
 
@@ -715,8 +785,12 @@
       <div class=" mb-4 align-items-start">
         <h5 class="fw-bold text-success">Contact Me</h5>
         <p><i class="bi bi-geo-alt-fill me-2"></i>Lagos, Nigeria</p>
-        <p style="text-decoration: underline;"><i class="bi bi-envelope-fill me-2" ></i>olagunjujoshua11@gmail.com</p>
-        <p style="text-decoration: underline;"><i class="bi bi-telephone-fill me-2" ></i>+234 903 749 8695</p>
+        <div class="d-flex flex-column gap-2">
+       <a href="mailto:olagunjujoshua11@gmail.com" style="text-decoration: underline; color: inherit;">
+          <i class="bi bi-envelope-fill me-2"></i>olagunjujoshua11@gmail.com</a>
+        <a href="tel:+2349037498695" style="text-decoration: underline; color: inherit;">
+          <i class="bi bi-telephone-fill me-2" ></i>+234 903 749 8695</a>
+        </div>
       </div>
 
     </div>
