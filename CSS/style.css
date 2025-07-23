@@ -213,7 +213,7 @@ header {
   cursor: pointer;
 }
 .strength-pill:hover {
-  background-color: green;
+  background-color: #3c3c3c;
   color: #ffffff;
 }
 .strength{

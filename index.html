@@ -28,16 +28,19 @@
       </div>
 
   <!-- Navigation (Only on md and above) -->
-      <div class="">
-        <nav class="web-nav">
+      <div class="d-flex justify-content-center align-items-center gap-3">
+        <nav class="web-nav ">
           <ul  class="gap-5 d-flex mb-0">
             <li><a href="#" class="">Home</a></li>
             <li><a href="#about" class="">About</a></li>
             <li><a href="#projects" class="">Projects</a></li>
             <li><a href="#experience" class="">Experience</a></li>
-            <li><a href="#contact" class="btn btn-success">Contact</a></li>
           </ul>
         </nav>
+              <div>
+                <button type="button" onclick="window.location.href
+                ='#contact'"class="btn btn-secondary">Contact</button>
+              </div>
       </div>
 
     <!-- Mobile Menu -->
@@ -62,7 +65,7 @@
      HERO SECTION
      ===========-->
     <section id="hero" class="heroo pt-5 mt-0">
-      <p class="text-center  fs-1 mb-3 welcomeid fw-bold" id="welcome"></p>
+      <p class="text-center fw-semibold  fs-1 mb-3 welcomeid " id="welcome"></p>
         <div class="d-flex justify-content-center align-items-center">
           <div class="border-glow">
             <img src="Images/Profile.jpg" class="img-fluid rounded-circle feature-box"
@@ -80,7 +83,7 @@
       <div class="second-hero">
 
         <div class="" >
-          <h3 class="fw-bold  fs-2">Joshua Olagunju</h3>
+          <h3 class="fs-2">Joshua Olagunju</h3>
             <div class="badge py-2 mb-2 px-3 gap-2 bg-light shadow-lg text-dark">
               <span class="blinking-dot me-2"></span> Currently Open for Freelance Projects
             </div>
@@ -89,7 +92,7 @@
               </p>
             <div>
               <a href="mailto:olagunjujoshua11@gmail.com" target="_blank"
-               class="btn btn-outline-success px-3 py-2">
+               class="btn btn-outline-secondary btn-sm px-3 py-2">
                 <i class="bi-telephone-fill me-2"></i> Hire Me
               </a>
             </div>
@@ -140,7 +143,7 @@
             combine visual appeal with functionality, always striving to learn, adapt,
             and improve in every project.
           </p> 
-            <button class="btn btn-success px-3 py-2"
+            <button class="btn btn-secondary px-3 py-2"
                 onclick="window.open('https://drive.google.com/file/d/1ixVvZtVvsnKOEx0xkJU2wx_cqNQzEuU1/view?usp=sharing', '_blank')">
               <i class="bi bi-file-earmark-pdf me-2"></i> Resume 
             </button>
@@ -281,7 +284,7 @@
     <!--=========
      PROJECTS SECTION
      ===========-->
-    <section class="container text-center my-5">
+    <section id="projects" class="container text-center my-5">
 
       <h2 class="fw-bold ">Projects Section</h2>
       <p class="text-muted mb-5">Explore all my works here, focucing on User Experience, Logic, and Satisfaction</p>
@@ -695,7 +698,7 @@
   <div id="feedback">
     <textarea id="feedbackText" rows="3" class="form-control mb-2 feedback" 
     placeholder="Write your feedback..."></textarea>
-    <button id="submitFeedback" class="btn btn-sm px-4">Submit Feedback</button>
+    <button id="submitFeedback" class="btn btn-sm btn-outline-secondary px-4">Submit Feedback</button>
   </div>
 
   <!-- Thank you message hidden initially -->
@@ -734,7 +737,7 @@
         <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required autocomplete="off"
   ></textarea>
       </div>
-      <button type="submit" class="w-100 py-2 small btn btn-success"
+      <button type="submit" class="w-100 py-2 small btn btn-secondary"
       >
         <i class="bi bi-send me-2"></i> Send Message
       </button>
