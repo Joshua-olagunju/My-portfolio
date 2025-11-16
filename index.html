@@ -1,127 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-    <link rel="icon" href="Images/letter-o-svgrepo-com.svg" type="image/svg+xml" sizes="16x16 32x32">
+  <head>
+    <link
+      rel="icon"
+      href="Images/letter-o-svgrepo-com.svg"
+      type="image/svg+xml"
+      sizes="16x16 32x32"
+    />
     <title>Joshua Olagunju Portfolio</title>
-    <meta name="Description" content="Joshua Olagunju - Showcasing web development, UI/UX design, and cybersecurity projects.">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="CSS/style.css">
-        </head>
+    <meta
+      name="Description"
+      content="Joshua Olagunju - Showcasing web development, UI/UX design, and cybersecurity projects."
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-
+  <body>
     <!--=========
      HEADER SECTION
      ===========-->
-    <header class="d-flex justify-content-between align-items-center px-3 py-4 bg-dark">
-  <!-- Logo -->
-      <div class=" " style="font-size: x-large;">
-        <a href="#" style="text-decoration: none;">
+    <header
+      class="d-flex justify-content-between align-items-center px-3 py-4 bg-dark"
+    >
+      <!-- Logo -->
+      <div class=" " style="font-size: x-large">
+        <a href="#" style="text-decoration: none">
           <div class="">
-              <span class="text-white fs-2">Joshua</span>
+            <span class="text-white fs-2">Joshua</span>
           </div>
         </a>
       </div>
 
-  <!-- Navigation (Only on md and above) -->
+      <!-- Navigation (Only on md and above) -->
       <div class="d-flex justify-content-center align-items-center gap-3">
-        <nav class="web-nav ">
-          <ul  class="gap-5 d-flex mb-0">
+        <nav class="web-nav">
+          <ul class="gap-5 d-flex mb-0">
             <li><a href="#" class="">Home</a></li>
             <li><a href="#about" class="">About</a></li>
             <li><a href="#projects" class="">Projects</a></li>
             <li><a href="#experience" class="">Experience</a></li>
           </ul>
         </nav>
-              <div>
-                <button type="button" onclick="window.location.href
-                ='#contact'"class="btn btn-secondary">Contact</button>
-              </div>
+        <div>
+          <button
+            type="button"
+            onclick="window.location.href
+                ='#contact'"
+            class="btn btn-secondary"
+          >
+            Contact
+          </button>
+        </div>
       </div>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-nav">
-      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+      <!-- Mobile Menu -->
+      <div class="mobile-nav">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
         <label for="menu-toggle" class="menu-label">☰</label>
-          <nav class="menu bg-dark">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#about"> About</a></li>
-              <li><a href="#projects"> Projects</a></li>
-              <li><a href="#experience"> Experience</a></li>
-              <li><a href="#contact"> Contact</a></li>
-            </ul>
-          </nav>
-    </div>
-
+        <nav class="menu bg-dark">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="#projects"> Projects</a></li>
+            <li><a href="#experience"> Experience</a></li>
+            <li><a href="#contact"> Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-
 
     <!--=========
      HERO SECTION
      ===========-->
     <section id="hero" class="heroo pt-5 mt-0">
-      <p class="text-center fw-semibold  fs-1 mb-3 welcomeid " id="welcome"></p>
-        <div class="d-flex justify-content-center align-items-center">
-          <div class="border-glow">
-            <img src="Images/Profile.jpg" class="img-fluid rounded-circle feature-box"
-            id="about-image" alt="Profile Picture" 
-            style="max-width: 190px; max-height: 190px;">
-          </div>
+      <p class="text-center fw-semibold fs-1 mb-3 welcomeid" id="welcome"></p>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="border-glow">
+          <img
+            src="Images/Profile.jpg"
+            class="img-fluid rounded-circle feature-box"
+            id="about-image"
+            alt="Profile Picture"
+            style="max-width: 190px; max-height: 190px"
+          />
         </div>
+      </div>
     </section>
 
     <!--=========
      HERO SECTION 2
      ===========-->
-    <section class="container py-5 text-center ">
-
+    <section class="container py-5 text-center">
       <div class="second-hero">
-
-        <div class="" >
+        <div class="">
           <h3 class="fs-2">Joshua Olagunju</h3>
-            <div class="badge py-2 mb-2 px-3 gap-2 bg-light shadow-lg text-dark">
-              <span class="blinking-dot me-2"></span> Currently Open for Freelance Projects
-            </div>
-              <p class="small hero-2-text">
-                <i class="bi bi-globe me-2"></i>Lagos, Nigeria
-              </p>
-            <div>
-              <a href="mailto:olagunjujoshua11@gmail.com" target="_blank"
-               class="btn btn-outline-secondary btn-sm px-3 py-2">
-                <i class="bi-telephone-fill me-2"></i> Hire Me
-              </a>
-            </div>
-        </div>
-
-  <!-- Right: Project card -->
-          <div class="strength p-4">
-            <h5 class="card-title fw-bold mb-2 text-center">Strengths</h5>
-              <div class="d-flex flex-wrap justify-content-center gap-2 mt-2 small">
-                  <span class="px-3 py-1 border rounded-pill  strength-pill">Problem Solver</span>
-                  <span class="px-3 py-1 border rounded-pill  strength-pill">Creative Thinker</span>
-                  <span class="px-3 py-1 border rounded-pill  strength-pill">Attention to Detail</span>
-                  <span class="px-3 py-1 border rounded-pill  strength-pill">Quick Learner</span>
-                  <span class="px-3 py-1 border rounded-pill  strength-pill">Team Player</span>
-                  <span class="px-3 py-1 border rounded-pill  strength-pill">Strong Communication</span>
-                  <span class="px-3 py-1 border rounded-pill  strength-pill">Collaboration Skills</span>
-                  <span class="px-3 py-1 border rounded-pill  strength-pill">Adaptable</span>
-                  <span class="px-3 py-1 border rounded-pill  strength-pill">User-Centered Mindset</span>
-                  <span class="px-3 py-1 border rounded-pill  strength-pill">Leadership</span>
-              </div>
+          <div class="badge py-2 mb-2 px-3 gap-2 bg-light shadow-lg text-dark">
+            <span class="blinking-dot me-2"></span> Currently Open for Freelance
+            Projects
           </div>
-      
+          <p class="small hero-2-text">
+            <i class="bi bi-globe me-2"></i>Lagos, Nigeria
+          </p>
+          <div>
+            <a
+              href="mailto:olagunjujoshua11@gmail.com"
+              target="_blank"
+              class="btn btn-outline-secondary btn-sm px-3 py-2"
+            >
+              <i class="bi-telephone-fill me-2"></i> Hire Me
+            </a>
+          </div>
         </div>
 
-  <!-- Scroll Down Indicator -->
-        <div class="scroll-down-indicator position-fixed bottom-0 end-50 m-3 d-none d-md-flex flex-column align-items-center">
-          <span class="scroll-text small mb-1">Scroll Down</span>
-            <i class="bi bi-arrow-down-short fs-4"></i>
+        <!-- Right: Project card -->
+        <div class="strength p-4">
+          <h5 class="card-title fw-bold mb-2 text-center">Strengths</h5>
+          <div class="d-flex flex-wrap justify-content-center gap-2 mt-2 small">
+            <span class="px-3 py-1 border rounded-pill strength-pill"
+              >Problem Solver</span
+            >
+            <span class="px-3 py-1 border rounded-pill strength-pill"
+              >Creative Thinker</span
+            >
+            <span class="px-3 py-1 border rounded-pill strength-pill"
+              >Attention to Detail</span
+            >
+            <span class="px-3 py-1 border rounded-pill strength-pill"
+              >Quick Learner</span
+            >
+            <span class="px-3 py-1 border rounded-pill strength-pill"
+              >Strong Communication</span
+            >
+            <span class="px-3 py-1 border rounded-pill strength-pill"
+              >Adaptable</span
+            >
+            <span class="px-3 py-1 border rounded-pill strength-pill"
+              >User-Centered Mindset</span
+            >
+            <span class="px-3 py-1 border rounded-pill strength-pill"
+              >Critical Debugging</span
+            >
+            <span class="px-3 py-1 border rounded-pill strength-pill"
+              >Scalable Thinking</span
+            >
+            <span class="px-3 py-1 border rounded-pill strength-pill"
+              >Collaborative</span
+            >
+            <span class="px-3 py-1 border rounded-pill strength-pill"
+              >Leadership</span
+            >
+          </div>
         </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <div
+        class="scroll-down-indicator position-fixed bottom-0 end-50 m-3 d-none d-md-flex flex-column align-items-center"
+      >
+        <span class="scroll-text small mb-1">Scroll Down</span>
+        <i class="bi bi-arrow-down-short fs-4"></i>
+      </div>
     </section>
 
     <!--=========
@@ -129,247 +182,401 @@
      ===========-->
     <section class="container py-5" id="about">
       <div class="about-section">
-
-    <!-- Left Column: About Me Text -->
-      <div>
-        <div class="mb-3">
-          <h3 class="fw-bold mb-0 ">About Me</h3>  
+        <!-- Left Column: About Me Text -->
+        <div>
+          <div class="mb-3">
+            <h3 class="fw-bold mb-0">About Me</h3>
+          </div>
+          <p style="line-height: 1.6">
+            I’m a Front-End Developer and UI/UX Designer focused on building
+            responsive, intuitive, and scalable web applications. I specialize
+            in HTML, CSS, JavaScript, and modern frameworks like React and
+            Next.js, with strong experience in Git and collaborative development
+            workflows.
+          </p>
+          <p style="line-height: 1.6">
+            I enjoy turning complex ideas into simple, user-friendly interfaces,
+            balancing functionality, performance, and aesthetics. I’ve worked on
+            real-world projects ranging from finance tools to construction
+            management platforms, and I continuously refine my skills through
+            hands-on problem-solving, research, and learning.
+          </p>
+          <button
+            class="btn btn-secondary px-3 py-2"
+            onclick="window.open('https://drive.google.com/file/d/1xzaIUa8uzm1uUI1nE6kT2k2kyN_xaQ0n/view?usp=sharing', '_blank')"
+          >
+            <i class="bi bi-file-earmark-pdf me-2"></i> Resume
+          </button>
         </div>
-          <p style="line-height: 1.6;">
-            I'm a Front-End Developer passionate about creating responsive, accessible, and 
-            user-friendly websites. With strong skills in HTML, CSS, JavaScript, WordPress,
-            and Git, I build clean, maintainable code and intuitive interfaces that offer 
-            smooth user experiences. I'm also growing my expertise in UI/UX design to better
-            combine visual appeal with functionality, always striving to learn, adapt,
-            and improve in every project.
-          </p> 
-            <button class="btn btn-secondary px-3 py-2"
-                onclick="window.open('https://drive.google.com/file/d/1xzaIUa8uzm1uUI1nE6kT2k2kyN_xaQ0n/view?usp=sharing', '_blank')">
-              <i class="bi bi-file-earmark-pdf me-2"></i> Resume 
-            </button>
-      </div>
 
-    <!-- Right Column: Profile Image -->
-      <div class=" d-flex justify-content-center">
-        <div class="border-glow">
-          <img src="Images/467865609_122128371410443868_6691633975994226230_n (1).jpg" 
-            alt="Joshua Olagunju" 
-            class="img-fluid rounded-circle feature-box shadow-lg" style="max-width: 290px; max-height: 290px;">
+        <!-- Right Column: Profile Image -->
+        <div class="d-flex justify-content-center">
+          <img
+            src="Images/WhatsApp Image 2025-10-13 at 18.17.22_0c314c03.jpg"
+            alt="Joshua Olagunju"
+            class="img-fluid rounded-circle feature-box shadow-lg"
+            style="max-width: 290px; max-height: 290px; object-fit: center"
+          />
         </div>
-      </div>
       </div>
     </section>
-  
+
     <!--=========
      SKILLS SECTION
      ===========-->
     <section class="container text-center py-5" id="skills">
-  <h3 class="fw-bold mb-4" >Skills</h3>
+      <h3 class="fw-bold mb-4">Skills</h3>
+      <p>Skill tabs</p>
 
-  <!-- Skill Buttons -->
+      <!-- Skill Buttons -->
       <div class="d-flex justify-content-center my-3">
         <div class="d-flex gap-3">
-          <button class="btn  btn-success skill-btn active" data-skill="languages" onclick="showSkill('languages')">Languages</button>
-          <button class="btn  btn-success skill-btn" data-skill="frontend" onclick="showSkill('frontend')">Front-End</button>
-          <button class="btn btn-success skill-btn" data-skill="uiux" onclick="showSkill('uiux')">UI/UX</button>
+          <button
+            class="btn btn-success skill-btn active"
+            data-skill="frontend"
+            onclick="showSkill('frontend')"
+          >
+            Front-End
+          </button>
+          <button
+            class="btn btn-success skill-btn"
+            data-skill="uiux"
+            onclick="showSkill('uiux')"
+          >
+            UI/UX
+          </button>
         </div>
       </div>
 
-  <!-- Skill Tabs -->
-      <div class="row justify-content-center ">
-        
+      <!-- Skill Tabs -->
+      <div class="row justify-content-center">
+        <!-- Front-End Tab -->
+        <div id="frontend" class="skill-section">
+          <div
+            class="d-flex flex-wrap justify-content-center align-items-center"
+          >
+            <figure class="logo-container2">
+              <img
+                src="Images/html-5-svgrepo-com.svg"
+                alt="HTML Logo"
+                class="logo2"
+              />
+              <figcaption>HTML</figcaption>
+            </figure>
 
-      <!-- Languages Tab -->
-          <div id="languages" class="skill-section">
-            <div class="d-flex flex-wrap justify-content-center align-items-center">
-              <figure class="logo-container2">
-                <img src="Images/javascript-svgrepo-com.svg" alt="JavaScript Logo" class="logo2">
-                  <figcaption>JavaScript</figcaption>
-              </figure>
-              <figure class="logo-container2">
-                <img src="Images/python-svgrepo-com(1).svg" alt="Python Logo" class="logo2">
-                  <figcaption>Python</figcaption>
-              </figure>
-            </div>
+            <figure class="logo-container2">
+              <img
+                src="Images/css-svgrepo-com.svg"
+                alt="CSS Logo"
+                class="logo2"
+              />
+              <figcaption>CSS</figcaption>
+            </figure>
+
+            <figure class="logo-container2">
+              <img
+                src="Images/javascript-svgrepo-com.svg"
+                alt="JavaScript Logo"
+                class="logo2"
+              />
+              <figcaption>JavaScript</figcaption>
+            </figure>
+
+            <figure class="logo-container2">
+              <img
+                src="Images/python-svgrepo-com(1).svg"
+                alt="Python Logo"
+                class="logo2"
+              />
+              <figcaption>Python</figcaption>
+            </figure>
+
+            <figure class="logo-container2">
+              <img src="Images/react-2.svg" alt="React Logo" class="logo2" />
+              <figcaption>React</figcaption>
+            </figure>
+
+            <figure class="logo-container2">
+              <img src="Images/next-js.svg" alt="Next.js Logo" class="logo2" />
+              <figcaption>Next.js</figcaption>
+            </figure>
+
+            <figure class="logo-container2">
+              <img
+                src="Images/bootstrap-4-logo-svgrepo-com.svg"
+                alt="Bootstrap Logo"
+                class="logo2"
+              />
+              <figcaption>Bootstrap</figcaption>
+            </figure>
+
+            <figure class="logo-container2">
+              <img
+                src="Images/tailwindcss-icon-svgrepo-com.svg"
+                alt="TailwindCSS Logo"
+                class="logo2"
+              />
+              <figcaption>TailwindCSS</figcaption>
+            </figure>
           </div>
+        </div>
 
-      <!-- Front-End Tab -->
-          <div id="frontend" class="skill-section" style="display:none;">
-            <div class="d-flex flex-wrap justify-content-center align-items-center">
-              <figure class="logo-container2">
-                <img src="Images/html-5-svgrepo-com.svg" alt="HTML Logo" class="logo2">
-                  <figcaption>HTML</figcaption>
-              </figure>
-              <figure class="logo-container2">
-                <img src="Images/css-svgrepo-com.svg" alt="CSS Logo" class="logo2">
-                  <figcaption>CSS</figcaption>
-              </figure>
-              <figure class="logo-container2">
-                <img src="Images/bootstrap-4-logo-svgrepo-com.svg" alt="Bootstrap Logo" class="logo2">
-                  <figcaption>Bootstrap</figcaption>
-              </figure>
-              <figure class="logo-container2">
-                <img src="Images/tailwindcss-icon-svgrepo-com.svg" alt="TailwindCSS Logo" class="logo2">
-                  <figcaption>TailwindCSS</figcaption>
-              </figure>
-            </div>
+        <!-- UI/UX Tab -->
+        <div id="uiux" class="skill-section" style="display: none">
+          <div
+            class="d-flex flex-wrap justify-content-center align-items-center"
+          >
+            <figure class="logo-container2">
+              <img
+                src="Images/figma-svgrepo-com.svg"
+                alt="Figma Logo"
+                class="logo2"
+              />
+              <figcaption>Figma</figcaption>
+            </figure>
+
+            <figure class="logo-container2">
+              <img
+                src="Images/adobe-xd-1-logo-svgrepo-com.svg"
+                alt="Adobe XD Logo"
+                class="logo2"
+              />
+              <figcaption>Adobe XD</figcaption>
+            </figure>
+
+            <figure class="logo-container2">
+              <img
+                src="Images/FigJam-technology (1).svg"
+                alt="Figjam Logo"
+                class="logo2"
+              />
+              <figcaption>Figjam</figcaption>
+            </figure>
+
+            <figure class="logo-container2">
+              <img src="Images/miro.svg" alt="Miro Logo" class="logo2" />
+              <figcaption>Miro</figcaption>
+            </figure>
+
+            <figure class="logo-container2">
+              <img src="Images/canva-icon.svg" alt="Canva Logo" class="logo2" />
+              <figcaption>Canva</figcaption>
+            </figure>
           </div>
+        </div>
+      </div>
 
-      <!-- UI/UX Tab -->
-          <div id="uiux" class="skill-section" style="display:none;">
-            <div class="d-flex flex-wrap justify-content-center align-items-center">
-              <figure class="logo-container2">
-                <img src="Images/figma-svgrepo-com.svg" alt="Figma Logo" class="logo2">
-                  <figcaption>Figma</figcaption>
-              </figure>
-              <figure class="logo-container2">
-                <img src="Images/adobe-xd-1-logo-svgrepo-com.svg" alt="Adobe XD Logo" class="logo2">
-                  <figcaption>Adobe XD</figcaption>
-              </figure>
-              <figure class="logo-container2">
-                <img src="Images/FigJam-technology (1).svg" alt="Figjam Logo" class="logo2">
-                  <figcaption>Figjam</figcaption>
-              </figure>
-              <figure class="logo-container2">
-                <img src="Images/miro.svg" alt="Miro Logo" class="logo2">
-                  <figcaption>Miro</figcaption>
-              </figure>
-              <figure class="logo-container2">
-                <img src="Images/canva-icon.svg" alt="Canva Logo" class="logo2">
-                  <figcaption>Canva</figcaption>
-              </figure>
-            </div>
-          </div>
+      <h5 class="fs-5 text-center mt-5">Platforms & Version Control</h5>
+      <div class="d-flex flex-wrap align-items-center justify-content-center">
+        <figure class="logo-container2 platform-item">
+          <img src="Images/github.svg" alt="GitHub Logo" class="logo2 git" />
+          <figcaption>GitHub</figcaption>
+        </figure>
 
-    
-  </div>
+        <figure class="logo-container2 platform-item">
+          <img
+            src="Images/git-svgrepo-com(2).svg"
+            alt="Git Logo"
+            class="logo2"
+          />
+          <figcaption>Git</figcaption>
+        </figure>
 
-          <h5 class="fs-5 text-center mt-5">Platforms & Version Control</h5>
-            <div class="d-flex flex-wrap align-items-center justify-content-center">
-              <figure class="logo-container2 platform-item">
-                <img src="Images/figma-svgrepo-com.svg" alt="Figma Logo" class="logo2">
-                  <figcaption>Figma</figcaption>
-              </figure>
-              <figure class="logo-container2">
-                <img src="Images/github.svg" alt="GitHub Logo" class="logo2 git">
-                  <figcaption>GitHub</figcaption>
-              </figure>
-              <figure class="logo-container2 platform-item">
-                <img src="Images/visual-studio-code-svgrepo-com.svg" alt="VS Code Logo" class="logo2">
-                  <figcaption>VS Code</figcaption>
-              </figure>
-              <figure class="logo-container2 platform-item">
-                <img src="Images/git-svgrepo-com(2).svg" alt="Git Logo" class="logo2">
-                  <figcaption>Git</figcaption>
-              </figure>
-              <figure class="logo-container2 platform-item">
-                <img src="Images/wordpress-svgrepo-com.svg" alt="WordPress Logo" class="logo2">
-                  <figcaption>WordPress</figcaption>
-              </figure>
-              <figure class="logo-container2 platform-item">
-                <img src="Images/xampp-svgrepo-com.svg" alt="XAMPP Logo" class="logo2">
-                  <figcaption>XAMPP</figcaption>
-              </figure>
-            </div>
+        <figure class="logo-container2 platform-item">
+          <img
+            src="Images/visual-studio-code-svgrepo-com.svg"
+            alt="VS Code Logo"
+            class="logo2"
+          />
+          <figcaption>VS Code</figcaption>
+        </figure>
+        <figure class="logo-container2 platform-item">
+          <img
+            src="Images/netlify-svgrepo-com.svg"
+            alt="Netlify Logo"
+            class="logo2"
+          />
+          <figcaption>Netlify</figcaption>
+        </figure>
+        <figure class="logo-container2 platform-item">
+          <img
+            src="Images/vercel-svgrepo-com.svg"
+            alt="Vercel Logo"
+            class="logo2"
+          />
+          <figcaption>Vercel</figcaption>
+        </figure>
 
-            <p class="d-flex flex-wrap justify-content-center gap-1 mt-2 small">
-              <strong class="me-1 mb-0">Other tools:</strong>
-                <span class="px-3 py-1 border rounded-pill  strength-pill">Discord</span>
-                  <span class="px-3 py-1 border rounded-pill  strength-pill">Chrome DevTools</span>
-                  <span class="px-3 py-1 border rounded-pill  strength-pill">WooCommerce</span>
-            </p>
+        <figure class="logo-container2 platform-item">
+          <img
+            src="Images/wordpress-svgrepo-com.svg"
+            alt="WordPress Logo"
+            class="logo2"
+          />
+          <figcaption>WordPress</figcaption>
+        </figure>
+
+        <figure class="logo-container2 platform-item">
+          <img
+            src="Images/xampp-svgrepo-com.svg"
+            alt="XAMPP Logo"
+            class="logo2"
+          />
+          <figcaption>XAMPP</figcaption>
+        </figure>
+      </div>
+
+      <p class="d-flex flex-wrap justify-content-center gap-1 mt-2 small">
+        <strong class="me-1 mb-0">Other tools:</strong>
+        <span class="px-3 py-1 border rounded-pill strength-pill">Discord</span>
+        <span class="px-3 py-1 border rounded-pill strength-pill"
+          >Chrome DevTools</span
+        >
+        <span class="px-3 py-1 border rounded-pill strength-pill"
+          >WooCommerce</span
+        >
+      </p>
     </section>
-
 
     <!--=========
      PROJECTS SECTION
      ===========-->
     <section id="projects" class="container text-center my-5">
-
-      <h2 class="fw-bold ">Projects Section</h2>
-      <p class="text-muted mb-5">Explore all my works here, focusing on User Experience, Logic, and Satisfaction</p>
-
+      <h2 class="fw-bold">Projects Section</h2>
+      <p class="text-muted mb-5">
+        Explore all my works here, focusing on User Experience, Logic, and
+        Satisfaction
+      </p>
 
       <div class="project-grid">
-
-        <div class="project-grid-images my-3" style="border-bottom: 2px solid rgb(133, 133, 133);">
-          <img src="./Images/Port Image.png" alt="Screenshot of Portfolio Website" 
-          class="img-fluid rounded shadow-sm">
-            <div class="d-flex justify-content-between align-items-center my-3">
-              <h6 class="mb-0 fw-semibold small">Portfolio Website</h6>
-                <a href="https://joshua-olagunju.github.io/My-portfolio/" target="_blank"
-                 class="btn btn-sm btn-outline-secondary px-3">
-                  Live <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-            </div>
+        <div
+          class="project-grid-images my-3"
+          style="border-bottom: 2px solid rgb(133, 133, 133)"
+        >
+          <img
+            src="./Images/Port Image.png"
+            alt="Screenshot of Portfolio Website"
+            class="img-fluid rounded shadow-sm"
+          />
+          <div class="d-flex justify-content-between align-items-center my-3">
+            <h6 class="mb-0 fw-semibold small">Portfolio Website</h6>
+            <a
+              href="https://joshua-olagunju.github.io/My-portfolio/"
+              target="_blank"
+              class="btn btn-sm btn-outline-secondary px-3"
+            >
+              Live <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="project-grid-images my-3" style="border-bottom: 2px solid rgb(133, 133, 133);">
-          <img src="./Images/Abvakon Image.png" alt="Screenshot of Abvakon Website" 
-          class="img-fluid rounded shadow-sm">
-            <div class="d-flex justify-content-between align-items-center my-3">
-              <h6 class="mb-0 fw-semibold small"> Fintech Company Website</h6>
-                <a href="https://abvakonmobilesolutions.com/" target="_blank"
-                 class="btn btn-sm btn-outline-secondary px-3">
-                  Live <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-            </div>
+        <div
+          class="project-grid-images my-3"
+          style="border-bottom: 2px solid rgb(133, 133, 133)"
+        >
+          <img
+            src="./Images/Abvakon Image.png"
+            alt="Screenshot of Abvakon Website"
+            class="img-fluid rounded shadow-sm"
+          />
+          <div class="d-flex justify-content-between align-items-center my-3">
+            <h6 class="mb-0 fw-semibold small">Fintech Company Website</h6>
+            <a
+              href="https://abvakonmobilesolutions.com/"
+              target="_blank"
+              class="btn btn-sm btn-outline-secondary px-3"
+            >
+              Live <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="project-grid-images my-3" style="border-bottom: 2px solid rgb(133, 133, 133);">
-          <img src="./Images/Tech Image.png" alt="Screenshot of a tech blog" 
-          class="img-fluid rounded shadow-sm">
-            <div class="d-flex justify-content-between align-items-center my-3">
-              <h6 class="mb-0 fw-semibold small">A Blog Page</h6>
-                <a href="https://joshua-olagunju.github.io/My-Blog/" target="_blank"
-                 class="btn btn-sm btn-outline-secondary px-3">
-                  Live <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-            </div>
+        <div
+          class="project-grid-images my-3"
+          style="border-bottom: 2px solid rgb(133, 133, 133)"
+        >
+          <img
+            src="./Images/Tech Image.png"
+            alt="Screenshot of a tech blog"
+            class="img-fluid rounded shadow-sm"
+          />
+          <div class="d-flex justify-content-between align-items-center my-3">
+            <h6 class="mb-0 fw-semibold small">A Blog Page</h6>
+            <a
+              href="https://joshua-olagunju.github.io/My-Blog/"
+              target="_blank"
+              class="btn btn-sm btn-outline-secondary px-3"
+            >
+              Live <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="project-grid-images my-3" style="border-bottom: 2px solid rgb(133, 133, 133);">
-          <img src="./Images/Calculator Image (2).png" alt="Screenshot of a Calculator" 
-          class="img-fluid rounded shadow-sm">
-            <div class="d-flex justify-content-between align-items-center my-3">
-              <h6 class="mb-0 fw-semibold small">Quiz With JavaScript</h6>
-                <a href="https://joshua-olagunju.github.io/Quiz/" target="_blank"
-                 class="btn btn-sm btn-outline-secondary px-3">
-                  Live <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-            </div>
+        <div
+          class="project-grid-images my-3"
+          style="border-bottom: 2px solid rgb(133, 133, 133)"
+        >
+          <img
+            src="./Images/Calculator Image (2).png"
+            alt="Screenshot of a Calculator"
+            class="img-fluid rounded shadow-sm"
+          />
+          <div class="d-flex justify-content-between align-items-center my-3">
+            <h6 class="mb-0 fw-semibold small">Quiz With JavaScript</h6>
+            <a
+              href="https://joshua-olagunju.github.io/Quiz/"
+              target="_blank"
+              class="btn btn-sm btn-outline-secondary px-3"
+            >
+              Live <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="project-grid-images my-3" style="border-bottom: 2px solid rgb(133, 133, 133);">
-          <img src="./Images/SpaceFit Image.png" alt="Screenshot of Sneakers Website" 
-          class="img-fluid rounded shadow-sm">
-            <div class="d-flex justify-content-between align-items-center my-3">
-              <h6 class="mb-0 fw-semibold small">Sneakers Website</h6>
-                <a href="https://joshua-olagunju.github.io/Spacefit-sneakers/" target="_blank"
-                 class="btn btn-sm btn-outline-secondary px-3">
-                  Live <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-            </div>
+        <div
+          class="project-grid-images my-3"
+          style="border-bottom: 2px solid rgb(133, 133, 133)"
+        >
+          <img
+            src="./Images/SpaceFit Image.png"
+            alt="Screenshot of Sneakers Website"
+            class="img-fluid rounded shadow-sm"
+          />
+          <div class="d-flex justify-content-between align-items-center my-3">
+            <h6 class="mb-0 fw-semibold small">Sneakers Website</h6>
+            <a
+              href="https://joshua-olagunju.github.io/Spacefit-sneakers/"
+              target="_blank"
+              class="btn btn-sm btn-outline-secondary px-3"
+            >
+              Live <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="project-grid-images my-3" style="border-bottom: 2px solid rgb(133, 133, 133);">
-          <img src="./Images/WordPress Image.png" alt="Screenshot of Sneakers Website" 
-          class="img-fluid rounded shadow-sm">
-            <div class="d-flex justify-content-between align-items-center my-3">
-              <h6 class="mb-0 fw-semibold small">WordPress Shop Setup</h6>
-                <a href="https://drive.google.com/drive/folders/1NFXhBKiJlzMrghmNRfj2yG6DlJ00snWy?usp=sharing"
-                 target="_blank" class="btn btn-sm btn-outline-secondary px-3">
-                  Live <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-            </div>
+        <div
+          class="project-grid-images my-3"
+          style="border-bottom: 2px solid rgb(133, 133, 133)"
+        >
+          <img
+            src="./Images/WordPress Image.png"
+            alt="Screenshot of Sneakers Website"
+            class="img-fluid rounded shadow-sm"
+          />
+          <div class="d-flex justify-content-between align-items-center my-3">
+            <h6 class="mb-0 fw-semibold small">WordPress Shop Setup</h6>
+            <a
+              href="https://drive.google.com/drive/folders/1NFXhBKiJlzMrghmNRfj2yG6DlJ00snWy?usp=sharing"
+              target="_blank"
+              class="btn btn-sm btn-outline-secondary px-3"
+            >
+              Live <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
         </div>
-
-        
-
       </div>
     </section>
 
-    
     <!-- <section class="container py-5">
       <div class="mb-5 align-items-center justify-content-center">
         <div class="mb-4 text-md-center">
@@ -578,245 +785,400 @@
      EXPEREINCE SECTION
      ===========-->
     <section class="container pb-5">
-        <h3 id="experience" class="text-start text-md-center mb-3 fw-bold">
+      <h3 id="experience" class="text-start text-md-center mb-3 fw-bold">
         Professional Experience
-        </h3>
-          <div class="experience-section">
-    <!-- Abvakon -->
-              <div class="text-start feature-box h-100">
-                <h6 class="mt-4 ms-3 fw-semibold ">Front-End Developer</h6>
-                  <p class="small mb-1 ms-3 fw-semibold">Abvakon Mobile Solutions Ltd.</p>
-                  <p class="small ms-3">
-                    <i class="bi bi-calendar-range me-2"></i>June 2025 - Present
-                  </p>
-       
-                    <ul style="font-size: 0.8rem; line-height: 1.5rem; color:var(--text-color)">
-                      <li>Build user-facing components and pages using HTML, CSS, and JavaScript.</li>
-                      <li>Follow design guidelines to implement consistent UI across the platform.</li>
-                      <li>Coordinate with backend developers to ensure seamless API integration.</li>
-                      <li>Attend weekly meetings and provide regular updates on progress.</li>
-                    </ul>
-              </div>
-    <!-- GAOTek -->
-            
-              <div class="text-start feature-box h-100">
-                <h6 class="mt-4 ms-3 fw-semibold ">Front-End Dev (Web Content Uploader)</h6>
-                  <p class="small mb-1 ms-3 fw-semibold">GAOTek Inc.</p>
-                  <p class="small ms-3">
-                    <i class="bi bi-calendar-range me-2"></i>June 2025 - Sept 2025
-                  </p>
-                    <ul class="ms-3" style="font-size: 0.8rem; line-height: 1.5rem; color:var(--text-color)">
-                      <li>Managed and uploaded product listings using WordPress & WooCommerce.</li>
-                      <li>Implemented AJAX search, optimized content for SEO, and used XAMPP locally.</li>
-                      <li>Collaborated with developers to improve design and fix bugs.</li>
-                    </ul>
+      </h3>
+      <div class="experience-section">
+        <!-- Abvakon -->
+        <div class="text-start feature-box h-100">
+          <h6 class="mt-4 ms-3 fw-semibold">Front-End Developer</h6>
+          <p class="small mb-1 ms-3 fw-semibold">
+            Abvakon Mobile Solutions Ltd.
+          </p>
+          <p class="small ms-3">
+            <i class="bi bi-calendar-range me-2"></i>June 2025 - Present
+          </p>
 
-                      <h6 class="ms-3 fw-semibold">Squad Leader</h6>
-                        <p class="small ms-3">
-                          <i class="bi bi-calendar-range me-2"></i>July 2025 - Sept 2025
-                        </p>
-                          <ul class="ms-3" style="font-size: 0.8rem; line-height: 1.5rem; color:var(--text-color)">
-                            <li>Reviewed and approved project deliverables to ensure quality.</li>
-                            <li>Monitored team progress and maintained project tracker sheets</li>
-                            <li>Attend weekly leaders meetings and assist with onboarding.</li>
-                          </ul>
-              </div>
-  <!-- Freelance Centered -->             
-                <div class="text-start feature-box h-100">
-                  <h6 class="mt-4 ms-3 fw-semibold ">Front-End Developer</h6>
-                    <p class="small mb-1 ms-3 fw-semibold">Freelance</p>
-                      <p class="small ms-3">
-                        <i class="bi bi-calendar-range me-2"></i>July 2024 - Present
-                      </p>
-      
-                        <ul style="font-size: 0.8rem; line-height: 1.5rem; color:var(--text-color)">
-                          <li>Design and develop responsive websites using HTML, CSS, and JavaScript.</li>
-                          <li>Customize layouts and implement interactive features to enhance user experience.</li>
-                          <li>Use Git and GitHub for version control and project collaboration.</li>
-                          <li>Communicate with clients to understand requirements and deliver tailored solutions.</li>
-                        </ul>
-                </div>
-          </div>
-            
+          <ul
+            style="
+              font-size: 0.8rem;
+              line-height: 1.5rem;
+              color: var(--text-color);
+            "
+          >
+            <li>
+              Build responsive and dynamic user interfaces using
+              <strong>React</strong> and <strong>Next.js</strong>.
+            </li>
+            <li>
+              Previously developed core pages and logic using
+              <strong>HTML, CSS, and Vanilla JavaScript</strong>
+              before migration to React/Next.js.
+            </li>
+            <li>
+              Collaborate with UI/UX designers to translate Figma designs into
+              pixel-perfect components.
+            </li>
+            <li>
+              Integrate frontend features with backend APIs and ensure data
+              consistency across the platform.
+            </li>
+            <li>
+              Deploy project builds and handle staging previews using
+              <strong>Netlify</strong>.
+            </li>
+            <li>
+              Participate in weekly project meetings and provide progress
+              updates on implementation milestones.
+            </li>
+          </ul>
+        </div>
+
+        <!-- GAOTek -->
+
+        <div class="text-start feature-box h-100">
+          <h6 class="mt-4 ms-3 fw-semibold">
+            Front-End Dev (Web Content Uploader)
+          </h6>
+          <p class="small mb-1 ms-3 fw-semibold">GAOTek Inc.</p>
+          <p class="small ms-3">
+            <i class="bi bi-calendar-range me-2"></i>June 2025 - Sept 2025
+          </p>
+          <ul
+            class="ms-3"
+            style="
+              font-size: 0.8rem;
+              line-height: 1.5rem;
+              color: var(--text-color);
+            "
+          >
+            <li>
+              Managed and uploaded product listings using WordPress &
+              WooCommerce.
+            </li>
+            <li>
+              Implemented AJAX search, optimized content for SEO, and used XAMPP
+              locally.
+            </li>
+            <li>
+              Collaborated with developers to improve design and fix bugs.
+            </li>
+          </ul>
+
+          <h6 class="ms-3 fw-semibold">Squad Leader</h6>
+          <p class="small ms-3">
+            <i class="bi bi-calendar-range me-2"></i>July 2025 - Sept 2025
+          </p>
+          <ul
+            class="ms-3"
+            style="
+              font-size: 0.8rem;
+              line-height: 1.5rem;
+              color: var(--text-color);
+            "
+          >
+            <li>
+              Reviewed and approved project deliverables to ensure quality.
+            </li>
+            <li>
+              Monitored team progress and maintained project tracker sheets
+            </li>
+            <li>Attend weekly leaders meetings and assist with onboarding.</li>
+          </ul>
+        </div>
+        <!-- Freelance Centered -->
+        <div class="text-start feature-box h-100">
+          <h6 class="mt-4 ms-3 fw-semibold">Front-End Developer</h6>
+          <p class="small mb-1 ms-3 fw-semibold">Freelance</p>
+          <p class="small ms-3">
+            <i class="bi bi-calendar-range me-2"></i>July 2024 - Present
+          </p>
+
+          <ul
+            style="
+              font-size: 0.8rem;
+              line-height: 1.5rem;
+              color: var(--text-color);
+            "
+          >
+            <li>
+              Design and build responsive websites and web apps using HTML, CSS,
+              JavaScript, React, and Next.js.
+            </li>
+            <li>
+              Deploy projects using platforms like Netlify and Vercel for fast
+              and optimized hosting.
+            </li>
+            <li>
+              Customize layouts and implement interactive features to enhance
+              user experience.
+            </li>
+            <li>
+              Use Git and GitHub for version control and project collaboration.
+            </li>
+            <li>
+              Communicate with clients to understand requirements and deliver
+              tailored solutions.
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-           
     <!-- FEEDBACK SECTION -->
     <section class="py-5 bg-light">
-  <h3 class="text-center mb-3 fw-bold">Client Feedback</h3>
-  <div class="container">
-    <div class="row justify-content-center">
+      <h3 class="text-center mb-3 fw-bold">Client Feedback</h3>
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Testimonial 1 -->
+          <div class="col-md-4 col-sm-6 mb-2">
+            <!-- Added mb-4 for vertical gap -->
+            <div class="feature-box h-100">
+              <article class="rounded p-4 h-100">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="small fw-semibold" style="color: #000000"
+                    >Daniel Rotimi ___ Backend Dev</span
+                  >
+                </div>
+                <p class="fst-italic small mb-2">
+                  “Joshua's precision and responsive design made collaboration
+                  seamless.”
+                </p>
+                <div class="text-success">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-half"></i>
+                </div>
+              </article>
+            </div>
+          </div>
 
-      <!-- Testimonial 1 -->
-      <div class="col-md-4 col-sm-6 mb-2" > <!-- Added mb-4 for vertical gap -->
-        <div class="feature-box h-100">
-          <article class="rounded p-4 h-100">
-            <div class="d-flex align-items-center gap-2 mb-2">
-              <span class="small fw-semibold" style="color: #000000;">Daniel Rotimi ___ Backend Dev</span>
+          <!-- Testimonial 2 -->
+          <div class="col-md-4 col-sm-6 mb-2">
+            <div class="feature-box h-100">
+              <article class="rounded p-4 h-100">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="small fw-semibold" style="color: #000000"
+                    >Raymond Okoh___Product Manager</span
+                  >
+                </div>
+                <p class="fst-italic small mb-2">
+                  “Impressed by the clean UI and how Joshua communicates. Very
+                  professional.”
+                </p>
+                <div class="text-success">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+              </article>
             </div>
-            <p class="fst-italic small mb-2">“Joshua's precision and responsive design made collaboration seamless.”</p>
-            <div class="text-success">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="col-md-4 col-sm-6 mb-2">
+            <div class="feature-box h-100">
+              <article class="rounded p-4 h-100">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="small fw-semibold" style="color: #000000"
+                    >Mary O___Customer Support</span
+                  >
+                </div>
+                <p class="fst-italic small mb-2">
+                  “Every layout showed skill and care. Looking forward to more
+                  projects together.”
+                </p>
+                <div class="text-success">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star"></i>
+                </div>
+              </article>
             </div>
-          </article>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-4">
+          <!-- Feedback input section -->
+          <div id="feedback">
+            <textarea
+              id="feedbackText"
+              rows="3"
+              class="form-control mb-2 feedback"
+              placeholder="Write your feedback..."
+            ></textarea>
+            <button
+              id="submitFeedback"
+              class="btn btn-sm btn-outline-secondary px-4"
+            >
+              Submit Feedback
+            </button>
+          </div>
+
+          <!-- Thank you message hidden initially -->
+          <p id="thankYouMsg" class="fw-semibold mt-2" style="display: none">
+            Thank you for your feedback!!!
+          </p>
         </div>
       </div>
-
-      <!-- Testimonial 2 -->
-      <div  class="col-md-4 col-sm-6 mb-2 ">
-        <div class="feature-box h-100">
-          <article class="rounded p-4 h-100">
-            <div class="d-flex align-items-center gap-2 mb-2">
-              <span class="small fw-semibold" style="color: #000000;">Raymond Okoh___Product Manager</span>
-            </div>
-            <p class="fst-italic small mb-2">“Impressed by the clean UI and how Joshua communicates. Very professional.”</p>
-            <div class="text-success">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <!-- Testimonial 3 -->
-      <div class="col-md-4 col-sm-6 mb-2 ">
-        <div class="feature-box h-100">
-          <article class="rounded p-4 h-100">
-            <div class="d-flex align-items-center gap-2 mb-2">
-              <span class="small fw-semibold" style="color: #000000;">Mary O___Customer Support</span>
-            </div>
-            <p class="fst-italic small mb-2">“Every layout showed skill and care. Looking forward to more projects together.”</p>
-            <div class="text-success">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-            </div>
-          </article>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- CTA -->
-<div class="text-center mt-4">
-  <!-- Feedback input section -->
-  <div id="feedback">
-    <textarea id="feedbackText" rows="3" class="form-control mb-2 feedback" 
-    placeholder="Write your feedback..."></textarea>
-    <button id="submitFeedback" class="btn btn-sm btn-outline-secondary px-4">Submit Feedback</button>
-  </div>
-
-  <!-- Thank you message hidden initially -->
-  <p id="thankYouMsg" class="fw-semibold mt-2" style="display: none;">Thank you for your feedback!!!</p>
-</div>
-
-  </div>
     </section>
 
     <!-- BACKTOTOP SECTION -->
     <section>
-          <div class="backtotop" id="backToTop">
-            <a href="#"><img src="Images\top-up-direction-move-svgrepo-com.svg" alt="back to top"></a>
-          </div>
+      <div class="backtotop" id="backToTop">
+        <a href="#"
+          ><img
+            src="Images\top-up-direction-move-svgrepo-com.svg"
+            alt="back to top"
+        /></a>
+      </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="mb-5 d-flex flex-column align-items-center justify-content-center">
+    <section
+      id="contact"
+      class="mb-5 d-flex flex-column align-items-center justify-content-center"
+    >
       <!-- Toast container -->
-<div id="toast">
-</div>
-  <h3 class="fw-bold text-center  mt-5">Let's Connect!</h3>
-  <p class="text-center">Feel free to reach out for collaborations, projects, or inquiries!</p>
+      <div id="toast"></div>
+      <h3 class="fw-bold text-center mt-5">Let's Connect!</h3>
+      <p class="text-center">
+        Feel free to reach out for collaborations, projects, or inquiries!
+      </p>
 
-  <div class="w-100 d-flex justify-content-center px-3">
-    <form action="https://formspree.io/f/mkgjdyrv" method="POST" autocomplete="on" class="w-100" style="max-width: 400px;">
-      <div class="mb-2" style="  border: 1px solid var(--text-color); border-radius: 8px;">
-        <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required autocomplete="name"
-         />
+      <div class="w-100 d-flex justify-content-center px-3">
+        <form
+          action="https://formspree.io/f/mkgjdyrv"
+          method="POST"
+          autocomplete="on"
+          class="w-100"
+          style="max-width: 400px"
+        >
+          <div
+            class="mb-2"
+            style="border: 1px solid var(--text-color); border-radius: 8px"
+          >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Your Name"
+              required
+              autocomplete="name"
+            />
+          </div>
+          <div
+            class="mb-2"
+            style="border: 1px solid var(--text-color); border-radius: 8px"
+          >
+            <input
+              type="email"
+              name="_replyto"
+              class="form-control"
+              placeholder="Your Email"
+              required
+              autocomplete="email"
+            />
+          </div>
+          <div
+            class="mb-2"
+            style="border: 1px solid var(--text-color); border-radius: 8px"
+          >
+            <textarea
+              name="message"
+              class="form-control"
+              rows="5"
+              placeholder="Your Message"
+              required
+              autocomplete="off"
+            ></textarea>
+          </div>
+          <button type="submit" class="w-100 py-2 small btn btn-secondary">
+            <i class="bi bi-send me-2"></i> Send Message
+          </button>
+        </form>
       </div>
-      <div class="mb-2" style="  border: 1px solid var(--text-color); border-radius: 8px;">
-        <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required autocomplete="email"
-           />
-      </div>
-      <div class="mb-2" style="  border: 1px solid var(--text-color); border-radius: 8px;">
-        <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required autocomplete="off"
-  ></textarea>
-      </div>
-      <button type="submit" class="w-100 py-2 small btn btn-secondary"
-      >
-        <i class="bi bi-send me-2"></i> Send Message
-      </button>
-    </form>
-  </div>
     </section>
 
-  
     <script src="JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-    AOS.init({
-        duration: 1700,  // Duration of the animation
-        once: false,     // Make sure animation happens only once
+      AOS.init({
+        duration: 1700, // Duration of the animation
+        once: false, // Make sure animation happens only once
         mirror: true,
-    });
+      });
     </script>
+  </body>
+  <hr style="color: var(--text-color)" />
 
-    </body>
-    <hr style="color: var(--text-color)">
-
-     <!--============== 
+  <!--============== 
         Footer Section
     ================-->
-    <footer class="bg-dark text-light pt-5 pb-3">
-  <div class="container">
-    <!-- <div class="row d-flex flex-column flex-md-row"> -->
-    <div class=" my-footer">
+  <footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
+      <div class="my-footer">
+        <!-- Description -->
+        <div class="footer-description mb-4 align-items-md-start">
+          <p class="mx-2">
+            Front-End Developer passionate about building responsive,
+            accessible, and user-focused digital experiences.
+          </p>
+        </div>
 
-      <!-- Logo and Description -->
-      <div class="footer-description mb-4 align-items-md-start">
-        
-        <p class="mx-2">A Front-End Developer passionate about creating responsive, accessible, and 
-            user-friendly websites. </p>
-      </div>
-
-      <!-- Quick Links -->
-      <div class=" mb-4">
-        <h5 class="fw-bold text-success">Quick Links</h5>
-        <ul class="list-unstyled foot">
-           <li><a href="#" class="">Home</a></li>
+        <!-- Quick Links -->
+        <div class="mb-4">
+          <h5 class="fw-bold text-success">Quick Links</h5>
+          <ul class="list-unstyled foot">
+            <li><a href="#" class="">Home</a></li>
             <li><a href="#about" class="">About</a></li>
             <li><a href="#projects" class="">Projects</a></li>
             <li><a href="#experience" class="">Experience</a></li>
             <li><a href="#contact" class="">Contact</a></li>
-        </ul>
-      </div>
+          </ul>
+        </div>
 
-      <!-- Social Links -->
-      <div class=" mb-4 align-items-start">
-        <h5 class="fw-bold text-success">Follow Us</h5>
-        <div class="d-flex social-icons">
-        <a href="#" class=" me-3 fs-5"><i class="bi bi-github"></i></a>
-        <a href="https://wa.me/+2349037498695" class=" me-3 fs-5"><i class="bi bi-whatsapp"></i></a>
-        <a href="https://www.linkedin.com/in/joshuaolagunju/" class=" fs-5"><i class="bi bi-linkedin"></i></a>
+        <!-- Social Links -->
+        <div class="mb-4 align-items-start">
+          <h5 class="fw-bold text-success">Follow Me</h5>
+          <div class="d-flex social-icons">
+            <a href="#" class="me-3 fs-5"><i class="bi bi-github"></i></a>
+            <a href="https://wa.me/+2349037498695" class="me-3 fs-5"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/joshuaolagunju/" class="fs-5"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="mb-4 align-items-end">
+          <h5 class="fw-bold text-success">Contact</h5>
+          <p>Lagos, Nigeria</p>
+          <div class="d-flex flex-column gap-1">
+            <a
+              href="mailto:olagunjujoshua11@gmail.com"
+              style="text-decoration: underline; color: inherit"
+            >
+              olagunjujoshua11@gmail.com
+            </a>
+            <a
+              href="tel:+2349037498695"
+              style="text-decoration: underline; color: inherit"
+            >
+              +234 903 749 8695
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Contact Info -->
-      <div class=" mb-4 align-items-end">
-        <h5 class="fw-bold text-success">Contact Me</h5>
-        <p><i class="bi bi-geo-alt-fill me-2"></i>Lagos, Nigeria</p>
-        <div class="d-flex flex-column gap-1">
-       <a href="mailto:olagunjujoshua11@gmail.com" style="text-decoration: underline; color: inherit;">
-          <i class="bi bi-envelope-fill me-2"></i>olagunjujoshua11@gmail.com</a>
-        <a href="tel:+2349037498695" style="text-decoration: underline; color: inherit;">
-          <i class="bi bi-telephone-fill me-2" ></i>+234 903 749 8695</a>
-        </div>
+      <hr class="border-light" />
+      <div class="text-center">
+        <p class="mb-0">&copy; Joshua Olagunju. All Rights Reserved.</p>
       </div>
-
     </div>
-
-    <hr class="border-light">
-    <div class="text-center">
-      <p class="mb-0">&copy; Joshua Olagunju. All Rights Reserved.</p>
-    </div>
-  </div>
-</footer>
-</html>   
-
+  </footer>
+</html>
